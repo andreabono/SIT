@@ -1,1 +1,1 @@
-# myrep
+# Seismic Intelligence Tool
