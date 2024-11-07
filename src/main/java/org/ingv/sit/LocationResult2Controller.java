@@ -74,7 +74,7 @@ import org.ingv.sit.tablemodels.Localmagnitude_list_items;
 import org.ingv.sit.tablemodels.Phases_List_items;
 import org.ingv.sit.tablemodels.Towns_List_items;
 import org.ingv.sit.utils.duration_buffer_item;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.ingv.sit.webservices.Hypo2000_configuration;
 
 /**
@@ -403,7 +403,7 @@ public class LocationResult2Controller implements Initializable {
             mytabPane.getSelectionModel().selectFirst();
             populate_phases_list();
         } else {
-            pfxDialog.ShowErrorMessage("Please, check settings parameters and format.", PrimaryStage);    
+            sitDialog.ShowErrorMessage("Please, check settings parameters and format.", PrimaryStage);    
         }
             
             
@@ -545,7 +545,7 @@ public class LocationResult2Controller implements Initializable {
     private void release_map(){
         try {
             if (this.MH.getMap()!=null) {
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Releasing map and graphic resources...");
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Releasing map and graphic resources...");
                 //MH.getMap().dispose();
                 MH.close();
             }
@@ -1122,7 +1122,7 @@ public class LocationResult2Controller implements Initializable {
                 // Trova la fase nella stazione
                 int idPh = ((Station)LocationResultEvent.getStations().get(idStaz)).phase_index(PhaseRemark);
                 if (idPh<0) {
-                    Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "RETURNING NULL with PhaseRemark = *" + PhaseRemark +"*");
+                    Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "RETURNING NULL with PhaseRemark = *" + PhaseRemark +"*");
                     return null;
                 }
                 
@@ -1384,7 +1384,7 @@ public class LocationResult2Controller implements Initializable {
             // Mix dei due eventi e aggiornamento interfaccia  
             relocated_event = PYML.PostRequest(relocated_event);
             if (relocated_event==null) {
-                pfxDialog.ShowErrorMessage("Error while using PYML", PrimaryStage);
+                sitDialog.ShowErrorMessage("Error while using PYML", PrimaryStage);
             } else {         
                 
                 if (buffered_codas!=null){
@@ -1397,7 +1397,7 @@ public class LocationResult2Controller implements Initializable {
                 ShowData();
             }           
         } else {
-            pfxDialog.ShowErrorMessage("Event location returned no results.", PrimaryStage);
+            sitDialog.ShowErrorMessage("Event location returned no results.", PrimaryStage);
         }
         //hypo_client=null;
         HYPO2000=null;
@@ -1415,7 +1415,7 @@ public class LocationResult2Controller implements Initializable {
         
         Event relocated_event = PYML.PostRequest(LocationResultEvent);
         if (relocated_event==null) {
-            pfxDialog.ShowErrorMessage("Error while using PYML", PrimaryStage);
+            sitDialog.ShowErrorMessage("Error while using PYML", PrimaryStage);
         } else {         
 
             if ((buffered_codas!=null) && (!relocated_event.HasMD())){ // ad not gia ha la MD !!!!!!!!!!!!!!!!!!!!!!

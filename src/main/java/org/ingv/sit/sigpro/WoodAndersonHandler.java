@@ -21,7 +21,7 @@ import org.ingv.sit.App;
 import org.ingv.sit.datamodel.Event;
 import org.ingv.sit.datamodel.Station;
 import org.ingv.sit.datamodel.Waveform;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 
 
 
@@ -89,14 +89,14 @@ public class WoodAndersonHandler {
                                
             // 2. Fa la FFT    
             if (!Make_FFT(data_samples)) {
-                pfxDialog.ShowErrorMessage("Error in FFT\n" + 
+                sitDialog.ShowErrorMessage("Error in FFT\n" + 
                         inWave.getFilename() +"\nOperation aborted.", null);
                 return false;
             }
             
             // 3. Procede con la conversione           
             if (!Convert(inWave)) {
-                pfxDialog.ShowErrorMessage("Error during conversion\n" + 
+                sitDialog.ShowErrorMessage("Error during conversion\n" + 
                         inWave.getFilename() +"\nOperation aborted.", null);
                 return false;
             } 
@@ -129,7 +129,7 @@ public class WoodAndersonHandler {
             //            
             return true;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }
  
@@ -248,7 +248,7 @@ _SAC_ResponseStruct readPZ(String STAZ, String CHAN) {
            return ((Station)App.G.SeismicNet.getStations().get(idStazInNet)).getChannels().get(idChanInStaz).getSAC_Response_Structure();
                
        } catch (Exception ex) {
-           Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, ex.getMessage());
+           Logger.getLogger("org.ingv.sit").log(Level.SEVERE, ex.getMessage());
            return null;
        } 
 } 
@@ -265,7 +265,7 @@ _SAC_ResponseStruct readPZ(String STAZ, String CHAN) {
             _SAC_ResponseStruct origRS = readPZ(inWave.getStationCode(), inWave.getChannelCode());
                         
             if (origRS==null) {
-                Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, "Response not found for " + inWave.getStationCode() + " " + inWave.getChannelCode());
+                Logger.getLogger("org.ingv.sit").log(Level.SEVERE, "Response not found for " + inWave.getStationCode() + " " + inWave.getChannelCode());
                 return  false;
             }
     //        
@@ -586,7 +586,7 @@ _SAC_ResponseStruct readPZ(String STAZ, String CHAN) {
                 String msgText =  "Please, check P and/or S times they look inconsistent when compared to event OT: " + 
                         E.getInnerObjectEvent().getOrigins().get(0).getOt().toLocalDateTime().format(DateTimeFormatter.ofPattern("HH:mm:ss").withZone(ZoneId.of("UTC")));
                
-                pfxDialog.ShowErrorMessage(msgText, null);
+                sitDialog.ShowErrorMessage(msgText, null);
                 
                 return null;
             }
@@ -707,7 +707,7 @@ _SAC_ResponseStruct readPZ(String STAZ, String CHAN) {
             return A;
         }
         catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return null;
         }
         

@@ -10,7 +10,7 @@
                 <exec.vmArgs>-Xmx4g -Dprism.maxvram=4G -Dprism.order=sw -Dprism.verbose=true -Dcom.sun.webkit.useHTTP2Loader=false -agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.executable>java</exec.executable>
-                <exec.mainClass>org.ingv.pfx.App</exec.mainClass>
+                <exec.mainClass>org.ingv.sit.App</exec.mainClass>
                 <exec.classpathScope>${classPathScope}</exec.classpathScope>
                 <jpda.listen>true</jpda.listen>
                 <exec.appArgs></exec.appArgs>
@@ -26,7 +26,7 @@
                 <exec.vmArgs>-Xmx4g -Dprism.maxvram=4G -Dprism.order=sw -Dprism.verbose=true -Dcom.sun.webkit.useHTTP2Loader=false</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
-                <exec.mainClass>org.ingv.pfx.App</exec.mainClass>
+                <exec.mainClass>org.ingv.sit.App</exec.mainClass>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
@@ -67,7 +67,7 @@
                 <exec.vmArgs>-Xmx4g -Dprism.maxvram=4G -Dprism.order=sw -Dprism.verbose=true -Dcom.sun.webkit.useHTTP2Loader=false</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
-                <exec.mainClass>org.ingv.pfx.App</exec.mainClass>
+                <exec.mainClass>org.ingv.sit.App</exec.mainClass>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>

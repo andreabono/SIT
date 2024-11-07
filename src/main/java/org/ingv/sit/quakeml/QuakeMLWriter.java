@@ -34,7 +34,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 //import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.ingv.dante.model.ObjectMagnitude;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.quakeml.xmlns.bed._1.Amplitude;
 import org.quakeml.xmlns.bed._1.Arrival;
 import org.quakeml.xmlns.bed._1.CreationInfo;
@@ -468,7 +468,7 @@ public class QuakeMLWriter {
             m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);          
             // Run the marshaler
             m.marshal(qml_root, file);
-            pfxDialog.ShowInformationMessage("Your file is ready!!",null);
+            sitDialog.ShowInformationMessage("Your file is ready!!",null);
             //
         } catch (Exception ex) {
             Alert alert = new Alert(AlertType.ERROR);
@@ -632,7 +632,7 @@ public class QuakeMLWriter {
 //            JAXBElement<CreationInfo> amp_CI = BED_OF.createMagnitudeCreationInfo(amp_CI_obj);
 //            a.getAny().add(amp_CI);
 //
-//            org.ingv.pfx.datamodel.Station s;
+//            org.ingv.sit.datamodel.Station s;
 //                        
 //            WaveformStreamID wsid = BED_OF.createWaveformStreamID();
 //                            wsid.setChannelCode(inAmp.getCha());

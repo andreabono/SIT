@@ -1,14 +1,14 @@
-# docker pfx 
+# docker sit 
 
-Docker hosting the Java package PFX by andrea.bono@ingv.it (based on JavaFX to be compiled with MAVEN or directly run as jar): PFX repo https://gitlab.rm.ingv.it/caravel/pfx
+Docker hosting the Java package SIT by andrea.bono@ingv.it (based on JavaFX to be compiled with MAVEN or directly run as jar): SIT repo https://github.com/andreabono/SIT
 
 ## Building the docker image
-From `pfx` folder, run:
+From `sit` folder, run:
 ```sh
-docker build -t pfx:latest -f docker/Dockerfile .
+docker build -t sit:latest -f docker/Dockerfile .
 ```
 
-## Runnig PFX in docker
+## Runnig SIT in docker
 
 First be sure to have allowed connections to X11 (Xquartz on mac os X).
 
@@ -19,15 +19,13 @@ The following instructions must be given on command line.
 ```sh
 MYIP="`ifconfig | grep -w inet | egrep -v -w "127.0.0.1" | awk '{print $2}' | head -n 1`"
 xhost +${MYIP} || exit
-docker run --rm -it -e DISPLAY=${MYIP}:0 --mount type=bind,source=/tmp/.X11-unix,target=/tmp/.X11-unix --name pfx_latest pfx:latest java -jar /app/target/pfx-1.9.0-develop-SNAPSHOT.jar
+docker run --rm -it -e DISPLAY=${MYIP}:0 --mount type=bind,source=/tmp/.X11-unix,target=/tmp/.X11-unix --name sit_latest sit:latest java -jar /app/target/sit-1.9.0-develop-SNAPSHOT.jar
 ```
 
-Otherwise the script `./run_docker_PFX.sh` can be used:
+Otherwise the script `./run_docker_sit.sh` can be used:
 ```sh
-./run_docker_PFX.sh java -jar /app/target/pfx-1.9.0-develop-SNAPSHOT.jar
+./run_docker_sit.sh java -jar /app/target/sit-1.9.0-develop-SNAPSHOT.jar
 ```
 
 ## contacts/developers 
-- raffaele.distefano@ingv.it
-- valentino.lauciani@ingv.it
 - andrea.bono@ingv.it

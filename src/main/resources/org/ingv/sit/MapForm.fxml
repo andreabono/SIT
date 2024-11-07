@@ -34,7 +34,7 @@
 <?import org.controlsfx.control.Rating?>
 <?import org.controlsfx.control.ToggleSwitch?>
 
-<AnchorPane fx:id="main_anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="909.0" prefWidth="1664.0" stylesheets="@../../../css/dark.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.pfx.MapFormController">
+<AnchorPane fx:id="main_anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="909.0" prefWidth="1664.0" stylesheets="@../../../css/dark.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.sit.MapFormController">
    <children>
       <MenuBar AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <menus>
@@ -615,7 +615,7 @@
       <Pane prefHeight="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <ImageView fx:id="imgDanteStatus" fitHeight="28.0" fitWidth="27.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true" />           
-            <Label fx:id="lblDanteStatus" layoutX="42.0" layoutY="7.0" text="PFX is using Caravel web services (Dante &amp; Apollo)" />
+            <Label fx:id="lblDanteStatus" layoutX="42.0" layoutY="7.0" text="SIT is using Caravel web services (Dante &amp; Apollo)" />
          </children>
       </Pane>
    </children>

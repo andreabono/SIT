@@ -28,7 +28,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.ingv.sit.datamodel.DataSource;
 import org.ingv.sit.datamodel.DataSource.dsType;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 
 /**
  * FXML Controller class
@@ -133,19 +133,19 @@ public class NewDatasourceController implements Initializable {
 //////////////////                    break;
 //////////////////                case 1:
 //////////////////                    // Missing datasource description    
-//////////////////                    pfxDialog.ShowErrorMessage("Missing description");
+//////////////////                    sitDialog.ShowErrorMessage("Missing description");
 //////////////////                    break;
 //////////////////                case 2:
 //////////////////                    // Missing or malformed URL
-//////////////////                    pfxDialog.ShowErrorMessage("Missing or malformed url");
+//////////////////                    sitDialog.ShowErrorMessage("Missing or malformed url");
 //////////////////                    break;
 //////////////////                case 3:
 //////////////////                    // Missing wave server host
-//////////////////                    pfxDialog.ShowErrorMessage("Missing host name");
+//////////////////                    sitDialog.ShowErrorMessage("Missing host name");
 //////////////////                    break; 
 //////////////////                case 4:
 //////////////////                    // Missing wave server host
-//////////////////                    pfxDialog.ShowErrorMessage("Ports list must be like 123,456,789");
+//////////////////                    sitDialog.ShowErrorMessage("Ports list must be like 123,456,789");
 //////////////////                    break;     
 //////////////////                case 100:
 //////////////////                    break;

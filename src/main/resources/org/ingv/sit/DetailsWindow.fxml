@@ -4,7 +4,7 @@
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="anchor_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="434.0" stylesheets="@../../../css/dark.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.pfx.DetailsWindowController">
+<AnchorPane fx:id="anchor_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="434.0" stylesheets="@../../../css/dark.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.sit.DetailsWindowController">
    <children>
       <ButtonBar layoutX="8.0" layoutY="346.0" prefHeight="40.0" prefWidth="582.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
         <buttons>

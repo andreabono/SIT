@@ -42,7 +42,7 @@ import org.ingv.dante.model.ObjectProvenance;
 import org.ingv.dante.model.ObjectStationmagnitude;
 import org.ingv.sit.App;
 import org.ingv.sit.datamodel.Event;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 
 public class PymlHandler {
     private String pymlURL;
@@ -185,7 +185,7 @@ public class PymlHandler {
                 type_amp.setName("WoodAnderson");
                 
                 ObjectLocalspace ls= new ObjectLocalspace();              
-                ls.setName("pfx");
+                ls.setName("sit");
                 int idStationMag=-1;
                 if (mags.getDb()!=null){
                     ObjectMagnitude mDB = new ObjectMagnitude();
@@ -351,7 +351,7 @@ public class PymlHandler {
             locApi=null;
             return myEvent;
         } catch (Exception ex){
-            pfxDialog.ShowErrorMessage("Error while using PYML:\n" + ex.getMessage(), null);
+            sitDialog.ShowErrorMessage("Error while using PYML:\n" + ex.getMessage(), null);
             return null;
         }
     }

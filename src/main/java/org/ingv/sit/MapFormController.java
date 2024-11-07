@@ -94,7 +94,7 @@ import javafx.util.Duration;
 import org.ingv.sit.utils.ResidualSelector;
 import javafx.util.StringConverter;
 import org.ingv.sit.datamodel.Event;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.ingv.sit.tablemodels.LocationTreeItems_Lev2_new;
 import org.ingv.sit.tablemodels.Phases_List_items;
 import org.ingv.sit.tablemodels.Towns_List_items;
@@ -439,7 +439,7 @@ public class MapFormController implements Initializable {
             lblDanteStatus.setVisible(true);
             if (!UpdateCaravelWebServicesStatus()){
                 // Dante web services are not available
-                pfxDialog.ShowErrorMessage("Attention: Dante or Apollo web services are not responding!!", PrimaryStage);    
+                sitDialog.ShowErrorMessage("Attention: Dante or Apollo web services are not responding!!", PrimaryStage);    
             }          
         } else {
             imgDanteStatus.setVisible(false);
@@ -636,10 +636,10 @@ public class MapFormController implements Initializable {
             
             if (tabMainEventsSources.getTabs()==null || tabMainEventsSources.getTabs().isEmpty()) {
                 AnyDatasourcesAvailable=false;
-                if (pfxDialog.ShowConfirmationMessage("Missing events sources","No FDSN or CARAVEL datasources available or used.\nCheck files: \ndatasources_CARAVEL.xml\ndatasources_FDSN.xml", PrimaryStage)== ButtonType.OK){
+                if (sitDialog.ShowConfirmationMessage("Missing events sources","No FDSN or CARAVEL datasources available or used.\nCheck files: \ndatasources_CARAVEL.xml\ndatasources_FDSN.xml", PrimaryStage)== ButtonType.OK){
                     ReleaseResources();
                     PrimaryStage.close();
-                } // else TODO: user should edit the configurartion by pfx settings interface
+                } 
                 
                 
             } else AnyDatasourcesAvailable=true;
@@ -700,7 +700,7 @@ public class MapFormController implements Initializable {
             
             tabMags.getScene().setUserData(this);   // This is useful in magnitudes display and refresh
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
         } finally {
             //this.initializing=false;   
         }
@@ -859,13 +859,13 @@ System.out.println("************************************************");
             Stage stage = new Stage();
                         
             stage.setScene(new Scene(root1));  
-            stage.setTitle("I.N.G.V. PFX - Settings dialog");
+            stage.setTitle("I.N.G.V. SIT - Settings dialog");
             stage.initModality(Modality.APPLICATION_MODAL);
                     
             stage.setMaximized(false);
             stage.showAndWait();
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE,  ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE,  ex.getMessage());
         }
     }
 //------------------------------------------------------------------------------
@@ -889,7 +889,7 @@ System.out.println("************************************************");
             Stage stage = new Stage();
                         
             stage.setScene(new Scene(root1));  
-            stage.setTitle("I.N.G.V. PFX - Information dialog");
+            stage.setTitle("I.N.G.V. SIT - Information dialog");
             stage.initModality(Modality.APPLICATION_MODAL);
                     
             stage.setMaximized(false);
@@ -897,13 +897,13 @@ System.out.println("************************************************");
             stage.show();
 
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE,  ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE,  ex.getMessage());
         }
     }  
 //------------------------------------------------------------------------------
     @FXML
     private void btnExit_Click(ActionEvent event) {
-        if (pfxDialog.ShowConfirmationMessage("Do you really want to quit pfx?", "All unsaved data will be lost!!", PrimaryStage)==ButtonType.OK) {
+        if (sitDialog.ShowConfirmationMessage("Do you really want to quit SIT?", "All unsaved data will be lost!!", PrimaryStage)==ButtonType.OK) {
             ReleaseResources();
             PrimaryStage.close();
         }  
@@ -945,7 +945,7 @@ System.out.println("************************************************");
             btnRefresh.fire();
             
             if (calendar.getValue().isBefore(LocalDate.now())){
-                if ((App.G.options.isWebServicePollingActive()) && pfxDialog.ShowConfirmationMessage("Stop polling?", 
+                if ((App.G.options.isWebServicePollingActive()) && sitDialog.ShowConfirmationMessage("Stop polling?", 
                         "You wish to stop events search for this session", PrimaryStage)== ButtonType.OK){
                     App.G.options.setWebServicePollingActive(false);
                     StopPolling();
@@ -959,7 +959,7 @@ System.out.println("************************************************");
     private void btnWaves_Clicked(ActionEvent event) {
         try {
             if (Event_already_open()){
-                pfxDialog.ShowInformationMessage("This event is already open in a waves window!!", PrimaryStage);
+                sitDialog.ShowInformationMessage("This event is already open in a waves window!!", PrimaryStage);
                 return;
             }
             
@@ -967,18 +967,18 @@ System.out.println("************************************************");
             // - first search on Earhtworm waveservers (sorted by priority)
             // - if no wave is avalable then search on FDSN services (sorted by priority)
 //            if (((App.G.options.getDatasources_EW()==null) && (App.G.options.getDatasources_FDSN()==null) && (App.G.options.getDatasources_SL()==null)) && (getLocal_QUAKEML_file().trim().isEmpty())) {
-//                pfxDialog.ShowInformationMessage("No datasource is configured.", PrimaryStage);
+//                sitDialog.ShowInformationMessage("No datasource is configured.", PrimaryStage);
 //                return;
 //            }
             if ((App.G.options.getDatasources_EW()==null || App.G.options.getDatasources_EW().isEmpty()) && 
                     (App.G.options.getDatasources_FDSN()==null || App.G.options.getDatasources_FDSN().isEmpty()) && 
                     (App.G.options.getDatasources_SL()==null || App.G.options.getDatasources_SL().isEmpty()) && (getLocal_QUAKEML_file().trim().isEmpty())) {
-                pfxDialog.ShowInformationMessage("Datasource list is empty.", PrimaryStage);
+                sitDialog.ShowInformationMessage("Datasource list is empty.", PrimaryStage);
                 return;
             }
             
             if (getEvent_on_Map().getSemaphoreOrOtherFlags().toUpperCase().contains("SEMAPHORE")){
-                if (pfxDialog.ShowConfirmationMessage("Lock found!", "Someone is already watching this event.\n Continue anyway?", PrimaryStage).getButtonData().isCancelButton())
+                if (sitDialog.ShowConfirmationMessage("Lock found!", "Someone is already watching this event.\n Continue anyway?", PrimaryStage).getButtonData().isCancelButton())
                     return; 
             }
             
@@ -991,7 +991,7 @@ System.out.println("************************************************");
             Stage stage = new Stage();
                         
             stage.setScene(new Scene(root1));  
-            stage.setTitle("PFX - Recovering data");
+            stage.setTitle("SIT - Recovering data");
             stage.initModality(Modality.APPLICATION_MODAL);
                     
             stage.setMaximized(false);
@@ -1000,7 +1000,7 @@ System.out.println("************************************************");
             
             
         } catch (Exception ex){
-            pfxDialog.ShowErrorMessage("Error while loading waves.\n" + ex.getMessage(), PrimaryStage);
+            sitDialog.ShowErrorMessage("Error while loading waves.\n" + ex.getMessage(), PrimaryStage);
         }
     }
     
@@ -1037,12 +1037,12 @@ System.out.println("************************************************");
              
             controller_details.ShowData(getEvent_on_Map().getInnerObjectEvent().getOrigins().get(0), getEvent_on_Map().getTownsInfo());
 
-            stage.setTitle("I.N.G.V. PFX - Event Report");
+            stage.setTitle("I.N.G.V. SIT - Event Report");
                     
             stage.setMaximized(false);
             stage.showAndWait();
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE,  ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE,  ex.getMessage());
         }
     }
 
@@ -1060,7 +1060,7 @@ System.out.println("************************************************");
                     }
                         System.out.println("Launched web server on port " + web_server_port);
                 } catch (Exception ex){
-                    pfxDialog.ShowErrorMessage("Unable to startup a web server for authentication!!", PrimaryStage);
+                    sitDialog.ShowErrorMessage("Unable to startup a web server for authentication!!", PrimaryStage);
                     return;
                 }
 
@@ -1086,7 +1086,7 @@ System.out.println("************************************************");
                     btnLogout.setVisible(true);
                 } else {
                     // Utente non autenticato
-                    pfxDialog.ShowInformationMessage("No user logged in", PrimaryStage);
+                    sitDialog.ShowInformationMessage("No user logged in", PrimaryStage);
                     reset_alias_image();
                     btnLogout.setVisible(false);
                 }
@@ -1101,7 +1101,7 @@ System.out.println("************************************************");
 
 
                 } catch (Exception ex){
-                    pfxDialog.ShowErrorMessage("Unable to stop the web server for authentication!!", PrimaryStage);
+                    sitDialog.ShowErrorMessage("Unable to stop the web server for authentication!!", PrimaryStage);
                 }
             }       
         }  
@@ -1124,13 +1124,13 @@ System.out.println("************************************************");
             if (App.G.User == null) return;
             if (Event_on_Map!=null)  {
                 Event_on_Map.getInnerObjectEvent().getOrigins().get(0).getProvenance().setUsername(App.G.User.getName());
-                Event_on_Map.getPfxProvenance().setUsername(App.G.User.getName());
+                Event_on_Map.getSitProvenance().setUsername(App.G.User.getName());
             }
             
             if (App.G.WavesControllers!=null && !App.G.WavesControllers.isEmpty()){
                 for (int i=0; i< App.G.WavesControllers.size(); i++){
                     App.G.WavesControllers.get(i).getMyEvent().getInnerObjectEvent().getOrigins().get(0).getProvenance().setUsername(App.G.User.getName());
-                    App.G.WavesControllers.get(i).getMyEvent().getPfxProvenance().setUsername(App.G.User.getName());
+                    App.G.WavesControllers.get(i).getMyEvent().getSitProvenance().setUsername(App.G.User.getName());
                 }
             }
             
@@ -1142,7 +1142,7 @@ System.out.println("************************************************");
     private void btnLogout_Click(ActionEvent event) {     
         if ((App.G.User!=null) && (App.G.User.isLoggedIn())){
             String msg = "Do you want to logout?";
-            if (pfxDialog.ShowConfirmationMessage("Logout", msg, PrimaryStage)==ButtonType.OK) {
+            if (sitDialog.ShowConfirmationMessage("Logout", msg, PrimaryStage)==ButtonType.OK) {
 
                 if (myKeyCloakClient.handleLogout()){
                     App.G.User.Init();  
@@ -1159,7 +1159,7 @@ System.out.println("************************************************");
         if (!local_QUAKEML_file.trim().isEmpty())
             TS(null, null, null, getLocal_QUAKEML_file());
         else
-            pfxDialog.ShowErrorMessage("No QuakeML file selected", PrimaryStage);
+            sitDialog.ShowErrorMessage("No QuakeML file selected", PrimaryStage);
     }
 //------------------------------------------------------------------------------
     @FXML
@@ -1185,12 +1185,12 @@ System.out.println("************************************************");
              
             controller_details.ShowData(getEvent_on_Map().getInnerObjectEvent().getOrigins().get(0));
 
-            stage.setTitle("I.N.G.V. PFX - Event details");
+            stage.setTitle("I.N.G.V. SIT - Event details");
                     
             stage.setMaximized(false);
             stage.showAndWait();
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE,  ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE,  ex.getMessage());
         }
     }
     
@@ -1220,7 +1220,7 @@ System.out.println("************************************************");
 
                 if (this.Locations_level1==null){
                     this.setEvent_on_Map(null);
-                    pfxDialog.ShowInformationMessage("No events found!", PrimaryStage);
+                    sitDialog.ShowInformationMessage("No events found!", PrimaryStage);
                     ResetInterface();
                     return;
                 }
@@ -1233,10 +1233,10 @@ System.out.println("************************************************");
                 SelectLastModifiedTableRow();
 
             }  else {
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Could not update events list");
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Could not update events list");
             }
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
         } finally {
             if (this.PrimaryStage!=null)
                 this.PrimaryStage.getScene().setCursor(Cursor.DEFAULT);
@@ -1259,7 +1259,7 @@ System.out.println("************************************************");
 
                 if (Locations_FDSN==null){
                     setEvent_on_Map(null);
-                    pfxDialog.ShowInformationMessage("No events found!", PrimaryStage);
+                    sitDialog.ShowInformationMessage("No events found!", PrimaryStage);
                     ResetInterface();
                     return;
                 }
@@ -1280,10 +1280,10 @@ System.out.println("************************************************");
 //                SelectLastModifiedTableRow();
 
             }  else {
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Could not update events list");
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Could not update events list");
             }
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
         } finally {
             if (this.PrimaryStage!=null)
                 this.PrimaryStage.getScene().setCursor(Cursor.DEFAULT);
@@ -1538,19 +1538,19 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
                 // The web polling_service returned a non empty list 
                 Locations_level1 = (ArrayList<ObjectMagnitudesOriginsEventsAndEventsGroup>)request_output.getData();
             } else {
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.WARNING, 
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.WARNING, 
                                    "No hypocenter found in the selected time interval");
             }       
             return true;
         } catch (org.ingv.dante.ApiException aex){
             String msg = aex.getResponseBody();
             if (aex.getMessage()!=null) msg = aex.getMessage();
-            Logger.getLogger("org.ingv.pfx.MapFormController.ReadLevel1_INGV()").log(java.util.logging.Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit.MapFormController.ReadLevel1_INGV()").log(java.util.logging.Level.SEVERE, 
                                    msg);
-            pfxDialog.ShowErrorMessage(msg, PrimaryStage);
+            sitDialog.ShowErrorMessage(msg, PrimaryStage);
             return false;
         } catch (Exception ex){
-            pfxDialog.ShowErrorMessage("Can't read events:\n" + ex.getMessage(), PrimaryStage);
+            sitDialog.ShowErrorMessage("Can't read events:\n" + ex.getMessage(), PrimaryStage);
              
             return false;
         } finally {
@@ -1734,81 +1734,82 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
     }      
     //------------------------------------------------------------------------------
     private boolean UpdateCaravelWebServicesStatus(){
-        GetApi ReadClient;
-        File file;
-        try {
-            boolean ok;
-            int n_services_up=0;
-            ReadClient = new GetApi();
-            ReadClient.getApiClient().setReadTimeout(30000);
-            
-            org.ingv.apollo.api.StatusApi apollo_status = new org.ingv.apollo.api.StatusApi();
-            org.ingv.dante.api.StatusApi dante_status = new org.ingv.dante.api.StatusApi();
-                             
-            App.logger.debug("WS-LOG: ReadClient.getStatus()");
-            ObjectStatus p = dante_status.getStatus();
-            App.logger.debug("WS-LOG: ReadClient.getStatus() received response");
-            
-            String separator = System.getProperty("file.separator");
-                  
-            if (p.getStatus()==200) {
-                n_services_up=1;
-                
-                ok= true;
-            } else {
-                ok=false;
-                
-            }
-            
-                    
-            String host_read = "Host(ro): ";
-            String  host_write  = "Host(rw): ";
-            for (int i=0; i< p.getDbHost().getRead().size(); i++){
-                host_read += p.getDbHost().getRead().get(i) + "/";
-            }
-            for (int i=0; i< p.getDbHost().getWrite().size(); i++){
-                host_write += p.getDbHost().getWrite().get(i) + "/";
-            }
-            
-            String apollo_info1;
-            apollo_status.setCustomBaseUrl(App.G.options.get_pyml_url());
-            try {
-                apollo_info1=  apollo_status.getStatus().getVersion() + " Status:" + apollo_status.getStatus().getDetail();
-                n_services_up=2;
-            } catch (Exception ex){
-                apollo_info1= "** NOT RESPONDING **";
-                ok=false;
-            }
-            
-            switch (n_services_up){
-                case 0:
-                    file = new File("src"+ separator + "main"+ separator + "resources"+ separator + "images"+ separator + "hand-ko-icon.png");
-                    break;
-                case 1:
-                    file = new File("src"+ separator + "main"+ separator + "resources"+ separator + "images"+ separator + "warning3.png");
-                    break;
-                case 2:
-                    file = new File("src"+ separator + "main"+ separator + "resources"+ separator + "images"+ separator + "hand-ok-icon.png");
-                    break;
-                default:
-                    file=null;
-            }
-            if (file!=null)
-                imgDanteStatus.setImage(new Image(file.toURI().toString()));
-
-            lblDanteStatus.setText("PFX is using Caravel web services (Dante & Apollo) - Dante: " + 
-                    p.getDetail() + " [" + p.getStatus() + "-" +p.getTitle() + "] " + 
-                    host_read + " " + host_write  + "  Port: " + p.getDbPort().toString()  + 
-                    "  Database name: " + p.getDbName() + " -- Apollo " + apollo_info1);
-            
-            return ok;
-                       
-        } catch (Exception ex) {
-            return false;
-        } finally {
-            ReadClient = null;
-            file=null;
-        }
+        return true;
+//        GetApi ReadClient;
+//        File file;
+//        try {
+//            boolean ok;
+//            int n_services_up=0;
+//            ReadClient = new GetApi();
+//            ReadClient.getApiClient().setReadTimeout(30000);
+//            
+//            org.ingv.apollo.api.StatusApi apollo_status = new org.ingv.apollo.api.StatusApi();
+//            org.ingv.dante.api.StatusApi dante_status = new org.ingv.dante.api.StatusApi();
+//                             
+//            App.logger.debug("WS-LOG: ReadClient.getStatus()");
+//            ObjectStatus p = dante_status.getStatus();
+//            App.logger.debug("WS-LOG: ReadClient.getStatus() received response");
+//            
+//            String separator = System.getProperty("file.separator");
+//                  
+//            if (p.getStatus()==200) {
+//                n_services_up=1;
+//                
+//                ok= true;
+//            } else {
+//                ok=false;
+//                
+//            }
+//            
+//                    
+//            String host_read = "Host(ro): ";
+//            String  host_write  = "Host(rw): ";
+//            for (int i=0; i< p.getDbHost().getRead().size(); i++){
+//                host_read += p.getDbHost().getRead().get(i) + "/";
+//            }
+//            for (int i=0; i< p.getDbHost().getWrite().size(); i++){
+//                host_write += p.getDbHost().getWrite().get(i) + "/";
+//            }
+//            
+//            String apollo_info1;
+//            apollo_status.setCustomBaseUrl(App.G.options.get_pyml_url());
+//            try {
+//                apollo_info1=  apollo_status.getStatus().getVersion() + " Status:" + apollo_status.getStatus().getDetail();
+//                n_services_up=2;
+//            } catch (Exception ex){
+//                apollo_info1= "** NOT RESPONDING **";
+//                ok=false;
+//            }
+//            
+//            switch (n_services_up){
+//                case 0:
+//                    file = new File("src"+ separator + "main"+ separator + "resources"+ separator + "images"+ separator + "hand-ko-icon.png");
+//                    break;
+//                case 1:
+//                    file = new File("src"+ separator + "main"+ separator + "resources"+ separator + "images"+ separator + "warning3.png");
+//                    break;
+//                case 2:
+//                    file = new File("src"+ separator + "main"+ separator + "resources"+ separator + "images"+ separator + "hand-ok-icon.png");
+//                    break;
+//                default:
+//                    file=null;
+//            }
+//            if (file!=null)
+//                imgDanteStatus.setImage(new Image(file.toURI().toString()));
+//
+//            lblDanteStatus.setText("SIT is using Caravel web services (Dante & Apollo) - Dante: " + 
+//                    p.getDetail() + " [" + p.getStatus() + "-" +p.getTitle() + "] " + 
+//                    host_read + " " + host_write  + "  Port: " + p.getDbPort().toString()  + 
+//                    "  Database name: " + p.getDbName() + " -- Apollo " + apollo_info1);
+//            
+//            return ok;
+//                       
+//        } catch (Exception ex) {
+//            return false;
+//        } finally {
+//            ReadClient = null;
+//            file=null;
+//        }
     }    
 //------------------------------------------------------------------------------
     public void StartPolling(){
@@ -1878,11 +1879,11 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
                                     if (!populate_group_members_INGV() ) { // read the elements in the group
                                         // If no element is found, try to read replicating the object in the parent
                                         if (!populate_group_members_INGV_replicating_parent(local_treetable_item.getValue())){
-                                            pfxDialog.ShowErrorMessage("Error while searching for child locations.\nTry again later.", PrimaryStage);
+                                            sitDialog.ShowErrorMessage("Error while searching for child locations.\nTry again later.", PrimaryStage);
                                         }
                                     }
                                 } else if (!populate_group_members_INGV_replicating_parent(local_treetable_item.getValue()) ) { // read the elements in the group
-                                    pfxDialog.ShowErrorMessage("Error while searching for child locations.\nTry again later.", PrimaryStage);
+                                    sitDialog.ShowErrorMessage("Error while searching for child locations.\nTry again later.", PrimaryStage);
                                 }
                            }
                     }                  
@@ -1973,7 +1974,7 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
                             read_result = getEvent_on_Map().read(qml_ev); 
                         else{
                             read_result=false;
-                            pfxDialog.ShowErrorMessage("Could not find event information for id " + s_eventID, PrimaryStage);
+                            sitDialog.ShowErrorMessage("Could not find event information for id " + s_eventID, PrimaryStage);
                         }
                         break;
                     case "LOCALHOST":
@@ -1985,7 +1986,7 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
                             read_result = getEvent_on_Map().read(local_qml_ev); 
                         else{
                             read_result=false;
-                            pfxDialog.ShowErrorMessage("Could not find event information in \n" + getLocal_QUAKEML_file(), PrimaryStage);
+                            sitDialog.ShowErrorMessage("Could not find event information in \n" + getLocal_QUAKEML_file(), PrimaryStage);
                         }
                         break;       
                 }                
@@ -1994,7 +1995,7 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
                     updateProgress(100, 100);
                     return null; // va rivisto il tipo in uscita
                 } else {
-                    pfxDialog.ShowErrorMessage("Something was wrong while reading this event.", PrimaryStage);
+                    sitDialog.ShowErrorMessage("Something was wrong while reading this event.", PrimaryStage);
                     finito=false;
                     return null;
                 }
@@ -2020,11 +2021,11 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
                 make_residuals_chart();
                
                 if (!populate_phases_list()) {
-                    pfxDialog.ShowErrorMessage("Error while building phases list.", PrimaryStage);
+                    sitDialog.ShowErrorMessage("Error while building phases list.", PrimaryStage);
                 }
                 
                 if (!populate_towns_list()) {
-                    pfxDialog.ShowErrorMessage("Error while building towns list.", PrimaryStage);
+                    sitDialog.ShowErrorMessage("Error while building towns list.", PrimaryStage);
                 }
                 
                 if (getPrimaryStage() != null) 
@@ -2195,7 +2196,7 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
                 
                 return res;
             } else {
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.WARNING, 
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.WARNING, 
                                    "No hypocenter found in time interval " +  
                                    TodayString +  "T00:00:00.000+00:00" + " to " + 
                                    TodayString +  "T23:59:59.000+00:00");
@@ -2214,7 +2215,7 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
     private void ShowEventSummary(){
     try {       
         if (getEvent_on_Map()==null) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Hypocenter is null");
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Hypocenter is null");
             this.lblLat.setText("00.00");
             this.lblLon.setText("00.00");
             this.lblDep.setText("00.00" + " km");
@@ -2307,7 +2308,7 @@ private boolean Read_FDSN_events_list(int idFDSNHost){
         this.anchor_summary.layout();
         
     } catch (Exception ex){
-        pfxDialog.ShowErrorMessage("Error in event summary parameters display.\n" + ex.getMessage(), PrimaryStage);
+        sitDialog.ShowErrorMessage("Error in event summary parameters display.\n" + ex.getMessage(), PrimaryStage);
     }
     
 }
@@ -3052,7 +3053,7 @@ public static double round(double value, int places) {
             else
                 (new File( "networks_backup" )).renameTo((new File("networks")));
         } catch (Exception ex){
-            Logger.getLogger("org.ingv.pfx.MapFormController.mnuFile_UpdateNetwork").log(java.util.logging.Level.SEVERE, "Error updating network!!");
+            Logger.getLogger("org.ingv.sit.MapFormController.mnuFile_UpdateNetwork").log(java.util.logging.Level.SEVERE, "Error updating network!!");
         } finally {
             PrimaryStage.getScene().setCursor(Cursor.DEFAULT);
             tmp=null;
@@ -3086,7 +3087,7 @@ public static double round(double value, int places) {
     
     private void SearchOrigins(){
         if (!SearchOriginsInputValidation()){
-            pfxDialog.ShowErrorMessage("Please check search settings.", PrimaryStage);
+            sitDialog.ShowErrorMessage("Please check search settings.", PrimaryStage);
             return;
         }
        
@@ -3823,7 +3824,7 @@ public static double round(double value, int places) {
             
             if ((dati==null)||(dati.isEmpty()))return null;
             
-            res.add(new Localspaces_List_items("production","pfx-rev-origin"));
+            res.add(new Localspaces_List_items("production","sit-rev-origin"));
             for (int i =0; i< dati.size(); i++){
                 res.add(new Localspaces_List_items(dati.get(i).getEnvironment().getValue(),dati.get(i).getName()));
             }
@@ -3845,13 +3846,13 @@ public static double round(double value, int places) {
             App.logger.debug("WS-LOG: GA.getTypeOrigin reading");
             
             
-            Logger.getLogger("org.ingv.pfx").log(Level.INFO, "WS-LOG: GA.getTypeOrigin reading");
+            Logger.getLogger("org.ingv.sit").log(Level.INFO, "WS-LOG: GA.getTypeOrigin reading");
             
             
             GetTypeOrigin200Response resp = GA.getTypeOrigin();
             App.logger.debug("WS-LOG: GA.getTypeOrigin received response");
             
-            Logger.getLogger("org.ingv.pfx").log(Level.INFO, "WS-LOG: GA.getTypeOrigin received response");
+            Logger.getLogger("org.ingv.sit").log(Level.INFO, "WS-LOG: GA.getTypeOrigin received response");
             
             List<ObjectTableTypeOrigin> dati = resp.getData();
             
@@ -4135,7 +4136,7 @@ public static double round(double value, int places) {
                                         .darkStyle()
                                         .hideAfter(Duration.seconds(3.0))
                                         .position(Pos.TOP_RIGHT)
-                                        .title("pFX information")
+                                        .title("SIT information")
                                         .text("New origin in " + appo.getOrigin().getRegion())
                                         .showInformation();
                                 
@@ -4158,7 +4159,7 @@ public static double round(double value, int places) {
                                         .darkStyle()
                                         .hideAfter(Duration.seconds(3.0))
                                         .position(Pos.TOP_RIGHT)
-                                        .title("pFX information")
+                                        .title("SIT information")
                                         .text("Origin update")
                                         .showInformation();
                                 
@@ -4312,7 +4313,7 @@ public static double round(double value, int places) {
                 
             } catch (Exception ex) {
                 // fileName could not exist...
-                java.util.logging.Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE,  ex.getMessage());
+                java.util.logging.Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE,  ex.getMessage());
             } finally {
                 file=null;
                 media=null;

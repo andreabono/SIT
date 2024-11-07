@@ -34,7 +34,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import org.ingv.dante.model.GetMunicipiDistanceKmPopolazione200ResponseDataInner;
 import org.ingv.dante.model.ObjectOrigin;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 
 /**
  * FXML Controller class
@@ -137,7 +137,7 @@ public class ReportWindowController implements Initializable {
                 job.endJob();
             }
         } catch (Exception ex) {
-            pfxDialog.ShowErrorMessage("Printer error", (Stage) anchor_main.getScene().getWindow());
+            sitDialog.ShowErrorMessage("Printer error", (Stage) anchor_main.getScene().getWindow());
         }
         
     }

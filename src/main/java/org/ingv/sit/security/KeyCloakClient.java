@@ -42,7 +42,7 @@ import javax.net.ssl.X509TrustManager;
 import org.apache.http.client.HttpResponseException;
 import org.ingv.sit.App;
 import org.ingv.sit.AuthenticationController;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -152,7 +152,7 @@ public class KeyCloakClient {
             Stage stage = new Stage();
 
             stage.setScene(new Scene(root1));  
-            stage.setTitle("I.N.G.V. PFX - Authentication dialog");
+            stage.setTitle("I.N.G.V. SIT - Authentication dialog");
             stage.initModality(Modality.APPLICATION_MODAL);
 
 
@@ -266,7 +266,7 @@ public class KeyCloakClient {
     public boolean refreshAccessToken(){
         HttpURLConnection con=null;
         try {
-            Logger.getLogger("org.ingv.pfx ").log(Level.INFO, 
+            Logger.getLogger("org.ingv.sit ").log(Level.INFO, 
                              "Refreshing user token...");
            
             String postData = "client_id=" + KEYCLOAK_CLIENT_ID + "&grant_type=refresh_token&refresh_token=" + refreshToken; 
@@ -289,7 +289,7 @@ public class KeyCloakClient {
             try {
                 responseCode=con.getResponseCode();
             } catch (HttpResponseException e){
-                pfxDialog.ShowErrorMessage("Errore... " + e.getReasonPhrase(), null);
+                sitDialog.ShowErrorMessage("Errore... " + e.getReasonPhrase(), null);
                 e.printStackTrace();
                 
                 return false;
@@ -318,20 +318,20 @@ public class KeyCloakClient {
                 App.G.User.setToken(userToken);
                 refreshToken = jsonNode.get("refresh_token").asText();
                 
-                Logger.getLogger("org.ingv.pfx ").log(Level.INFO, 
+                Logger.getLogger("org.ingv.sit ").log(Level.INFO, 
                              "Refreshing user token... done!!");
                 return true;
             } else {
                 System.out.println("Errore nella risposta HTTP in referesh token: " + responseCode);
                 
-                Logger.getLogger("org.ingv.pfx ").log(Level.SEVERE, 
+                Logger.getLogger("org.ingv.sit ").log(Level.SEVERE, 
                              "Errore nella risposta HTTP in referesh token: " + responseCode);
                 return false;
             }
         } catch (IOException e) {
             //e.printStackTrace();
             System.out.println(">>>>>>>> ERROR REFRESHING TOKEN");
-            Logger.getLogger("org.ingv.pfx ").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit ").log(Level.SEVERE, 
                              e.getMessage());
             return false;
         } finally {

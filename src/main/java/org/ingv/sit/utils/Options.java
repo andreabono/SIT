@@ -82,7 +82,7 @@ public class Options {
     public final boolean load() throws InvalidPropertiesFormatException{
         FileInputStream fis=null;
         try {
-            File options_f=new File("configuration/pfx_properties.xml");
+            File options_f=new File("configuration/sit_properties.xml");
             if (!options_f.exists()){
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("Error");
@@ -92,7 +92,7 @@ public class Options {
                     alert.showAndWait();
                     return false;
             } else {
-                fis = new FileInputStream("configuration/pfx_properties.xml");
+                fis = new FileInputStream("configuration/sit_properties.xml");
                 prop.loadFromXML(fis);
                 
                 if ((App.G.FileExists(datasources_FDSN_filename)) && !readFDSNDatasources(datasources_FDSN_filename)){
@@ -928,7 +928,7 @@ public class Options {
     public boolean store() { //throws FileNotFoundException, IOException{
         try {
             FileOutputStream fos;
-            fos = new FileOutputStream("configuration/pfx_properties.xml");
+            fos = new FileOutputStream("configuration/sit_properties.xml");
             
             SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
             Date date = new Date(System.currentTimeMillis());

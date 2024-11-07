@@ -49,7 +49,7 @@ public class EW_Host {
         
        this.hostname = host;
        if (!this.Init_Wave_Servers(ports_list)) {  
-           Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, "Error while reading wave servers menus");
+           Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, "Error while reading wave servers menus");
        }
        
 //       if (this.OpenConnection()) {
@@ -61,7 +61,7 @@ public class EW_Host {
 //--------------------------------------------------------------------------------         
     public boolean OpenConnection(){
         try {
-//            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, 
+//            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, 
 //                    "Opening connection with Earthworm host " + hostname + " on port " + port);
             
             s = new Socket(hostname, port);
@@ -75,7 +75,7 @@ public class EW_Host {
             return true;
         } catch (Exception ex) {
             ex.printStackTrace();
-            //Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            //Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }
     }
@@ -98,7 +98,7 @@ public void ListenToMessages(){
     //
     String syncfile = "syncro.txt";
     
-    //Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, "Listening to Earthworm messages...");
+    //Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, "Listening to Earthworm messages...");
     try {     
 //        SyncFileWriter syncWriter = null;
 //        if (syncfile != null) {
@@ -133,12 +133,12 @@ public void ListenToMessages(){
 //                        lastEndTimeMap.put(key, traceBuf2.getPredictedNextStartTime());
 //                        //System.out.println("TraceBuf: "+traceBuf2);
 //                    } else if (message.getMessageType() == EarthwormMessage.MESSAGE_TYPE_HEARTBEAT) {
-//                        Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, "Heartbeat received: " + new String(message.getData()));
+//                        Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, "Heartbeat received: " + new String(message.getData()));
 //                    }
 //                    Thread.sleep(1);
 //                } catch(IOException e) {
 //                    // remote closed connection?
-//                    Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, "Remote conection closed");
+//                    Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, "Remote conection closed");
 //                    heartbeater.setOutStream(null);
 //                    outStream.close();
 //                    break;
@@ -167,7 +167,7 @@ public void ListenToMessages(){
             EW_Wave_Server_Client tmp;
             for (int i=0; i<ports_list.size(); i++) {
 //                String[] params = {"-h", this.getHostname(), "-p", ports_list.get(i).toString(), "--menu"};
-//                Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, 
+//                Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, 
 //                        "Creating an EW_Wave_Server_Client with params -h=" + 
 //                        this.getHostname() + " e -p = " + ports_list.get(i).toString() + " --menu");
                 

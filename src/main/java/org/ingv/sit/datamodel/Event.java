@@ -98,7 +98,7 @@ import org.ingv.sit.fdsn.QuakeML_Utils;
 import org.ingv.sit.utils.MiniSeedToFloatArray;
 import org.ingv.sit.utils.StationsComparator;
 import org.ingv.sit.utils.duration_buffer_item;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 
 public class Event { 
     private EW_Host EW_SERVER;
@@ -114,8 +114,8 @@ public class Event {
     private Long work_event_ID;
     private Long work_origin_ID;  
     public ObjectEvent innerObjectEvent; 
-    ObjectLocalspace pfxLocalSpace;
-    private ObjectProvenance pfxProvenance;        
+    ObjectLocalspace sitLocalSpace;
+    private ObjectProvenance sitProvenance;        
        
     private boolean AddingStations=false;
     public int idController;   
@@ -138,24 +138,24 @@ public class Event {
     }
 //------------------------------------------------------------------------------    
     public boolean read(Long originId) {
-        pfxLocalSpace = new ObjectLocalspace(); 
-        pfxLocalSpace.setName("pfx");
-        pfxLocalSpace.setDescription("Manually reviewed");    // Differenziare per bollettino
+        sitLocalSpace = new ObjectLocalspace(); 
+        sitLocalSpace.setName("sit");
+        sitLocalSpace.setDescription("Manually reviewed");    // Differenziare per bollettino
 
-        setPfxProvenance(new ObjectProvenance()); 
-        getPfxProvenance().setName("INGV");
-        getPfxProvenance().setDescription("PFX interactive revision");
-        getPfxProvenance().setHostname(App.G.pfxHostname);
-        getPfxProvenance().setMethod("ToDoPFX");
-        getPfxProvenance().setModel("ToDoPFX");
-        getPfxProvenance().setParameters("ToDoPFX");
-        getPfxProvenance().setProgram("pfx");
-        getPfxProvenance().setSoftwarename("PFX");
-        getPfxProvenance().setUsername(App.G.pfxUsername);
-        getPfxProvenance().setVersion("1.0");
-        getPfxProvenance().setEvaluationmode(ProvenanceEvaluationmode.MANUAL);
+        setSitProvenance(new ObjectProvenance()); 
+        getSitProvenance().setName("INGV");
+        getSitProvenance().setDescription("SIT interactive revision");
+        getSitProvenance().setHostname(App.G.sitHostname);
+        getSitProvenance().setMethod("ToDoSIT");
+        getSitProvenance().setModel("ToDoSIT");
+        getSitProvenance().setParameters("ToDoSIT");
+        getSitProvenance().setProgram("sit");
+        getSitProvenance().setSoftwarename("SIT");
+        getSitProvenance().setUsername(App.G.sitUsername);
+        getSitProvenance().setVersion("1.0");
+        getSitProvenance().setEvaluationmode(ProvenanceEvaluationmode.MANUAL);
         if ((App.G.User!=null)&&(App.G.User.isLoggedIn()))
-            getPfxProvenance().setUsername(App.G.User.getName());
+            getSitProvenance().setUsername(App.G.User.getName());
         
         /*
         Reads an event via the DANTE web-service starting from the originId of 
@@ -172,7 +172,7 @@ public class Event {
            
             if (myResp!=null){     
                 App.logger.debug("WS-LOG: Event.read()--> ReadClient.getEvent received response");
-                //java.util.logging.Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, myResp.getData().toString());
+                //java.util.logging.Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, myResp.getData().toString());
                 if (myResp.getData().getEvent()==null) {
                     // No origin found
                     return false;
@@ -355,23 +355,23 @@ public class Event {
             String STAZ="";
             QuakeML_Utils QML_UTILS = new QuakeML_Utils(QMLevent);
               
-            pfxLocalSpace = new ObjectLocalspace(); 
-            pfxLocalSpace.setName("pfx");
-            pfxLocalSpace.setDescription("Manually reviewed");    // Differenziare per bollettino
-            innerObjectEvent.setLocalspace(pfxLocalSpace);
+            sitLocalSpace = new ObjectLocalspace(); 
+            sitLocalSpace.setName("SIT");
+            sitLocalSpace.setDescription("Manually reviewed");    // Differenziare per bollettino
+            innerObjectEvent.setLocalspace(sitLocalSpace);
 
-            setPfxProvenance(new ObjectProvenance()); 
-            getPfxProvenance().setName("INGV");
-            getPfxProvenance().setDescription("PFX interactive revision");
-            getPfxProvenance().setHostname(App.G.pfxHostname);
-            getPfxProvenance().setMethod("ToDoPFX");
-            getPfxProvenance().setModel("ToDoPFX");
-            getPfxProvenance().setParameters("ToDoPFX");
-            getPfxProvenance().setProgram("pfx");
-            getPfxProvenance().setSoftwarename("PFX");
-            getPfxProvenance().setUsername(App.G.pfxUsername);
-            getPfxProvenance().setVersion("1.0");
-            getPfxProvenance().setEvaluationmode(ProvenanceEvaluationmode.MANUAL);
+            setSitProvenance(new ObjectProvenance()); 
+            getSitProvenance().setName("INGV");
+            getSitProvenance().setDescription("SIT interactive revision");
+            getSitProvenance().setHostname(App.G.sitHostname);
+            getSitProvenance().setMethod("ToDoSIT");
+            getSitProvenance().setModel("ToDoSIT");
+            getSitProvenance().setParameters("ToDoSIT");
+            getSitProvenance().setProgram("SIT");
+            getSitProvenance().setSoftwarename("SIT");
+            getSitProvenance().setUsername(App.G.sitUsername);
+            getSitProvenance().setVersion("1.0");
+            getSitProvenance().setEvaluationmode(ProvenanceEvaluationmode.MANUAL);
                             
             //-------------
             // Origin
@@ -926,7 +926,7 @@ public class Event {
         try {    
             String NodeURL = App.G.options.getDatasources_FDSN().get(idDataSource).getUrl();
             
-            Logger.getLogger("org.ingv.pfx.Event ").log(Level.INFO, 
+            Logger.getLogger("org.ingv.sit.Event ").log(Level.INFO, 
                             "Searching waves on FDSN node " + NodeURL); 
 
             String res;
@@ -950,7 +950,7 @@ public class Event {
             String ewHostName = App.G.options.getDatasources_EW().get(idDataSource).getHostname();
             ArrayList<Integer> ports_list = App.G.options.getDatasources_EW().get(idDataSource).getPortslist();
             
-            Logger.getLogger("org.ingv.pfx.Event ").log(Level.INFO, 
+            Logger.getLogger("org.ingv.sit.Event ").log(Level.INFO, 
                             "Searching waves on earthworm server " + ewHostName); 
           
             Long tmpID = innerObjectEvent.getOrigins().get(0).getId();
@@ -1011,7 +1011,7 @@ public class Event {
             String ewHostName = App.G.options.getDatasources_EW().get(idDataSource).getHostname();
             ArrayList<Integer> ports_list = App.G.options.getDatasources_EW().get(idDataSource).getPortslist();
             
-            Logger.getLogger("org.ingv.pfx.Event ").log(Level.INFO, 
+            Logger.getLogger("org.ingv.sit.Event ").log(Level.INFO, 
                             "Searching horizontal components on earthworm server " + ewHostName); 
 
             String res;
@@ -1117,11 +1117,11 @@ public class Event {
         if (ActiveTerna.RecoverWaves(innerObjectEvent.getOrigins().get(0).getOt())) 
             return true;
         else 
-            Logger.getLogger("org.ingv.pfx ").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit ").log(Level.SEVERE, 
                             "Could NOT init terna for " + Staz + Chan + Net + Loc); 
             return false;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }    
     }
@@ -1319,7 +1319,7 @@ public class Event {
                 ObjectMagnitude tmpM = innerObjectEvent.getOrigins().get(0).getMagnitudes().get(mlId);
                 return this.local_findAmp(tmpM, STAZ, CHAN);  
             } else {
-                Logger.getLogger("org.ingv.pfx ").log(Level.WARNING, "EVENT HAS NO ML");
+                Logger.getLogger("org.ingv.sit ").log(Level.WARNING, "EVENT HAS NO ML");
                 return null;
             } 
         } catch (Exception ex) {
@@ -1390,7 +1390,7 @@ public class Event {
                 ObjectMagnitude tmpM = innerObjectEvent.getOrigins().get(0).getMagnitudes().get(mlId);
                 return this.local_findAmpIndex(tmpM, STAZ, CHAN);
             } else {
-                Logger.getLogger("org.ingv.pfx ").log(Level.WARNING, 
+                Logger.getLogger("org.ingv.sit ").log(Level.WARNING, 
                             "EVENT HAS NO ML and mlId = " + String.valueOf(mlId));
                 return -1;
             }
@@ -1407,8 +1407,8 @@ public class Event {
         if (idAmp==-1) {
             AmplitudeAdd(inAmp);
         } else {           
-            inAmp.getAmplitude().setLocalspace(pfxLocalSpace);
-            inAmp.getAmplitude().setProvenance(getPfxProvenance());
+            inAmp.getAmplitude().setLocalspace(sitLocalSpace);
+            inAmp.getAmplitude().setProvenance(getSitProvenance());
             innerObjectEvent.getOrigins().get(0).getMagnitudes().get(this.findMLid(inAmp.getTypeMagnitude())).getStationmagnitudes().remove(idAmp);
             innerObjectEvent.getOrigins().get(0).getMagnitudes().get(this.findMLid(inAmp.getTypeMagnitude())).getStationmagnitudes().add(inAmp);
         }
@@ -1425,8 +1425,8 @@ public class Event {
 //--------------------------------------------------------------------------------   
     public void AmplitudeAdd(ObjectStationmagnitude inAmp){
 
-        inAmp.getAmplitude().setLocalspace(pfxLocalSpace);
-        inAmp.getAmplitude().setProvenance(getPfxProvenance());
+        inAmp.getAmplitude().setLocalspace(sitLocalSpace);
+        inAmp.getAmplitude().setProvenance(getSitProvenance());
 
         for (int i=0; i< innerObjectEvent.getOrigins().get(0).getMagnitudes().size(); i++){
             if (innerObjectEvent.getOrigins().get(0).getMagnitudes().get(i).getTypeMagnitude().toUpperCase().contains("ML")){
@@ -1498,7 +1498,7 @@ public class Event {
             App.logger.debug("WS-LOG: ChangeEventType()--> eventUpdater.updateEvent finished");
             return true;
         } catch (Exception ex) {
-            pfxDialog.ShowErrorMessage("Error:\n" + ex.getMessage() , null);
+            sitDialog.ShowErrorMessage("Error:\n" + ex.getMessage() , null);
             return false;
         } finally {
             eventUpdater=null;
@@ -2317,33 +2317,33 @@ public class Event {
 //------------------------------------------------------------------------------    
     public void ResetLocalspacesAndProvenances(){
         innerObjectEvent.setIdLocalspace(null);
-        innerObjectEvent.getLocalspace().setName("pfx-rev-event");
-        innerObjectEvent.getLocalspace().setDescription("pfx manually reviewed event");
+        innerObjectEvent.getLocalspace().setName("sit-rev-event");
+        innerObjectEvent.getLocalspace().setDescription("SIT manually reviewed event");
         
         ObjectLocalspace ls = new ObjectLocalspace();
-        ls.setName("pfx-rev-origin");
-        ls.setDescription("pfx manually reviewed origin");
+        ls.setName("sit-rev-origin");
+        ls.setDescription("sit manually reviewed origin");
         
         ObjectLocalspace ls_mag = new ObjectLocalspace();
-        ls_mag.setName("pfx-rev-magnitude");
-        ls_mag.setDescription("pfx manually reviewed magnitude");
+        ls_mag.setName("sit-rev-magnitude");
+        ls_mag.setDescription("sit manually reviewed magnitude");
         
         if (innerObjectEvent.getOrigins()!=null){
             for (int id_origin=0; id_origin<innerObjectEvent.getOrigins().size(); id_origin++){
                 innerObjectEvent.getOrigins().get(id_origin).setIdLocalspace(null);
                 innerObjectEvent.getOrigins().get(id_origin).setLocalspace(ls);   
-                innerObjectEvent.getOrigins().get(id_origin).setProvenance(pfxProvenance);
+                innerObjectEvent.getOrigins().get(id_origin).setProvenance(sitProvenance);
 
                 if (innerObjectEvent.getOrigins().get(id_origin).getMagnitudes()!=null){
                     for (int id_mags=0; id_mags < innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().size(); id_mags++){
                         innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().get(id_mags).setIdLocalspace(null);
                         innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().get(id_mags).setLocalspace(ls_mag);  
-                        innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().get(id_mags).setProvenance(pfxProvenance);
+                        innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().get(id_mags).setProvenance(sitProvenance);
                         if (innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().get(id_mags).getTypeMagnitude().toUpperCase().contains("MD")){
                             
                             for (int k=0; k < innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().get(id_mags).getStationmagnitudes().size(); k++){
                                 innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().get(id_mags).getStationmagnitudes().get(k).getAmplitude().setLocalspace(ls_mag);
-                                innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().get(id_mags).getStationmagnitudes().get(k).getAmplitude().setProvenance(pfxProvenance);
+                                innerObjectEvent.getOrigins().get(id_origin).getMagnitudes().get(id_mags).getStationmagnitudes().get(k).getAmplitude().setProvenance(sitProvenance);
                             }
 
                         }
@@ -2408,8 +2408,8 @@ public class Event {
 //                AddOriginFlagRequestData data = new AddOriginFlagRequestData();
 //            
 //                originFlagItem.setValue(Float.valueOf("1")); 
-//                //originFlagItem.setNote(App.G.pfxUsername + " on " + App.G.pfxHostname);
-//                originFlagItem.setNote(App.G.pfxUsername + " on " + App.G.pfxHostname);
+//                //originFlagItem.setNote(App.G.sitUsername + " on " + App.G.sitHostname);
+//                originFlagItem.setNote(App.G.sitUsername + " on " + App.G.sitHostname);
 //                 data.setOriginid(innerObjectEvent.getOrigins().get(0).getId());
 //                data.addOriginFlagItem(originFlagItem);
 //
@@ -2419,7 +2419,7 @@ public class Event {
 //                    writer.addOriginFlag(addOriginFlagRequest);
 //                    // Semaphore properly set ON/OFF
 //                } catch (ApiException aex){
-//                    pfxDialog.ShowErrorMessage("Could not switch semaphore " + ON_or_OFF +  "!!");
+//                    sitDialog.ShowErrorMessage("Could not switch semaphore " + ON_or_OFF +  "!!");
 //                    return false;
 //                }
 //                writer=null;
@@ -2430,7 +2430,7 @@ public class Event {
 //                g.getApiClient().setReadTimeout(30000);
 //                d.getApiClient().setWriteTimeout(30000);
 //                // First we have to retrieve the origin flag  id
-//                GetOriginFlag200Response resp = g.getOriginFlag(innerObjectEvent.getOrigins().get(0).getId(), null, null, App.G.pfxUsername + " on " + App.G.pfxHostname);
+//                GetOriginFlag200Response resp = g.getOriginFlag(innerObjectEvent.getOrigins().get(0).getId(), null, null, App.G.sitUsername + " on " + App.G.sitHostname);
 //                if ((resp!=null) && (resp.getData()!=null)){
 //                    if (!resp.getData().isEmpty()){
 //                        int idSta=0;
@@ -2646,7 +2646,7 @@ public class Event {
   
             waves_primarystage.getIcons().add(new Image(("images/waves.png")));                       
             waves_primarystage.setScene(new Scene(root1));              
-            waves_primarystage.setTitle("PFX - Event (Origin ID): " + this.getInnerObjectEvent().getOrigins().get(0).getId());
+            waves_primarystage.setTitle("SIT - Event (Origin ID): " + this.getInnerObjectEvent().getOrigins().get(0).getId());
            
             waves_primarystage.setMaximized(true); 
             waves_primarystage.requestFocus();
@@ -2659,7 +2659,7 @@ public class Event {
 //            
             App.G.WavesControllers.get(App.G.WavesControllers.size()-1).setMyEvent(this);            
 //            
-            App.G.WavesControllers.get(App.G.WavesControllers.size()-1).getMyEvent().setWaves_path(App.G.WAVES_BASKET_PATH +  App.G.pfxUsername + File.separator + String.valueOf(this.getInnerObjectEvent().getOrigins().get(0).getId()));
+            App.G.WavesControllers.get(App.G.WavesControllers.size()-1).getMyEvent().setWaves_path(App.G.WAVES_BASKET_PATH +  App.G.sitUsername + File.separator + String.valueOf(this.getInnerObjectEvent().getOrigins().get(0).getId()));
 //            
             waves_primarystage.setOnShown(event -> {
                 event.consume();
@@ -2675,7 +2675,7 @@ public class Event {
           
         }  catch (Exception ex) {
             //Event_on_Map.SetSemaphoreOnOrigin("OFF");
-            pfxDialog.ShowErrorMessage("Error while loading waves.\n" + ex.getMessage(),null);
+            sitDialog.ShowErrorMessage("Error while loading waves.\n" + ex.getMessage(),null);
         }     
     }
     
@@ -2737,8 +2737,8 @@ public class Event {
             ObjectMagnitude MD = new ObjectMagnitude();
            
             MD.setTypeMagnitude("Md");
-            MD.setProvenance(getPfxProvenance());
-            MD.setLocalspace(pfxLocalSpace);
+            MD.setProvenance(getSitProvenance());
+            MD.setLocalspace(sitLocalSpace);
             
             double somma=0;
             int n=0;
@@ -2765,8 +2765,8 @@ public class Event {
                     sm.getAmplitude().setAmp1((double)Stations.get(i).getCoda_duration());
                     sm.getAmplitude().setTime1(P.getPick().getArrivalTime());
                     
-                    sm.getAmplitude().setLocalspace(pfxLocalSpace);
-                    sm.getAmplitude().setProvenance(getPfxProvenance());
+                    sm.getAmplitude().setLocalspace(sitLocalSpace);
+                    sm.getAmplitude().setProvenance(getSitProvenance());
  
                     double D=P.getEpDistanceKm();   // Distanza in Km
                      
@@ -3049,27 +3049,27 @@ public class Event {
                 }
             }
             
-            pfxLocalSpace = new ObjectLocalspace(); 
-            pfxLocalSpace.setName("pfx");
-            pfxLocalSpace.setDescription("Manually reviewed");    // Differenziare per bollettino
+            sitLocalSpace = new ObjectLocalspace(); 
+            sitLocalSpace.setName("sit");
+            sitLocalSpace.setDescription("Manually reviewed");    // Differenziare per bollettino
 
-            setPfxProvenance(new ObjectProvenance()); 
-            getPfxProvenance().setName("INGV");
-            getPfxProvenance().setDescription("PFX interactive revision");
-            getPfxProvenance().setHostname(App.G.pfxHostname);
-            getPfxProvenance().setMethod("ToDoPFX");
-            getPfxProvenance().setModel("ToDoPFX");
-            getPfxProvenance().setParameters("ToDoPFX");
-            getPfxProvenance().setProgram("pfx");
-            getPfxProvenance().setSoftwarename("PFX");
-            getPfxProvenance().setUsername(App.G.pfxUsername);
-            getPfxProvenance().setVersion("1.0");
-            getPfxProvenance().setEvaluationmode(ProvenanceEvaluationmode.MANUAL);
+            setSitProvenance(new ObjectProvenance()); 
+            getSitProvenance().setName("INGV");
+            getSitProvenance().setDescription("SIT interactive revision");
+            getSitProvenance().setHostname(App.G.sitHostname);
+            getSitProvenance().setMethod("ToDoSIT");
+            getSitProvenance().setModel("ToDoSIT");
+            getSitProvenance().setParameters("ToDoSIT");
+            getSitProvenance().setProgram("sit");
+            getSitProvenance().setSoftwarename("SIT");
+            getSitProvenance().setUsername(App.G.sitUsername);
+            getSitProvenance().setVersion("1.0");
+            getSitProvenance().setEvaluationmode(ProvenanceEvaluationmode.MANUAL);
             if ((App.G.User!=null)&&(App.G.User.isLoggedIn()))
-                getPfxProvenance().setUsername(App.G.User.getName());
+                getSitProvenance().setUsername(App.G.User.getName());
             
             
-            Orig.setProvenance(getPfxProvenance());
+            Orig.setProvenance(getSitProvenance());
             //O.setOt();
             
             // Copy the arrivals from the picks stored in stations
@@ -3141,17 +3141,17 @@ public class Event {
     }
 
     /**
-     * @return the pfxProvenance
+     * @return the sitProvenance
      */
-    public ObjectProvenance getPfxProvenance() {
-        return pfxProvenance;
+    public ObjectProvenance getSitProvenance() {
+        return sitProvenance;
     }
 
     /**
-     * @param pfxProvenance the pfxProvenance to set
+     * @param sitProvenance the sitProvenance to set
      */
-    public void setPfxProvenance(ObjectProvenance pfxProvenance) {
-        this.pfxProvenance = pfxProvenance;
+    public void setSitProvenance(ObjectProvenance sitProvenance) {
+        this.sitProvenance = sitProvenance;
     }
     
     

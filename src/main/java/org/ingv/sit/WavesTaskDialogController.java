@@ -46,7 +46,7 @@ import org.ingv.sit.datamodel.Waveform;
 import org.ingv.sit.earthworm.EW_Wave_Server_Client;
 import org.ingv.sit.mapping.MapHandler;
 import org.ingv.sit.utils.MiniSeedToFloatArray;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 
 /**
  *
@@ -534,7 +534,7 @@ System.out.println(">>>>>>>>>>> Scarico da FDSN " + Stazioni_canali_tempi_selezi
             updateMessage("Plotting when ready..."); // + title.getValue());
             
             if (!Event_on_Map.Event_has_waves()){ // NO!! Sostituire con "se ci sono stazioni della SeismicNetowrk (letta all'inizio) non trovate sui server EW"
-                    pfxDialog.ShowMessage("No waves found.", "ALERT", Alert.AlertType.WARNING,null);  
+                    sitDialog.ShowMessage("No waves found.", "ALERT", Alert.AlertType.WARNING,null);  
             } else {
                 Platform.runLater(() -> {
                     if (!Event_on_Map.isAddingStations())

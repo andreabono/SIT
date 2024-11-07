@@ -43,7 +43,7 @@ import org.ingv.sit.datamodel.DataSource;
 import org.ingv.sit.mapping.MapHandler;
 import org.ingv.sit.tablemodels.DataSource_List_items;
 import org.ingv.sit.tablemodels.MAPLayers_list_items;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.ingv.sit.utils.map_layers_element;
 
 /**
@@ -238,7 +238,7 @@ populate_datasources_INGV_list();
         }
          
         if (!change_options() || !App.G.options.store()){
-            pfxDialog.ShowErrorMessage("Error while saving options.", (Stage) btnCancel.getScene().getWindow());
+            sitDialog.ShowErrorMessage("Error while saving options.", (Stage) btnCancel.getScene().getWindow());
         }else {
             // Polling options change            
             App.G.options.SaveDataSources();
@@ -1146,7 +1146,7 @@ populate_datasources_INGV_list();
     }
 //------------------------------------------------------------------------------
     private void btnDataSources_stations_minus_Click(ActionEvent event) {
-        if (pfxDialog.ShowConfirmationMessage("Data source will be permanently removed", "Are you sure?", (Stage) btnCancel.getScene().getWindow())==ButtonType.OK){
+        if (sitDialog.ShowConfirmationMessage("Data source will be permanently removed", "Are you sure?", (Stage) btnCancel.getScene().getWindow())==ButtonType.OK){
             System.out.println("To do:   Elimino");
         } else System.out.println("To do:   NON Elimino");
     }

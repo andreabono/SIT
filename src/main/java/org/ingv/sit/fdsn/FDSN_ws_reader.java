@@ -25,7 +25,7 @@ import java.util.TimeZone;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 /**
  *
  * @author andreabono
@@ -68,9 +68,9 @@ public class FDSN_ws_reader {
             return quakeml.getEventParameters().getEvents();
             //
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx ").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit ").log(Level.SEVERE, 
                              ex.getMessage());
-            pfxDialog.ShowErrorMessage("Error in QML list read.\n" + ex.getMessage(), null);
+            sitDialog.ShowErrorMessage("Error in QML list read.\n" + ex.getMessage(), null);
             return null;
         }
     }
@@ -102,13 +102,13 @@ public class FDSN_ws_reader {
                 return null;
             //
         } catch (Exception ex) {
-            pfxDialog.ShowErrorMessage("Error in QML event read.\n" + ex.getMessage(),null);
+            sitDialog.ShowErrorMessage("Error in QML event read.\n" + ex.getMessage(),null);
             return null;
         }
     }
 //--------------------------------------------------------------------------------
     private void log_locally_for_bad_format(Quakeml quakeml){
-        Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, 
+        Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, 
                 "WARNING: XmlSchema of this document does not match this code, results may be incorrect." + "\n" + 
                         "XmlSchema (code): " + QuakeMLTagNames.CODE_MAIN_SCHEMA_VERSION + "\n" +
                         "XmlSchema (doc): " + quakeml.getSchemaVersion());

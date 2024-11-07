@@ -37,7 +37,7 @@ import org.ingv.sit.App;
 import org.ingv.sit.datamodel.Station;
 import org.ingv.sit.datamodel.Waveform;
 import org.ingv.sit.utils.MiniSeedToFloatArray;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 
 public class EW_Wave_Server_Client { //extends MSeedQueryClient{
 //
@@ -102,8 +102,8 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
 //                for (String a : reallyUnknownArgs) {
 //                    s += " "+a;
 //                }
-//                Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, "Unknown args: " + s);
-//                Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, getHelp());
+//                Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, "Unknown args: " + s);
+//                Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, getHelp());
 //                System.exit(-1);
 //            }
 //            if (params.getOutFile() == null) {
@@ -121,7 +121,7 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
             this.setup_waveserver_per_stations();
             
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
         }  
     }
 //--------------------------------------------------------------------------------
@@ -130,7 +130,7 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
             
 //            if (!doMenu
 //                && (params.getNetwork() == null || params.getStation() == null || params.getChannel() == null)) {
-//                Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, BuildVersion.getDetailedVersion() + " one of scnl is null: n=" + params.getNetwork()
+//                Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, BuildVersion.getDetailedVersion() + " one of scnl is null: n=" + params.getNetwork()
 //                        + " s=" + params.getStation() + " l=" + params.getLocation() + " c=" + params.getChannel() + 
 //                        "\n" + "LocId null is ok for scn, but needed for scnl");            
 //                return;
@@ -144,9 +144,9 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
    
             }
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             
-            pfxDialog.ShowErrorMessage("Can't read data: \n" + ex.getMessage(), null);
+            sitDialog.ShowErrorMessage("Can't read data: \n" + ex.getMessage(), null);
             
             ex.printStackTrace();
         }   
@@ -187,7 +187,7 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
  
         } catch (Exception ex) {
             ex.printStackTrace();
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return null;
         } finally {
             try {
@@ -204,7 +204,7 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
             if (App.G==null) return false;
             if (App.G.SeismicNet==null) return false;
             
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, "Matching stations with servers...");
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, "Matching stations with servers...");
             
             menu_items = ((WaveServer)this.reader).getMenu();
             //
@@ -216,10 +216,10 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
                 }            
             }
                        
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, "Done!!");
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, "Done!!");
             return true;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }
     }
@@ -231,9 +231,9 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
             long last_latency=-9;
             int idStaz=-1;
 //
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, "Getting menu...");
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, "Getting menu...");
             menu_items = ((WaveServer)this.reader).getMenu();  
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.INFO, "Done!!");
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.INFO, "Done!!");
 //
             int nNotMapped=0;
             long latency;
@@ -261,9 +261,7 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
 //            
             return true;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.WARNING, "get menu FAILED!! Latencies are unreliable!! Check for EW server connectivity.");
-            //
-            //pfxDialog.ShowErrorMessage("get menu FAILED: Station latencies are unreliable!! \nCheck for EW server connectivity.");
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.WARNING, "get menu FAILED!! Latencies are unreliable!! Check for EW server connectivity.");
             return false;
         }
     }

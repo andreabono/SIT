@@ -21,7 +21,7 @@ import javafx.scene.control.ButtonType;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public final class pfxDialog {
+public final class sitDialog {
     //------------------------------------------------------------------------------
     /**
      *
@@ -34,7 +34,7 @@ public final class pfxDialog {
                     Alert alert = new Alert(AlertType.ERROR);
                     alert.initOwner(owner); 
                     alert.initModality(Modality.APPLICATION_MODAL);
-                    alert.setTitle("PFX - Error");
+                    alert.setTitle("SIT - Error");
                     alert.setHeaderText("An error occurred!!");
                     alert.setContentText(msgText);
 
@@ -53,7 +53,7 @@ public final class pfxDialog {
                     Alert alert = new Alert(AlertType.INFORMATION);
                     alert.initOwner(owner); 
                     alert.initModality(Modality.APPLICATION_MODAL);
-                    alert.setTitle("PFX - Information");
+                    alert.setTitle("SIT - Information");
                     alert.setContentText(msgText);
                     alert.showAndWait();
                 }
@@ -65,7 +65,7 @@ public final class pfxDialog {
         try {
             Alert alert = new Alert(AlertType.CONFIRMATION);
             alert.initOwner(owner); 
-            alert.setTitle("PFX - Confirmation");
+            alert.setTitle("SIT - Confirmation");
             alert.initModality(Modality.APPLICATION_MODAL);
             alert.setHeaderText(header_text);
             alert.setContentText(msgText);

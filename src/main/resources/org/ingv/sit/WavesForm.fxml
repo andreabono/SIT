@@ -22,7 +22,7 @@
 <?import org.controlsfx.control.ToggleSwitch?>
 <?import org.jfree.chart.fx.ChartViewer?>
 
-<AnchorPane fx:id="main_anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#ShortcutKeyPressed" onKeyReleased="#ShortcutKeyReleased" prefHeight="876.0" prefWidth="2045.0" stylesheets="@../../../css/dark.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.pfx.WavesFormController">
+<AnchorPane fx:id="main_anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#ShortcutKeyPressed" onKeyReleased="#ShortcutKeyReleased" prefHeight="876.0" prefWidth="2045.0" stylesheets="@../../../css/dark.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.sit.WavesFormController">
    <children>
       <ToolBar layoutX="17.0" layoutY="16.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <items>

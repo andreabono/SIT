@@ -53,7 +53,7 @@ public class TownsListReader {
                 App.logger.debug("WS-LOG: ReadClient.getMunicipiDistanceKmPopolazione received response");
                 return request_output.getData();
             } else {
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.WARNING, 
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.WARNING, 
                     "Error reading towns list from service");
             }
                         

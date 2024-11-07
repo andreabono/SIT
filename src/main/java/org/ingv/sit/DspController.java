@@ -26,7 +26,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.ingv.sit.datamodel.Event;
 import org.ingv.sit.utils.DSP;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.data.Range;
 
@@ -165,7 +165,7 @@ public class DspController implements Initializable {
           
                 IIR_btnCancel.setDisable(false);
             } else {
-                pfxDialog.ShowErrorMessage("Please check your input", null); 
+                sitDialog.ShowErrorMessage("Please check your input", null); 
             }
         } catch (Exception ex){
         }
@@ -480,7 +480,7 @@ public class DspController implements Initializable {
           
                 FIR_btnCancel.setDisable(false);
             } else {
-                pfxDialog.ShowErrorMessage("Please check your input", null); 
+                sitDialog.ShowErrorMessage("Please check your input", null); 
             }
         } catch (Exception ex){
         }

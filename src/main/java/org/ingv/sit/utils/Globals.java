@@ -31,8 +31,8 @@ import org.ingv.sit.LocationResult2Controller;
 import org.ingv.sit.WavesFormController;
 import org.ingv.sit.datamodel.SeismicNetwork;
 import org.ingv.sit.security.User;
-//import org.ingv.pfx.MapFormController;
-//import org.ingv.pfx.datamodel.SeismicNetwork;
+//import org.ingv.sit.MapFormController;
+//import org.ingv.sit.datamodel.SeismicNetwork;
 //
 public class Globals {    
     public SysProperties SystemProperties;
@@ -42,7 +42,7 @@ public class Globals {
     public ArrayList<WavesFormController> WavesControllers;
     public ArrayList<LocationResult2Controller> LocationControllers;
     private FXMLLoader mainFormLoader;
-    public  String pfxHostname, pfxUsername;
+    public  String sitHostname, sitUsername;
     public boolean show_magnitudebyazimuth_chart;
     public User User;
     
@@ -53,14 +53,14 @@ public class Globals {
         WAVES_BASKET_PATH  = "waves" + SystemProperties.file_Separator; 
         
         try {
-            pfxHostname=InetAddress.getLocalHost().getHostName();
+            sitHostname=InetAddress.getLocalHost().getHostName();
         } catch (Exception ex){
-            pfxHostname="Unknown pfx host";
+            sitHostname="Unknown SIT host";
         }
         try {
-            pfxUsername=System.getProperty("user.name");
+            sitUsername=System.getProperty("user.name");
         } catch (Exception ex){
-            pfxUsername="Unknown pfx user";
+            sitUsername="Unknown SIT user";
         }
     }
 //------------------------------------------------------------------------------
@@ -172,12 +172,12 @@ public class Globals {
     public void UpdateSplash(int i) {
         final SplashScreen splash = SplashScreen.getSplashScreen();
         if (splash == null) {
-            //Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE,"SplashScreen.getSplashScreen() returned null");
+            //Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE,"SplashScreen.getSplashScreen() returned null");
             return;
         }
         Graphics2D g = splash.createGraphics();
         if (g == null) {
-            //Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE,"g is null");
+            //Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE,"g is null");
             return;
         }
             renderSplashFrame(g, i);

@@ -457,8 +457,8 @@ public class Station {
     public void Pick_a_phase(ObjectArrival ph) {
         if (ph.getPick().getLocalspace()==null)
             ph.getPick().setLocalspace(new ObjectLocalspace());
-        ph.getPick().getLocalspace().setName("pfx arrival");
-        ph.getPick().getLocalspace().setDescription("pfx arrival localspace description");
+        ph.getPick().getLocalspace().setName("sit arrival");
+        ph.getPick().getLocalspace().setDescription("sit arrival localspace description");
         ph.getPick().setIdLocalspace(null);
         
         ph.getPick().setSta(getCode());

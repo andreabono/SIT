@@ -95,7 +95,7 @@ public class fftMaker {
         // Here I check if n is a power of 2. If exist decimals in ld, I quit
         // from the function returning null.
         if (((int) ld) - ld != 0) {
-            Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit").log(Level.SEVERE, 
                              "The number of elements is not a power of 2.");
             return null;
         }

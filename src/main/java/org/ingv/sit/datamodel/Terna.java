@@ -160,10 +160,10 @@ public class Terna {
                 }
             }
                
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.WARNING, "Could not recover terna waves because no data source seems to be available.");
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.WARNING, "Could not recover terna waves because no data source seems to be available.");
             return false;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }
     }  
@@ -265,7 +265,7 @@ public class Terna {
             else
                 return false;
         } catch (Exception ex) {
-           Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+           Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }
         
@@ -347,7 +347,7 @@ public class Terna {
             else
                 return false;
         } catch (Exception ex) {
-           Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+           Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }
         
@@ -370,21 +370,21 @@ public class Terna {
             } else return false;
                
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }
     }   
 //------------------------------------------------------------------------------
     public boolean RecoverWaves_EW(String ewHostName, ArrayList<Integer> ports_list, List<ChannelTimeWindow> Selected_Stations){
         try {        
-            Logger.getLogger("org.ingv.pfx.Event ").log(Level.INFO, 
+            Logger.getLogger("org.ingv.sit.Event ").log(Level.INFO, 
                             "Searching waves on earthworm server " + ewHostName); 
 //            
             Query_EWWaveServer(ewHostName, ports_list,Selected_Stations);
 // 
             return true;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx ").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit ").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }
     }  
@@ -443,13 +443,13 @@ public class Terna {
                                 waves_path);
 
                     } else {
-                        Logger.getLogger("org.ingv.pfx ").log(Level.WARNING, 
+                        Logger.getLogger("org.ingv.sit ").log(Level.WARNING, 
                                 "Skipping data search for " + parametri.get(i).getStation() + 
                                         " " + parametri.get(i).getChannel() + 
                                         " because it is not mapped on any earthworm wave-server...");
                     }
                 }catch (Exception ex) {
-                    Logger.getLogger("org.ingv.pfx ").log(Level.WARNING, 
+                    Logger.getLogger("org.ingv.sit ").log(Level.WARNING, 
                             "NODATA for  " +  parametri.get(i).getStation() + "."+
                                         parametri.get(i).getChannel() + ": " + ex.getMessage()); 
                 }                  

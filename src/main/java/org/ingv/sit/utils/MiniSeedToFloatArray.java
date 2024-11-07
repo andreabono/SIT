@@ -88,7 +88,7 @@ public class MiniSeedToFloatArray {
           }  
         } catch(EOFException e) {
             //System.out.println (e.getMessage());
-            //Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE,e.getMessage());
+            //Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE,e.getMessage());
         } finally {
             try {
                 ((DataInputStream)dis).close();
@@ -169,7 +169,7 @@ public class MiniSeedToFloatArray {
             }
            
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit").log(Level.SEVERE, 
                              ex.getMessage());
             return null;
         }

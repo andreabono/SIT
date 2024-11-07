@@ -104,7 +104,7 @@ import org.geotools.styling.Symbolizer;
 import org.geotools.styling.TextSymbolizer;
 import org.geotools.swing.wms.WMSLayerChooser;
 import org.geotools.util.factory.Hints;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.jfree.fx.FXGraphics2D;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.filter.Filter;
@@ -165,7 +165,7 @@ public class MapHandler implements AutoCloseable {
     public void close()  {
         if (svc!=null && svc.isRunning()) svc.cancel();
                 
-        //Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, ">>>>>>>>>>>>>>>> Releasing map and graphic resources...");
+        //Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, ">>>>>>>>>>>>>>>> Releasing map and graphic resources...");
         if ((map!=null) && (map.layers()!=null)){
             for (int k=0; k < map.layers().size(); k++){
                 map.layers().get(k).dispose();
@@ -1640,7 +1640,7 @@ public class MapHandler implements AutoCloseable {
                 float cm = remaining_cm / 100;
 
                 //System.out.println("Distance = " + km + "km " + meters + "m " + cm + "cm");
-                pfxDialog.ShowInformationMessage("DISTANCE: " + km + "km " + meters + "m " , null);
+                sitDialog.ShowInformationMessage("DISTANCE: " + km + "km " + meters + "m " , null);
                 
             } catch (Exception ex) {
                 App.logger.error(ex.getMessage());

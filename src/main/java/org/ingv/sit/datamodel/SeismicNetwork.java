@@ -43,7 +43,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.ingv.sit.sigpro._SAC_PZNum;
 import org.ingv.sit.sigpro._SAC_ResponseStruct;
 import org.ingv.sit.sigpro._StationResponse_Channel;
@@ -251,8 +251,8 @@ public class SeismicNetwork {
         boolean res;
         try {     
             if (App.G.IsDirEmpty("networks") || ForceUpdate){
-                pfxDialog.ShowInformationMessage("No network information available in local cache.\n Going to read from services.\n This could take some minutes...", null);
-                Logger.getLogger("org.ingv.pfx.datamodel.SeismicNetwork").log(java.util.logging.Level.INFO, "No network information available in local cache.\n Going to read from services.\n This could take some minutes...");
+                sitDialog.ShowInformationMessage("No network information available in local cache.\n Going to read from services.\n This could take some minutes...", null);
+                Logger.getLogger("org.ingv.sit.datamodel.SeismicNetwork").log(java.util.logging.Level.INFO, "No network information available in local cache.\n Going to read from services.\n This could take some minutes...");
                 
                 // Read the networks via FDSN web-services (level=RESPONSE ==> SLOW)
                 res = readFDSN_StationXml_multithread(); 
@@ -299,7 +299,7 @@ public class SeismicNetwork {
                 for (File xmlfile : xmlfiles) {
                     try {
                         if (!isStationXML) {
-                            tmpSta = read_station_from_xml_pfxcustom_file(directories[i].getName(), xmlfile.getPath());
+                            tmpSta = read_station_from_xml_SITcustom_file(directories[i].getName(), xmlfile.getPath());
                             
                             if (tmpSta!=null){
                                 Stations.add(tmpSta);
@@ -341,7 +341,7 @@ public class SeismicNetwork {
         Reads a list of stations from a stationXML file in the filesystem
         */
         try {
-            Station newPFXstation;
+            Station newSITstation;
             ArrayList<Station> res = new ArrayList<>();
             ArrayList<_StationResponse_Channel> channel_responses;
             // Specifica il percorso del tuo file StationXML
@@ -354,14 +354,14 @@ public class SeismicNetwork {
             _SAC_ResponseStruct response_structure;
             for (edu.iris.dmc.fdsn.station.model.Network network : document.getNetwork()) {
                 for (edu.iris.dmc.fdsn.station.model.Station station : network.getStations()) {
-                    newPFXstation = new Station(station.getCode(), 
+                    newSITstation = new Station(station.getCode(), 
                             station.getSite().getName(), 
                              station.getLatitude().getValue().floatValue(), 
                             station.getLongitude().getValue().floatValue(), 
                             station.getElevation().getValue().floatValue(), 
                               station.getNetwork().getCode());
-                    if (newPFXstation.getNetwork().isBlank())
-                        newPFXstation.setNetwork(netCode);
+                    if (newSITstation.getNetwork().isBlank())
+                        newSITstation.setNetwork(netCode);
                     
                     if (station.getChannels() != null) {
                         channel_responses = new ArrayList();
@@ -414,12 +414,12 @@ public class SeismicNetwork {
                                 tmpCh.setLocationCode(channel.getLocationCode());
                                 if (tmpCh.getLocationCode().trim().length()==0) tmpCh.setLocationCode("--");
                                 
-                                if (newPFXstation.getChannels()==null) newPFXstation.setChannels(new ArrayList());
-                                newPFXstation.getChannels().add(tmpCh);
+                                if (newSITstation.getChannels()==null) newSITstation.setChannels(new ArrayList());
+                                newSITstation.getChannels().add(tmpCh);
                             }
                         }
                     }                   
-                    res.add(newPFXstation);       
+                    res.add(newSITstation);       
                 }  
             }
             return res;
@@ -429,7 +429,7 @@ public class SeismicNetwork {
         }
     }
 //------------------------------------------------------------------------------    
-    private Station read_station_from_xml_pfxcustom_file(String netCode, String fName){
+    private Station read_station_from_xml_SITcustom_file(String netCode, String fName){
         String code, name, loc;
         float lat, lon, elev;
             
@@ -757,7 +757,7 @@ public class SeismicNetwork {
                                         idChannelInStation= -1; //*************************************************************************SR.FindChannel(chan.getCode());
                                         if (idChannelInStation != -1) {
                                             // THIS SHOULD NEVER HAPPEN (or maybe can happen because of different location codes)
-                                            Logger.getLogger("org.ingv.pfx").log(Level.WARNING, 
+                                            Logger.getLogger("org.ingv.sit").log(Level.WARNING, 
                                                     "DUPLICATE CHANNEL IN STATIONXML for " + s.getCode() + " " + chan.getCode());
                                         } else {
                                             tmpCh = new _StationResponse_Channel(chan.getCode());

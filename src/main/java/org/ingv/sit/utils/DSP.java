@@ -70,7 +70,7 @@ public class DSP {
             
             dY=null;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit").log(Level.SEVERE, 
                              ex.getMessage());
         }  
     }
@@ -108,7 +108,7 @@ public class DSP {
             
             dY=null;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit").log(Level.SEVERE, 
                              ex.getMessage());
         }  
     }
@@ -146,7 +146,7 @@ public class DSP {
             
             dY=null;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit").log(Level.SEVERE, 
                              ex.getMessage());
         }  
     }
@@ -184,7 +184,7 @@ public class DSP {
             
             dY=null;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit").log(Level.SEVERE, 
                              ex.getMessage());
         }  
     }
@@ -225,7 +225,7 @@ public class DSP {
             
             dY=null;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit").log(Level.SEVERE, 
                              ex.getMessage());
         }  
     }   
@@ -258,7 +258,7 @@ public class DSP {
             
             dY=null;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit").log(Level.SEVERE, 
                              ex.getMessage());
         }  
     }     
@@ -270,7 +270,7 @@ public class DSP {
             HighPass(Y, SampleRate, iStart, iEnd, Order, f1);
             LowPass(Y, SampleRate, iStart, iEnd, Order, f2);
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, 
+            Logger.getLogger("org.ingv.sit").log(Level.SEVERE, 
                              ex.getMessage());
         }  
     }  

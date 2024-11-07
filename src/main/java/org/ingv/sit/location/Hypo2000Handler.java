@@ -41,7 +41,7 @@ import org.ingv.dante.model.TypeOriginName;
 import org.ingv.sit.App;
 import org.ingv.sit.datamodel.Event;
 import org.ingv.sit.datamodel.Station;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.ingv.sit.webservices.Hypo2000_configuration;
 
 public class Hypo2000Handler {
@@ -55,39 +55,36 @@ public class Hypo2000Handler {
     } 
 //------------------------------------------------------------------------------        
     public Event PostRequest(Event EV){
-        ObjectLocalspace pfxLocalSpace;
-        ObjectProvenance pfxProvenance;
-        String pfxHostname, pfxUsername;
+        ObjectLocalspace sitLocalSpace;
+        ObjectProvenance sitProvenance;
+        String sitHostname, sitUsername;
         
         try {
-            pfxHostname=InetAddress.getLocalHost().getHostName();
+            sitHostname=InetAddress.getLocalHost().getHostName();
         } catch (Exception ex){
-            pfxHostname="Unknown pfx host";
+            sitHostname="Unknown sit host";
         }
         try {
-            pfxUsername=System.getProperty("user.name");
+            sitUsername=System.getProperty("user.name");
         } catch (Exception ex){
-            pfxUsername="Unknown pfx user";
+            sitUsername="Unknown sit user";
         }
-        
-//        Package pack = getClass().getPackage();
-//        String pfxVersion = pack.getImplementationVersion();
            
-        pfxLocalSpace = new ObjectLocalspace(); 
-        pfxLocalSpace.setName("pfx");
-        pfxLocalSpace.setDescription("Manually reviewed");    // Differenziare per bollettino
+        sitLocalSpace = new ObjectLocalspace(); 
+        sitLocalSpace.setName("sit");
+        sitLocalSpace.setDescription("Manually reviewed");    // Differenziare per bollettino
 
-        pfxProvenance = new ObjectProvenance(); 
-        pfxProvenance.setName("INGV");
-        pfxProvenance.setDescription("PFX interactive revision");
-        pfxProvenance.setHostname(pfxHostname);
-        pfxProvenance.setMethod("ToDoPFX");
-        pfxProvenance.setModel("ToDoPFX");
-        pfxProvenance.setParameters("ToDoPFX");
-        pfxProvenance.setProgram("ToDoPFX");
-        pfxProvenance.setSoftwarename("PFX");
-        pfxProvenance.setUsername(pfxUsername);
-        pfxProvenance.setVersion("1.0");
+        sitProvenance = new ObjectProvenance(); 
+        sitProvenance.setName("INGV");
+        sitProvenance.setDescription("SIT interactive revision");
+        sitProvenance.setHostname(sitHostname);
+        sitProvenance.setMethod("ToDoSIT");
+        sitProvenance.setModel("ToDoSIT");
+        sitProvenance.setParameters("ToDoSIT");
+        sitProvenance.setProgram("ToDoSIT");
+        sitProvenance.setSoftwarename("SIT");
+        sitProvenance.setUsername(sitUsername);
+        sitProvenance.setVersion("1.0");
         
         try {
             Event res=new Event(EV.getIdController());
@@ -143,8 +140,8 @@ public class Hypo2000Handler {
             // Swap the resulting ARC event into our pfx class Event
             //------------------------------------------------------------------
             res.setOriginal_hostname(EV.getOriginal_hostname());
-            res.getInnerObjectEvent().setProvenance(pfxProvenance);
-            res.getInnerObjectEvent().setLocalspace(pfxLocalSpace);
+            res.getInnerObjectEvent().setProvenance(sitProvenance);
+            res.getInnerObjectEvent().setLocalspace(sitLocalSpace);
             
             //res.setOrigins(EV.getOrigins());
             ArrayList<ObjectOrigin> arr = new ArrayList();
@@ -167,8 +164,8 @@ public class Hypo2000Handler {
             
             
             res.getInnerObjectEvent().getOrigins().get(0).setIdLocalspace(null);
-            res.getInnerObjectEvent().getOrigins().get(0).setProvenance(pfxProvenance);   
-            res.getInnerObjectEvent().getOrigins().get(0).setLocalspace(pfxLocalSpace);
+            res.getInnerObjectEvent().getOrigins().get(0).setProvenance(sitProvenance);   
+            res.getInnerObjectEvent().getOrigins().get(0).setLocalspace(sitLocalSpace);
             res.getInnerObjectEvent().getOrigins().get(0).setNph(ARC.getEwMessage().getNph());
             res.getInnerObjectEvent().getOrigins().get(0).setNphS(ARC.getEwMessage().getNphS());
             res.getInnerObjectEvent().getOrigins().get(0).setNphTot(ARC.getEwMessage().getNphtot());
@@ -232,8 +229,8 @@ public class Hypo2000Handler {
                                 
                                 p.setArrTimeIsUsed(true);
 
-                                p.getPick().setLocalspace(pfxLocalSpace);
-                                p.getPick().setProvenance(pfxProvenance);
+                                p.getPick().setLocalspace(sitLocalSpace);
+                                p.getPick().setProvenance(sitProvenance);
                                 
                                 res.getInnerObjectEvent().getOrigins().get(0).getArrivals().add(p);
                                 
@@ -261,7 +258,7 @@ public class Hypo2000Handler {
                 }    
             }  else {
                 // No phases: rise an exception
-                Logger.getLogger("org.ingv.pfx").log(Level.SEVERE, "Error in location output parse");
+                Logger.getLogger("org.ingv.sit").log(Level.SEVERE, "Error in location output parse");
                 return null;
             }
             
@@ -269,7 +266,7 @@ public class Hypo2000Handler {
         } catch (ApiException aex) {
             String msg = "...";
             if (aex.getResponseHeaders()!=null) msg = aex.getMessage();
-            pfxDialog.ShowErrorMessage("ERROR: " + msg  + "\n" + aex.getResponseBody(), null);
+            sitDialog.ShowErrorMessage("ERROR: " + msg  + "\n" + aex.getResponseBody(), null);
             return null;
         } catch (Exception ex){
             return null;
@@ -565,8 +562,8 @@ public class Hypo2000Handler {
 //            if ((!isP) && (!isS)) {
 //                // Phase is not a P neither an S, we (suppose)impose that it's an amplitude
 //                outPh_A = new ObjectArrival();
-////                 outPh_A.setLocalspace(pfxLocalSpace);
-////                outPh_A.setProvenance(pfxProvenance);
+////                 outPh_A.setLocalspace(sitLocalSpace);
+////                outPh_A.setProvenance(sitProvenance);
 //                outPh_A.setIscCode("A");
 //                // Channel Code
 //                outPh_A.setCha(((JsonObject)tmpP).get("comp").getAsString());
@@ -582,7 +579,7 @@ public class Hypo2000Handler {
             //
             return result;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return null;
         }
         

@@ -53,7 +53,7 @@ import org.ingv.dante.model.UpdateEventRequestData;
 import org.ingv.dante.model.UpdateEventRequestDataEvent;
 import org.ingv.sit.tablemodels.Localmagnitude_list_items;
 import org.ingv.sit.utils.MagnitudeChartMaker;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.fx.ChartViewer;
 
@@ -557,7 +557,7 @@ public class MagnitudeController implements Initializable {
                 }
                 
             } catch (Exception ex) {
-                pfxDialog.ShowErrorMessage("Error:\n" + ex.getMessage() , null);
+                sitDialog.ShowErrorMessage("Error:\n" + ex.getMessage() , null);
                 //return false;
             } finally {
                 magnitudeUpdater=null;

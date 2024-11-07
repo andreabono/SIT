@@ -16,9 +16,6 @@ package org.ingv.sit;
 
 //import com.sun.javafx.application.LauncherImpl;
 import com.sun.tools.javac.Main;
-import jakarta.servlet.ServletContext;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRegistration;
 import java.awt.RenderingHints;
 import java.awt.Taskbar;
 import java.awt.Toolkit;
@@ -48,45 +45,39 @@ import javafx.stage.StageStyle;
 import javafx.stage.WindowEvent;
 import org.geotools.util.factory.Hints;
 import org.ingv.sit.datamodel.SeismicNetwork;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.slf4j.LoggerFactory;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
-import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerFactory;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-import org.springframework.web.servlet.DispatcherServlet;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class App extends Application implements WebApplicationInitializer {
+//@SpringBootApplication
+public class App extends Application { //implements WebApplicationInitializer {
     public static Globals G;
     private static Scene scene;
     public static SimpleDateFormat dateFormatGmt;
     
     public static org.slf4j.Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
      
-    @Override
-    public void onStartup(ServletContext servletContext) throws ServletException {
-        AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.setConfigLocation("com.example.config");
-
-        DispatcherServlet dispatcherServlet = new DispatcherServlet(context);
-        ServletRegistration.Dynamic registration = servletContext.addServlet("dispatcherServlet", dispatcherServlet);
-        registration.setLoadOnStartup(1);
-        registration.addMapping("/pfxauth/");
-    }
+//    @Override
+//    public void onStartup(ServletContext servletContext) throws ServletException {
+//        AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
+//        context.setConfigLocation("com.example.config");
+//
+//        DispatcherServlet dispatcherServlet = new DispatcherServlet(context);
+//        ServletRegistration.Dynamic registration = servletContext.addServlet("dispatcherServlet", dispatcherServlet);
+//        registration.setLoadOnStartup(1);
+//        registration.addMapping("/pfxauth/");
+//    }
     
    
 
-    @Bean
-    public ConfigurableServletWebServerFactory webServerFactory() {
-        TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory();
-        factory.setPort(8585);
-        factory.setContextPath("/pfxauth");
-        return factory;
-    }
+//    @Bean
+//    public ConfigurableServletWebServerFactory webServerFactory() {
+//        TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory();
+//        factory.setPort(8585);
+//        factory.setContextPath("/pfxauth");
+//        return factory;
+//    }
 //--------------------------------------------------------------------------------
     @Override
     public void init() throws Exception {
@@ -120,7 +111,7 @@ public class App extends Application implements WebApplicationInitializer {
 //      ------------------------------------
         G.SeismicNet = new SeismicNetwork();        
         if (!G.SeismicNet.read(false)) {
-            pfxDialog.ShowInformationMessage("Error while reading seismic network!", null);
+            sitDialog.ShowInformationMessage("Error while reading seismic network!", null);
         }  
         
         while (App.G.StillReadingStations()) {
@@ -167,7 +158,7 @@ public class App extends Application implements WebApplicationInitializer {
             
 
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE,  ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE,  ex.getMessage());
         }  
     }
 //------------------------------------------------------------------------------       
@@ -185,7 +176,7 @@ public class App extends Application implements WebApplicationInitializer {
         if (root!=null){
             scene = new Scene(root); 
             stage.setScene(scene); 
-            stage.setTitle("PFX");
+            stage.setTitle("SIT");
 
             stage.setOnHidden(e -> Platform.exit());
 
@@ -210,7 +201,7 @@ public class App extends Application implements WebApplicationInitializer {
 
             stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
               @Override public void handle(WindowEvent ev) {    
-                if (pfxDialog.ShowConfirmationMessage("Do you really want to quit pfx?", "All unsaved data will be lost!!", stage)==ButtonType.OK) 
+                if (sitDialog.ShowConfirmationMessage("Do you really want to quit SIT?", "All unsaved data will be lost!!", stage)==ButtonType.OK) 
                     Platform.exit();
                 else
                     ev.consume();
@@ -224,7 +215,7 @@ public class App extends Application implements WebApplicationInitializer {
                     if (((MapFormController)App.G.getMainFormLoader().getController()).isAnyDatasourcesAvailable())
                         ((MapFormController)App.G.getMainFormLoader().getController()).SearchAndShowLocations();
                     else
-                        System.exit(0); // TODO: User should edit configuration via pfx interface
+                        System.exit(0); // TODO: User should edit configuration via sit interface
                 });
             });          
 
@@ -243,23 +234,23 @@ public class App extends Application implements WebApplicationInitializer {
                 net_folder, logs_folder, waves_full_folder;
         try{
             // Settings file
-            options_f=new File("configuration/pfx_properties.xml");
+            options_f=new File("configuration/sit_properties.xml");
             if (!options_f.exists()){
-                pfxDialog.ShowConfirmationMessage("A","B", null);
-                pfxDialog.ShowErrorMessage("Options file is missing:\n" + options_f.getPath(), null);
+                sitDialog.ShowConfirmationMessage("A","B", null);
+                sitDialog.ShowErrorMessage("Options file is missing:\n" + options_f.getPath(), null);
                 return false;
             } 
                      
             // Hypoinverse settings file 1
             hypo_settings_f=new File("configuration/Hypo2000_configuration.txt");
             if (!hypo_settings_f.exists()){
-                pfxDialog.ShowErrorMessage("Hypoinverse configuration file is missing:\n" + hypo_settings_f.getPath(),null);
+                sitDialog.ShowErrorMessage("Hypoinverse configuration file is missing:\n" + hypo_settings_f.getPath(),null);
                 return false;
             } 
             // Hypoinverse settings file 2
             hypo_MODEL_settings_f=new File("configuration/Hypo2000_MODEL_configuration.txt");
             if (!hypo_MODEL_settings_f.exists()){
-                pfxDialog.ShowErrorMessage("Hypoinverse MODEL configuration file is missing:\n" + hypo_MODEL_settings_f.getPath(), null);
+                sitDialog.ShowErrorMessage("Hypoinverse MODEL configuration file is missing:\n" + hypo_MODEL_settings_f.getPath(), null);
                 return false;
             } 
                      

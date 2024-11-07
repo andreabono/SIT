@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import org.ingv.sit.App;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 
 /**
  *
@@ -66,10 +66,10 @@ public class Hypo2000_configuration {
 //------------------------------------------------------------------------------    
     public Hypo2000_configuration(String default_settings_file, String model_file){
         if (!this.Read_default_settings(default_settings_file)){
-            pfxDialog.ShowErrorMessage("Unable to read Hypo2000 settings file.", null);
+            sitDialog.ShowErrorMessage("Unable to read Hypo2000 settings file.", null);
         } else {
             if (!this.Read_model_settings(model_file)) {
-                pfxDialog.ShowErrorMessage("Unable to read Hypo2000 velocity model file.", null);
+                sitDialog.ShowErrorMessage("Unable to read Hypo2000 velocity model file.", null);
             }
         }
     }

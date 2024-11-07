@@ -3,7 +3,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.ingv</groupId>
-    <artifactId>pfx</artifactId>
+    <artifactId>sit</artifactId>
     <version>1.0</version>
     <name>SIT</name>
     <properties>
@@ -441,15 +441,7 @@
                   </execution>
                 </executions>
                 <configuration>
-                    <!--
-                        <archive>
-                        <manifest>
-                          <addClasspath>true</addClasspath>
-                          <mainClass>org.ingv.pfx.pfxStarter</mainClass>
-                        </manifest>
-                        </archive>
-                    -->
-                  <mainClass>org.ingv.pfx.App</mainClass>
+                  <mainClass>org.ingv.sit.App</mainClass>
                 </configuration>
               </plugin>
              
@@ -507,7 +499,7 @@
                               <!-- would with the assembly plugin                                       -->
                               <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                   <manifestEntries>
-                                    <Main-Class>org.ingv.pfx.App</Main-Class>
+                                    <Main-Class>org.ingv.sit.App</Main-Class>
                                       <Implementation-Version>1.9</Implementation-Version>
                                       <Specification-Vendor>INGV</Specification-Vendor>
                                       <Implementation-Vendor>INGV</Implementation-Vendor>

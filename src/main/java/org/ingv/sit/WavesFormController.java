@@ -129,7 +129,7 @@ import org.ingv.sit.datamodel.Event_type;
 import org.ingv.sit.datamodel.Event;
 import org.ingv.sit.datamodel.Station;
 import org.ingv.sit.datamodel.Waveform;
-//import org.ingv.pfx.jL.jL;
+//import org.ingv.sit.jL.jL;
 import org.ingv.sit.location.Hypo2000Handler;
 import org.ingv.sit.mapping.MapHandler;
 import org.ingv.sit.sigpro.WoodAndersonHandler;
@@ -138,7 +138,7 @@ import org.ingv.sit.tablemodels.Phases_List_items_terna;
 import org.ingv.sit.utils.CircleDrawer;
 import org.ingv.sit.utils.DSP;
 import org.ingv.sit.utils.Globals;
-import org.ingv.sit.utils.pfxDialog;
+import org.ingv.sit.utils.sitDialog;
 import org.ingv.sit.utils.PickedObject;
 import org.ingv.sit.location.PymlHandler;
 import org.ingv.sit.quakeml.QuakeMLWriter;
@@ -476,7 +476,7 @@ public class WavesFormController implements Initializable {
             if (MH.getSelected_Stations()!=null && !MH.getSelected_Stations().isEmpty()){
                 String msg = MH.getSelected_Stations().size() + " stations will be added to current event.\n Are you sure?" ;
 
-                if (pfxDialog.ShowConfirmationMessage("Adding stations...", msg,this.getPrimaryStage())== ButtonType.OK){
+                if (sitDialog.ShowConfirmationMessage("Adding stations...", msg,this.getPrimaryStage())== ButtonType.OK){
                     for (int i=0; i<MH.getSelected_Stations().size(); i++){
                         AddStationToMyEvent(MH.getSelected_Stations().get(i));
                     }
@@ -532,7 +532,7 @@ public class WavesFormController implements Initializable {
             Stage stage = new Stage();
                         
             stage.setScene(new Scene(root1));  
-            stage.setTitle("I.N.G.V. PFX - Information dialog");
+            stage.setTitle("I.N.G.V. SIT - Information dialog");
             stage.initModality(Modality.APPLICATION_MODAL);
                     
             stage.setMaximized(false);
@@ -541,7 +541,7 @@ public class WavesFormController implements Initializable {
             stage.show();
 
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE,  ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE,  ex.getMessage());
         }
     }
 
@@ -860,9 +860,9 @@ public class WavesFormController implements Initializable {
      @FXML
     private void btn_WA_refres_click(ActionEvent event) {
         if (myEvent.getNWavesWA() > 0) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Plotting Wood-Anderson waves...");
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Plotting Wood-Anderson waves...");
             if (!show_waves_WA()){
-                pfxDialog.ShowErrorMessage("Error while plotting waves.\nOperation aborted.", getPrimaryStage());   
+                sitDialog.ShowErrorMessage("Error while plotting waves.\nOperation aborted.", getPrimaryStage());   
             } 
         }          
     }
@@ -898,7 +898,7 @@ public class WavesFormController implements Initializable {
     @FXML
     private void btnBack_clicked(ActionEvent event) {
         //
-        if (pfxDialog.ShowConfirmationMessage("Do you really want to close this window?", 
+        if (sitDialog.ShowConfirmationMessage("Do you really want to close this window?", 
                 "All unsaved data will be lost!!", this.getPrimaryStage())==ButtonType.CANCEL) return;
         
         // 
@@ -945,7 +945,7 @@ public class WavesFormController implements Initializable {
 //                // Event was read before a magnitude was available: we try to read it again
 //                App.logger.debug("Reading event again to find some amplitude...");
 //                if (!myEvent.reReadMagnitudes()) {
-//                    if (pfxDialog.ShowConfirmationMessage("No amplitude available for this event", "Continue location anyway?",this.getPrimaryStage())==ButtonType.CANCEL)
+//                    if (sitDialog.ShowConfirmationMessage("No amplitude available for this event", "Continue location anyway?",this.getPrimaryStage())==ButtonType.CANCEL)
 //                        return;
 //                    }
 //            }
@@ -999,7 +999,7 @@ public class WavesFormController implements Initializable {
                     } 
                 }           
             } else {
-                pfxDialog.ShowErrorMessage("Event location returned no results.", this.getPrimaryStage());
+                sitDialog.ShowErrorMessage("Event location returned no results.", this.getPrimaryStage());
             }
             
             relocated_event=null;
@@ -1068,17 +1068,17 @@ public class WavesFormController implements Initializable {
             }); 
             
             if (myEvent.getInnerObjectEvent().getOrigins().get(0).getId()!=null){
-                stage.setTitle("I.N.G.V. PFX - Location result for origin " + 
+                stage.setTitle("I.N.G.V. SIT - Location result for origin " + 
                         myEvent.getInnerObjectEvent().getOrigins().get(0).getId());
                     //event_to_be_shown.getInnerObjectEvent().getOrigins().get(0).getId());
                 App.G.LocationControllers.get(App.G.LocationControllers.size()-1).setLocalOriginID(myEvent.getInnerObjectEvent().getOrigins().get(0).getId());
             }else{
                 if (myEvent.getWork_origin_ID()!=null) {
-                    stage.setTitle("I.N.G.V. PFX - Location result for origin " + myEvent.getWork_origin_ID());
+                    stage.setTitle("I.N.G.V. SIT - Location result for origin " + myEvent.getWork_origin_ID());
                         //event_to_be_shown.getWork_origin_ID());
                     App.G.LocationControllers.get(App.G.LocationControllers.size()-1).setLocalOriginID(myEvent.getWork_origin_ID());
                 } else {
-                    stage.setTitle("I.N.G.V. PFX - Location result for origin **Unknown ID**" );
+                    stage.setTitle("I.N.G.V. SIT - Location result for origin **Unknown ID**" );
                     App.G.LocationControllers.get(App.G.LocationControllers.size()-1).setLocalOriginID(App.G.LocationControllers.size()-1);
                 }
             } 
@@ -1100,7 +1100,7 @@ public class WavesFormController implements Initializable {
         }  catch (Exception ex) {
 //            if (controller_added)
 //                App.G.LocationControllers.remove(App.G.LocationControllers.size()-1);
-            pfxDialog.ShowErrorMessage(ex.getMessage(), this.getPrimaryStage());
+            sitDialog.ShowErrorMessage(ex.getMessage(), this.getPrimaryStage());
             return null; 
         }
     }  
@@ -1121,7 +1121,7 @@ public class WavesFormController implements Initializable {
             stage.initOwner(PrimaryStage);
                         
             stage.setScene(new Scene(root1));  
-            stage.setTitle("PFX - Choose how to save ");                    
+            stage.setTitle("SIT - Choose how to save ");                    
             stage.setMaximized(false);
             
             ((ChooseHowToSaveOriginController)fxmlLoader1.getController()).setPrimaryStage(stage);
@@ -1153,9 +1153,9 @@ public class WavesFormController implements Initializable {
     
     private void SaveSimple(){ 
         
-         if (pfxDialog.ShowConfirmationMessage("Please confirm", "Location will be saved in the database.", this.getPrimaryStage())==ButtonType.CANCEL) return;
+         if (sitDialog.ShowConfirmationMessage("Please confirm", "Location will be saved in the database.", this.getPrimaryStage())==ButtonType.CANCEL) return;
         
-        Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Starting event save.");
+        Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Starting event save.");
   
         Long local_id_localspace = myEvent.getInnerObjectEvent().getIdLocalspace();
         ObjectLocalspace LS = new ObjectLocalspace();
@@ -1168,9 +1168,9 @@ public class WavesFormController implements Initializable {
 //        try {
 //            boolean saved=SaveInSeisEV(false);
 //            if (saved)
-//                pfxDialog.ShowInformationMessage("Evento salvato anche in SeisEV!!", this.getPrimaryStage());
+//                sitDialog.ShowInformationMessage("Evento salvato anche in SeisEV!!", this.getPrimaryStage());
 //            else
-//                pfxDialog.ShowErrorMessage("Non sono ruiscito a salvare l'evento su seisEV.", this.getPrimaryStage());  
+//                sitDialog.ShowErrorMessage("Non sono ruiscito a salvare l'evento su seisEV.", this.getPrimaryStage());  
 //        } catch (Exception ex) {    
 //            //
 //        }
@@ -1181,17 +1181,17 @@ public class WavesFormController implements Initializable {
         
         switch (post_data()){
             case -1:
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Generic Exception: Event save not completed!");
-                pfxDialog.ShowErrorMessage("Generic Exception: Event save not completed!", this.getPrimaryStage());
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Generic Exception: Event save not completed!");
+                sitDialog.ShowErrorMessage("Generic Exception: Event save not completed!", this.getPrimaryStage());
                 break;
             case -2:
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Api Exception: Unauthorized user or user session expired");
-                pfxDialog.ShowErrorMessage("Api Exception: Unauthorized user or user session expired.\nPlease Login", this.getPrimaryStage());
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Api Exception: Unauthorized user or user session expired");
+                sitDialog.ShowErrorMessage("Api Exception: Unauthorized user or user session expired.\nPlease Login", this.getPrimaryStage());
                 break;
             default:
                 // Mix dei due eventi e aggiornamento interfaccia
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Location saved");
-                pfxDialog.ShowInformationMessage("Your location has been saved into the database!!", this.getPrimaryStage());
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Location saved");
+                sitDialog.ShowInformationMessage("Your location has been saved into the database!!", this.getPrimaryStage());
         }
     }
     
@@ -1199,9 +1199,9 @@ public class WavesFormController implements Initializable {
 //------------------------------------------------------------------------------
    
     private void SaveDraft() {
-        if (pfxDialog.ShowConfirmationMessage("Please confirm", "Location will be saved as a DRAFT", this.getPrimaryStage())==ButtonType.CANCEL) return;
+        if (sitDialog.ShowConfirmationMessage("Please confirm", "Location will be saved as a DRAFT", this.getPrimaryStage())==ButtonType.CANCEL) return;
         
-        Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Starting event save as draft.", this.getPrimaryStage());
+        Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Starting event save as draft.", this.getPrimaryStage());
         ObjectTypeOrigin to = new ObjectTypeOrigin();
         to.setName(TypeOriginName.HYPOCENTER);    
         to.setVersionName("draft");
@@ -1210,35 +1210,35 @@ public class WavesFormController implements Initializable {
         
         switch (post_data()){
             case -1:
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Generic Exception: Event save not completed!");
-                pfxDialog.ShowErrorMessage("Generic Exception: Event save not completed!", this.getPrimaryStage());
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Generic Exception: Event save not completed!");
+                sitDialog.ShowErrorMessage("Generic Exception: Event save not completed!", this.getPrimaryStage());
                 break;
             case -2:
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Api Exception: Unauthorized user or user session expired");
-                pfxDialog.ShowErrorMessage("Api Exception: Unauthorized user or user session expired.\nPlease Login", this.getPrimaryStage());
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Api Exception: Unauthorized user or user session expired");
+                sitDialog.ShowErrorMessage("Api Exception: Unauthorized user or user session expired.\nPlease Login", this.getPrimaryStage());
                 break;
             default:
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Location saved");
-                pfxDialog.ShowInformationMessage("Your location has been saved as a draft.", this.getPrimaryStage());  
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Location saved");
+                sitDialog.ShowInformationMessage("Your location has been saved as a draft.", this.getPrimaryStage());  
             break;
         }  
     }
 //------------------------------------------------------------------------------    
     
     private void SaveAndNotify() {
-        if (pfxDialog.ShowConfirmationMessage("Please confirm", 
+        if (sitDialog.ShowConfirmationMessage("Please confirm", 
                 "Location will be saved and sent to DPC", this.getPrimaryStage())==ButtonType.CANCEL) return;
 //        
         int neworiginid=post_data();
                
         switch (neworiginid){
             case -1:
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Generic Exception: Event save not completed!");
-                pfxDialog.ShowErrorMessage("Generic Exception: Event save not completed!", this.getPrimaryStage());
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Generic Exception: Event save not completed!");
+                sitDialog.ShowErrorMessage("Generic Exception: Event save not completed!", this.getPrimaryStage());
                 break;
             case -2:
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Api Exception: Unauthorized user or user session expired");
-                pfxDialog.ShowErrorMessage("Api Exception: Unauthorized user or user session expired.\nPlease Login", this.getPrimaryStage());
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Api Exception: Unauthorized user or user session expired");
+                sitDialog.ShowErrorMessage("Api Exception: Unauthorized user or user session expired.\nPlease Login", this.getPrimaryStage());
                 break;
             default:
                 Long local_id_localspace = myEvent.getInnerObjectEvent().getIdLocalspace();
@@ -1247,8 +1247,8 @@ public class WavesFormController implements Initializable {
                 LS.setName(myEvent.getInnerObjectEvent().getLocalspace().getName());
 
                 // Mix dei due eventi e aggiornamento interfaccia
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Location saved");
-                pfxDialog.ShowInformationMessage("Your location has been saved into the database!!", this.getPrimaryStage());
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Location saved");
+                sitDialog.ShowInformationMessage("Your location has been saved into the database!!", this.getPrimaryStage());
 
                 // Chiama la rotta per settare l'evento a comunicato:
                 StoreApi writer=new StoreApi();
@@ -1272,9 +1272,9 @@ public class WavesFormController implements Initializable {
 
                     App.logger.debug("WS-LOG: SaveAndNotify()--> writer.addOriginFlag finished");
 
-                    pfxDialog.ShowInformationMessage("Location was also marked for DPC notifications!!", this.getPrimaryStage());
+                    sitDialog.ShowInformationMessage("Location was also marked for DPC notifications!!", this.getPrimaryStage());
                 } catch (ApiException aex){
-                     pfxDialog.ShowErrorMessage("Event save not completed: error while marking origin flags!!", this.getPrimaryStage());
+                     sitDialog.ShowErrorMessage("Event save not completed: error while marking origin flags!!", this.getPrimaryStage());
                 }
                 break;
         }   
@@ -1322,10 +1322,10 @@ public class WavesFormController implements Initializable {
         
             
         } catch (ApiException aex){
-            //pfxDialog.ShowErrorMessage("ERROR: " + aex.getMessage()  + "\n" + aex.getResponseBody() , this.getPrimaryStage());
+            
             return -2;  // ApiException: unauthorized user
         } catch (Exception ex) {
-            //pfxDialog.ShowErrorMessage("ERROR: " + ex.getMessage(), this.getPrimaryStage());
+            
             return -1; // Generic exception
         }
     }
@@ -1625,7 +1625,7 @@ public class WavesFormController implements Initializable {
         BlockFrame frame_legend;
 
         //
-        Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Plotting waves");
+        Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Plotting waves");
     //    
         try{
             if (myEvent == null) return true;
@@ -1717,7 +1717,7 @@ public class WavesFormController implements Initializable {
     //
                             plot_combinato.add(subplot); 
                         } else {
-                            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Wave is flat: " + tmpWave.getStationCode() + " " + tmpWave.getChannelCode());
+                            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Wave is flat: " + tmpWave.getStationCode() + " " + tmpWave.getChannelCode());
                         }
                     }
                     
@@ -1765,7 +1765,7 @@ public class WavesFormController implements Initializable {
             return true;
     } catch (Exception ex) {
         
-        Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+        Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
         return false;
     }            
 }
@@ -2011,7 +2011,7 @@ public class WavesFormController implements Initializable {
     private void ShowEventSummary_short(){
         try {       
             if (myEvent==null) {
-                Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Hypocenter is null");
+                Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Hypocenter is null");
                 lblLat.setText("00.00");
                 lblLon.setText("00.00");
                 lblDep.setText("00.00" + " km");
@@ -2053,7 +2053,7 @@ public class WavesFormController implements Initializable {
                     this.lblOT.setText("** Unknown **");
             }
         } catch (Exception ex){
-            pfxDialog.ShowErrorMessage("Error in event summary parameters display.\n" + ex.getMessage(), PrimaryStage);
+            sitDialog.ShowErrorMessage("Error in event summary parameters display.\n" + ex.getMessage(), PrimaryStage);
         }
     }
     //------------------------------------------------------------------------------
@@ -2562,7 +2562,7 @@ public class WavesFormController implements Initializable {
             tglFilterTerna.setSelected(false);
             
             WEIGHT_BOXES.clear();
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Loading terna");
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Loading terna");
             Waveform tmpW;       
             if (subplotIndex > -1) {  
                 if (subplotIndex==0) {
@@ -2674,17 +2674,17 @@ public class WavesFormController implements Initializable {
                     //tglFilterTerna.setSelected(false);
                 } else {
                     Alert alert = new Alert(AlertType.WARNING);
-                    alert.setTitle("PFX - Information Dialog");
+                    alert.setTitle("SIT - Information Dialog");
                     alert.setHeaderText(null);
                     alert.setContentText("No waves for " + staCode + " " + chaCode);
                     alert.showAndWait();
 
-                    Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "No waves for " + staCode + " " + chaCode);
+                    Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "No waves for " + staCode + " " + chaCode);
                 }
             } 
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.INFO, "Loaded terna");
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.INFO, "Loaded terna");
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
         }    
     }
 //------------------------------------------------------------------------------    
@@ -2861,7 +2861,7 @@ public class WavesFormController implements Initializable {
             
             return true;
         } catch (Exception ex) {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "ERROR in plot terna: " + ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "ERROR in plot terna: " + ex.getMessage());
             return false;
         }            
     }  
@@ -3033,7 +3033,7 @@ public class WavesFormController implements Initializable {
             preview_subplot_index  = chart_viewer_PREVIEW.getRenderingInfo().getPlotInfo().getSubplotIndex(p);    
             LoadAndShowTerna(preview_subplot_index);
         } catch (Exception ex) { 
-             Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+             Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
         }
     }
 //--------------------------------------------------------------------------------
@@ -3120,7 +3120,7 @@ public class WavesFormController implements Initializable {
                                 }
                                 
                             } else {
-                                pfxDialog.ShowErrorMessage("CONTROLLER is null", PrimaryStage);
+                                sitDialog.ShowErrorMessage("CONTROLLER is null", PrimaryStage);
                             }
                         }
                         
@@ -3211,7 +3211,7 @@ public class WavesFormController implements Initializable {
                 }
             } 
         } catch (Exception ex) {
-            pfxDialog.ShowErrorMessage("Could not load traveltimes.\n" + ex.getMessage() , PrimaryStage);
+            sitDialog.ShowErrorMessage("Could not load traveltimes.\n" + ex.getMessage() , PrimaryStage);
         }
         
     }
@@ -3343,7 +3343,7 @@ public class WavesFormController implements Initializable {
             ArrayList<String> stazioni= StationsInDelta();
             if (!myEvent.GETWAVES_WA(stazioni)){
                 updateMessage("Error while recovering horizontal components. Aborting...");
-                pfxDialog.ShowMessage("Error while recovering horizontal components.\nOperation aborted.", "ERROR", Alert.AlertType.ERROR, null);
+                sitDialog.ShowMessage("Error while recovering horizontal components.\nOperation aborted.", "ERROR", Alert.AlertType.ERROR, null);
                  if (isCancelled()) {
                     return null;
                 }
@@ -3353,7 +3353,7 @@ public class WavesFormController implements Initializable {
             updateProgress(60, 100);
             if (!ConvertWaves(MAX_N_WA_STATIONS)){
                 updateMessage("Error during conversion. Aborting...");
-                pfxDialog.ShowMessage("Error while converting waves to Wood-Anderson.\nOperation aborted.", "ERROR", Alert.AlertType.ERROR,null);
+                sitDialog.ShowMessage("Error while converting waves to Wood-Anderson.\nOperation aborted.", "ERROR", Alert.AlertType.ERROR,null);
                 return null;
             }  
                        
@@ -3364,7 +3364,7 @@ public class WavesFormController implements Initializable {
                 Platform.runLater(() -> {
                     if (!show_waves_WA()){
                         updateMessage("Error while plotting waves. Aborting...");
-                        pfxDialog.ShowMessage("Error while plotting waves.\nOperation aborted.", "ERROR", Alert.AlertType.ERROR,null);
+                        sitDialog.ShowMessage("Error while plotting waves.\nOperation aborted.", "ERROR", Alert.AlertType.ERROR,null);
                     }      
                 });
                 
@@ -3373,7 +3373,7 @@ public class WavesFormController implements Initializable {
                 Platform.runLater(() -> {
                     if (!show_current_wave_wa(0)){
                         updateMessage("Could not plot current wave. Aborting...");
-                        pfxDialog.ShowMessage("Could not plot current wave.", "ERROR", Alert.AlertType.ERROR,null);
+                        sitDialog.ShowMessage("Could not plot current wave.", "ERROR", Alert.AlertType.ERROR,null);
                      } else {
                         //txtAreaLog.setVisible(false);
                         Disable_Tools(false);
@@ -3381,7 +3381,7 @@ public class WavesFormController implements Initializable {
                 });
             } else {  
                 Platform.runLater(() -> {
-                    pfxDialog.ShowMessage("Operation terminated.\nNo waves converted.", "WARNING", Alert.AlertType.WARNING,null);
+                    sitDialog.ShowMessage("Operation terminated.\nNo waves converted.", "WARNING", Alert.AlertType.WARNING,null);
                 });
             }
 
@@ -3530,7 +3530,7 @@ public class WavesFormController implements Initializable {
             return true;
         } catch (Exception ex) {
             
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
             return false;
         }                
     }    
@@ -3703,7 +3703,7 @@ public class WavesFormController implements Initializable {
         
         return true;
         } catch (Exception ex)  {
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Errore in show_current_wave_wa:\n" + ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Errore in show_current_wave_wa:\n" + ex.getMessage());
             return false;
         }
     }    
@@ -3828,7 +3828,7 @@ public class WavesFormController implements Initializable {
         try{
             
             if ((time_t1==null)||(time_t2==null)){
-                pfxDialog.ShowErrorMessage("Error showing amplitude blue bars:\nT1 or T2 is null", this.getPrimaryStage());
+                sitDialog.ShowErrorMessage("Error showing amplitude blue bars:\nT1 or T2 is null", this.getPrimaryStage());
                 return;
             }
             DecimalFormat df = new DecimalFormat("0.00");
@@ -4041,7 +4041,7 @@ public class WavesFormController implements Initializable {
 //                        //delete_amplitude_markers(plot_combinato_WA);
 //                        make_amplitude_annotations(newA, (XYPlot)((CombinedDomainXYPlot)(chart_viewer_preview_WA.getChart().getPlot())).getSubplots().get(BOXID));
 
-                    }  else Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.WARNING, "outA is null");
+                    }  else Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.WARNING, "outA is null");
                 }
             }
         }
@@ -4073,7 +4073,7 @@ public class WavesFormController implements Initializable {
             
             btnSave_single_amplitude.setVisible(true);
             
-        }  else Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.WARNING, "outA is null");
+        }  else Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.WARNING, "outA is null");
     }
 
     @FXML
@@ -4282,7 +4282,7 @@ public class WavesFormController implements Initializable {
             show_waves_WA();
         } catch (Exception ex) {
             //
-            pfxDialog.ShowErrorMessage(ex.getMessage(), PrimaryStage);
+            sitDialog.ShowErrorMessage(ex.getMessage(), PrimaryStage);
         }         
     }
 //--------------------------------------------------------------------------------
@@ -4663,7 +4663,7 @@ public class WavesFormController implements Initializable {
         try {
             plot.removeDomainMarker(Marker);    
         } catch (Exception ex){
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Error removing marker from plot");
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Error removing marker from plot");
         }
     }
     private void RemoveMarkerFromPlot(XYPlot plot, ArrayList<ValueMarker> Markers){
@@ -4672,7 +4672,7 @@ public class WavesFormController implements Initializable {
                 plot.removeDomainMarker(Markers.get(m));
             }
         } catch (Exception ex){
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Error removing marker from plot");
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Error removing marker from plot");
         }
     }
     private void RemoveMarkerFromPlot(CombinedDomainXYPlot combinedplot, ValueMarker Marker){
@@ -4681,7 +4681,7 @@ public class WavesFormController implements Initializable {
                 ((XYPlot)combinedplot.getSubplots().get(i)).removeDomainMarker(Marker);
             }
         } catch (Exception ex){
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Error removing marker from combined plot");
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Error removing marker from combined plot");
         }
     }
     private void RemoveMarkerFromPlot(CombinedDomainXYPlot combinedplot, ArrayList<ValueMarker> Markers){
@@ -4692,7 +4692,7 @@ public class WavesFormController implements Initializable {
                 }
             }
         } catch (Exception ex){
-           Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, "Error removing marker from combined plot");
+           Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, "Error removing marker from combined plot");
         }
     }
 //--------------------------------------------------------------------------------    
@@ -4782,7 +4782,7 @@ public class WavesFormController implements Initializable {
                     int staId = CONTROLLER.getLocationResultEvent().StationCode_to_StationId(myEvent.getStation(myEvent.getActiveTerna().getStationIndex()).getCode());
                     if (staId!=-1)
                         CONTROLLER.getLocationResultEvent().getStation(staId).Pick_a_phase(prospective_phase);
-                } else pfxDialog.ShowErrorMessage("CONTROLLER = null", PrimaryStage);
+                } else sitDialog.ShowErrorMessage("CONTROLLER = null", PrimaryStage);
             }
             prospective_phase=null;
             System.gc();
@@ -5129,13 +5129,13 @@ public class WavesFormController implements Initializable {
     private void bntNOTAnEarthquake_Click(ActionEvent event) {
         try {
             if (myEvent.ChangeEventType("not existing", event_types)) {
-                if (pfxDialog.ShowConfirmationMessage("Event was marked as NOT EXISTING", "Close the waves window?", this.getPrimaryStage())==ButtonType.OK){
+                if (sitDialog.ShowConfirmationMessage("Event was marked as NOT EXISTING", "Close the waves window?", this.getPrimaryStage())==ButtonType.OK){
                     btnBack.fire();
                 }
             }
         } catch (Exception ex) {
             // Log the error
-            Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+            Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
         }
     }
 //------------------------------------------------------------------------------       
@@ -5144,7 +5144,7 @@ public class WavesFormController implements Initializable {
         String newVal = cmbTypeEvent.getValue();
         if (newVal!=null){
             if (myEvent.ChangeEventType(newVal, event_types)) {
-                if (pfxDialog.ShowConfirmationMessage("Event was marked as " + 
+                if (sitDialog.ShowConfirmationMessage("Event was marked as " + 
                         newVal.toUpperCase(), "Close the waves window?", this.getPrimaryStage())==ButtonType.OK){
                     btnBack.fire();
                 }
@@ -5200,7 +5200,7 @@ public class WavesFormController implements Initializable {
     
     @FXML
     private void btnDiscardStation_click(ActionEvent event) {       
-        if (pfxDialog.ShowConfirmationMessage("Station " + myEvent.getStation(myEvent.getActiveStationID()).getCode() +  " will be removed from event", "This operation is not reversible!!", this.getPrimaryStage())==ButtonType.CANCEL) 
+        if (sitDialog.ShowConfirmationMessage("Station " + myEvent.getStation(myEvent.getActiveStationID()).getCode() +  " will be removed from event", "This operation is not reversible!!", this.getPrimaryStage())==ButtonType.CANCEL) 
             return;
         // 
         if (myEvent.RemoveStation(myEvent.getActiveStationID())){
@@ -5237,7 +5237,7 @@ public class WavesFormController implements Initializable {
             if (myEvent.getActiveTerna().getWaves()==null) return;
             if (myEvent.getActiveTerna().getWaves().isEmpty()) return;
             if (myEvent.getActiveTerna().getWaves().size()<3) {
-                pfxDialog.ShowInformationMessage("Particle motion is implemented for three components stations only", PrimaryStage);
+                sitDialog.ShowInformationMessage("Particle motion is implemented for three components stations only", PrimaryStage);
                 return;
             }
 
@@ -5258,7 +5258,7 @@ public class WavesFormController implements Initializable {
              Stage stage = new Stage();
 
              stage.setScene(new Scene(root1));  
-             stage.setTitle("PFX - Particle motion viewer");
+             stage.setTitle("SIT - Particle motion viewer");
              stage.initModality(Modality.APPLICATION_MODAL);
              float duration_sec = (float)1.5;
              
@@ -5278,7 +5278,7 @@ public class WavesFormController implements Initializable {
 
              stage.show();
          } catch (Exception ex) {
-             Logger.getLogger("org.ingv.pfx").log(java.util.logging.Level.SEVERE, ex.getMessage());
+             Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
          }
     }
 
