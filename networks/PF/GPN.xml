@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="GPN" ELEVATION="1413.0" LATITUDE="-21.23979" LONGITUDE="55.75247" NAME="Grandes Pentes Nord">
+    <channel ChannelCode="HHZ" Gain="4.7275632740007937E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="4.741949696455475E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.68920509287891E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

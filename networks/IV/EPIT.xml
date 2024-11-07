@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="EPIT" ELEVATION="1657.0" LATITUDE="37.8113" LONGITUDE="15.0567" NAME="Pozzo Pitarrone, Linguaglossa, Catania">
+    <channel ChannelCode="HHE" Gain="59217.599791104" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.11110000312328339 0.11110000312328339</pole>
+            <pole>-0.11110000312328339 -0.11110000312328339</pole>
+            <pole>-172.7899932861328 262.3699951171875</pole>
+            <pole>-172.7899932861328 -262.3699951171875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="59217.599791104" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.11110000312328339 0.11110000312328339</pole>
+            <pole>-0.11110000312328339 -0.11110000312328339</pole>
+            <pole>-172.7899932861328 262.3699951171875</pole>
+            <pole>-172.7899932861328 -262.3699951171875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="59217.599791104" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.11110000312328339 0.11110000312328339</pole>
+            <pole>-0.11110000312328339 -0.11110000312328339</pole>
+            <pole>-172.7899932861328 262.3699951171875</pole>
+            <pole>-172.7899932861328 -262.3699951171875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

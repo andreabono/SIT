@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CHA2" ELEVATION="2202.82" LATITUDE="45.12024" LONGITUDE="5.8985276" NAME="Chamrousse">
+    <channel ChannelCode="EHE" Gain="0.688550144" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.688550144" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.688550144" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

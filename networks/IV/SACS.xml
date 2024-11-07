@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SACS" ELEVATION="845.0" LATITUDE="42.84906" LONGITUDE="11.90967" NAME="San Casciano dei Bagni">
+    <channel ChannelCode="BHE" Gain="6.403744011533681E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="6.403744011533681E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="6.403744011533681E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="6.403744011533681E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="6.403744011533681E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="6.403744011533681E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="7.890942064873963E9" LocationCode="" Network="IV">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="7.890942064873963E9" LocationCode="" Network="IV">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="7.890942064873963E9" LocationCode="" Network="IV">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

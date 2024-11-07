@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="HOUCH" ELEVATION="1152.0" LATITUDE="45.89967" LONGITUDE="6.769854" NAME="Ecole de Physique des Houches">
+    <channel ChannelCode="HHE" Gain="1.1182170693435392E9" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.1163503047580059E9" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.1182170693435392E9" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

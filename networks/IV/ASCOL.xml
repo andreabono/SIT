@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ASCOL" ELEVATION="180.0" LATITUDE="42.851223" LONGITUDE="13.58969" NAME="Ascoli Piceno">
+    <channel ChannelCode="EHE" Gain="0.251652" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.251652" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.251652" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="1.5781465215817745E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.5781465215817745E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.5781465215817745E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

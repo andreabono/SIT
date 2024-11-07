@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE node [
+
+  <!ELEMENT node (used, type, filename, title, linecolor, fillcolor, opacity)>
+  
+  <!ELEMENT used (#PCDATA)>             <!-- "true" to see the layer on the map -->
+  <!ELEMENT type (#PCDATA)>             <!-- S: Shapefile R: Raster Image -->
+  <!ELEMENT filename (#PCDATA)>         <!-- File name in the /shapefiles folder -->
+  <!ELEMENT title (#PCDATA)>            <!-- Layer title -->
+  <!ELEMENT linecolor (#PCDATA)>        <!-- Outline RGB color ex. "(0,0,0)" stands for BLACK  NO SPACES!!!!!!-->
+  <!ELEMENT fillcolor (#PCDATA)>        <!-- Fill RGB color ex. "(0,0,0)" stands for BLACK  NO SPACES!!!!!!-->
+  <!ELEMENT opacity (#PCDATA)>          <!-- Layer opacity -->
+]>
+
+<root>
+    <node> 
+        <used>true</used>
+        <type>R</type>
+        <filename>bluemarble.tif</filename>
+        <title>World raster background</title>
+        <linecolor></linecolor>
+        <fillcolor></fillcolor>
+        <opacity></opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>L</type>
+        <filename>countries+30.shp</filename>
+        <title>World boundaries</title>
+        <linecolor>(255,255,0)</linecolor>
+        <fillcolor></fillcolor>
+        <opacity>1</opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>L</type>
+        <filename>regioni.shp</filename>
+        <title>Italian regional boundaries</title>
+        <linecolor>(255,255,0)</linecolor>
+        <fillcolor></fillcolor>
+        <opacity>1</opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>P</type>
+        <filename>SETTORE_CAT_pol.shp</filename>
+        <title>Italian TSUNAMI ALERT area (CAT)</title>
+        <linecolor>(255,0,0)</linecolor>
+        <fillcolor>(255,0,0)</fillcolor>
+        <opacity>0.1</opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>P</type>
+        <filename>Settore2_new.shp</filename>
+        <title>Italian SETTORE 2</title>
+        <linecolor>(0,0,255)</linecolor>
+        <fillcolor>(0,0,255)</fillcolor>
+        <opacity>0.1</opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>P</type>
+        <filename>SETTORE_1_pol.shp</filename>
+        <title>Italian SETTORE 1</title>
+        <linecolor>(0,255,0)</linecolor>
+        <fillcolor>(0,255,0)</fillcolor>
+        <opacity>0.1</opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>P</type>
+        <filename>Settore_EOLIE_pol.shp</filename>
+        <title>Italian EOLIE islands area</title>
+        <linecolor>(255,0,0)</linecolor>
+        <fillcolor>(255,0,0)</fillcolor>
+        <opacity>0.11</opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>P</type>
+        <filename>Settore_ColliAlbani_pol.shp</filename>
+        <title>Italian COLLI ALBANI area</title>
+        <linecolor>(0,0,255)</linecolor>
+        <fillcolor>(0,0,255)</fillcolor>
+        <opacity>0.1</opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>P</type>
+        <filename>Settore_Etna_pol_new.shp</filename>
+        <title>Italian ETNA volcano area</title>
+        <linecolor>(0,255,255)</linecolor>
+        <fillcolor>(0,255,255)</fillcolor>
+        <opacity>0.1</opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>P</type>
+        <filename>Settore_OV_pol.shp</filename>
+        <title>Italian VESUVIO volcano area</title>
+        <linecolor>(0,255,255)</linecolor>
+        <fillcolor>(0,255,255)</fillcolor>
+        <opacity>0.1</opacity>
+    </node>
+    <node> 
+        <used>true</used>
+        <type>P</type>
+        <filename>Settore_Pantelleria_pol.shp</filename>
+        <title>Italian PANTELLERIA islands area</title>
+        <linecolor>(0,255,255)</linecolor>
+        <fillcolor>(0,255,255)</fillcolor>
+        <opacity>0.1</opacity>
+    </node>
+</root>
+

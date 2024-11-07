@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="OEM4" ELEVATION="183.0" LATITUDE="38.4095" LONGITUDE="14.9422" NAME="rete mobile - Isola di Vulcano (Lentia)">
+    <channel ChannelCode="HHE" Gain="1843199.97902848" LocationCode="" Network="3D">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1843199.97902848" LocationCode="" Network="3D">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1843199.97902848" LocationCode="" Network="3D">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="VSVT" ELEVATION="195.0" LATITUDE="40.8229" LONGITUDE="14.3692" NAME="Vesuvio, San Vito -Stazione TESNET-OV">
+    <channel ChannelCode="EHE" Gain="0.335544" LocationCode="" Network="2I">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.335544" LocationCode="" Network="2I">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.335544" LocationCode="" Network="2I">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="2.1280364484005723E9" LocationCode="" Network="2I">
+        <poles>
+            <pole>-480.6499938964844 -1160.3900146484375</pole>
+            <pole>-480.6499938964844 1160.3900146484375</pole>
+            <pole>-1160.3900146484375 480.6499938964844</pole>
+            <pole>-1160.3900146484375 -480.6499938964844</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="2.1280364484005723E9" LocationCode="" Network="2I">
+        <poles>
+            <pole>-480.6499938964844 -1160.3900146484375</pole>
+            <pole>-480.6499938964844 1160.3900146484375</pole>
+            <pole>-1160.3900146484375 480.6499938964844</pole>
+            <pole>-1160.3900146484375 -480.6499938964844</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="2.1280364484005723E9" LocationCode="" Network="2I">
+        <poles>
+            <pole>-480.6499938964844 -1160.3900146484375</pole>
+            <pole>-480.6499938964844 1160.3900146484375</pole>
+            <pole>-1160.3900146484375 480.6499938964844</pole>
+            <pole>-1160.3900146484375 -480.6499938964844</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

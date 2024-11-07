@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CELB" ELEVATION="742.0" LATITUDE="42.74658" LONGITUDE="10.210652" NAME="S.Piero in Campo Elba">
+    <channel ChannelCode="BHE" Gain="116426.740334592" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.11110000312328339 0.11110000312328339</pole>
+            <pole>-0.11110000312328339 -0.11110000312328339</pole>
+            <pole>-172.7899932861328 262.3699951171875</pole>
+            <pole>-172.7899932861328 -262.3699951171875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="116426.740334592" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.11110000312328339 0.11110000312328339</pole>
+            <pole>-0.11110000312328339 -0.11110000312328339</pole>
+            <pole>-172.7899932861328 262.3699951171875</pole>
+            <pole>-172.7899932861328 -262.3699951171875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="116426.740334592" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.11110000312328339 0.11110000312328339</pole>
+            <pole>-0.11110000312328339 -0.11110000312328339</pole>
+            <pole>-172.7899932861328 262.3699951171875</pole>
+            <pole>-172.7899932861328 -262.3699951171875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="116426.740334592" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.11110000312328339 0.11110000312328339</pole>
+            <pole>-0.11110000312328339 -0.11110000312328339</pole>
+            <pole>-172.7899932861328 262.3699951171875</pole>
+            <pole>-172.7899932861328 -262.3699951171875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="116426.740334592" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.11110000312328339 0.11110000312328339</pole>
+            <pole>-0.11110000312328339 -0.11110000312328339</pole>
+            <pole>-172.7899932861328 262.3699951171875</pole>
+            <pole>-172.7899932861328 -262.3699951171875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="116426.740334592" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.11110000312328339 0.11110000312328339</pole>
+            <pole>-0.11110000312328339 -0.11110000312328339</pole>
+            <pole>-172.7899932861328 262.3699951171875</pole>
+            <pole>-172.7899932861328 -262.3699951171875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

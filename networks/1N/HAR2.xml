@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="HAR2" ELEVATION="735.2" LATITUDE="44.939438" LONGITUDE="5.67059" NAME="HAR2">
+    <channel ChannelCode="HHE" Gain="796.00058368" LocationCode="00" Network="1N">
+        <poles>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="799.993561088" LocationCode="00" Network="1N">
+        <poles>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="797.997072384" LocationCode="00" Network="1N">
+        <poles>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

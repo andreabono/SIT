@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="DIMT" ELEVATION="152.0" LATITUDE="38.24676" LONGITUDE="22.04364" NAME="Dimitropoulo">
+    <channel ChannelCode="EH2" Gain="0.400017536" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EH3" Gain="0.400017536" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.400017536" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

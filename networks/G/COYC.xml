@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="COYC" ELEVATION="235.0" LATITUDE="-45.57299" LONGITUDE="-72.08139" NAME="Coyhaique, Chile">
+    <channel ChannelCode="BHE" Gain="2.1993394410320467E17" LocationCode="10" Network="G">
+        <poles>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-15.640000343322754 0.0</pole>
+            <pole>-97.33999633789062 -400.70001220703125</pole>
+            <pole>-97.33999633789062 400.70001220703125</pole>
+            <pole>-374.79998779296875 0.0</pole>
+            <pole>-520.2999877929688 0.0</pole>
+            <pole>-10530.0 -10050.0</pole>
+            <pole>-10530.0 10050.0</pole>
+            <pole>-13300.0 0.0</pole>
+            <pole>-255.0970001220703 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.149999618530273 0.0</zero>
+            <zero>-176.60000610351562 0.0</zero>
+            <zero>-463.1000061035156 -430.5</zero>
+            <zero>-463.1000061035156 430.5</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="2.1993394410320467E17" LocationCode="10" Network="G">
+        <poles>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-15.640000343322754 0.0</pole>
+            <pole>-97.33999633789062 -400.70001220703125</pole>
+            <pole>-97.33999633789062 400.70001220703125</pole>
+            <pole>-374.79998779296875 0.0</pole>
+            <pole>-520.2999877929688 0.0</pole>
+            <pole>-10530.0 -10050.0</pole>
+            <pole>-10530.0 10050.0</pole>
+            <pole>-13300.0 0.0</pole>
+            <pole>-255.0970001220703 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.149999618530273 0.0</zero>
+            <zero>-176.60000610351562 0.0</zero>
+            <zero>-463.1000061035156 -430.5</zero>
+            <zero>-463.1000061035156 430.5</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="2.1993394410320467E17" LocationCode="10" Network="G">
+        <poles>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-15.640000343322754 0.0</pole>
+            <pole>-97.33999633789062 -400.70001220703125</pole>
+            <pole>-97.33999633789062 400.70001220703125</pole>
+            <pole>-374.79998779296875 0.0</pole>
+            <pole>-520.2999877929688 0.0</pole>
+            <pole>-10530.0 -10050.0</pole>
+            <pole>-10530.0 10050.0</pole>
+            <pole>-13300.0 0.0</pole>
+            <pole>-255.0970001220703 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.149999618530273 0.0</zero>
+            <zero>-176.60000610351562 0.0</zero>
+            <zero>-463.1000061035156 -430.5</zero>
+            <zero>-463.1000061035156 430.5</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHE" Gain="1.0610583424332518E18" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012118400074541569 0.011867299675941467</pole>
+            <pole>-0.012118400074541569 -0.011867299675941467</pole>
+            <pole>-32.948699951171875 75.69550323486328</pole>
+            <pole>-32.948699951171875 -75.69550323486328</pole>
+            <pole>-24.509599685668945 372.010009765625</pole>
+            <pole>-24.509599685668945 -372.010009765625</pole>
+            <pole>-15680.5 0.0</pole>
+            <pole>-15680.5 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="1.3169438424262978E16" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012067499570548534 0.011989199556410313</pole>
+            <pole>-0.012067499570548534 -0.011989199556410313</pole>
+            <pole>-28.69260025024414 67.68360137939453</pole>
+            <pole>-28.69260025024414 -67.68360137939453</pole>
+            <pole>-25.40290069580078 177.27499389648438</pole>
+            <pole>-25.40290069580078 -177.27499389648438</pole>
+            <pole>-4096.66015625 0.0</pole>
+            <pole>-4096.66015625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="1.209163044743417E18" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012066500261425972 0.01199680007994175</pole>
+            <pole>-0.012066500261425972 -0.01199680007994175</pole>
+            <pole>-33.2406005859375 66.82679748535156</pole>
+            <pole>-33.2406005859375 -66.82679748535156</pole>
+            <pole>-27.4955997467041 395.0570068359375</pole>
+            <pole>-27.4955997467041 -395.0570068359375</pole>
+            <pole>-15435.0 0.0</pole>
+            <pole>-15435.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

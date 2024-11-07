@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ATD" ELEVATION="610.0" LATITUDE="11.530725" LONGITUDE="42.846634" NAME="Arta Cave - Arta, Republic of Djibouti">
+    <channel ChannelCode="BHE" Gain="29524.34548736" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01219400018453598 0.012326099909842014</pole>
+            <pole>-0.01219400018453598 -0.012326099909842014</pole>
+            <pole>-31.301599502563477 72.60700225830078</pole>
+            <pole>-31.301599502563477 -72.60700225830078</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="29988.459905024" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012333200313150883 0.01212329976260662</pole>
+            <pole>-0.012333200313150883 -0.01212329976260662</pole>
+            <pole>-30.922800064086914 73.341796875</pole>
+            <pole>-30.922800064086914 -73.341796875</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="30999.886954496" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012354999780654907 0.012062899768352509</pole>
+            <pole>-0.012354999780654907 -0.012062899768352509</pole>
+            <pole>-33.99689865112305 63.49150085449219</pole>
+            <pole>-33.99689865112305 -63.49150085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="2.1555243828671128E14" LocationCode="00" Network="G">
+        <poles>
+            <pole>-977.0 328.0</pole>
+            <pole>-977.0 -328.0</pole>
+            <pole>-1486.0 2512.0</pole>
+            <pole>-1486.0 -2512.0</pole>
+            <pole>-5736.0 4946.0</pole>
+            <pole>-5736.0 -4946.0</pole>
+        </poles>
+        <zeroes>
+            <zero>-515.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="2.1555243828671128E14" LocationCode="00" Network="G">
+        <poles>
+            <pole>-977.0 328.0</pole>
+            <pole>-977.0 -328.0</pole>
+            <pole>-1486.0 2512.0</pole>
+            <pole>-1486.0 -2512.0</pole>
+            <pole>-5736.0 4946.0</pole>
+            <pole>-5736.0 -4946.0</pole>
+        </poles>
+        <zeroes>
+            <zero>-515.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="2.1555243828671128E14" LocationCode="00" Network="G">
+        <poles>
+            <pole>-977.0 328.0</pole>
+            <pole>-977.0 -328.0</pole>
+            <pole>-1486.0 2512.0</pole>
+            <pole>-1486.0 -2512.0</pole>
+            <pole>-5736.0 4946.0</pole>
+            <pole>-5736.0 -4946.0</pole>
+        </poles>
+        <zeroes>
+            <zero>-515.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

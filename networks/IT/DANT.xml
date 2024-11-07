@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="DANT" ELEVATION="1453.0" LATITUDE="46.5675" LONGITUDE="12.5199" NAME="Danta di Cadore ARPAV">
+    <channel ChannelCode="HNE" Gain="10.524347392" LocationCode="" Network="IT">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="10.524347392" LocationCode="" Network="IT">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="10.524347392" LocationCode="" Network="IT">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

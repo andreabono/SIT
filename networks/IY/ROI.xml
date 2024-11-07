@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ROI" ELEVATION="658.0" LATITUDE="39.57235" LONGITUDE="16.56912" NAME="Rossano (CS)">
+    <channel ChannelCode="HHE" Gain="4.649663304669593E7" LocationCode="00" Network="IY">
+        <poles>
+            <pole>-0.07500000298023224 -0.07500000298023224</pole>
+            <pole>-0.07500000298023224 0.07500000298023224</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.649663304669593E7" LocationCode="00" Network="IY">
+        <poles>
+            <pole>-0.07500000298023224 -0.07500000298023224</pole>
+            <pole>-0.07500000298023224 0.07500000298023224</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.649663304669593E7" LocationCode="00" Network="IY">
+        <poles>
+            <pole>-0.07500000298023224 -0.07500000298023224</pole>
+            <pole>-0.07500000298023224 0.07500000298023224</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

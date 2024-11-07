@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="BIGN" ELEVATION="1250.0" LATITUDE="43.8708" LONGITUDE="7.7378" NAME="Bignone">
+    <channel ChannelCode="EHE" Gain="0.335544" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.335544" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.335544" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

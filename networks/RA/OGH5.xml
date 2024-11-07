@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="OGH5" ELEVATION="258.0" LATITUDE="45.186535" LONGITUDE="5.736162" NAME="hôtel de ville de Grenoble NE top - 38185, Grenoble - Isère - Auvergne-Rhône-Alpes - France">
+    <channel ChannelCode="HN2" Gain="1.2860373329772543E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HN1" Gain="1.2872225292025857E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.2855227958951935E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

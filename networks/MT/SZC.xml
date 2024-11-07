@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SZC" ELEVATION="1939.0" LATITUDE="44.34787" LONGITUDE="6.67805" NAME="Super-Sauze C">
+    <channel ChannelCode="HH1" Gain="798.596005888" LocationCode="00" Network="MT">
+        <poles>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HH2" Gain="798.596005888" LocationCode="00" Network="MT">
+        <poles>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="798.596005888" LocationCode="00" Network="MT">
+        <poles>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

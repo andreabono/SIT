@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PABO" ELEVATION="1016.0" LATITUDE="41.748856" LONGITUDE="14.386994" NAME="Pietrabbondante">
+    <channel ChannelCode="HHE" Gain="1.9285351267916632E11" LocationCode="" Network="IV">
+        <poles>
+            <pole>-371.20001220703125 0.0</pole>
+            <pole>-0.03691000118851662 0.03711999952793121</pole>
+            <pole>-0.03691000118851662 -0.03711999952793121</pole>
+            <pole>-373.8999938964844 475.5</pole>
+            <pole>-373.8999938964844 -475.5</pole>
+            <pole>-588.4000244140625 1508.0</pole>
+            <pole>-588.4000244140625 -1508.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-434.1000061035156 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.9285351267916632E11" LocationCode="" Network="IV">
+        <poles>
+            <pole>-371.20001220703125 0.0</pole>
+            <pole>-0.03691000118851662 0.03711999952793121</pole>
+            <pole>-0.03691000118851662 -0.03711999952793121</pole>
+            <pole>-373.8999938964844 475.5</pole>
+            <pole>-373.8999938964844 -475.5</pole>
+            <pole>-588.4000244140625 1508.0</pole>
+            <pole>-588.4000244140625 -1508.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-434.1000061035156 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.9285351267916632E11" LocationCode="" Network="IV">
+        <poles>
+            <pole>-371.20001220703125 0.0</pole>
+            <pole>-0.03691000118851662 0.03711999952793121</pole>
+            <pole>-0.03691000118851662 -0.03711999952793121</pole>
+            <pole>-373.8999938964844 475.5</pole>
+            <pole>-373.8999938964844 -475.5</pole>
+            <pole>-588.4000244140625 1508.0</pole>
+            <pole>-588.4000244140625 -1508.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-434.1000061035156 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

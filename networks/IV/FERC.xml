@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="FERC" ELEVATION="460.0" LATITUDE="38.45271" LONGITUDE="16.12807" NAME="GALATRO">
+    <channel ChannelCode="HHE" Gain="118580.314112" LocationCode="00" Network="IV">
+        <poles>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-0.007499999832361937 0.007499999832361937</pole>
+            <pole>-0.007499999832361937 -0.007499999832361937</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="118580.314112" LocationCode="00" Network="IV">
+        <poles>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-0.007499999832361937 0.007499999832361937</pole>
+            <pole>-0.007499999832361937 -0.007499999832361937</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="118580.314112" LocationCode="00" Network="IV">
+        <poles>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-0.007499999832361937 0.007499999832361937</pole>
+            <pole>-0.007499999832361937 -0.007499999832361937</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

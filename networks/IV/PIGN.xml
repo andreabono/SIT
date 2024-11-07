@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PIGN" ELEVATION="398.0" LATITUDE="41.2" LONGITUDE="14.17989" NAME="Pignataro Maggiore (CE)">
+    <channel ChannelCode="HHE" Gain="8.142780392852684E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="8.142780392852684E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="8.142780392852684E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="1.0033848445967531E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.0033848445967531E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.0033848445967531E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

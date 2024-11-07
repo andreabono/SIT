@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="UNPM" ELEVATION="150.0" LATITUDE="43.58676" LONGITUDE="13.516745" NAME="Ancona Universit..">
+    <channel ChannelCode="HNE" Gain="5.888262295052993E11" LocationCode="" Network="VM">
+        <poles>
+            <pole>-2763.739990234375 -6672.259765625</pole>
+            <pole>-2763.739990234375 6672.259765625</pole>
+            <pole>-6672.259765625 -2763.739990234375</pole>
+            <pole>-6672.259765625 2763.739990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="5.888262295052993E11" LocationCode="" Network="VM">
+        <poles>
+            <pole>-2763.739990234375 -6672.259765625</pole>
+            <pole>-2763.739990234375 6672.259765625</pole>
+            <pole>-6672.259765625 -2763.739990234375</pole>
+            <pole>-6672.259765625 2763.739990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="5.888262295052993E11" LocationCode="" Network="VM">
+        <poles>
+            <pole>-2763.739990234375 -6672.259765625</pole>
+            <pole>-2763.739990234375 6672.259765625</pole>
+            <pole>-6672.259765625 -2763.739990234375</pole>
+            <pole>-6672.259765625 2763.739990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

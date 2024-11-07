@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="OGFO" ELEVATION="220.0" LATITUDE="45.20874" LONGITUDE="5.821009" NAME="Montbonnot Forage (38) France">
+    <channel ChannelCode="HNE" Gain="1.2820556835454976E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.2851614817714175E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.2872067451977728E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

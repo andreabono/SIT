@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="MAZM" ELEVATION="23.0" LATITUDE="14.58584" LONGITUDE="-61.02274" NAME="zone aéro-militaire - 97213, Le Lamentin - Martinique - Martinique - France">
+    <channel ChannelCode="HNE" Gain="4783389.366288384" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="4785315.122249728" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="4794893.973061632" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

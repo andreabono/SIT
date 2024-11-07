@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="OGCE" ELEVATION="1789.0" LATITUDE="44.675625" LONGITUDE="6.772324" NAME="Ceillac">
+    <channel ChannelCode="EHE" Gain="1.106404096" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.707099974155426 0.707099974155426</pole>
+            <pole>-0.707099974155426 -0.707099974155426</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="1.106404096" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.707099974155426 0.707099974155426</pole>
+            <pole>-0.707099974155426 -0.707099974155426</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="1.106404096" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.707099974155426 0.707099974155426</pole>
+            <pole>-0.707099974155426 -0.707099974155426</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

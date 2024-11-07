@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ANBD" ELEVATION="26.0" LATITUDE="17.048" LONGITUDE="-61.765" NAME="Bethesda, Antigua">
+    <channel ChannelCode="BHE" Gain="1.1071142009262571E9" LocationCode="00" Network="WI">
+        <poles>
+            <pole>-0.018149999901652336 0.017990000545978546</pole>
+            <pole>-0.018149999901652336 -0.017990000545978546</pole>
+            <pole>-173.0 0.0</pole>
+            <pole>-196.0 231.0</pole>
+            <pole>-196.0 -231.0</pole>
+            <pole>-732.0 1415.0</pole>
+            <pole>-732.0 -1415.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-108.0 0.0</zero>
+            <zero>-161.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="1.1071142009262571E9" LocationCode="00" Network="WI">
+        <poles>
+            <pole>-0.018149999901652336 0.017990000545978546</pole>
+            <pole>-0.018149999901652336 -0.017990000545978546</pole>
+            <pole>-173.0 0.0</pole>
+            <pole>-196.0 231.0</pole>
+            <pole>-196.0 -231.0</pole>
+            <pole>-732.0 1415.0</pole>
+            <pole>-732.0 -1415.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-108.0 0.0</zero>
+            <zero>-161.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="1.1071142009262571E9" LocationCode="00" Network="WI">
+        <poles>
+            <pole>-0.018149999901652336 0.017990000545978546</pole>
+            <pole>-0.018149999901652336 -0.017990000545978546</pole>
+            <pole>-173.0 0.0</pole>
+            <pole>-196.0 231.0</pole>
+            <pole>-196.0 -231.0</pole>
+            <pole>-732.0 1415.0</pole>
+            <pole>-732.0 -1415.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-108.0 0.0</zero>
+            <zero>-161.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="1.1071142009262571E9" LocationCode="00" Network="WI">
+        <poles>
+            <pole>-0.018149999901652336 0.017990000545978546</pole>
+            <pole>-0.018149999901652336 -0.017990000545978546</pole>
+            <pole>-173.0 0.0</pole>
+            <pole>-196.0 231.0</pole>
+            <pole>-196.0 -231.0</pole>
+            <pole>-732.0 1415.0</pole>
+            <pole>-732.0 -1415.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-108.0 0.0</zero>
+            <zero>-161.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.1071142009262571E9" LocationCode="00" Network="WI">
+        <poles>
+            <pole>-0.018149999901652336 0.017990000545978546</pole>
+            <pole>-0.018149999901652336 -0.017990000545978546</pole>
+            <pole>-173.0 0.0</pole>
+            <pole>-196.0 231.0</pole>
+            <pole>-196.0 -231.0</pole>
+            <pole>-732.0 1415.0</pole>
+            <pole>-732.0 -1415.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-108.0 0.0</zero>
+            <zero>-161.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.1071142009262571E9" LocationCode="00" Network="WI">
+        <poles>
+            <pole>-0.018149999901652336 0.017990000545978546</pole>
+            <pole>-0.018149999901652336 -0.017990000545978546</pole>
+            <pole>-173.0 0.0</pole>
+            <pole>-196.0 231.0</pole>
+            <pole>-196.0 -231.0</pole>
+            <pole>-732.0 1415.0</pole>
+            <pole>-732.0 -1415.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-108.0 0.0</zero>
+            <zero>-161.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="2.0557188505170597E14" LocationCode="00" Network="WI">
+        <poles>
+            <pole>-977.0 328.0</pole>
+            <pole>-977.0 -328.0</pole>
+            <pole>-1486.0 2512.0</pole>
+            <pole>-1486.0 -2512.0</pole>
+            <pole>-5736.0 4946.0</pole>
+            <pole>-5736.0 -4946.0</pole>
+        </poles>
+        <zeroes>
+            <zero>-515.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="2.0557188505170597E14" LocationCode="00" Network="WI">
+        <poles>
+            <pole>-977.0 328.0</pole>
+            <pole>-977.0 -328.0</pole>
+            <pole>-1486.0 2512.0</pole>
+            <pole>-1486.0 -2512.0</pole>
+            <pole>-5736.0 4946.0</pole>
+            <pole>-5736.0 -4946.0</pole>
+        </poles>
+        <zeroes>
+            <zero>-515.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="2.0557188505170597E14" LocationCode="00" Network="WI">
+        <poles>
+            <pole>-977.0 328.0</pole>
+            <pole>-977.0 -328.0</pole>
+            <pole>-1486.0 2512.0</pole>
+            <pole>-1486.0 -2512.0</pole>
+            <pole>-5736.0 4946.0</pole>
+            <pole>-5736.0 -4946.0</pole>
+        </poles>
+        <zeroes>
+            <zero>-515.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

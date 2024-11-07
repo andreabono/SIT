@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="POPM" ELEVATION="438.0" LATITUDE="44.045" LONGITUDE="10.7568" NAME="Popiglio,Piteglio(PT) - Italy">
+    <channel ChannelCode="BHE" Gain="1845043.191087104" LocationCode="" Network="GU">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="1841817.53643008" LocationCode="" Network="GU">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="1853798.347702272" LocationCode="" Network="GU">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="4.5720524725367606E8" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.5720524725367606E8" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.5720524725367606E8" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

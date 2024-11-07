@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="LADO" ELEVATION="488.0" LATITUDE="39.28398" LONGITUDE="16.979492" NAME="San Nicola dell Alto">
+    <channel ChannelCode="EHE" Gain="0.503316" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.503316" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.503316" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

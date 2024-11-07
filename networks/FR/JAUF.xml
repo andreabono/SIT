@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="JAUF" ELEVATION="1641.0" LATITUDE="44.429" LONGITUDE="6.7488" NAME="Jausiers">
+    <channel ChannelCode="EHE" Gain="1.108085376" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="1.108085376" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="1.108085376" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

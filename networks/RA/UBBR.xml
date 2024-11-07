@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="UBBR" ELEVATION="30.0" LATITUDE="48.358044" LONGITUDE="-4.562102" NAME="29212, Plouzané - Finistère - Bretagne - France">
+    <channel ChannelCode="HNE" Gain="1.2618049127448576E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.2632189233528832E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.2616534077734912E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

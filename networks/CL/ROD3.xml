@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ROD3" ELEVATION="448.0" LATITUDE="38.30811" LONGITUDE="21.89204" NAME="Rodini">
+    <channel ChannelCode="HHE" Gain="1.8153136261064294E8" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-502.6548156738281 0.0</pole>
+            <pole>-1005.3096313476562 0.0</pole>
+            <pole>-1130.9732666015625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.8153136261064294E8" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-502.6548156738281 0.0</pole>
+            <pole>-1005.3096313476562 0.0</pole>
+            <pole>-1130.9732666015625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.829031236253778E8" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-502.6548156738281 0.0</pole>
+            <pole>-1005.3096313476562 0.0</pole>
+            <pole>-1130.9732666015625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="363.38024448" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.05000000074505806 0.0</pole>
+            <pole>-65.5999984741211 104.0</pole>
+            <pole>-65.5999984741211 -104.0</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="357.32389888" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.05000000074505806 0.0</pole>
+            <pole>-65.5999984741211 104.0</pole>
+            <pole>-65.5999984741211 -104.0</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="369.43659008" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.05000000074505806 0.0</pole>
+            <pole>-65.5999984741211 104.0</pole>
+            <pole>-65.5999984741211 -104.0</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

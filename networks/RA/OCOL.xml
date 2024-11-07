@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="OCOL" ELEVATION="449.0" LATITUDE="45.6764" LONGITUDE="3.63619" NAME="Olliergues - 63258 - Puy-de-Dôme - Auvergne-Rhône-Alpes - France">
+    <channel ChannelCode="HNE" Gain="1.2842871338041345E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.2872729950683136E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.2867063815077888E7" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

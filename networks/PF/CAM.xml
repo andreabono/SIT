@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CAM" ELEVATION="15.0" LATITUDE="-20.9293" LONGITUDE="55.647133" NAME="College de Cambuston">
+    <channel ChannelCode="HHE" Gain="4.6934749775659007E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.717443987454034E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.70306478054441E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

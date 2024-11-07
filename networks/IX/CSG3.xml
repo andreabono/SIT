@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CSG3" ELEVATION="1253.0" LATITUDE="40.8181" LONGITUDE="15.4633" NAME="Station Toppo Di Castelgrande (Osservatorio Astronomico), It">
+    <channel ChannelCode="HNE" Gain="2.8697915940709333E9" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.300048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="2.8697915940709333E9" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.300048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="2.8697915940709333E9" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.300048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

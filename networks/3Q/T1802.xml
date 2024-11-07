@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="T1802" ELEVATION="0.0" LATITUDE="0.0" LONGITUDE="0.0" NAME="da definire">
+    <channel ChannelCode="EHE" Gain="0.335544" LocationCode="" Network="3Q">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.335544" LocationCode="" Network="3Q">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.335544" LocationCode="" Network="3Q">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="6.280786186950421E11" LocationCode="" Network="3Q">
+        <poles>
+            <pole>-2763.739990234375 -6672.259765625</pole>
+            <pole>-2763.739990234375 6672.259765625</pole>
+            <pole>-6672.259765625 -2763.739990234375</pole>
+            <pole>-6672.259765625 2763.739990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="6.280786186950421E11" LocationCode="" Network="3Q">
+        <poles>
+            <pole>-2763.739990234375 -6672.259765625</pole>
+            <pole>-2763.739990234375 6672.259765625</pole>
+            <pole>-6672.259765625 -2763.739990234375</pole>
+            <pole>-6672.259765625 2763.739990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="6.280786186950421E11" LocationCode="" Network="3Q">
+        <poles>
+            <pole>-2763.739990234375 -6672.259765625</pole>
+            <pole>-2763.739990234375 6672.259765625</pole>
+            <pole>-6672.259765625 -2763.739990234375</pole>
+            <pole>-6672.259765625 2763.739990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

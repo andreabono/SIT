@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SDA" ELEVATION="30.0" LATITUDE="42.05" LONGITUDE="19.5" NAME="Shkoder, Albania">
+    <channel ChannelCode="HHE" Gain="6.130634767999005E11" LocationCode="" Network="AC">
+        <poles>
+            <pole>-371.20001220703125 0.0</pole>
+            <pole>-0.03691000118851662 0.03711999952793121</pole>
+            <pole>-0.03691000118851662 -0.03711999952793121</pole>
+            <pole>-373.8999938964844 475.5</pole>
+            <pole>-373.8999938964844 -475.5</pole>
+            <pole>-588.4000244140625 1508.0</pole>
+            <pole>-588.4000244140625 -1508.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-434.1000061035156 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="6.130634767999005E11" LocationCode="" Network="AC">
+        <poles>
+            <pole>-371.20001220703125 0.0</pole>
+            <pole>-0.03691000118851662 0.03711999952793121</pole>
+            <pole>-0.03691000118851662 -0.03711999952793121</pole>
+            <pole>-373.8999938964844 475.5</pole>
+            <pole>-373.8999938964844 -475.5</pole>
+            <pole>-588.4000244140625 1508.0</pole>
+            <pole>-588.4000244140625 -1508.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-434.1000061035156 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="6.130634767999005E11" LocationCode="" Network="AC">
+        <poles>
+            <pole>-371.20001220703125 0.0</pole>
+            <pole>-0.03691000118851662 0.03711999952793121</pole>
+            <pole>-0.03691000118851662 -0.03711999952793121</pole>
+            <pole>-373.8999938964844 475.5</pole>
+            <pole>-373.8999938964844 -475.5</pole>
+            <pole>-588.4000244140625 1508.0</pole>
+            <pole>-588.4000244140625 -1508.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-434.1000061035156 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

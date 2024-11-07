@@ -1,0 +1,41 @@
+
+/* 
+    Created on : 29 set 2021, 08:36:47
+    Author     : andreabono
+*/
+.tree-table-row-cell:selected {
+    -fx-background-color: rgb(185, 37, 194); 
+}
+.tree-table-row-cell:selected > *{ -fx-text-fill: white; }
+
+.tree-table-row-cell:top-node {
+    -fx-background: rgb(48, 90, 137); 
+}
+
+.tree-table-row-cell:level1-node {
+    -fx-background: rgb(250, 247, 212); 
+   /* -fx-background:white;
+    -fx-text-fill:green;*/
+    -fx-font: bold 14px "Arial";
+    -fx-border-color: rgb(49, 89, 23);
+    -fx-border-radius: 2;
+}
+
+.tree-table-row-cell:level2-node {
+    -fx-background: white; 
+   /* -fx-background:white;
+    -fx-text-fill:green;*/  
+    -fx-border-color: rgb(49, 89, 23);
+    -fx-border-radius: 2;
+}
+
+.tree-table-row-cell:reviewed-node {
+    -fx-background:green;
+    -fx-font: bold 14px "Arial";
+    -fx-text-fill: #056503;
+}
+
+.tree-table-row-cell:disabled-node {
+    -fx-background:grey;
+}
+

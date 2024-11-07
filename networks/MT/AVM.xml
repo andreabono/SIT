@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="AVM" ELEVATION="708.0" LATITUDE="44.9422" LONGITUDE="5.675" NAME="maison">
+    <channel ChannelCode="HHE" Gain="731833.23488256" LocationCode="02" Network="MT">
+        <poles>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-80.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="735520.061652992" LocationCode="02" Network="MT">
+        <poles>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-80.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="733676.648267776" LocationCode="02" Network="MT">
+        <poles>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-80.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

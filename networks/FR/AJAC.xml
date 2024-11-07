@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="AJAC" ELEVATION="27.0" LATITUDE="41.9279" LONGITUDE="8.763" NAME="Ajaccio">
+    <channel ChannelCode="HHE" Gain="4.8741364203205425E8" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-80.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.884033055762678E8" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-80.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.884033055762678E8" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-80.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

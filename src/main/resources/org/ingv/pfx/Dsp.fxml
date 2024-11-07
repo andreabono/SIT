@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="658.0" stylesheets="@../../../css/dark.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.pfx.DspController">
+   <children>
+      <ButtonBar layoutX="14.0" layoutY="371.0" prefHeight="40.0" prefWidth="644.0" AnchorPane.rightAnchor="7.0">
+        <buttons>
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#btnCancel_Clicked" text="Close" />
+        </buttons>
+      </ButtonBar>
+      <TabPane layoutX="6.0" layoutY="98.0" prefHeight="321.0" prefWidth="644.0" style="-fx-border-color: black;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="39.0">
+        <tabs>
+          <Tab text="IIR Filters">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="IIR_cmbFilterType" layoutX="100.0" layoutY="35.0" onAction="#IIR_cmbFilterType_change" prefHeight="28.0" prefWidth="205.0" />
+                        <Label layoutX="25.0" layoutY="40.0" text="Filter type" />
+                        <ComboBox fx:id="IIR_cmbFilterCut" disable="true" layoutX="100.0" layoutY="80.0" onAction="#IIR_cmbFilterCut_change" prefHeight="28.0" prefWidth="205.0" />
+                        <Label layoutX="412.0" layoutY="41.0" text="F1 [Hz]" />
+                        <Label layoutX="412.0" layoutY="86.0" text="F2 [Hz]" />
+                        <TextField fx:id="IIR_txtF1" disable="true" layoutX="490.0" layoutY="37.0" prefHeight="26.0" prefWidth="81.0" />
+                        <TextField fx:id="IIR_txtF2" disable="true" layoutX="490.0" layoutY="82.0" prefHeight="26.0" prefWidth="81.0" />
+                        <Button fx:id="IIR_btnOk" disable="true" layoutX="537.0" layoutY="215.0" mnemonicParsing="false" onAction="#IIR_btnOk_Click" prefHeight="26.0" prefWidth="91.0" text="Apply" />
+                        <Button fx:id="IIR_btnCancel" disable="true" layoutX="537.0" layoutY="251.0" mnemonicParsing="false" onAction="#IIR_btnCancel_Click" prefHeight="26.0" prefWidth="91.0" text="Cancel" />
+                        <Label layoutX="25.0" layoutY="132.0" text="Order" />
+                        <TextField fx:id="IIR_txtOrder" alignment="BASELINE_CENTER" layoutX="99.0" layoutY="127.0" prefHeight="26.0" prefWidth="50.0" text="2" />
+                        <Label layoutX="28.0" layoutY="86.0" text="Cut type" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="FIR Filters">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                        <ComboBox fx:id="FIR_cmbFilterType" layoutX="100.0" layoutY="35.0" onAction="#FIR_cmbFilterType_change" prefHeight="28.0" prefWidth="205.0" />
+                        <Label layoutX="25.0" layoutY="40.0" text="Filter type" />
+                        <ComboBox fx:id="FIR_cmbFilterCut" disable="true" layoutX="100.0" layoutY="80.0" onAction="#FIR_cmbFilterCut_change" prefHeight="28.0" prefWidth="205.0" />
+                        <Label layoutX="412.0" layoutY="41.0" text="F1 [Hz]" />
+                        <Label layoutX="412.0" layoutY="86.0" text="F2 [Hz]" />
+                        <TextField fx:id="FIR_txtF1" disable="true" layoutX="490.0" layoutY="37.0" prefHeight="26.0" prefWidth="81.0" />
+                        <TextField fx:id="FIR_txtF2" disable="true" layoutX="490.0" layoutY="82.0" prefHeight="26.0" prefWidth="81.0" />
+                        <Button fx:id="FIR_btnOk" disable="true" layoutX="537.0" layoutY="215.0" mnemonicParsing="false" onAction="#FIR_btnOk_Click" prefHeight="26.0" prefWidth="91.0" text="Apply" />
+                        <Button fx:id="FIR_btnCancel" disable="true" layoutX="537.0" layoutY="251.0" mnemonicParsing="false" onAction="#FIR_btnCancel_Click" prefHeight="26.0" prefWidth="91.0" text="Cancel" />
+                        <Label layoutX="26.0" layoutY="170.0" text="Number of taps" />
+                        <TextField fx:id="FIR_txtNTaps" alignment="BASELINE_CENTER" layoutX="124.0" layoutY="165.0" prefHeight="26.0" prefWidth="50.0" />
+                        <Label layoutX="28.0" layoutY="86.0" text="Cut type" />
+                        <Label layoutX="26.0" layoutY="211.0" text="Ripple value" />
+                        <TextField fx:id="FIR_txtRipple" alignment="BASELINE_CENTER" layoutX="124.0" layoutY="206.0" prefHeight="26.0" prefWidth="50.0" />
+                        <Label layoutX="28.0" layoutY="129.0" text="Width" />
+                        <TextField fx:id="FIR_txtWidth" alignment="BASELINE_CENTER" layoutX="124.0" layoutY="124.0" prefHeight="26.0" prefWidth="50.0" />
+                     </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Kernel-based Filters">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Adaptive Filters">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Signals">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Peak detection">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Transformations">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      
+   </children>
+</AnchorPane>

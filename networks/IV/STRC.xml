@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="STRC" ELEVATION="182.0" LATITUDE="38.791058" LONGITUDE="15.191556" NAME="Stromboli Timpone del Fuoco - Stazione Osservatorio Vesuvian">
+    <channel ChannelCode="HHE" Gain="1.0910400050331952E12" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-0.03920000046491623 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.0910400050331952E12" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-0.03920000046491623 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.0910400050331952E12" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-0.03920000046491623 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

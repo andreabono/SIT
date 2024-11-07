@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ZAG" ELEVATION="155.0" LATITUDE="45.82944" LONGITUDE="15.99417" NAME="Zagreb, Croatia">
+    <channel ChannelCode="BHE" Gain="0.627451008" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="0.627451008" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="0.627451008" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="0.627451008" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="0.627451008" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="0.627451008" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

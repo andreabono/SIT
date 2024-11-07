@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="AMEN" ELEVATION="46.0" LATITUDE="43.608845" LONGITUDE="13.444468" NAME="Colle Ameno">
+    <channel ChannelCode="HHE" Gain="1.928526858464222E11" LocationCode="" Network="VM">
+        <poles>
+            <pole>-371.20001220703125 0.0</pole>
+            <pole>-0.03691000118851662 0.03711999952793121</pole>
+            <pole>-0.03691000118851662 -0.03711999952793121</pole>
+            <pole>-373.8999938964844 475.5</pole>
+            <pole>-373.8999938964844 -475.5</pole>
+            <pole>-588.4000244140625 1508.0</pole>
+            <pole>-588.4000244140625 -1508.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-434.1000061035156 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.928526858464222E11" LocationCode="" Network="VM">
+        <poles>
+            <pole>-371.20001220703125 0.0</pole>
+            <pole>-0.03691000118851662 0.03711999952793121</pole>
+            <pole>-0.03691000118851662 -0.03711999952793121</pole>
+            <pole>-373.8999938964844 475.5</pole>
+            <pole>-373.8999938964844 -475.5</pole>
+            <pole>-588.4000244140625 1508.0</pole>
+            <pole>-588.4000244140625 -1508.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-434.1000061035156 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.928526858464222E11" LocationCode="" Network="VM">
+        <poles>
+            <pole>-371.20001220703125 0.0</pole>
+            <pole>-0.03691000118851662 0.03711999952793121</pole>
+            <pole>-0.03691000118851662 -0.03711999952793121</pole>
+            <pole>-373.8999938964844 475.5</pole>
+            <pole>-373.8999938964844 -475.5</pole>
+            <pole>-588.4000244140625 1508.0</pole>
+            <pole>-588.4000244140625 -1508.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-434.1000061035156 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="5.888262295052993E11" LocationCode="" Network="VM">
+        <poles>
+            <pole>-2763.739990234375 -6672.259765625</pole>
+            <pole>-2763.739990234375 6672.259765625</pole>
+            <pole>-6672.259765625 -2763.739990234375</pole>
+            <pole>-6672.259765625 2763.739990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="5.888262295052993E11" LocationCode="" Network="VM">
+        <poles>
+            <pole>-2763.739990234375 -6672.259765625</pole>
+            <pole>-2763.739990234375 6672.259765625</pole>
+            <pole>-6672.259765625 -2763.739990234375</pole>
+            <pole>-6672.259765625 2763.739990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="5.888262295052993E11" LocationCode="" Network="VM">
+        <poles>
+            <pole>-2763.739990234375 -6672.259765625</pole>
+            <pole>-2763.739990234375 6672.259765625</pole>
+            <pole>-6672.259765625 -2763.739990234375</pole>
+            <pole>-6672.259765625 2763.739990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

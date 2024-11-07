@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="TDBSM" ELEVATION="-43.0" LATITUDE="15.81638" LONGITUDE="-61.63444" NAME="Terre-de-Bas Sous-Marine">
+    <channel ChannelCode="EH1" Gain="999.999995904" LocationCode="00" Network="GL">
+        <poles>
+            <pole>-21.991100311279297 47.979000091552734</pole>
+            <pole>-21.991100311279297 -47.979000091552734</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EH2" Gain="999.999995904" LocationCode="00" Network="GL">
+        <poles>
+            <pole>-21.991100311279297 47.979000091552734</pole>
+            <pole>-21.991100311279297 -47.979000091552734</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="999.999995904" LocationCode="00" Network="GL">
+        <poles>
+            <pole>-20.756999969482422 -54.2864990234375</pole>
+            <pole>-20.756999969482422 54.2864990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

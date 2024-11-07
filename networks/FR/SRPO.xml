@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SRPO" ELEVATION="132.7" LATITUDE="48.64609" LONGITUDE="7.830758" NAME="Station Régionale de Protection des Oiseaux">
+    <channel ChannelCode="EHE" Gain="16.49092608" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-2.182149887084961 -5.892099857330322</pole>
+            <pole>-2.182149887084961 5.892099857330322</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="16.49092608" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-2.182149887084961 -5.892099857330322</pole>
+            <pole>-2.182149887084961 5.892099857330322</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="16.49092608" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-2.182149887084961 -5.892099857330322</pole>
+            <pole>-2.182149887084961 5.892099857330322</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

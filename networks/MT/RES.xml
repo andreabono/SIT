@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="RES" ELEVATION="660.0" LATITUDE="45.234997" LONGITUDE="5.779916" NAME="réservoirs">
+    <channel ChannelCode="EHZ" Gain="1.281781888" LocationCode="00" Network="MT">
+        <poles>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="1.281781888" LocationCode="01" Network="MT">
+        <poles>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="1.281781888" LocationCode="02" Network="MT">
+        <poles>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="1.281781888" LocationCode="03" Network="MT">
+        <poles>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

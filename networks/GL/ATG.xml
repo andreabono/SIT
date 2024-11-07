@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ATG" ELEVATION="865.0" LATITUDE="16.09621" LONGITUDE="-61.72632" NAME="Morne Soldat ancien code MSG">
+    <channel ChannelCode="EHZ" Gain="6.674994688" LocationCode="91" Network="GL">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

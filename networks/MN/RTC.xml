@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="RTC" ELEVATION="50.0" LATITUDE="33.9881" LONGITUDE="-6.8569" NAME="Rabat, Morocco">
+    <channel ChannelCode="BHE" Gain="16243.550584832" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="16243.550584832" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="16243.550584832" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="16243.550584832" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="16243.550584832" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="16243.550584832" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="BAIF" ELEVATION="215.0" LATITUDE="50.05862" LONGITUDE="4.2055" NAME="BAIVES, France">
+    <channel ChannelCode="HNE" Gain="227.854221312" LocationCode="" Network="RA">
+        <poles>
+            <pole>-700.0 750.0</pole>
+            <pole>-700.0 -750.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="227.854221312" LocationCode="" Network="RA">
+        <poles>
+            <pole>-700.0 750.0</pole>
+            <pole>-700.0 -750.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="227.854221312" LocationCode="" Network="RA">
+        <poles>
+            <pole>-700.0 750.0</pole>
+            <pole>-700.0 -750.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

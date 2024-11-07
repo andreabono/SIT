@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ISP" ELEVATION="1100.0" LATITUDE="37.8433" LONGITUDE="30.5093" NAME="Isparta, Turkey">
+    <channel ChannelCode="BHE" Gain="15183.593340928" LocationCode="00" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="15395.592339456" LocationCode="00" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="16892.776415232" LocationCode="00" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

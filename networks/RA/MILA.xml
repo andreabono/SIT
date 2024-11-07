@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="MILA" ELEVATION="0.0" LATITUDE="-12.8481" LONGITUDE="45.1928" NAME="Iloni">
+    <channel ChannelCode="HNZ" Gain="2.0066155376632923E10" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="2.0066155376632923E10" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="2.0066155376632923E10" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="AGRP" ELEVATION="282.0" LATITUDE="38.3959" LONGITUDE="21.72277" NAME="Agrapidokambos">
+    <channel ChannelCode="HNE" Gain="241.836212224" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.05000000074505806 0.0</pole>
+            <pole>-65.5999984741211 104.0</pole>
+            <pole>-65.5999984741211 -104.0</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="241.836212224" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.05000000074505806 0.0</pole>
+            <pole>-65.5999984741211 104.0</pole>
+            <pole>-65.5999984741211 -104.0</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="241.76050176" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.05000000074505806 0.0</pole>
+            <pole>-65.5999984741211 104.0</pole>
+            <pole>-65.5999984741211 -104.0</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="621.950140416" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="625.854447616" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="620.985319424" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

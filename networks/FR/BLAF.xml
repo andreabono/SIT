@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="BLAF" ELEVATION="590.0" LATITUDE="43.951" LONGITUDE="6.045" NAME="Les Blancs">
+    <channel ChannelCode="HHE" Gain="4.4018597089084944E14" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-190.0 620.0</pole>
+            <pole>-190.0 -620.0</pole>
+            <pole>-2000.0 3000.0</pole>
+            <pole>-2000.0 -3000.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.4018597089084944E14" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-190.0 620.0</pole>
+            <pole>-190.0 -620.0</pole>
+            <pole>-2000.0 3000.0</pole>
+            <pole>-2000.0 -3000.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.4018597089084944E14" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-190.0 620.0</pole>
+            <pole>-190.0 -620.0</pole>
+            <pole>-2000.0 3000.0</pole>
+            <pole>-2000.0 -3000.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

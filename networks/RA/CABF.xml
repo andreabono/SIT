@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CABF" ELEVATION="1070.0" LATITUDE="46.610424" LONGITUDE="6.086031" NAME="Chapelle des Bois, France">
+    <channel ChannelCode="HNE" Gain="1110.026223616" LocationCode="" Network="RA">
+        <poles>
+            <pole>-700.0 750.0</pole>
+            <pole>-700.0 -750.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1110.026223616" LocationCode="" Network="RA">
+        <poles>
+            <pole>-700.0 750.0</pole>
+            <pole>-700.0 -750.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1110.026223616" LocationCode="" Network="RA">
+        <poles>
+            <pole>-700.0 750.0</pole>
+            <pole>-700.0 -750.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

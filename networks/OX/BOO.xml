@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="BOO" ELEVATION="444.0" LATITUDE="46.3195" LONGITUDE="13.0984" NAME="Bordano, Italy">
+    <channel ChannelCode="HHE" Gain="1.3740841309925693E17" LocationCode="" Network="OX">
+        <poles>
+            <pole>-0.03691000118851662 0.0370200015604496</pole>
+            <pole>-0.03691000118851662 -0.0370200015604496</pole>
+            <pole>-343.0 0.0</pole>
+            <pole>-370.0 467.0</pole>
+            <pole>-370.0 -467.0</pole>
+            <pole>-836.0 1522.0</pole>
+            <pole>-836.0 -1522.0</pole>
+            <pole>-4900.0 4700.0</pole>
+            <pole>-4900.0 -4700.0</pole>
+            <pole>-6900.0 0.0</pole>
+            <pole>-15000.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-392.0 0.0</zero>
+            <zero>-1960.0 0.0</zero>
+            <zero>-1490.0 1740.0</zero>
+            <zero>-1490.0 -1740.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.3740841309925693E17" LocationCode="" Network="OX">
+        <poles>
+            <pole>-0.03691000118851662 0.0370200015604496</pole>
+            <pole>-0.03691000118851662 -0.0370200015604496</pole>
+            <pole>-343.0 0.0</pole>
+            <pole>-370.0 467.0</pole>
+            <pole>-370.0 -467.0</pole>
+            <pole>-836.0 1522.0</pole>
+            <pole>-836.0 -1522.0</pole>
+            <pole>-4900.0 4700.0</pole>
+            <pole>-4900.0 -4700.0</pole>
+            <pole>-6900.0 0.0</pole>
+            <pole>-15000.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-392.0 0.0</zero>
+            <zero>-1960.0 0.0</zero>
+            <zero>-1490.0 1740.0</zero>
+            <zero>-1490.0 -1740.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.3740841309925693E17" LocationCode="" Network="OX">
+        <poles>
+            <pole>-0.03691000118851662 0.0370200015604496</pole>
+            <pole>-0.03691000118851662 -0.0370200015604496</pole>
+            <pole>-343.0 0.0</pole>
+            <pole>-370.0 467.0</pole>
+            <pole>-370.0 -467.0</pole>
+            <pole>-836.0 1522.0</pole>
+            <pole>-836.0 -1522.0</pole>
+            <pole>-4900.0 4700.0</pole>
+            <pole>-4900.0 -4700.0</pole>
+            <pole>-6900.0 0.0</pole>
+            <pole>-15000.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-392.0 0.0</zero>
+            <zero>-1960.0 0.0</zero>
+            <zero>-1490.0 1740.0</zero>
+            <zero>-1490.0 -1740.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="5.262154898396414E9" LocationCode="" Network="OX">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="5.262154898396414E9" LocationCode="" Network="OX">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="5.262154898396414E9" LocationCode="" Network="OX">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

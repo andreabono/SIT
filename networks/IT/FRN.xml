@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="FRN" ELEVATION="280.0" LATITUDE="44.6868" LONGITUDE="10.1072" NAME="Fornovo">
+    <channel ChannelCode="HGE" Gain="0.100109704" LocationCode="" Network="IT">
+        <poles>
+            <pole>-1144.0 0.0</pole>
+            <pole>-676.0 -0.0</pole>
+            <pole>-278.0 571.0</pole>
+            <pole>-278.0 -571.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HGN" Gain="0.100109704" LocationCode="" Network="IT">
+        <poles>
+            <pole>-1144.0 0.0</pole>
+            <pole>-676.0 -0.0</pole>
+            <pole>-278.0 571.0</pole>
+            <pole>-278.0 -571.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HGZ" Gain="0.100109704" LocationCode="" Network="IT">
+        <poles>
+            <pole>-1144.0 0.0</pole>
+            <pole>-676.0 -0.0</pole>
+            <pole>-278.0 571.0</pole>
+            <pole>-278.0 -571.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

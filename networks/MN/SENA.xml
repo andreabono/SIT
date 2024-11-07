@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SENA" ELEVATION="338.0" LATITUDE="40.4444" LONGITUDE="9.4566" NAME="Sos Enattos Mine">
+    <channel ChannelCode="HHE" Gain="3.3451284382558177E18" LocationCode="" Network="MN">
+        <poles>
+            <pole>0.012292999774217606 0.012315000407397747</pole>
+            <pole>0.012292999774217606 -0.012315000407397747</pole>
+            <pole>-33.400001525878906 0.0</pole>
+            <pole>-142.0 0.0</pole>
+            <pole>155.8000030517578 252.8000030517578</pole>
+            <pole>155.8000030517578 -252.8000030517578</pole>
+            <pole>-2120.0 0.0</pole>
+            <pole>4900.0 5100.0</pole>
+            <pole>4900.0 -5100.0</pole>
+            <pole>6700.0 1300.0</pole>
+            <pole>6700.0 -1300.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-31.600000381469727 0.0</zero>
+            <zero>-143.39999389648438 0.0</zero>
+            <zero>-350.0 0.0</zero>
+            <zero>-3100.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.3451284382558177E18" LocationCode="" Network="MN">
+        <poles>
+            <pole>0.012292999774217606 0.012315000407397747</pole>
+            <pole>0.012292999774217606 -0.012315000407397747</pole>
+            <pole>-33.400001525878906 0.0</pole>
+            <pole>-142.0 0.0</pole>
+            <pole>155.8000030517578 252.8000030517578</pole>
+            <pole>155.8000030517578 -252.8000030517578</pole>
+            <pole>-2120.0 0.0</pole>
+            <pole>4900.0 5100.0</pole>
+            <pole>4900.0 -5100.0</pole>
+            <pole>6700.0 1300.0</pole>
+            <pole>6700.0 -1300.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-31.600000381469727 0.0</zero>
+            <zero>-143.39999389648438 0.0</zero>
+            <zero>-350.0 0.0</zero>
+            <zero>-3100.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.3451284382558177E18" LocationCode="" Network="MN">
+        <poles>
+            <pole>0.012292999774217606 0.012315000407397747</pole>
+            <pole>0.012292999774217606 -0.012315000407397747</pole>
+            <pole>-33.400001525878906 0.0</pole>
+            <pole>-142.0 0.0</pole>
+            <pole>155.8000030517578 252.8000030517578</pole>
+            <pole>155.8000030517578 -252.8000030517578</pole>
+            <pole>-2120.0 0.0</pole>
+            <pole>4900.0 5100.0</pole>
+            <pole>4900.0 -5100.0</pole>
+            <pole>6700.0 1300.0</pole>
+            <pole>6700.0 -1300.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-31.600000381469727 0.0</zero>
+            <zero>-143.39999389648438 0.0</zero>
+            <zero>-350.0 0.0</zero>
+            <zero>-3100.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

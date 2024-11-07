@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CHCE" ELEVATION="550.0" LATITUDE="38.68397" LONGITUDE="16.41418" NAME="Chiaravalle">
+    <channel ChannelCode="HHE" Gain="9.300421825999667E7" LocationCode="00" Network="IY">
+        <poles>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-0.07500000298023224 0.07500000298023224</pole>
+            <pole>-0.07500000298023224 -0.07500000298023224</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="9.300421825999667E7" LocationCode="00" Network="IY">
+        <poles>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-0.07500000298023224 0.07500000298023224</pole>
+            <pole>-0.07500000298023224 -0.07500000298023224</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="9.300421825999667E7" LocationCode="00" Network="IY">
+        <poles>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-0.07500000298023224 0.07500000298023224</pole>
+            <pole>-0.07500000298023224 -0.07500000298023224</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="NOUC" ELEVATION="137.0" LATITUDE="-22.09863" LONGITUDE="166.30666" NAME="Port Laguerre - New Caledonia, France">
+    <channel ChannelCode="BHE" Gain="29955.759013888" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012404000386595726 0.011775000020861626</pole>
+            <pole>-0.012404000386595726 -0.011775000020861626</pole>
+            <pole>-32.04410171508789 76.92400360107422</pole>
+            <pole>-32.04410171508789 -76.92400360107422</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="31844.9385472" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01227600034326315 0.01191799994558096</pole>
+            <pole>-0.01227600034326315 -0.01191799994558096</pole>
+            <pole>-32.10390090942383 69.59940338134766</pole>
+            <pole>-32.10390090942383 -69.59940338134766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="2.285502044099838E10" LocationCode="00" Network="G">
+        <poles>
+            <pole>-700.0 1250.0</pole>
+            <pole>-700.0 -1250.0</pole>
+            <pole>-1340.0 3350.0</pole>
+            <pole>-1340.0 -3350.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="2.285502044099838E10" LocationCode="00" Network="G">
+        <poles>
+            <pole>-700.0 1250.0</pole>
+            <pole>-700.0 -1250.0</pole>
+            <pole>-1340.0 3350.0</pole>
+            <pole>-1340.0 -3350.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="2.285502044099838E10" LocationCode="00" Network="G">
+        <poles>
+            <pole>-700.0 1250.0</pole>
+            <pole>-700.0 -1250.0</pole>
+            <pole>-1340.0 3350.0</pole>
+            <pole>-1340.0 -3350.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="1.2000927806823741E18" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.011999799869954586 0.0116955004632473</pole>
+            <pole>-0.011999799869954586 -0.0116955004632473</pole>
+            <pole>-31.879600524902344 70.64099884033203</pole>
+            <pole>-31.879600524902344 -70.64099884033203</pole>
+            <pole>-23.860200881958008 373.49700927734375</pole>
+            <pole>-23.860200881958008 -373.49700927734375</pole>
+            <pole>-17696.400390625 0.0</pole>
+            <pole>-17696.400390625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

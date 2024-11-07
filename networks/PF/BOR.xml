@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="BOR" ELEVATION="2540.0" LATITUDE="-21.246881" LONGITUDE="55.706055" NAME="Station Sismologique de Cratere Bory">
+    <channel ChannelCode="EHE" Gain="0.069992352" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.069992352" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.069992352" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CMP3" ELEVATION="958.0" LATITUDE="40.6519" LONGITUDE="15.0802" NAME="Station Campagna, Italy">
+    <channel ChannelCode="HNE" Gain="2.8697915940709333E9" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.300048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="2.8697915940709333E9" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.300048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="2.8697915940709333E9" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.300048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHE" Gain="0.38806" LocationCode="02" Network="IX">
+        <poles>
+            <pole>-4.442999839782715 4.442999839782715</pole>
+            <pole>-4.442999839782715 -4.442999839782715</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.38806" LocationCode="02" Network="IX">
+        <poles>
+            <pole>-4.442999839782715 4.442999839782715</pole>
+            <pole>-4.442999839782715 -4.442999839782715</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.38806" LocationCode="02" Network="IX">
+        <poles>
+            <pole>-4.442999839782715 4.442999839782715</pole>
+            <pole>-4.442999839782715 -4.442999839782715</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

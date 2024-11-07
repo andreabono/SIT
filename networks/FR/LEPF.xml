@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="LEPF" ELEVATION="345.0" LATITUDE="43.5235" LONGITUDE="5.7025" NAME="Légion Etrangère">
+    <channel ChannelCode="EHE" Gain="17.945827328" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="17.945827328" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="17.945827328" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

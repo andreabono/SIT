@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="OEM5" ELEVATION="49.0" LATITUDE="38.4223" LONGITUDE="14.9661" NAME="staz. mobile- Isola di Vulcano (vulcanello)">
+    <channel ChannelCode="HHE" Gain="8.72832018100305E11" LocationCode="" Network="3D">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="8.72832018100305E11" LocationCode="" Network="3D">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="8.72832018100305E11" LocationCode="" Network="3D">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

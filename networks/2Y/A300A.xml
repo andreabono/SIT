@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="A300A" ELEVATION="6.0" LATITUDE="45.8193" LONGITUDE="13.128" NAME="Muzzana del Turgnano (UD)">
+    <channel ChannelCode="HHE" Gain="4.001299490163124E17" LocationCode="" Network="2Y">
+        <poles>
+            <pole>-0.03661400079727173 0.0370590016245842</pole>
+            <pole>-0.03661400079727173 -0.0370590016245842</pole>
+            <pole>-32.54999923706055 0.0</pole>
+            <pole>-142.0 0.0</pole>
+            <pole>-364.0 404.0</pole>
+            <pole>-364.0 -404.0</pole>
+            <pole>-1260.0 0.0</pole>
+            <pole>-4900.0 5200.0</pole>
+            <pole>-4900.0 -5200.0</pole>
+            <pole>-7100.0 1700.0</pole>
+            <pole>-7100.0 -1700.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-31.6299991607666 0.0</zero>
+            <zero>-160.0 0.0</zero>
+            <zero>-350.0 0.0</zero>
+            <zero>-3177.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.001299490163124E17" LocationCode="" Network="2Y">
+        <poles>
+            <pole>-0.03661400079727173 0.0370590016245842</pole>
+            <pole>-0.03661400079727173 -0.0370590016245842</pole>
+            <pole>-32.54999923706055 0.0</pole>
+            <pole>-142.0 0.0</pole>
+            <pole>-364.0 404.0</pole>
+            <pole>-364.0 -404.0</pole>
+            <pole>-1260.0 0.0</pole>
+            <pole>-4900.0 5200.0</pole>
+            <pole>-4900.0 -5200.0</pole>
+            <pole>-7100.0 1700.0</pole>
+            <pole>-7100.0 -1700.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-31.6299991607666 0.0</zero>
+            <zero>-160.0 0.0</zero>
+            <zero>-350.0 0.0</zero>
+            <zero>-3177.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.001299490163124E17" LocationCode="" Network="2Y">
+        <poles>
+            <pole>-0.03661400079727173 0.0370590016245842</pole>
+            <pole>-0.03661400079727173 -0.0370590016245842</pole>
+            <pole>-32.54999923706055 0.0</pole>
+            <pole>-142.0 0.0</pole>
+            <pole>-364.0 404.0</pole>
+            <pole>-364.0 -404.0</pole>
+            <pole>-1260.0 0.0</pole>
+            <pole>-4900.0 5200.0</pole>
+            <pole>-4900.0 -5200.0</pole>
+            <pole>-7100.0 1700.0</pole>
+            <pole>-7100.0 -1700.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-31.6299991607666 0.0</zero>
+            <zero>-160.0 0.0</zero>
+            <zero>-350.0 0.0</zero>
+            <zero>-3177.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

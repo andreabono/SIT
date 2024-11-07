@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SALI" ELEVATION="872.0" LATITUDE="40.93" LONGITUDE="15.18" NAME="Station CIMA - Sant`Angelo dei Lombardi, Italy">
+    <channel ChannelCode="HNE" Gain="9.351875919034818E10" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="9.351875919034818E10" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="9.351875919034818E10" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

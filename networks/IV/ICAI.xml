@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ICAI" ELEVATION="166.0" LATITUDE="40.7313" LONGITUDE="13.9653" NAME="Castello Aragonese Ischia - Stazione Osservatorio Vesuviano">
+    <channel ChannelCode="EHE" Gain="0.0064" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.3979997634887695 4.486999988555908</pole>
+            <pole>-4.3979997634887695 -4.486999988555908</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.0064" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.3979997634887695 4.486999988555908</pole>
+            <pole>-4.3979997634887695 -4.486999988555908</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.0064" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.3979997634887695 4.486999988555908</pole>
+            <pole>-4.3979997634887695 -4.486999988555908</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

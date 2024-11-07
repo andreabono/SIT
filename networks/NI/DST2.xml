@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="DST2" ELEVATION="80.0" LATITUDE="45.6589" LONGITUDE="13.8013" NAME="Trieste Universita DST, Italy">
+    <channel ChannelCode="BHE" Gain="3.6145032110596636E12" LocationCode="" Network="NI">
+        <poles>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-15.989999771118164 0.0</pole>
+            <pole>-417.1000061035156 0.0</pole>
+            <pole>-187.1999969482422 0.0</pole>
+            <pole>-100.9000015258789 401.8999938964844</pole>
+            <pole>-100.9000015258789 -401.8999938964844</pole>
+            <pole>-7454.0 7142.0</pole>
+            <pole>-7454.0 -7142.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.149999618530273 0.0</zero>
+            <zero>-318.6000061035156 401.20001220703125</zero>
+            <zero>-318.6000061035156 -401.20001220703125</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="3.6145032110596636E12" LocationCode="" Network="NI">
+        <poles>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-15.989999771118164 0.0</pole>
+            <pole>-417.1000061035156 0.0</pole>
+            <pole>-187.1999969482422 0.0</pole>
+            <pole>-100.9000015258789 401.8999938964844</pole>
+            <pole>-100.9000015258789 -401.8999938964844</pole>
+            <pole>-7454.0 7142.0</pole>
+            <pole>-7454.0 -7142.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.149999618530273 0.0</zero>
+            <zero>-318.6000061035156 401.20001220703125</zero>
+            <zero>-318.6000061035156 -401.20001220703125</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="3.6145032110596636E12" LocationCode="" Network="NI">
+        <poles>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-15.989999771118164 0.0</pole>
+            <pole>-417.1000061035156 0.0</pole>
+            <pole>-187.1999969482422 0.0</pole>
+            <pole>-100.9000015258789 401.8999938964844</pole>
+            <pole>-100.9000015258789 -401.8999938964844</pole>
+            <pole>-7454.0 7142.0</pole>
+            <pole>-7454.0 -7142.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.149999618530273 0.0</zero>
+            <zero>-318.6000061035156 401.20001220703125</zero>
+            <zero>-318.6000061035156 -401.20001220703125</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="3.614500396309896E12" LocationCode="" Network="NI">
+        <poles>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-15.989999771118164 0.0</pole>
+            <pole>-417.1000061035156 0.0</pole>
+            <pole>-187.1999969482422 0.0</pole>
+            <pole>-100.9000015258789 401.8999938964844</pole>
+            <pole>-100.9000015258789 -401.8999938964844</pole>
+            <pole>-7454.0 7142.0</pole>
+            <pole>-7454.0 -7142.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.149999618530273 0.0</zero>
+            <zero>-318.6000061035156 401.20001220703125</zero>
+            <zero>-318.6000061035156 -401.20001220703125</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.614500396309896E12" LocationCode="" Network="NI">
+        <poles>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-15.989999771118164 0.0</pole>
+            <pole>-417.1000061035156 0.0</pole>
+            <pole>-187.1999969482422 0.0</pole>
+            <pole>-100.9000015258789 401.8999938964844</pole>
+            <pole>-100.9000015258789 -401.8999938964844</pole>
+            <pole>-7454.0 7142.0</pole>
+            <pole>-7454.0 -7142.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.149999618530273 0.0</zero>
+            <zero>-318.6000061035156 401.20001220703125</zero>
+            <zero>-318.6000061035156 -401.20001220703125</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.614500396309896E12" LocationCode="" Network="NI">
+        <poles>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-15.989999771118164 0.0</pole>
+            <pole>-417.1000061035156 0.0</pole>
+            <pole>-187.1999969482422 0.0</pole>
+            <pole>-100.9000015258789 401.8999938964844</pole>
+            <pole>-100.9000015258789 -401.8999938964844</pole>
+            <pole>-7454.0 7142.0</pole>
+            <pole>-7454.0 -7142.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.149999618530273 0.0</zero>
+            <zero>-318.6000061035156 401.20001220703125</zero>
+            <zero>-318.6000061035156 -401.20001220703125</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="1.0524309796792828E10" LocationCode="" Network="NI">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.0524309796792828E10" LocationCode="" Network="NI">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.0524309796792828E10" LocationCode="" Network="NI">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

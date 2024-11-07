@@ -1,0 +1,46 @@
+1#earthquake
+11#not reported
+21#anthropogenic event
+31#collapse
+41#cavity collapse
+51#mine collapse
+61#building collapse
+71#explosion
+81#accidental explosion
+91#chemical explosion
+101#controlled explosion
+111#experimental explosion
+121#industrial explosion
+131#mining explosion
+141#quarry blast
+151#road cut
+161#blasting levee
+171#nuclear explosion
+181#induced or triggered event
+191#rock burst
+201#reservoir loading
+211#fluid injection
+221#fluid extraction
+231#crash
+241#plane crash
+251#train crash
+261#boat crash
+271#other event
+281#atmospheric event
+291#sonic boom
+301#sonic blast
+311#acoustic noise
+321#thunder
+331#avalanche
+341#snow avalanche
+351#debris avalanche
+361#hydroacoustic event
+371#ice quake
+381#slide
+391#landslide
+401#rockslide
+411#meteorite
+421#volcanic eruption
+431#not existing
+441#testing
+451#duplicate earthquake

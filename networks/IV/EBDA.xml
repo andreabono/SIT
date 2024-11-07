@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="EBDA" ELEVATION="350.0" LATITUDE="37.6335" LONGITUDE="15.1223" NAME="Etna Bosco di Aci">
+    <channel ChannelCode="HHE" Gain="2899100.24044544" LocationCode="" Network="IV">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="2899100.24044544" LocationCode="" Network="IV">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="2899100.24044544" LocationCode="" Network="IV">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

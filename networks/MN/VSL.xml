@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="VSL" ELEVATION="370.0" LATITUDE="39.496" LONGITUDE="9.378" NAME="Villasalto, Italy">
+    <channel ChannelCode="BHE" Gain="4249.698697216" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="4249.698697216" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="4249.698697216" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="4249.698697216" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4249.698697216" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4249.698697216" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

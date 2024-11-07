@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="319.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.pfx.SplashScreenController">
+   <children>
+      <ImageView fitHeight="371.0" fitWidth="560.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../images/splash_screen.png" />
+         </image></ImageView>
+      <Label fx:id="lblProgress" layoutX="13.0" layoutY="247.0" prefHeight="17.0" prefWidth="164.0" text="Progress..." textFill="#111010" />
+      <ProgressBar fx:id="progressBar" layoutX="13.0" layoutY="272.0" prefHeight="17.0" prefWidth="525.0" progress="0.0" />
+      <Label fx:id="lblVersion" layoutX="118.0" layoutY="85.0" text="Version 1.8.7" textFill="#5e5c5c">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

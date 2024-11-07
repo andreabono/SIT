@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="DRV" ELEVATION="40.0" LATITUDE="-66.66491" LONGITUDE="140.00208" NAME="Dumont d'Urville - Terre Adelie, Antarctica">
+    <channel ChannelCode="BHE" Gain="4504.777392128" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="4635.632861184" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="5453.779042304" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-39.18000030517578 49.119998931884766</pole>
+            <pole>-39.18000030517578 -49.119998931884766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

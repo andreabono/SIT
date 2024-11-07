@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="EQUI" ELEVATION="350.0" LATITUDE="44.166" LONGITUDE="10.153" NAME="Equi Terme (MS) - Italy">
+    <channel ChannelCode="HHE" Gain="3.835327111527137E8" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.835327111527137E8" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.835327111527137E8" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

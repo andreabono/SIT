@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="BRJN" ELEVATION="1.0" LATITUDE="44.905933" LONGITUDE="13.750528" NAME="Brijuni, Croatia">
+    <channel ChannelCode="BHE" Gain="3.2607615049531394E8" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="3.2607615049531394E8" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="3.2607615049531394E8" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="3.2607615049531394E8" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.2607615049531394E8" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.2607615049531394E8" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CSS" ELEVATION="2193.0" LATITUDE="-21.24642" LONGITUDE="55.68451" NAME="Enclos Sery Sud">
+    <channel ChannelCode="HHE" Gain="7.951234444690038E10" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.037007998675107956 0.037007998675107956</pole>
+            <pole>-0.037007998675107956 -0.037007998675107956</pole>
+            <pole>-188.8300018310547 195.52999877929688</pole>
+            <pole>-188.8300018310547 -195.52999877929688</pole>
+            <pole>-259.2200012207031 719.6400146484375</pole>
+            <pole>-259.2200012207031 -719.6400146484375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="7.912595846871384E10" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.037007998675107956 0.037007998675107956</pole>
+            <pole>-0.037007998675107956 -0.037007998675107956</pole>
+            <pole>-188.8300018310547 195.52999877929688</pole>
+            <pole>-188.8300018310547 -195.52999877929688</pole>
+            <pole>-259.2200012207031 719.6400146484375</pole>
+            <pole>-259.2200012207031 -719.6400146484375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="7.897355736101106E10" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.037007998675107956 0.037007998675107956</pole>
+            <pole>-0.037007998675107956 -0.037007998675107956</pole>
+            <pole>-188.8300018310547 195.52999877929688</pole>
+            <pole>-188.8300018310547 -195.52999877929688</pole>
+            <pole>-259.2200012207031 719.6400146484375</pole>
+            <pole>-259.2200012207031 -719.6400146484375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

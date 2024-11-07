@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="RNCA" ELEVATION="193.0" LATITUDE="44.4711" LONGITUDE="8.9512" NAME="Ronca, Sant`Olcese(GE) - Italy">
+    <channel ChannelCode="HHE" Gain="1546189.166084096" LocationCode="" Network="GU">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1546189.166084096" LocationCode="" Network="GU">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1546189.166084096" LocationCode="" Network="GU">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.011780000291764736 -0.011780000291764736</pole>
+            <pole>-0.011780000291764736 0.011780000291764736</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

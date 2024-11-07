@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="MIDA" ELEVATION="950.0" LATITUDE="41.64188" LONGITUDE="14.25402" NAME="MIRANDA">
+    <channel ChannelCode="HHE" Gain="-3.2858567252572356E16" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03702399879693985 0.03702399879693985</pole>
+            <pole>-0.03702399879693985 -0.03702399879693985</pole>
+            <pole>-1256.6400146484375 0.0</pole>
+            <pole>-3141.590087890625 0.0</pole>
+            <pole>-3141.590087890625 0.0</pole>
+            <pole>-1068.1400146484375 0.0</pole>
+            <pole>-897.239013671875 2347.39990234375</pole>
+            <pole>-897.239013671875 -2347.39990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>1068.1400146484375 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="-3.2858567252572356E16" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03702399879693985 0.03702399879693985</pole>
+            <pole>-0.03702399879693985 -0.03702399879693985</pole>
+            <pole>-1256.6400146484375 0.0</pole>
+            <pole>-3141.590087890625 0.0</pole>
+            <pole>-3141.590087890625 0.0</pole>
+            <pole>-1068.1400146484375 0.0</pole>
+            <pole>-897.239013671875 2347.39990234375</pole>
+            <pole>-897.239013671875 -2347.39990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>1068.1400146484375 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="-3.2858567252572356E16" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03702399879693985 0.03702399879693985</pole>
+            <pole>-0.03702399879693985 -0.03702399879693985</pole>
+            <pole>-1256.6400146484375 0.0</pole>
+            <pole>-3141.590087890625 0.0</pole>
+            <pole>-3141.590087890625 0.0</pole>
+            <pole>-1068.1400146484375 0.0</pole>
+            <pole>-897.239013671875 2347.39990234375</pole>
+            <pole>-897.239013671875 -2347.39990234375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>1068.1400146484375 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

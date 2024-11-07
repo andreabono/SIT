@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PRO" ELEVATION="157.3" LATITUDE="-20.898865" LONGITUDE="55.452618" NAME="La Providence (ONF)">
+    <channel ChannelCode="HHE" Gain="4.698269879055155E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.693937803241718E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.674872271616082E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

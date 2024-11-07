@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="LIO3" ELEVATION="737.0" LATITUDE="40.8969" LONGITUDE="15.1804" NAME="Station Lioni, Italy">
+    <channel ChannelCode="HNE" Gain="2.8697915940709333E9" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.300048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="2.8697915940709333E9" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.300048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="2.8697915940709333E9" LocationCode="01" Network="IX">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.300048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="308955.519647744" LocationCode="02" Network="IX">
+        <poles>
+            <pole>-0.11029999703168869 0.11100000143051147</pole>
+            <pole>-0.11029999703168869 -0.11100000143051147</pole>
+            <pole>-86.30000305175781 0.0</pole>
+            <pole>-241.0 178.0</pole>
+            <pole>-241.0 -178.0</pole>
+            <pole>-535.0 719.0</pole>
+            <pole>-535.0 -719.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-68.80000305175781 0.0</zero>
+            <zero>-323.0 0.0</zero>
+            <zero>-2530.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="308955.519647744" LocationCode="02" Network="IX">
+        <poles>
+            <pole>-0.11029999703168869 0.11100000143051147</pole>
+            <pole>-0.11029999703168869 -0.11100000143051147</pole>
+            <pole>-86.30000305175781 0.0</pole>
+            <pole>-241.0 178.0</pole>
+            <pole>-241.0 -178.0</pole>
+            <pole>-535.0 719.0</pole>
+            <pole>-535.0 -719.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-68.80000305175781 0.0</zero>
+            <zero>-323.0 0.0</zero>
+            <zero>-2530.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="308955.519647744" LocationCode="02" Network="IX">
+        <poles>
+            <pole>-0.11029999703168869 0.11100000143051147</pole>
+            <pole>-0.11029999703168869 -0.11100000143051147</pole>
+            <pole>-86.30000305175781 0.0</pole>
+            <pole>-241.0 178.0</pole>
+            <pole>-241.0 -178.0</pole>
+            <pole>-535.0 719.0</pole>
+            <pole>-535.0 -719.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-68.80000305175781 0.0</zero>
+            <zero>-323.0 0.0</zero>
+            <zero>-2530.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

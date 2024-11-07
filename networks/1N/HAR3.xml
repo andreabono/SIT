@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="HAR3" ELEVATION="730.6" LATITUDE="44.93844" LONGITUDE="5.666084" NAME="HAR3">
+    <channel ChannelCode="HHZ" Gain="0.100923904" LocationCode="00" Network="1N">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>159.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="0.1005968" LocationCode="00" Network="1N">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>159.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="0.100647128" LocationCode="00" Network="1N">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>159.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

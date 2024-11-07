@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="EL6" ELEVATION="978.0" LATITUDE="43.329334" LONGITUDE="13.101667" NAME="Elcito">
+    <channel ChannelCode="EHE" Gain="0.503316" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.210000038146973 -4.659999847412109</pole>
+            <pole>-4.210000038146973 4.659999847412109</pole>
+            <pole>-2.1050000190734863 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.503316" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.210000038146973 -4.659999847412109</pole>
+            <pole>-4.210000038146973 4.659999847412109</pole>
+            <pole>-2.1050000190734863 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.503316" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.210000038146973 -4.659999847412109</pole>
+            <pole>-4.210000038146973 4.659999847412109</pole>
+            <pole>-2.1050000190734863 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

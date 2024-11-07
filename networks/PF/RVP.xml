@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="RVP" ELEVATION="352.0" LATITUDE="-20.9653" LONGITUDE="55.4904" NAME="Riviere des pluies">
+    <channel ChannelCode="HHE" Gain="6.305492339670385E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.005869999993592501 -0.005909999832510948</pole>
+            <pole>-0.005869999993592501 0.005909999832510948</pole>
+            <pole>-59.5099983215332 75.68000030517578</pole>
+            <pole>-59.5099983215332 -75.68000030517578</pole>
+            <pole>-93.6500015258789 -240.00999450683594</pole>
+            <pole>-93.6500015258789 240.00999450683594</pole>
+            <pole>-59.08000183105469 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-69.08999633789062 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="6.305492339670385E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.005869999993592501 -0.005909999832510948</pole>
+            <pole>-0.005869999993592501 0.005909999832510948</pole>
+            <pole>-59.5099983215332 75.68000030517578</pole>
+            <pole>-59.5099983215332 -75.68000030517578</pole>
+            <pole>-93.6500015258789 -240.00999450683594</pole>
+            <pole>-93.6500015258789 240.00999450683594</pole>
+            <pole>-59.08000183105469 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-69.08999633789062 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="6.305492339670385E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.005869999993592501 -0.005909999832510948</pole>
+            <pole>-0.005869999993592501 0.005909999832510948</pole>
+            <pole>-59.5099983215332 75.68000030517578</pole>
+            <pole>-59.5099983215332 -75.68000030517578</pole>
+            <pole>-93.6500015258789 -240.00999450683594</pole>
+            <pole>-93.6500015258789 240.00999450683594</pole>
+            <pole>-59.08000183105469 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-69.08999633789062 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

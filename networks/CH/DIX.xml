@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="DIX" ELEVATION="2370.2" LATITUDE="46.081055" LONGITUDE="7.408391" NAME="Grande Dixence, VS">
+    <channel ChannelCode="HGE" Gain="1.0521468658746655E10" LocationCode="" Network="CH">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HGN" Gain="1.0521468658746655E10" LocationCode="" Network="CH">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HGZ" Gain="1.0521468658746655E10" LocationCode="" Network="CH">
+        <poles>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-981.0 1009.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+            <pole>-3290.0 1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="3.9602571875E-4" LocationCode="" Network="CH">
+        <poles>
+            <pole>-0.0370200015604496 0.0370200015604496</pole>
+            <pole>-0.0370200015604496 -0.0370200015604496</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-327.35400390625 -74.1416015625</pole>
+            <pole>-327.35400390625 74.1416015625</pole>
+            <pole>-973.8939819335938 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-630.2030029296875 0.0</zero>
+            <zero>-556.06201171875 -936.1950073242188</zero>
+            <zero>-556.06201171875 936.1950073242188</zero>
+            <zero>-973.8939819335938 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.9602571875E-4" LocationCode="" Network="CH">
+        <poles>
+            <pole>-0.0370200015604496 0.0370200015604496</pole>
+            <pole>-0.0370200015604496 -0.0370200015604496</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-327.35400390625 -74.1416015625</pole>
+            <pole>-327.35400390625 74.1416015625</pole>
+            <pole>-973.8939819335938 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-630.2030029296875 0.0</zero>
+            <zero>-556.06201171875 -936.1950073242188</zero>
+            <zero>-556.06201171875 936.1950073242188</zero>
+            <zero>-973.8939819335938 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.9602571875E-4" LocationCode="" Network="CH">
+        <poles>
+            <pole>-0.0370200015604496 0.0370200015604496</pole>
+            <pole>-0.0370200015604496 -0.0370200015604496</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-327.35400390625 -74.1416015625</pole>
+            <pole>-327.35400390625 74.1416015625</pole>
+            <pole>-973.8939819335938 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-630.2030029296875 0.0</zero>
+            <zero>-556.06201171875 -936.1950073242188</zero>
+            <zero>-556.06201171875 936.1950073242188</zero>
+            <zero>-973.8939819335938 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHE" Gain="3.9602571875E-4" LocationCode="" Network="CH">
+        <poles>
+            <pole>-0.0370200015604496 0.0370200015604496</pole>
+            <pole>-0.0370200015604496 -0.0370200015604496</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-327.35400390625 -74.1416015625</pole>
+            <pole>-327.35400390625 74.1416015625</pole>
+            <pole>-973.8939819335938 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-630.2030029296875 0.0</zero>
+            <zero>-556.06201171875 -936.1950073242188</zero>
+            <zero>-556.06201171875 936.1950073242188</zero>
+            <zero>-973.8939819335938 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="3.9602571875E-4" LocationCode="" Network="CH">
+        <poles>
+            <pole>-0.0370200015604496 0.0370200015604496</pole>
+            <pole>-0.0370200015604496 -0.0370200015604496</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-327.35400390625 -74.1416015625</pole>
+            <pole>-327.35400390625 74.1416015625</pole>
+            <pole>-973.8939819335938 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-630.2030029296875 0.0</zero>
+            <zero>-556.06201171875 -936.1950073242188</zero>
+            <zero>-556.06201171875 936.1950073242188</zero>
+            <zero>-973.8939819335938 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="3.9602571875E-4" LocationCode="" Network="CH">
+        <poles>
+            <pole>-0.0370200015604496 0.0370200015604496</pole>
+            <pole>-0.0370200015604496 -0.0370200015604496</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-16.041000366210938 0.0</pole>
+            <pole>-327.35400390625 -74.1416015625</pole>
+            <pole>-327.35400390625 74.1416015625</pole>
+            <pole>-973.8939819335938 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-630.2030029296875 0.0</zero>
+            <zero>-556.06201171875 -936.1950073242188</zero>
+            <zero>-556.06201171875 936.1950073242188</zero>
+            <zero>-973.8939819335938 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

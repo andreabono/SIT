@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+<?import org.controlsfx.control.ToggleSwitch?>
+
+<AnchorPane fx:id="main_anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="909.0" prefWidth="1664.0" stylesheets="@../../../css/dark.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.pfx.MapFormController">
+   <children>
+      <MenuBar AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="mnuFile_Export" mnemonicParsing="false" onAction="#mnuFile_Export_Click" text="Export event">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/32_downloads-folder-ash-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#mnuFile_UpdateNetwork" text="Update seismic network" />
+                  <MenuItem fx:id="mnuFile_Exit" mnemonicParsing="false" onAction="#mnuFile_Exit_Click" text="Exit">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/24_actions-window-close-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Tools">
+               <items>
+                  <MenuItem fx:id="mnuTools_Settings" mnemonicParsing="false" onAction="#mnuTools_Settings_Click" text="Settings">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/32_settings-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <CheckMenuItem fx:id="mnuView_ShowMagsByAzimuthChart" mnemonicParsing="false" onAction="#mnuView_ShowMagsByAzimuthChart_Click" text="Show magnitude by azimuth chart" />
+                  <MenuItem fx:id="mnuSwitchLayout" mnemonicParsing="false" onAction="#mnuSwitchLayout_Click" text="Switch layout" visible="false" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="mnuHelp_About" mnemonicParsing="false" onAction="#mnuHelp_About_Click" text="About">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/24_actions-help-about-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <SplitPane fx:id="split_map_updown" dividerPositions="0.6971664698937426" layoutX="76.0" layoutY="48.0" orientation="VERTICAL" prefHeight="667.0" prefWidth="1358.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane fx:id="split_top_right_left" dividerPositions="0.5" layoutX="161.0" layoutY="10.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="855.0">
+                           <children>
+                              <ToolBar layoutY="3.0" minHeight="-Infinity" prefHeight="41.0" prefWidth="557.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <items>
+                                    <Button fx:id="btnExit" mnemonicParsing="false" onAction="#btnExit_Click" prefHeight="20.0" prefWidth="26.0">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../images/24_actions-window-close-icon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnExport" mnemonicParsing="false" onAction="#btnExport_Click" prefHeight="31.0" prefWidth="39.0">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../images/32_downloads-folder-ash-icon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <Button fx:id="btnSettings" mnemonicParsing="false" onAction="#btnSettings_Click">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../images/24_settings-icon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <Button fx:id="btnRefresh" mnemonicParsing="false" onAction="#btnRefresh_Clicked">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../images/24_refresh.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label alignment="CENTER" minWidth="35.0" prefHeight="17.0" prefWidth="35.0" style="&#10;" text="Date" textFill="#f5eded" wrapText="false" />
+                                    <DatePicker id="calendar" fx:id="calendar" onAction="#date_changed" prefHeight="27.0" prefWidth="120.0" />
+                                    <CheckBox fx:id="ckLimitSearch" mnemonicParsing="false" onAction="#ckLimitSearch_Clicked" text="Limit search to last hours" />
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <Button fx:id="btnInfo" mnemonicParsing="false" onAction="#btnInfo_Clicked">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../images/24_actions-help-about-icon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </items>
+                              </ToolBar>
+                              <TabPane fx:id="tabMainEventsSources" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+                                <tabs>
+                                  <Tab fx:id="tabCARAVEL" text="CARAVEL">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TabPane fx:id="tabCARAVELGroupsAndOrigins" prefWidth="465.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <tabs>
+                                                    <Tab text="Groups">
+                                                      <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <TreeTableView fx:id="treetableview_Events" cache="true" cacheHint="SPEED" layoutX="42.0" layoutY="209.0" onMouseClicked="#treetableview_Events_mouse_click" prefHeight="233.0" prefWidth="827.0" showRoot="false" stylesheets="@../../../css/treetablestyles.css" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                                                                     <columns>
+                                                                        <TreeTableColumn fx:id="ttc_id" prefWidth="75.0" text="C1" />
+                                                                        <TreeTableColumn prefWidth="75.0" text="C2" />
+                                                                     </columns>
+                                                                     <contextMenu>
+                                                                        <ContextMenu fx:id="mnuRight">
+                                                                          <items>
+                                                                              <MenuItem fx:id="mnuRight_ShowMembers" mnemonicParsing="false" onAction="#mnuRight_ShowMembers_Click" text="Show group members" />
+                                                                              <MenuItem fx:id="mnuRight_SetPreferred" mnemonicParsing="false" onAction="#mnuRight_SetPreferred_Click" text="Set as preferred" />
+                                                                            
+                                                                          </items>
+                                                                        </ContextMenu>
+                                                                     </contextMenu>
+                                                                  </TreeTableView>
+                                                                  <Pane fx:id="paneFilters" layoutX="14.0" layoutY="31.0" prefHeight="40.0" prefWidth="813.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                     <children>
+                                                                        <Label layoutX="110.0" layoutY="11.0" text="Localspace Filter" textFill="#e48b06" />
+                                                                        <Label layoutX="492.0" layoutY="11.0" text="Region Filter" textFill="#e48b06" />
+                                                                        <TextField fx:id="txtFilterLocalspace" layoutX="205.0" layoutY="7.0" />
+                                                                        <TextField fx:id="txtFilterRegion" layoutX="590.0" layoutY="7.0" />
+                                                                     </children>
+                                                                  </Pane>
+                                                               </children>
+                                                            </AnchorPane>
+                                                      </content>
+                                                    </Tab>
+                                                    <Tab text="Origins">
+                                                      <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <TableView fx:id="tblOrigins" layoutX="7.0" layoutY="42.0" prefHeight="468.0" prefWidth="819.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+                                                                    <columns>
+                                                                      <TableColumn prefWidth="75.0" text="ID" />
+                                                                      <TableColumn prefWidth="75.0" text="Time" />
+                                                                    </columns>
+                                                                  </TableView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                      </content>
+                                                    </Tab>
+                                                  </tabs>
+                                                </TabPane>
+                                                <ToggleSwitch fx:id="tglCaravelGropusFilter" layoutX="703.0" layoutY="6.0" text="Group filters" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="6.0" />
+                                                <ToggleSwitch fx:id="tglCaravelLastToFirst" layoutX="157.0" layoutY="6.0" prefHeight="20.0" prefWidth="149.0" selected="true" text="Last To First" visible="false" />
+                                                <Label fx:id="lblLastPoll" layoutX="335.0" layoutY="8.0" prefHeight="17.0" prefWidth="270.0" text="Last poll: hh:mm:ss" textFill="#e48b06">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab fx:id="tabFDSN" text="FDSN">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TabPane fx:id="tabs_available_FDSN" layoutX="46.0" layoutY="73.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab fx:id="tabLOCALHOST" text="Local folders">
+                                       <content>
+                                          <AnchorPane fx:id="anchor_localfolders" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Button fx:id="btnPreRead" layoutX="569.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnPreRead_click" prefWidth="120.0" text="Read SAC" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="5.0" />
+                                                <TabPane fx:id="tabs_available_LOCALHOST" layoutY="38.0" prefHeight="436.0" prefWidth="827.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="38.0" />
+                                                <Button fx:id="btnPreReadQML" layoutX="699.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnPreReadQML_click" prefHeight="26.0" prefWidth="120.0" text="Read XML" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                              <TitledPane fx:id="titled_pane_settings" prefHeight="546.0" prefWidth="827.0" text="Search settings" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                                 <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane prefHeight="347.0" prefWidth="826.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="825.0">
+                                                   <children>
+                                                      <Label layoutX="18.0" layoutY="60.0" prefHeight="26.0" prefWidth="83.0" text="Environments" />
+                                                      <Label layoutX="573.0" layoutY="65.0" prefHeight="17.0" prefWidth="61.0" text="Versions" />
+                                                      <TableView fx:id="tblSearch_Versions" layoutX="573.0" layoutY="86.0" prefHeight="141.0" prefWidth="206.0">
+                                                         <columns>
+                                                            <TableColumn prefWidth="75.0" text="Version" />
+                                                            <TableColumn prefWidth="75.0" text="Description" />
+                                                         </columns>
+                                                      </TableView>
+                                                      <Label alignment="CENTER" layoutY="245.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Lat. min" textFill="#403f3f" wrapText="false" />
+                                                      <Label alignment="CENTER" layoutX="175.0" layoutY="245.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Lat. max" textFill="#403f3f" wrapText="false" />
+                                                      <Label alignment="CENTER" layoutX="343.0" layoutY="245.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Lon. min" textFill="#403f3f" wrapText="false" />
+                                                      <Label alignment="CENTER" layoutX="527.0" layoutY="245.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Lon. max" textFill="#403f3f" wrapText="false" />
+                                                      <TextField fx:id="txtLatMin" alignment="CENTER" layoutX="86.0" layoutY="241.0" prefHeight="25.0" prefWidth="73.0" promptText="[-90, 90]" />
+                                                      <TextField fx:id="txtLatMax" alignment="CENTER" layoutX="258.0" layoutY="241.0" prefHeight="25.0" prefWidth="73.0" promptText="[-90, 90]" />
+                                                      <TextField fx:id="txtLonMin" alignment="CENTER" layoutX="427.0" layoutY="241.0" prefHeight="25.0" prefWidth="81.0" promptText="[-180, 180]" />
+                                                      <TextField fx:id="txtLonMax" alignment="CENTER" layoutX="611.0" layoutY="241.0" prefHeight="25.0" prefWidth="82.0" promptText="[-180, 180]" />
+                                                      <Label alignment="CENTER" layoutX="11.0" layoutY="280.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Center Lat. " textFill="#403f3f" wrapText="false" />
+                                                      <Label alignment="CENTER" layoutX="185.0" layoutY="280.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Center Lon." textFill="#403f3f" wrapText="false" />
+                                                      <Label alignment="CENTER" layoutX="353.0" layoutY="280.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Radius min." textFill="#403f3f" wrapText="false" />
+                                                      <TextField fx:id="txtCenterLat" alignment="CENTER" layoutX="87.0" layoutY="276.0" prefHeight="25.0" prefWidth="73.0" promptText="[-90, 90]" />
+                                                      <TextField fx:id="txtCenterLon" alignment="CENTER" layoutX="259.0" layoutY="276.0" prefHeight="25.0" prefWidth="80.0" promptText="[-180, 180]" />
+                                                      <TextField fx:id="txtRadiusMin" alignment="CENTER" layoutX="429.0" layoutY="276.0" prefHeight="25.0" prefWidth="85.0" promptText="[km]" />
+                                                      <Label alignment="CENTER" layoutX="528.0" layoutY="280.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Radius max." textFill="#403f3f" wrapText="false" />
+                                                      <TextField fx:id="txtRadiusMax" alignment="CENTER" layoutX="613.0" layoutY="276.0" prefHeight="25.0" prefWidth="80.0" promptText="[km]" />
+                                                      <Label alignment="CENTER" layoutX="7.0" layoutY="315.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Mag. min" textFill="#403f3f" wrapText="false" />
+                                                      <Label alignment="CENTER" layoutX="180.0" layoutY="315.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Mag. max" textFill="#403f3f" wrapText="false" />
+                                                      <TextField fx:id="txtMagMax" alignment="CENTER" layoutX="258.0" layoutY="311.0" prefHeight="25.0" prefWidth="73.0" />
+                                                      <TextField fx:id="txtMagMin" alignment="CENTER" layoutX="86.0" layoutY="311.0" prefHeight="25.0" prefWidth="73.0" />
+                                                      <Label alignment="CENTER" layoutX="350.0" layoutY="315.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Depth min" textFill="#403f3f" wrapText="false" />
+                                                      <TextField fx:id="txtDepMin" alignment="CENTER" layoutX="427.0" layoutY="311.0" prefHeight="25.0" prefWidth="85.0" promptText="[km]" />
+                                                      <Label alignment="CENTER" layoutX="527.0" layoutY="315.0" minWidth="35.0" prefHeight="17.0" prefWidth="70.0" style="&#10;" text="Depth max" textFill="#403f3f" wrapText="false" />
+                                                      <TextField fx:id="txtDepMax" alignment="CENTER" layoutX="616.0" layoutY="311.0" prefHeight="25.0" prefWidth="73.0" promptText="[km]" />
+                                                      <TabPane fx:id="tabPane_environments" layoutX="18.0" layoutY="90.0" prefHeight="135.0" prefWidth="543.0" style="-fx-border-color: black;" tabClosingPolicy="UNAVAILABLE">
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                      </TabPane>
+                                                      <Label alignment="CENTER" layoutX="12.0" layoutY="396.0" minWidth="35.0" prefHeight="17.0" prefWidth="128.0" style="&#10;" text="Search in this route:" textFill="#403f3f" wrapText="false" />
+                                                      <ComboBox fx:id="cmbSearchRoute" layoutX="148.0" layoutY="390.0" onAction="#cmbSearchRoute_Click" prefHeight="28.0" prefWidth="190.0" />
+                                                      <Label layoutX="353.0" layoutY="396.0" prefHeight="17.0" prefWidth="396.0" style="-fx-font-weight: bold;" text="This only applies to origins search (not on groups!!)" />
+                                                      <Button fx:id="btnSaveSearchSettings" layoutX="720.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnSaveSearchSettings_Click" prefHeight="50.0" prefWidth="55.0">
+                                                         <graphic>
+                                                            <ImageView fitHeight="121.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../images/save.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <tooltip>
+                                                            <Tooltip text="Apply and Save search settings" />
+                                                        </tooltip>
+                                                      </Button>
+                                                      <Button fx:id="btnApplySearchSettings1" layoutX="652.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnApplySearchSettings_Click" prefHeight="50.0" prefWidth="55.0">
+                                                         <graphic>
+                                                            <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../images/green_check.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <tooltip>
+                                                            <Tooltip text="Apply search settings" />
+                                                         </tooltip>
+                                                      </Button>
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <graphic>
+                                    <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/magnifying-glass-sign-search-icon-free-png.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </TitledPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="anchor_top_right" minWidth="0.0">
+                           <children>
+                              <AnchorPane fx:id="anchor_top_right_int" minWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ToolBar prefHeight="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                          <Button fx:id="btnRapaintMap" mnemonicParsing="false" onAction="#btnRepaintMap_Click">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/24_refresh_map.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="Repaint map" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button mnemonicParsing="false">
+                                              <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/arrow-cursor-transparent.png" />
+                                                   </image>
+                                                </ImageView>
+                                              </graphic>
+                                              <tooltip>
+                                                  <Tooltip text="Reset action" />
+                                              </tooltip>
+                                          </Button>
+                                          <Separator orientation="VERTICAL" prefHeight="32.0" />
+                                          <Button mnemonicParsing="false">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/transform-move-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                  <Tooltip text="Pan map" />
+                                              </tooltip>
+                                          </Button>
+                                          <Button fx:id="btnMapZoomIn" mnemonicParsing="false" onAction="#btnMapZoomIn_Click">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/Misc-Zoom-In-Area-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                  <Tooltip text="Zoom in" />
+                                              </tooltip>
+                                          </Button>
+                                          <Button fx:id="btnMapZoomOut" mnemonicParsing="false" onAction="#btnMapZoomOut_Click">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/Misc-Zoom-Out-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                  <Tooltip text="Zoom out" />
+                                              </tooltip>
+                                          </Button>
+                                          <Button fx:id="btnMapResetBounds" mnemonicParsing="false" onAction="#btnMapResetBounds_Click">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/zoom_reset-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                  <Tooltip text="Reset map bounds" />
+                                              </tooltip>
+                                          </Button>
+                                          <Button fx:id="btnZoonOnIpo" mnemonicParsing="false" onAction="#btnZoonOnIpo_Clicked" prefHeight="32.0" prefWidth="32.0" textAlignment="CENTER">
+                                             <tooltip>
+                                                <Tooltip text="Zoom around the epicenter" />
+                                             </tooltip>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/star-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Separator orientation="VERTICAL" prefHeight="32.0" />
+                                        <Button fx:id="btnSelectStations" maxHeight="32.0" maxWidth="32.0" mnemonicParsing="false" onAction="#btnSelectStations_Click" prefHeight="32.0" prefWidth="32.0">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/cursor-select-icon3_orange.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                  <Tooltip text="Select stations" />
+                                              </tooltip>
+                                          </Button>
+                                          <Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+                                          <Button fx:id="btnWaves" mnemonicParsing="false" onAction="#btnWaves_Clicked" prefHeight="32.0" prefWidth="32.0" textAlignment="CENTER">
+                                             <tooltip>
+                                                <Tooltip text="Load seismograms" />
+                                             </tooltip>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/32_mac-activity-monitor-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                      </items>
+                                    </ToolBar>
+                                    <AnchorPane prefHeight="45.0" prefWidth="378.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <ToolBar prefHeight="45.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                                <Label fx:id="lblLogin" alignment="BASELINE_RIGHT" prefHeight="17.0" prefWidth="98.0" text="Login">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btnLogin_Click" prefHeight="32.0" prefWidth="54.0" style="-fx-background-color: transparent;">
+                                                   <graphic>
+                                                      <ImageView fx:id="imgAlias" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../../images/alias.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#btnLogout_Click" prefHeight="32.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../../images/icons8-logout-48.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                   <tooltip>
+                                                            <Tooltip text="Logout" />
+                                                    </tooltip>
+                                                </Button>
+                                            </items>
+                                          </ToolBar>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane fx:id="prova_split" dividerPositions="0.6285714285714286" layoutX="182.0" layoutY="10.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane fx:id="anchor_bottom_left_ext" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane fx:id="anchor_summary" layoutX="-10.0" layoutY="5.0" minHeight="0.0" minWidth="0.0" prefHeight="161.0" prefWidth="783.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    
+                                    <Separator layoutX="418.0" layoutY="3.0" orientation="VERTICAL" prefHeight="135.0" prefWidth="6.0" visible="false" />
+                                    <SplitPane fx:id="split_OriginInfo" dividerPositions="0.5170068027210885" layoutX="-1.0" layoutY="149.0" prefHeight="309.0" prefWidth="935.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <items>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="459.0">
+                                             <children>
+                                                <TableView fx:id="table_towns" layoutX="8.0" layoutY="144.0" prefHeight="143.0" prefWidth="361.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="144.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="C1" />
+                                                      <TableColumn prefWidth="75.0" text="C2" />
+                                                   </columns>
+                                                </TableView>
+                                                <Label fx:id="lblArea" layoutX="7.0" layoutY="7.0" styleClass="label_big_bold" text="AREA HYPO" textFill="#e48b06">
+                                                   <font>
+                                                      <Font name="Arial Black" size="17.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblOT" layoutX="7.0" layoutY="52.0" text="ORIGN TIME: hh:mm:ss" />
+                                                <Label fx:id="lblLon_L" layoutX="7.0" layoutY="97.0" prefHeight="17.0" prefWidth="34.0" text="Lon:">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblLat_L" layoutX="7.0" layoutY="80.0" text="Lat:">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblDep" layoutX="54.0" layoutY="114.0" text="xxx.xxx" />
+                                                <Label fx:id="lblDep_L" layoutX="8.0" layoutY="115.0" text="Dep:">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblLat" layoutX="54.0" layoutY="80.0" text="xx.xxx" />
+                                                <Label fx:id="lblLon" layoutX="54.0" layoutY="97.0" text="xxx.xxx" />
+                                                <Label layoutX="137.0" layoutY="80.0" text="+/-">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblErrH" layoutX="164.0" layoutY="81.0" text="0.0" />
+                                                <Label fx:id="lblErrZ" layoutX="164.0" layoutY="114.0" text="0.0" />
+                                                <Label layoutX="137.0" layoutY="114.0" text="+/-">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button fx:id="btnOriginDetail" layoutX="308.0" layoutY="110.0" mnemonicParsing="false" onAction="#btnOriginDetail_Click" text="Details" AnchorPane.rightAnchor="5.0" />
+                                                <Rating fx:id="rating1" layoutX="186.0" layoutY="24.0" max="4" prefHeight="27.0" prefWidth="172.0" AnchorPane.rightAnchor="5.0" />
+                                                <Rating fx:id="rating2" layoutX="117.0" layoutY="64.0" max="4" prefHeight="27.0" prefWidth="172.0" AnchorPane.rightAnchor="5.0" />
+                                                <Label fx:id="lblIDs" layoutX="8.0" layoutY="32.0" text="Event id: Origin id:" />
+                                                <Label fx:id="lblQ1" layoutX="333.0" layoutY="27.0" style="-fx-font-weight: bold;" styleClass="label_big_bold" text="A" textFill="#e48b06">
+                                                   <font>
+                                                      <Font name="Arial Black" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblQ2" layoutX="333.0" layoutY="68.0" style="-fx-font-weight: bold;" styleClass="label_big_bold" text="A" textFill="#e48b06">
+                                                   <font>
+                                                      <Font name="Arial Black" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblErrLAT" layoutX="163.0" layoutY="81.0" text="0.0" />
+                                                <Label fx:id="lblErrLON" layoutX="163.0" layoutY="98.0" text="0.0" />
+                                                <Label fx:id="lblErrLON_plusminus" layoutX="137.0" layoutY="97.0" text="+/-">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button fx:id="btnOriginReport" layoutX="403.0" layoutY="110.0" mnemonicParsing="false" onAction="#btnOriginReport_Click" text="Report" AnchorPane.rightAnchor="70.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="293.0" prefWidth="337.0">
+                                             <children>
+                                                <TabPane fx:id="tabMags" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <tabs>
+                                                      <Tab text="Untitled Tab 1">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                         </content>
+                                                      </Tab>
+                                                   </tabs>
+                                                </TabPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="anchor_lower_right" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TableView fx:id="table_phases" layoutY="146.0" prefHeight="215.0" prefWidth="590.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="146.0" />
+                              
+                              <ScatterChart fx:id="resChart" layoutX="102.0" layoutY="-16.0" prefHeight="128.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <xAxis>
+                                    <NumberAxis side="BOTTOM" />
+                                 </xAxis>
+                                 <yAxis>
+                                    <NumberAxis side="LEFT" />
+                                 </yAxis>
+                              </ScatterChart>
+                                                           
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <Pane prefHeight="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="imgDanteStatus" fitHeight="28.0" fitWidth="27.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true" />           
+            <Label fx:id="lblDanteStatus" layoutX="42.0" layoutY="7.0" text="PFX is using Caravel web services (Dante &amp; Apollo)" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

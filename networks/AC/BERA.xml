@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="BERA" ELEVATION="234.0" LATITUDE="40.708126" LONGITUDE="19.945503" NAME="BERA">
+    <channel ChannelCode="HHE" Gain="8.952089670372556E7" LocationCode="00" Network="AC">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="8.952089670372556E7" LocationCode="00" Network="AC">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="8.952089670372556E7" LocationCode="00" Network="AC">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ACOM" ELEVATION="1788.0" LATITUDE="46.548" LONGITUDE="13.5137" NAME="Acomizza, Italy">
+    <channel ChannelCode="HHE" Gain="3.725364438237184E7" LocationCode="" Network="OX">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.725364438237184E7" LocationCode="" Network="OX">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.725364438237184E7" LocationCode="" Network="OX">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="1.0524309796792828E10" LocationCode="" Network="OX">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.0524309796792828E10" LocationCode="" Network="OX">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.0524309796792828E10" LocationCode="" Network="OX">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="HAR3" ELEVATION="730.0" LATITUDE="44.93844" LONGITUDE="5.666084" NAME="glissement de terrain de l'Harmalière">
+    <channel ChannelCode="HHE" Gain="798.59646464" LocationCode="01" Network="MT">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="798.59646464" LocationCode="01" Network="MT">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="798.59646464" LocationCode="01" Network="MT">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-35.32429885864258 -35.32429885864258</pole>
+            <pole>-35.32429885864258 35.32429885864258</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

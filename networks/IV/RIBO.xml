@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="RIBO" ELEVATION="50.0" LATITUDE="42.949" LONGITUDE="11.0465" NAME="RIBO">
+    <channel ChannelCode="EHE" Gain="0.965107968" LocationCode="" Network="IV">
+        <poles>
+            <pole>-10.553000450134277 11.720000267028809</pole>
+            <pole>-10.553000450134277 -11.720000267028809</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.965107968" LocationCode="" Network="IV">
+        <poles>
+            <pole>-10.553000450134277 11.720000267028809</pole>
+            <pole>-10.553000450134277 -11.720000267028809</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.965107968" LocationCode="" Network="IV">
+        <poles>
+            <pole>-10.553000450134277 11.720000267028809</pole>
+            <pole>-10.553000450134277 -11.720000267028809</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHE" Gain="0.359512" LocationCode="01" Network="IV">
+        <poles>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.359512" LocationCode="01" Network="IV">
+        <poles>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.359512" LocationCode="01" Network="IV">
+        <poles>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

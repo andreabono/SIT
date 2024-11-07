@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="IST3" ELEVATION="255.0" LATITUDE="38.7992" LONGITUDE="15.2304" NAME="Stromboli-Oss. Fiorentini">
+    <channel ChannelCode="HHE" Gain="2899100.24044544" LocationCode="" Network="IV">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="2899100.24044544" LocationCode="" Network="IV">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="2899100.24044544" LocationCode="" Network="IV">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.005890000145882368 0.005890000145882368</pole>
+            <pole>-0.005890000145882368 -0.005890000145882368</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="622399.615664128" LocationCode="" Network="IV">
+        <poles>
+            <pole>-755.8900146484375 0.0</pole>
+            <pole>-209.64999389648438 0.0</pole>
+            <pole>-63.790000915527344 -90.37999725341797</pole>
+            <pole>-63.790000915527344 90.37999725341797</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="622399.615664128" LocationCode="" Network="IV">
+        <poles>
+            <pole>-755.8900146484375 0.0</pole>
+            <pole>-209.64999389648438 0.0</pole>
+            <pole>-63.790000915527344 -90.37999725341797</pole>
+            <pole>-63.790000915527344 90.37999725341797</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="622399.615664128" LocationCode="" Network="IV">
+        <poles>
+            <pole>-755.8900146484375 0.0</pole>
+            <pole>-209.64999389648438 0.0</pole>
+            <pole>-63.790000915527344 -90.37999725341797</pole>
+            <pole>-63.790000915527344 90.37999725341797</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

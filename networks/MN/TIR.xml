@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="TIR" ELEVATION="247.0" LATITUDE="41.3472" LONGITUDE="19.8631" NAME="Tirana, Albania">
+    <channel ChannelCode="BHE" Gain="3.580835996998042E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="3.580835996998042E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="3.580835996998042E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="3.580835996998042E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.580835996998042E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.580835996998042E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

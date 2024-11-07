@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="HMG" ELEVATION="420.0" LATITUDE="15.9796" LONGITUDE="-61.70344" NAME="Houelmont">
+    <channel ChannelCode="EHE" Gain="10.679984128" LocationCode="91" Network="GL">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="10.679984128" LocationCode="91" Network="GL">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="10.679984128" LocationCode="91" Network="GL">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

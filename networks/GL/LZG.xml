@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="LZG" ELEVATION="116.0" LATITUDE="16.14079" LONGITUDE="-61.7755" NAME="Morne Lezard">
+    <channel ChannelCode="EHZ" Gain="0.066749952" LocationCode="91" Network="GL">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

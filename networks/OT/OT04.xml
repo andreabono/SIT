@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="OT04" ELEVATION="279.0" LATITUDE="41.719585" LONGITUDE="15.580701" NAME="Stignano - San Marco in Lamis">
+    <channel ChannelCode="EHE" Gain="1.677720064" LocationCode="" Network="OT">
+        <poles>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="1.677720064" LocationCode="" Network="OT">
+        <poles>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="1.677720064" LocationCode="" Network="OT">
+        <poles>
+            <pole>-4.440000057220459 -4.440000057220459</pole>
+            <pole>-4.440000057220459 4.440000057220459</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="FOMA" ELEVATION="28.0" LATITUDE="-24.97565" LONGITUDE="46.978878" NAME="Nahampoana Reserve - Fort Dauphin, Madagascar">
+    <channel ChannelCode="BHE" Gain="4.664405625E-4" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.0370200015604496 0.0370200015604496</pole>
+            <pole>-0.0370200015604496 -0.0370200015604496</pole>
+            <pole>-16.047300338745117 0.0</pole>
+            <pole>-16.047300338745117 0.0</pole>
+            <pole>-339.2919921875 -115.61100006103516</pole>
+            <pole>-339.2919921875 115.61100006103516</pole>
+            <pole>-961.3270263671875 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-605.0709838867188 0.0</zero>
+            <zero>-521.5040283203125 -961.3270263671875</zero>
+            <zero>-521.5040283203125 961.3270263671875</zero>
+            <zero>-961.3270263671875 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="4.664405625E-4" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.0370200015604496 0.0370200015604496</pole>
+            <pole>-0.0370200015604496 -0.0370200015604496</pole>
+            <pole>-16.047300338745117 0.0</pole>
+            <pole>-16.047300338745117 0.0</pole>
+            <pole>-339.2919921875 -115.61100006103516</pole>
+            <pole>-339.2919921875 115.61100006103516</pole>
+            <pole>-961.3270263671875 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-605.0709838867188 0.0</zero>
+            <zero>-521.5040283203125 -961.3270263671875</zero>
+            <zero>-521.5040283203125 961.3270263671875</zero>
+            <zero>-961.3270263671875 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="4.664405625E-4" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.0370200015604496 0.0370200015604496</pole>
+            <pole>-0.0370200015604496 -0.0370200015604496</pole>
+            <pole>-16.047300338745117 0.0</pole>
+            <pole>-16.047300338745117 0.0</pole>
+            <pole>-339.2919921875 -115.61100006103516</pole>
+            <pole>-339.2919921875 115.61100006103516</pole>
+            <pole>-961.3270263671875 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-15.708000183105469 0.0</zero>
+            <zero>-605.0709838867188 0.0</zero>
+            <zero>-521.5040283203125 -961.3270263671875</zero>
+            <zero>-521.5040283203125 961.3270263671875</zero>
+            <zero>-961.3270263671875 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

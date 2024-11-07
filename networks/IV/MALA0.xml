@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="MALA0" ELEVATION="441.0" LATITUDE="43.00582" LONGITUDE="11.473764" NAME="MALA">
+    <channel ChannelCode="EHE" Gain="0.215168" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.40500020980835 -4.480999946594238</pole>
+            <pole>-4.40500020980835 4.480999946594238</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.215168" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.40500020980835 -4.480999946594238</pole>
+            <pole>-4.40500020980835 4.480999946594238</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.215168" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.40500020980835 -4.480999946594238</pole>
+            <pole>-4.40500020980835 4.480999946594238</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

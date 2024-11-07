@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SN1" ELEVATION="-2100.0" LATITUDE="37.54765" LONGITUDE="15.3975" NAME="SN1">
+    <channel ChannelCode="HHE" Gain="1.0705024737660109E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-30.052900314331055 31.1210994720459</pole>
+            <pole>-30.052900314331055 -31.1210994720459</pole>
+            <pole>-41.25640106201172 114.53500366210938</pole>
+            <pole>-41.25640106201172 -114.53500366210938</pole>
+            <pole>-0.001964000053703785 0.001964000053703785</pole>
+            <pole>-0.001964000053703785 -0.001964000053703785</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.0705024737660109E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-30.052900314331055 31.1210994720459</pole>
+            <pole>-30.052900314331055 -31.1210994720459</pole>
+            <pole>-41.25640106201172 114.53500366210938</pole>
+            <pole>-41.25640106201172 -114.53500366210938</pole>
+            <pole>-0.001964000053703785 0.001964000053703785</pole>
+            <pole>-0.001964000053703785 -0.001964000053703785</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.0650982023168E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-30.052900314331055 31.1210994720459</pole>
+            <pole>-30.052900314331055 -31.1210994720459</pole>
+            <pole>-41.25640106201172 114.53500366210938</pole>
+            <pole>-41.25640106201172 -114.53500366210938</pole>
+            <pole>-0.001964000053703785 0.001964000053703785</pole>
+            <pole>-0.001964000053703785 -0.001964000053703785</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="IVI" ELEVATION="15.0" LATITUDE="61.205807" LONGITUDE="-48.171177" NAME="Ivittuut, Greenland">
+    <channel ChannelCode="BHE" Gain="26731.115184128" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012045999988913536 0.012013000436127186</pole>
+            <pole>-0.012045999988913536 -0.012013000436127186</pole>
+            <pole>-37.599700927734375 68.08930206298828</pole>
+            <pole>-37.599700927734375 -68.08930206298828</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="32140.764905472" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012125999666750431 0.011839999817311764</pole>
+            <pole>-0.012125999666750431 -0.011839999817311764</pole>
+            <pole>-37.505699157714844 75.5167007446289</pole>
+            <pole>-37.505699157714844 -75.5167007446289</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="33568.250134528" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012082000263035297 0.011921999976038933</pole>
+            <pole>-0.012082000263035297 -0.011921999976038933</pole>
+            <pole>-37.25080108642578 64.79920196533203</pole>
+            <pole>-37.25080108642578 -64.79920196533203</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

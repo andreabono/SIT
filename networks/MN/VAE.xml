@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="VAE" ELEVATION="735.0" LATITUDE="37.469" LONGITUDE="14.3533" NAME="Valguarnera, Italy">
+    <channel ChannelCode="HHE" Gain="3.1224650612604927E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.1246374557188097E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.120280855642112E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.03564700111746788 -0.03687899932265282</pole>
+            <pole>-0.03564700111746788 0.03687899932265282</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CDE" ELEVATION="1250.0" LATITUDE="16.04069" LONGITUDE="-61.66064" NAME="Col de l Echelle">
+    <channel ChannelCode="HHE" Gain="68580.28875776" LocationCode="00" Network="GL">
+        <poles>
+            <pole>-0.11029999703168869 0.11100000143051147</pole>
+            <pole>-0.11029999703168869 -0.11100000143051147</pole>
+            <pole>-86.30000305175781 0.0</pole>
+            <pole>-241.0 178.0</pole>
+            <pole>-241.0 -178.0</pole>
+            <pole>-535.0 719.0</pole>
+            <pole>-535.0 -719.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-68.80000305175781 0.0</zero>
+            <zero>-323.0 0.0</zero>
+            <zero>-2530.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="68580.28875776" LocationCode="00" Network="GL">
+        <poles>
+            <pole>-0.11029999703168869 0.11100000143051147</pole>
+            <pole>-0.11029999703168869 -0.11100000143051147</pole>
+            <pole>-86.30000305175781 0.0</pole>
+            <pole>-241.0 178.0</pole>
+            <pole>-241.0 -178.0</pole>
+            <pole>-535.0 719.0</pole>
+            <pole>-535.0 -719.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-68.80000305175781 0.0</zero>
+            <zero>-323.0 0.0</zero>
+            <zero>-2530.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="68580.28875776" LocationCode="00" Network="GL">
+        <poles>
+            <pole>-0.11029999703168869 0.11100000143051147</pole>
+            <pole>-0.11029999703168869 -0.11100000143051147</pole>
+            <pole>-86.30000305175781 0.0</pole>
+            <pole>-241.0 178.0</pole>
+            <pole>-241.0 -178.0</pole>
+            <pole>-535.0 719.0</pole>
+            <pole>-535.0 -719.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-68.80000305175781 0.0</zero>
+            <zero>-323.0 0.0</zero>
+            <zero>-2530.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

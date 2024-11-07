@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="KLV" ELEVATION="758.0" LATITUDE="38.04367" LONGITUDE="22.15042" NAME="Kalavryta, Achaia, Greece">
+    <channel ChannelCode="HHE" Gain="3.532527493342822E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.037004001438617706 0.03701600059866905</pole>
+            <pole>-0.037004001438617706 -0.03701600059866905</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.532527493342822E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.037004001438617706 0.03701600059866905</pole>
+            <pole>-0.037004001438617706 -0.03701600059866905</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.532527493342822E7" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.037004001438617706 0.03701600059866905</pole>
+            <pole>-0.037004001438617706 -0.03701600059866905</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

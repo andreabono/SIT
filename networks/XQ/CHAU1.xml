@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CHAU1" ELEVATION="288.0" LATITUDE="44.3881" LONGITUDE="4.41613" NAME="Vallon-Pont-d'Arc, 07330, Ardèche, Auvergne-Rhône-Alpes, France">
+    <channel ChannelCode="HHE" Gain="1.1219506672340827E9" LocationCode="00" Network="XQ">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.1182170693435392E9" LocationCode="00" Network="XQ">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.1219506672340827E9" LocationCode="00" Network="XQ">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="1.1154168881055007E9" LocationCode="10" Network="XQ">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.1154168881055007E9" LocationCode="10" Network="XQ">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.1154168881055007E9" LocationCode="10" Network="XQ">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PDN12" ELEVATION="535.0" LATITUDE="42.8206" LONGITUDE="12.917" NAME="Cerreto di Spoleto">
+    <channel ChannelCode="EHE" Gain="0.251652" LocationCode="" Network="ZO">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.251652" LocationCode="" Network="ZO">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.251652" LocationCode="" Network="ZO">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

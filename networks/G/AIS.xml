@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="AIS" ELEVATION="35.9" LATITUDE="-37.79635" LONGITUDE="77.56918" NAME="Nouvelle-Amsterdam - TAAF, France">
+    <channel ChannelCode="BHE" Gain="1.489941120756791E17" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-10.949999809265137 0.0</pole>
+            <pole>-98.44000244140625 -442.79998779296875</pole>
+            <pole>-98.44000244140625 442.79998779296875</pole>
+            <pole>-556.7999877929688 -60.04999923706055</pole>
+            <pole>-556.7999877929688 60.04999923706055</pole>
+            <pole>-1391.0 0.0</pole>
+            <pole>-4936.0 -4713.0</pole>
+            <pole>-4936.0 4713.0</pole>
+            <pole>-6227.0 0.0</pole>
+            <pole>-6909.0 -9208.0</pole>
+            <pole>-6909.0 9208.0</pole>
+            <pole>-255.0970001220703 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-10.75 0.0</zero>
+            <zero>-294.6000061035156 0.0</zero>
+            <zero>-555.0999755859375 0.0</zero>
+            <zero>-683.9000244140625 -175.5</zero>
+            <zero>-683.9000244140625 175.5</zero>
+            <zero>-5907.0 -3411.0</zero>
+            <zero>-5907.0 3411.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="1.489941120756791E17" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-10.949999809265137 0.0</pole>
+            <pole>-98.44000244140625 -442.79998779296875</pole>
+            <pole>-98.44000244140625 442.79998779296875</pole>
+            <pole>-556.7999877929688 -60.04999923706055</pole>
+            <pole>-556.7999877929688 60.04999923706055</pole>
+            <pole>-1391.0 0.0</pole>
+            <pole>-4936.0 -4713.0</pole>
+            <pole>-4936.0 4713.0</pole>
+            <pole>-6227.0 0.0</pole>
+            <pole>-6909.0 -9208.0</pole>
+            <pole>-6909.0 9208.0</pole>
+            <pole>-255.0970001220703 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-10.75 0.0</zero>
+            <zero>-294.6000061035156 0.0</zero>
+            <zero>-555.0999755859375 0.0</zero>
+            <zero>-683.9000244140625 -175.5</zero>
+            <zero>-683.9000244140625 175.5</zero>
+            <zero>-5907.0 -3411.0</zero>
+            <zero>-5907.0 3411.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="1.489941120756791E17" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.03700000047683716 -0.03700000047683716</pole>
+            <pole>-0.03700000047683716 0.03700000047683716</pole>
+            <pole>-10.949999809265137 0.0</pole>
+            <pole>-98.44000244140625 -442.79998779296875</pole>
+            <pole>-98.44000244140625 442.79998779296875</pole>
+            <pole>-556.7999877929688 -60.04999923706055</pole>
+            <pole>-556.7999877929688 60.04999923706055</pole>
+            <pole>-1391.0 0.0</pole>
+            <pole>-4936.0 -4713.0</pole>
+            <pole>-4936.0 4713.0</pole>
+            <pole>-6227.0 0.0</pole>
+            <pole>-6909.0 -9208.0</pole>
+            <pole>-6909.0 9208.0</pole>
+            <pole>-255.0970001220703 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-10.75 0.0</zero>
+            <zero>-294.6000061035156 0.0</zero>
+            <zero>-555.0999755859375 0.0</zero>
+            <zero>-683.9000244140625 -175.5</zero>
+            <zero>-683.9000244140625 175.5</zero>
+            <zero>-5907.0 -3411.0</zero>
+            <zero>-5907.0 3411.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

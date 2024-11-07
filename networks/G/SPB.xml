@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SPB" ELEVATION="647.0" LATITUDE="-23.592691" LONGITUDE="-47.42698" NAME="Sao Paulo, Brazil">
+    <channel ChannelCode="BHE" Gain="31989.57912064" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012109000235795975 0.0119420001283288</pole>
+            <pole>-0.012109000235795975 -0.0119420001283288</pole>
+            <pole>-32.12820053100586 78.8499984741211</pole>
+            <pole>-32.12820053100586 -78.8499984741211</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="31388.927524864" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012323999777436256 0.011799000203609467</pole>
+            <pole>-0.012323999777436256 -0.011799000203609467</pole>
+            <pole>-32.568199157714844 77.20559692382812</pole>
+            <pole>-32.568199157714844 -77.20559692382812</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="30947.718201344" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012009999714791775 0.011974000371992588</pole>
+            <pole>-0.012009999714791775 -0.011974000371992588</pole>
+            <pole>-32.25239944458008 65.60299682617188</pole>
+            <pole>-32.25239944458008 -65.60299682617188</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

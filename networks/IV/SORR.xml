@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SORR" ELEVATION="537.0" LATITUDE="40.58256" LONGITUDE="14.335709" NAME="Penisola sorrentina - Stazione Osservatorio Vesuviano">
+    <channel ChannelCode="HHE" Gain="1.3638000238836802E12" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-0.03920000046491623 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.3638000238836802E12" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-0.03920000046491623 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.3638000238836802E12" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-0.03920000046491623 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="1.460014002733056E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-382.01800537109375 973.8939819335938</pole>
+            <pole>-382.01800537109375 -973.8939819335938</pole>
+            <pole>-804.2479858398438 0.0</pole>
+            <pole>-8293.8095703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.460014002733056E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-382.01800537109375 973.8939819335938</pole>
+            <pole>-382.01800537109375 -973.8939819335938</pole>
+            <pole>-804.2479858398438 0.0</pole>
+            <pole>-8293.8095703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.460014002733056E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-382.01800537109375 973.8939819335938</pole>
+            <pole>-382.01800537109375 -973.8939819335938</pole>
+            <pole>-804.2479858398438 0.0</pole>
+            <pole>-8293.8095703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

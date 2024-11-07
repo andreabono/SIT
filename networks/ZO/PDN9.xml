@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PDN9" ELEVATION="-150.0" LATITUDE="45.3082" LONGITUDE="11.1724" NAME="Oppeano borehole">
+    <channel ChannelCode="HHE" Gain="8.719132362224436E7" LocationCode="15" Network="ZO">
+        <poles>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-0.07500000298023224 0.07500000298023224</pole>
+            <pole>-0.07500000298023224 -0.07500000298023224</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="8.719132362224436E7" LocationCode="15" Network="ZO">
+        <poles>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-0.07500000298023224 0.07500000298023224</pole>
+            <pole>-0.07500000298023224 -0.07500000298023224</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="8.719132362224436E7" LocationCode="15" Network="ZO">
+        <poles>
+            <pole>-188.49600219726562 490.0880126953125</pole>
+            <pole>-188.49600219726562 -490.0880126953125</pole>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-0.07500000298023224 0.07500000298023224</pole>
+            <pole>-0.07500000298023224 -0.07500000298023224</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="168.846360576" LocationCode="15" Network="ZO">
+        <poles>
+            <pole>-444.22100830078125 444.3550109863281</pole>
+            <pole>-444.22100830078125 -444.3550109863281</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="168.846360576" LocationCode="15" Network="ZO">
+        <poles>
+            <pole>-444.22100830078125 444.3550109863281</pole>
+            <pole>-444.22100830078125 -444.3550109863281</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="168.846360576" LocationCode="15" Network="ZO">
+        <poles>
+            <pole>-444.22100830078125 444.3550109863281</pole>
+            <pole>-444.22100830078125 -444.3550109863281</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

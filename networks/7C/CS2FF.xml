@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CS2FF" ELEVATION="235.0" LATITUDE="39.293324" LONGITUDE="16.258362" NAME="Cosenza_MIN2_Bor_115gN_(N--&gt;SE)">
+    <channel ChannelCode="HH1" Gain="1.6296157383993643E11" LocationCode="" Network="7C">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+            <pole>-188.8000030517578 195.5</pole>
+            <pole>-188.8000030517578 -195.5</pole>
+            <pole>-259.20001220703125 719.5999755859375</pole>
+            <pole>-259.20001220703125 -719.5999755859375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HH2" Gain="1.6296157383993643E11" LocationCode="" Network="7C">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+            <pole>-188.8000030517578 195.5</pole>
+            <pole>-188.8000030517578 -195.5</pole>
+            <pole>-259.20001220703125 719.5999755859375</pole>
+            <pole>-259.20001220703125 -719.5999755859375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.6296157383993643E11" LocationCode="" Network="7C">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+            <pole>-188.8000030517578 195.5</pole>
+            <pole>-188.8000030517578 -195.5</pole>
+            <pole>-259.20001220703125 719.5999755859375</pole>
+            <pole>-259.20001220703125 -719.5999755859375</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HN1" Gain="1.939317784437588E9" LocationCode="" Network="7C">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.3800048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HN2" Gain="1.939317784437588E9" LocationCode="" Network="7C">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.3800048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.939317784437588E9" LocationCode="" Network="7C">
+        <poles>
+            <pole>-400.79998779296875 567.8699951171875</pole>
+            <pole>-400.79998779296875 -567.8699951171875</pole>
+            <pole>-1317.3800048828125 0.0</pole>
+            <pole>-4748.39990234375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

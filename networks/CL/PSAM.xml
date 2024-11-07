@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PSAM" ELEVATION="59.0" LATITUDE="38.321815" LONGITUDE="22.184229" NAME="Psaromita multiparametre">
+    <channel ChannelCode="HHE" Gain="1.829031236253778E8" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-502.6548156738281 0.0</pole>
+            <pole>-1005.3096313476562 0.0</pole>
+            <pole>-1130.9732666015625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.829031236253778E8" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-502.6548156738281 0.0</pole>
+            <pole>-1005.3096313476562 0.0</pole>
+            <pole>-1130.9732666015625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.829031236253778E8" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-502.6548156738281 0.0</pole>
+            <pole>-1005.3096313476562 0.0</pole>
+            <pole>-1130.9732666015625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

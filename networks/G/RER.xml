@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="RER" ELEVATION="834.0" LATITUDE="-21.1712" LONGITUDE="55.73986" NAME="Riviere de l'Est - Sainte Rose - La Reunion island, France">
+    <channel ChannelCode="BHE" Gain="29814.520020992" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012128399685025215 0.01219009980559349</pole>
+            <pole>-0.012128399685025215 -0.01219009980559349</pole>
+            <pole>-31.57080078125 75.22260284423828</pole>
+            <pole>-31.57080078125 -75.22260284423828</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="28963.646734336" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012118499726057053 0.012097099795937538</pole>
+            <pole>-0.012118499726057053 -0.012097099795937538</pole>
+            <pole>-31.53529930114746 71.74859619140625</pole>
+            <pole>-31.53529930114746 -71.74859619140625</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="32018.641453056" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01207020040601492 0.012188299559056759</pole>
+            <pole>-0.01207020040601492 -0.012188299559056759</pole>
+            <pole>-31.627199172973633 68.16190338134766</pole>
+            <pole>-31.627199172973633 -68.16190338134766</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

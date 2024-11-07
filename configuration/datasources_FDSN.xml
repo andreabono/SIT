@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE root SYSTEM "datasource.dtd">
+<root>
+    <datasource>
+        <datasourcetype>FDSN</datasourcetype>
+        <description>Italian EIDA node webserivce</description>
+        <used>true</used>
+        <hostname>webservices.ingv.it</hostname>
+        <waveserver_ports_list/>
+        <url>http://webservices.ingv.it</url>
+        <httpport>80</httpport>
+    </datasource>
+    <datasource>
+        <datasourcetype>FDSN</datasourcetype>
+        <description>Italian EIDA node webserivce</description>
+        <used>false</used>
+        <hostname>exist-dev.int.ingv.it</hostname>
+        <waveserver_ports_list/>
+        <url>http://exist-dev.int.ingv.it</url>
+        <httpport>8083</httpport>
+    </datasource>
+    <datasource>
+        <datasourcetype>FDSN</datasourcetype>
+        <description>ORFEUS webserivce</description>
+        <used>false</used>
+        <hostname>www.orfeus-eu.org</hostname>
+        <waveserver_ports_list/>
+        <url>http://www.orfeus-eu.org</url>
+        <httpport>80</httpport>
+    </datasource>
+    <datasource>
+        <datasourcetype>FDSN</datasourcetype>
+        <description>RESIF webserivce</description>
+        <used>false</used>
+        <hostname>ws.resif.fr</hostname>
+        <waveserver_ports_list/>
+        <url>http://ws.resif.fr</url>
+        <httpport>80</httpport>
+    </datasource>
+    <datasource>
+        <datasourcetype>FDSN</datasourcetype>
+        <description>GEOFON webserivce</description>
+        <used>false</used>
+        <hostname>geofon.gfz-potsdam.de</hostname>
+        <waveserver_ports_list/>
+        <url>http://geofon.gfz-potsdam.de</url>
+        <httpport>80</httpport>
+    </datasource>
+    <datasource>
+        <datasourcetype>FDSN</datasourcetype>
+        <description>ETH Swiss webserivce</description>
+        <used>false</used>
+        <hostname>eida.ethz.ch</hostname>
+        <waveserver_ports_list/>
+        <url>http://eida.ethz.ch</url>
+        <httpport>80</httpport>
+    </datasource>
+    <datasource>
+        <datasourcetype>FDSN</datasourcetype>
+        <description>IRIS webserivce</description>
+        <used>false</used>
+        <hostname>service.iris.edu</hostname>
+        <waveserver_ports_list/>
+        <url>http://service.iris.edu</url>
+        <httpport>80</httpport>
+    </datasource>
+</root>

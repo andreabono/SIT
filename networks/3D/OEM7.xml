@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="OEM7" ELEVATION="259.0" LATITUDE="38.4825" LONGITUDE="14.9707" NAME="rete mobile - Lipari M.te Rosa">
+    <channel ChannelCode="HHE" Gain="0.629145984" LocationCode="" Network="3D">
+        <poles>
+            <pole>-0.22214999794960022 -0.22214999794960022</pole>
+            <pole>-0.22214999794960022 0.22214999794960022</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="0.629145984" LocationCode="" Network="3D">
+        <poles>
+            <pole>-0.22214999794960022 -0.22214999794960022</pole>
+            <pole>-0.22214999794960022 0.22214999794960022</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="0.629145984" LocationCode="" Network="3D">
+        <poles>
+            <pole>-0.22214999794960022 -0.22214999794960022</pole>
+            <pole>-0.22214999794960022 0.22214999794960022</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

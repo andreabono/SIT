@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="VISG" ELEVATION="727.0" LATITUDE="44.18896" LONGITUDE="11.43431" NAME="Visignano (FI)">
+    <channel ChannelCode="HHE" Gain="2174328.53577728" LocationCode="" Network="IV">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="2174328.53577728" LocationCode="" Network="IV">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="2174328.53577728" LocationCode="" Network="IV">
+        <poles>
+            <pole>-80.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

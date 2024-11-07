@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="RVA" ELEVATION="2231.0" LATITUDE="-21.25661" LONGITUDE="55.69886" NAME="New RVL station 2020">
+    <channel ChannelCode="HHE" Gain="3.657650842841907E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.657650842841907E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.657650842841907E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

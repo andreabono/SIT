@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="VRG02" ELEVATION="53.0" LATITUDE="43.65693" LONGITUDE="10.516896" NAME="Virgo North End Building">
+    <channel ChannelCode="HH1" Gain="-0.571507968" LocationCode="" Network="VR">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HH2" Gain="0.571507968" LocationCode="" Network="VR">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HH3" Gain="0.571507968" LocationCode="" Network="VR">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

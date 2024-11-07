@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SF11" ELEVATION="831.0" LATITUDE="42.868614" LONGITUDE="11.67894" NAME="Podere del Sole">
+    <channel ChannelCode="HHE" Gain="2.035405932977258E12" LocationCode="" Network="TV">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="2.035405932977258E12" LocationCode="" Network="TV">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="2.035405932977258E12" LocationCode="" Network="TV">
+        <poles>
+            <pole>-0.14800000190734863 0.14800000190734863</pole>
+            <pole>-0.14800000190734863 -0.14800000190734863</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

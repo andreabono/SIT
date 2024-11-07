@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="HB04" ELEVATION="300.0" LATITUDE="45.1725" LONGITUDE="5.73044" NAME="Grenoble, 38185, Isere, Auvergne-Rhone-Alpes, France">
+    <channel ChannelCode="EHE" Gain="0.420210176" LocationCode="00" Network="8N">
+        <poles>
+            <pole>-0.14133000373840332 0.14133000373840332</pole>
+            <pole>-0.14133000373840332 -0.14133000373840332</pole>
+            <pole>-0.046149998903274536 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.420210176" LocationCode="00" Network="8N">
+        <poles>
+            <pole>-0.14133000373840332 0.14133000373840332</pole>
+            <pole>-0.14133000373840332 -0.14133000373840332</pole>
+            <pole>-0.046149998903274536 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.420210176" LocationCode="00" Network="8N">
+        <poles>
+            <pole>-0.14133000373840332 0.14133000373840332</pole>
+            <pole>-0.14133000373840332 -0.14133000373840332</pole>
+            <pole>-0.046149998903274536 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

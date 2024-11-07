@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="DSO" ELEVATION="2517.0" LATITUDE="-21.248613" LONGITUDE="55.71405" NAME="Station Sismologique de Dolomieu Sud Ouest">
+    <channel ChannelCode="HHE" Gain="4.549203590119424E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.044422000646591187 0.044422000646591187</pole>
+            <pole>-0.044422000646591187 -0.044422000646591187</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.4714784259571713E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.044422000646591187 0.044422000646591187</pole>
+            <pole>-0.044422000646591187 -0.044422000646591187</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.558347403693916E8" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.044422000646591187 0.044422000646591187</pole>
+            <pole>-0.044422000646591187 -0.044422000646591187</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SURF" ELEVATION="1820.0" LATITUDE="44.480934" LONGITUDE="6.811695" NAME="Saint-Ours">
+    <channel ChannelCode="HHE" Gain="148154.880098304" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.038520000874996185 0.03658000007271767</pole>
+            <pole>-0.038520000874996185 -0.03658000007271767</pole>
+            <pole>-178.0 0.0</pole>
+            <pole>-135.0 160.0</pole>
+            <pole>-135.0 -160.0</pole>
+            <pole>-671.0 1154.0</pole>
+            <pole>-671.0 -1154.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-90.0 0.0</zero>
+            <zero>-160.6999969482422 0.0</zero>
+            <zero>-3108.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="148154.880098304" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.038520000874996185 0.03658000007271767</pole>
+            <pole>-0.038520000874996185 -0.03658000007271767</pole>
+            <pole>-178.0 0.0</pole>
+            <pole>-135.0 160.0</pole>
+            <pole>-135.0 -160.0</pole>
+            <pole>-671.0 1154.0</pole>
+            <pole>-671.0 -1154.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-90.0 0.0</zero>
+            <zero>-160.6999969482422 0.0</zero>
+            <zero>-3108.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="148154.880098304" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.038520000874996185 0.03658000007271767</pole>
+            <pole>-0.038520000874996185 -0.03658000007271767</pole>
+            <pole>-178.0 0.0</pole>
+            <pole>-135.0 160.0</pole>
+            <pole>-135.0 -160.0</pole>
+            <pole>-671.0 1154.0</pole>
+            <pole>-671.0 -1154.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-90.0 0.0</zero>
+            <zero>-160.6999969482422 0.0</zero>
+            <zero>-3108.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="8.346274019191817E10" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-155.49400329589844 52.20280075073242</pole>
+            <pole>-155.49400329589844 -52.20280075073242</pole>
+            <pole>-235.50399780273438 399.7969970703125</pole>
+            <pole>-235.50399780273438 -399.7969970703125</pole>
+            <pole>-912.9130249023438 784.1799926757812</pole>
+            <pole>-912.9130249023438 -784.1799926757812</pole>
+        </poles>
+        <zeroes>
+            <zero>-81.96479797363281 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="8.346274019191817E10" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-155.49400329589844 52.20280075073242</pole>
+            <pole>-155.49400329589844 -52.20280075073242</pole>
+            <pole>-235.50399780273438 399.7969970703125</pole>
+            <pole>-235.50399780273438 -399.7969970703125</pole>
+            <pole>-912.9130249023438 784.1799926757812</pole>
+            <pole>-912.9130249023438 -784.1799926757812</pole>
+        </poles>
+        <zeroes>
+            <zero>-81.96479797363281 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="8.346274019191817E10" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-155.49400329589844 52.20280075073242</pole>
+            <pole>-155.49400329589844 -52.20280075073242</pole>
+            <pole>-235.50399780273438 399.7969970703125</pole>
+            <pole>-235.50399780273438 -399.7969970703125</pole>
+            <pole>-912.9130249023438 784.1799926757812</pole>
+            <pole>-912.9130249023438 -784.1799926757812</pole>
+        </poles>
+        <zeroes>
+            <zero>-81.96479797363281 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

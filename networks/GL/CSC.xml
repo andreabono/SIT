@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CSC" ELEVATION="1433.0" LATITUDE="16.043085" LONGITUDE="-61.66285" NAME="Cratere Sud Centre">
+    <channel ChannelCode="EHE" Gain="999.999995904" LocationCode="00" Network="GL">
+        <poles>
+            <pole>-8.691699981689453 51.42100143432617</pole>
+            <pole>-8.691699981689453 -51.42100143432617</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="999.999995904" LocationCode="00" Network="GL">
+        <poles>
+            <pole>-10.864700317382812 51.006099700927734</pole>
+            <pole>-10.864700317382812 -51.006099700927734</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="999.999995904" LocationCode="00" Network="GL">
+        <poles>
+            <pole>-9.843700408935547 58.23590087890625</pole>
+            <pole>-9.843700408935547 -58.23590087890625</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

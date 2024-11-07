@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="LSTV" ELEVATION="105.0" LATITUDE="42.768646" LONGITUDE="16.89201" NAME="Lastovo">
+    <channel ChannelCode="BHE" Gain="4.149834487922405E11" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="4.149834487922405E11" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="4.149834487922405E11" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="4.149834487922405E11" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.149834487922405E11" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.149834487922405E11" LocationCode="" Network="CR">
+        <poles>
+            <pole>-0.1485999971628189 0.1485999971628189</pole>
+            <pole>-0.1485999971628189 -0.1485999971628189</pole>
+            <pole>-391.9599914550781 850.6900024414062</pole>
+            <pole>-391.9599914550781 -850.6900024414062</pole>
+            <pole>-471.239990234375 0.0</pole>
+            <pole>-2199.10009765625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

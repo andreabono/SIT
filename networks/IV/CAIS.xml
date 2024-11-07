@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CAIS" ELEVATION="33.0" LATITUDE="43.050003" LONGITUDE="9.842659" NAME="CAIS">
+    <channel ChannelCode="HHE" Gain="4.473264013599226E11" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-392.0 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.473264013599226E11" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-392.0 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.473264013599226E11" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-392.0 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

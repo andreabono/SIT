@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE root SYSTEM "datasource.dtd">
+<root>
+    <datasource>
+        <datasourcetype>LOCALHOST_EVENTS</datasourcetype>
+        <description>Events in folders on local file system 1</description>
+        <used>true</used>
+        <hostname>localhost</hostname>
+        <waveserver_ports_list/>
+        <url>/Users/andreabono/Desktop/</url>      
+        <httpport></httpport>
+    </datasource>
+    <datasource>
+        <datasourcetype>LOCALHOST_NETWORKS</datasourcetype>
+        <description>Additional stations data in folders on local file system</description>
+        <used>false</used>
+        <hostname>localhost</hostname>
+        <waveserver_ports_list/>
+        <url>local_network/</url>
+        <httpport></httpport>
+    </datasource>
+</root>

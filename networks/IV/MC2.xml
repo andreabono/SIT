@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="MC2" ELEVATION="1888.0" LATITUDE="42.91142" LONGITUDE="13.188976" NAME="Monte Cornaccione">
+    <channel ChannelCode="EHE" Gain="0.314572992" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.314572992" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.314572992" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

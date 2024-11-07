@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="EFIU" ELEVATION="97.0" LATITUDE="37.7896" LONGITUDE="15.2103" NAME="Fiumefreddo di Sicilia">
+    <channel ChannelCode="HHE" Gain="5.587052404037711E11" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-0.03920000046491623 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="5.587052404037711E11" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-0.03920000046491623 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="5.587052404037711E11" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.03700999915599823 0.03700999915599823</pole>
+            <pole>-0.03700999915599823 -0.03700999915599823</pole>
+            <pole>-392.0 850.7000122070312</pole>
+            <pole>-0.03920000046491623 -850.7000122070312</pole>
+            <pole>-2199.0 0.0</pole>
+            <pole>-471.20001220703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="810232.49416192" LocationCode="" Network="IV">
+        <poles>
+            <pole>-755.8900146484375 0.0</pole>
+            <pole>-209.64999389648438 0.0</pole>
+            <pole>-63.790000915527344 -90.37999725341797</pole>
+            <pole>-63.790000915527344 90.37999725341797</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="810232.49416192" LocationCode="" Network="IV">
+        <poles>
+            <pole>-755.8900146484375 0.0</pole>
+            <pole>-209.64999389648438 0.0</pole>
+            <pole>-63.790000915527344 -90.37999725341797</pole>
+            <pole>-63.790000915527344 90.37999725341797</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="810232.49416192" LocationCode="" Network="IV">
+        <poles>
+            <pole>-755.8900146484375 0.0</pole>
+            <pole>-209.64999389648438 0.0</pole>
+            <pole>-63.790000915527344 -90.37999725341797</pole>
+            <pole>-63.790000915527344 90.37999725341797</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

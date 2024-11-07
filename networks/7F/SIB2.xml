@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SIB2" ELEVATION="778.0" LATITUDE="42.891083" LONGITUDE="13.303827" NAME="Rocca di Montemonaco">
+    <channel ChannelCode="EHE" Gain="0.314572992" LocationCode="" Network="7F">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.314572992" LocationCode="" Network="7F">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.314572992" LocationCode="" Network="7F">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

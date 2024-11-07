@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CAN" ELEVATION="700.0" LATITUDE="-35.318714" LONGITUDE="148.99632" NAME="Canberra, Australia">
+    <channel ChannelCode="BHE" Gain="1.2701414136102106E18" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012012500315904617 0.011633500456809998</pole>
+            <pole>-0.012012500315904617 -0.011633500456809998</pole>
+            <pole>-32.48640060424805 72.60289764404297</pole>
+            <pole>-32.48640060424805 -72.60289764404297</pole>
+            <pole>-24.00510025024414 377.1820068359375</pole>
+            <pole>-24.00510025024414 -377.1820068359375</pole>
+            <pole>-17413.099609375 0.0</pole>
+            <pole>-17413.099609375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="1.3128006160853084E18" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012103799730539322 0.011582099832594395</pole>
+            <pole>-0.012103799730539322 -0.011582099832594395</pole>
+            <pole>-32.401100158691406 72.91670227050781</pole>
+            <pole>-32.401100158691406 -72.91670227050781</pole>
+            <pole>-23.966400146484375 378.0419921875</pole>
+            <pole>-23.966400146484375 -378.0419921875</pole>
+            <pole>-17505.400390625 0.0</pole>
+            <pole>-17505.400390625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="7.215553887026171E17" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012076799757778645 0.011706000193953514</pole>
+            <pole>-0.012076799757778645 -0.011706000193953514</pole>
+            <pole>-36.46839904785156 66.84519958496094</pole>
+            <pole>-36.46839904785156 -66.84519958496094</pole>
+            <pole>-29.8656005859375 380.5400085449219</pole>
+            <pole>-29.8656005859375 -380.5400085449219</pole>
+            <pole>-12145.599609375 0.0</pole>
+            <pole>-12145.599609375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PSAR" ELEVATION="117.0" LATITUDE="38.33194" LONGITUDE="22.17519" NAME="Psaromita">
+    <channel ChannelCode="EHE" Gain="3.12055808" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="3.12055808" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="3.12055808" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

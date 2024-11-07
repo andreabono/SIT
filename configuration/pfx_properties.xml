@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>PickFX properties file - last update 2024-11-02 at 14:20:48 GMT</comment>
+<entry key="debug_mode">false</entry>
+<entry key="search.center_lat"></entry>
+<entry key="search.max_lat"></entry>
+<entry key="ws.pymlurl">https://caravel-apollo.int.ingv.it/api</entry>
+<entry key="search.min_lon"></entry>
+<entry key="messaging.rabbit.user">qbus_reader</entry>
+<entry key="box.max_lon">25.25</entry>
+<entry key="ws.station.network"></entry>
+<entry key="search.min_dep"></entry>
+<entry key="messaging.rabbit.exchange">eventdb_exchange</entry>
+<entry key="messaging.rabbit.queue">eventdb_queue</entry>
+<entry key="mapping.gis.WMSURL">https://www.gebco.net/data_and_products/gebco_web_services/web_map_service/mapserv</entry>
+<entry key="box.min_lat">36.27</entry>
+<entry key="search.max_lon"></entry>
+<entry key="ws.basepath_fdsn.station">http://webservices.ingv.it/fdsnws</entry>
+<entry key="magntude.preferred">ML-DIBONA</entry>
+<entry key="alarm_originupdate">sounds/origin_update.mp3</entry>
+<entry key="search.max_dep"></entry>
+<entry key="search.localspaces"></entry>
+<entry key="ws.standard">INGV_CUSTOM</entry>
+<entry key="waveform.format">MSEED</entry>
+<entry key="mapping.gis.useWMS">false</entry>
+<entry key="messaging.rabbit.port">5672</entry>
+<entry key="search.center_lon"></entry>
+<entry key="messaging.rabbit.host">rabbitmq1-rm.int.ingv.it</entry>
+<entry key="box.max_lat">47.53</entry>
+<entry key="search.radius_max"></entry>
+<entry key="alarm_filename">sounds/new_event.mp3</entry>
+<entry key="box.min_lon">0.47</entry>
+<entry key="search.environments">production</entry>
+<entry key="search.mag_min"></entry>
+<entry key="messaging.rabbit.pwd">***********</entry>
+<entry key="keycloak.config_url">https://ksso.ingv.it/auth/realms/ingv/.well-known/openid-configuration</entry>
+<entry key="ws.path_for_hypo2000">https://caravel-apollo.int.ingv.it/api</entry>
+<entry key="search.search_last_n_hours"></entry>
+<entry key="ws.polling_interval">10</entry>
+<entry key="search.versions">0,1,2,99,100,200,900,1000</entry>
+<entry key="ws.make_polling_on_host">false</entry>
+<entry key="messaging.rabbit.virtual_host">/qbus</entry>
+<entry key="search.radius_min">0</entry>
+<entry key="startup_date"></entry>
+<entry key="messaging.engine">RABBITMQ</entry>
+<entry key="search.mag_max"></entry>
+<entry key="mapping.gis_engine">GEOTOOLS</entry>
+<entry key="messaging.use_messaging">false</entry>
+<entry key="search.hours_before_now">1</entry>
+<entry key="search.min_lat"></entry>
+</properties>

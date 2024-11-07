@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="FR10" ELEVATION="336.0" LATITUDE="41.01764" LONGITUDE="14.96909" NAME="Taurasi (AV)">
+    <channel ChannelCode="EHE" Gain="0.146788992" LocationCode="" Network="5H">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.146788992" LocationCode="" Network="5H">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.146788992" LocationCode="" Network="5H">
+        <poles>
+            <pole>-0.8849999904632568 0.8870000243186951</pole>
+            <pole>-0.8849999904632568 -0.8870000243186951</pole>
+            <pole>-0.4269999861717224 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

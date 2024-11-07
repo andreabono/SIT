@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="STSF" ELEVATION="130.0" LATITUDE="48.8314" LONGITUDE="7.96376" NAME="Soufflenheim - 67472 - Bas-Rhin - Grand Est - France">
+    <channel ChannelCode="HNE" Gain="8.346520309796439E10" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-155.49400329589844 52.20280075073242</pole>
+            <pole>-155.49400329589844 -52.20280075073242</pole>
+            <pole>-235.50399780273438 399.7969970703125</pole>
+            <pole>-235.50399780273438 -399.7969970703125</pole>
+            <pole>-912.9130249023438 784.1799926757812</pole>
+            <pole>-912.9130249023438 -784.1799926757812</pole>
+        </poles>
+        <zeroes>
+            <zero>-81.96479797363281 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="8.346417395508078E10" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-155.49400329589844 52.20280075073242</pole>
+            <pole>-155.49400329589844 -52.20280075073242</pole>
+            <pole>-235.50399780273438 399.7969970703125</pole>
+            <pole>-235.50399780273438 -399.7969970703125</pole>
+            <pole>-912.9130249023438 784.1799926757812</pole>
+            <pole>-912.9130249023438 -784.1799926757812</pole>
+        </poles>
+        <zeroes>
+            <zero>-81.96479797363281 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="8.346417395508078E10" LocationCode="00" Network="RA">
+        <poles>
+            <pole>-155.49400329589844 52.20280075073242</pole>
+            <pole>-155.49400329589844 -52.20280075073242</pole>
+            <pole>-235.50399780273438 399.7969970703125</pole>
+            <pole>-235.50399780273438 -399.7969970703125</pole>
+            <pole>-912.9130249023438 784.1799926757812</pole>
+            <pole>-912.9130249023438 -784.1799926757812</pole>
+        </poles>
+        <zeroes>
+            <zero>-81.96479797363281 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CCAP" ELEVATION="209.0" LATITUDE="40.8064" LONGITUDE="14.192267" NAME="Capo Posillipo C. acqisiz. - Stazione Osservatorio Vesuviano">
+    <channel ChannelCode="EHE" Gain="8.71391015625E-5" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="8.71391015625E-5" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="8.71391015625E-5" LocationCode="" Network="IV">
+        <poles>
+            <pole>-4.443999767303467 4.443999767303467</pole>
+            <pole>-4.443999767303467 -4.443999767303467</pole>
+            <pole>-1.0829999446868896 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

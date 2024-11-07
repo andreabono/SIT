@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="MATE" ELEVATION="494.0" LATITUDE="40.64907" LONGITUDE="16.70442" NAME="U Basilicata/GEOFON Station Matera, Italy">
+    <channel ChannelCode="BHN" Gain="3.532527493342822E7" LocationCode="" Network="GE">
+        <poles>
+            <pole>-0.037004001438617706 0.03701600059866905</pole>
+            <pole>-0.037004001438617706 -0.03701600059866905</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.532527493342822E7" LocationCode="" Network="GE">
+        <poles>
+            <pole>-0.037004001438617706 0.03701600059866905</pole>
+            <pole>-0.037004001438617706 -0.03701600059866905</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHE" Gain="3.532527493342822E7" LocationCode="" Network="GE">
+        <poles>
+            <pole>-0.037004001438617706 0.03701600059866905</pole>
+            <pole>-0.037004001438617706 -0.03701600059866905</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="3.532527493342822E7" LocationCode="" Network="GE">
+        <poles>
+            <pole>-0.037004001438617706 0.03701600059866905</pole>
+            <pole>-0.037004001438617706 -0.03701600059866905</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="3.532527493342822E7" LocationCode="" Network="GE">
+        <poles>
+            <pole>-0.037004001438617706 0.03701600059866905</pole>
+            <pole>-0.037004001438617706 -0.03701600059866905</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.532527493342822E7" LocationCode="" Network="GE">
+        <poles>
+            <pole>-0.037004001438617706 0.03701600059866905</pole>
+            <pole>-0.037004001438617706 -0.03701600059866905</pole>
+            <pole>-251.3300018310547 0.0</pole>
+            <pole>-131.0399932861328 -467.2900085449219</pole>
+            <pole>-131.0399932861328 467.2900085449219</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

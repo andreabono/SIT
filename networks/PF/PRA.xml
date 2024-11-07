@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PRA" ELEVATION="2009.0" LATITUDE="-21.291698" LONGITUDE="55.707912" NAME="Puys Ramond">
+    <channel ChannelCode="HHE" Gain="1.0660795336244593E9" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.044422000646591187 -0.044422000646591187</pole>
+            <pole>-0.044422000646591187 0.044422000646591187</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-502.6499938964844 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.0573925671313081E9" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.044422000646591187 -0.044422000646591187</pole>
+            <pole>-0.044422000646591187 0.044422000646591187</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-502.6499938964844 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.0593071604726497E9" LocationCode="00" Network="PF">
+        <poles>
+            <pole>-0.044422000646591187 -0.044422000646591187</pole>
+            <pole>-0.044422000646591187 0.044422000646591187</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-502.6499938964844 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

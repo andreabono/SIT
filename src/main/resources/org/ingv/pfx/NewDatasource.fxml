@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ingv.pfx.NewDatasourceController">
+   <children>
+      <Label fx:id="lblHost" layoutX="15.0" layoutY="139.0" text="Host " />
+      <Label fx:id="lblPorts" layoutX="15.0" layoutY="173.0" text="Ports" />
+      <Label fx:id="lblUrl" layoutX="15.0" layoutY="211.0" text="url" />
+      <Label layoutX="15.0" layoutY="105.0" text="Description" />
+      <Label layoutX="105.0" layoutY="35.0" text="New data source" />
+      <TextField fx:id="txtDescription" layoutX="105.0" layoutY="100.0" prefHeight="26.0" prefWidth="467.0">
+         <tooltip>
+            <Tooltip text="Datasource extended description" />
+         </tooltip></TextField>
+      <TextField fx:id="txtHost" layoutX="105.0" layoutY="134.0" prefHeight="26.0" prefWidth="467.0">
+         <tooltip>
+            <Tooltip text="Host name [e.g. Earthworm server]" />
+         </tooltip></TextField>
+      <TextField fx:id="txtPorts" layoutX="105.0" layoutY="167.0" prefHeight="26.0" prefWidth="467.0">
+         <tooltip>
+            <Tooltip text="Comma separated ports list" />
+         </tooltip></TextField>
+      <TextField fx:id="txtUrl" layoutX="105.0" layoutY="204.0" prefHeight="26.0" prefWidth="467.0">
+         <tooltip>
+            <Tooltip text="Web service url" />
+         </tooltip></TextField>
+      
+      <Button fx:id="btnOK" layoutX="435.0" layoutY="279.0" mnemonicParsing="false" onAction="#btnOK_Click" prefHeight="26.0" prefWidth="63.0" text="Ok" />
+      <Button fx:id="btnCancel" layoutX="509.0" layoutY="279.0" mnemonicParsing="false" onAction="#btnCancel_Click" prefHeight="26.0" prefWidth="63.0" text="Cancel" />
+      <Separator layoutX="20.0" layoutY="255.0" prefHeight="0.0" prefWidth="564.0" />
+      <ImageView fitHeight="78.0" fitWidth="190.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/newdatasource.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDataSourrceType" layoutX="105.0" layoutY="66.0" text="Data Source Type" />
+      <ComboBox fx:id="cmbDataSourceType" layoutX="221.0" layoutY="61.0" onAction="#cmbDataSourceType_Changed" prefHeight="26.0" prefWidth="349.0" />
+   </children>
+</AnchorPane>

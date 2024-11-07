@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="NSR" ELEVATION="2035.0" LATITUDE="-21.206879" LONGITUDE="55.723377" NAME="Station Sismologique de Nez Coupe de Sainte Rose">
+    <channel ChannelCode="EHZ" Gain="17.10870528" LocationCode="90" Network="PF">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

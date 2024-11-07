@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="KER01" ELEVATION="227.0" LATITUDE="-49.4362" LONGITUDE="70.4205" NAME="Pointe Suzanne Haut, 98412, Kerguelen, Terres australes, France">
+    <channel ChannelCode="HHE" Gain="735519.793217536" LocationCode="00" Network="YR">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-80.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="735519.793217536" LocationCode="00" Network="YR">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-80.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="733676.37983232" LocationCode="00" Network="YR">
+        <poles>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-180.0 0.0</pole>
+            <pole>-160.0 0.0</pole>
+            <pole>-80.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

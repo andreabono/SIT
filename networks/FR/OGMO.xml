@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="OGMO" ELEVATION="1200.0" LATITUDE="45.20865" LONGITUDE="6.68308" NAME="Modane">
+    <channel ChannelCode="HHE" Gain="1.3109517173735445E17" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.03691000118851662 0.0370200015604496</pole>
+            <pole>-0.03691000118851662 -0.0370200015604496</pole>
+            <pole>-343.0 0.0</pole>
+            <pole>-370.0 467.0</pole>
+            <pole>-370.0 -467.0</pole>
+            <pole>-836.0 1522.0</pole>
+            <pole>-836.0 -1522.0</pole>
+            <pole>-4900.0 4700.0</pole>
+            <pole>-4900.0 -4700.0</pole>
+            <pole>-6900.0 0.0</pole>
+            <pole>-15000.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-392.0 0.0</zero>
+            <zero>-1960.0 0.0</zero>
+            <zero>-1490.0 1740.0</zero>
+            <zero>-1490.0 -1740.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.3109517173735445E17" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.03691000118851662 0.0370200015604496</pole>
+            <pole>-0.03691000118851662 -0.0370200015604496</pole>
+            <pole>-343.0 0.0</pole>
+            <pole>-370.0 467.0</pole>
+            <pole>-370.0 -467.0</pole>
+            <pole>-836.0 1522.0</pole>
+            <pole>-836.0 -1522.0</pole>
+            <pole>-4900.0 4700.0</pole>
+            <pole>-4900.0 -4700.0</pole>
+            <pole>-6900.0 0.0</pole>
+            <pole>-15000.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-392.0 0.0</zero>
+            <zero>-1960.0 0.0</zero>
+            <zero>-1490.0 1740.0</zero>
+            <zero>-1490.0 -1740.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.3109517173735445E17" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.03691000118851662 0.0370200015604496</pole>
+            <pole>-0.03691000118851662 -0.0370200015604496</pole>
+            <pole>-343.0 0.0</pole>
+            <pole>-370.0 467.0</pole>
+            <pole>-370.0 -467.0</pole>
+            <pole>-836.0 1522.0</pole>
+            <pole>-836.0 -1522.0</pole>
+            <pole>-4900.0 4700.0</pole>
+            <pole>-4900.0 -4700.0</pole>
+            <pole>-6900.0 0.0</pole>
+            <pole>-15000.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-392.0 0.0</zero>
+            <zero>-1960.0 0.0</zero>
+            <zero>-1490.0 1740.0</zero>
+            <zero>-1490.0 -1740.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="8.346274019191817E10" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-155.49400329589844 52.20280075073242</pole>
+            <pole>-155.49400329589844 -52.20280075073242</pole>
+            <pole>-235.50399780273438 399.7969970703125</pole>
+            <pole>-235.50399780273438 -399.7969970703125</pole>
+            <pole>-912.9130249023438 784.1799926757812</pole>
+            <pole>-912.9130249023438 -784.1799926757812</pole>
+        </poles>
+        <zeroes>
+            <zero>-81.96479797363281 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="8.346274019191817E10" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-155.49400329589844 52.20280075073242</pole>
+            <pole>-155.49400329589844 -52.20280075073242</pole>
+            <pole>-235.50399780273438 399.7969970703125</pole>
+            <pole>-235.50399780273438 -399.7969970703125</pole>
+            <pole>-912.9130249023438 784.1799926757812</pole>
+            <pole>-912.9130249023438 -784.1799926757812</pole>
+        </poles>
+        <zeroes>
+            <zero>-81.96479797363281 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="8.346274019191817E10" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-155.49400329589844 52.20280075073242</pole>
+            <pole>-155.49400329589844 -52.20280075073242</pole>
+            <pole>-235.50399780273438 399.7969970703125</pole>
+            <pole>-235.50399780273438 -399.7969970703125</pole>
+            <pole>-912.9130249023438 784.1799926757812</pole>
+            <pole>-912.9130249023438 -784.1799926757812</pole>
+        </poles>
+        <zeroes>
+            <zero>-81.96479797363281 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

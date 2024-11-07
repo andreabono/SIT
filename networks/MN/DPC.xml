@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="DPC" ELEVATION="748.0" LATITUDE="50.3502" LONGITUDE="16.3222" NAME="Dobruska/Polom, Czech Republic">
+    <channel ChannelCode="BHE" Gain="3973.230886912" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01234120037406683 0.012341500259935856</pole>
+            <pole>-0.01234120037406683 -0.012341500259935856</pole>
+            <pole>-19.587799072265625 24.56170082092285</pole>
+            <pole>-19.587799072265625 -24.56170082092285</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="3973.230886912" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01234120037406683 0.012341500259935856</pole>
+            <pole>-0.01234120037406683 -0.012341500259935856</pole>
+            <pole>-19.587799072265625 24.56170082092285</pole>
+            <pole>-19.587799072265625 -24.56170082092285</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="3973.230886912" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01234120037406683 0.012341500259935856</pole>
+            <pole>-0.01234120037406683 -0.012341500259935856</pole>
+            <pole>-19.587799072265625 24.56170082092285</pole>
+            <pole>-19.587799072265625 -24.56170082092285</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="3973.235605504" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01234120037406683 0.012341500259935856</pole>
+            <pole>-0.01234120037406683 -0.012341500259935856</pole>
+            <pole>-19.587799072265625 24.56170082092285</pole>
+            <pole>-19.587799072265625 -24.56170082092285</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3973.235605504" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01234120037406683 0.012341500259935856</pole>
+            <pole>-0.01234120037406683 -0.012341500259935856</pole>
+            <pole>-19.587799072265625 24.56170082092285</pole>
+            <pole>-19.587799072265625 -24.56170082092285</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3973.235605504" LocationCode="" Network="MN">
+        <poles>
+            <pole>-0.01234120037406683 0.012341500259935856</pole>
+            <pole>-0.01234120037406683 -0.012341500259935856</pole>
+            <pole>-19.587799072265625 24.56170082092285</pole>
+            <pole>-19.587799072265625 -24.56170082092285</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

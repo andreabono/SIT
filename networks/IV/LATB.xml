@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="LATB" ELEVATION="0.0" LATITUDE="41.4939" LONGITUDE="12.96239" NAME="Latina borehole">
+    <channel ChannelCode="EHE" Gain="0.513383008" LocationCode="" Network="IV">
+        <poles>
+            <pole>-10.553000450134277 11.720000267028809</pole>
+            <pole>-10.553000450134277 -11.720000267028809</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.512124992" LocationCode="" Network="IV">
+        <poles>
+            <pole>-10.553000450134277 11.720000267028809</pole>
+            <pole>-10.553000450134277 -11.720000267028809</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.486959008" LocationCode="" Network="IV">
+        <poles>
+            <pole>-10.553000450134277 11.720000267028809</pole>
+            <pole>-10.553000450134277 -11.720000267028809</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

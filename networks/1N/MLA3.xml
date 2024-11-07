@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="MLA3" ELEVATION="725.5" LATITUDE="44.8923" LONGITUDE="5.8169417" NAME="MLA3">
+    <channel ChannelCode="EHE" Gain="0.065125956" LocationCode="00" Network="1N">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.065125956" LocationCode="00" Network="1N">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.065125956" LocationCode="00" Network="1N">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHE" Gain="0.065125956" LocationCode="01" Network="1N">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.065125956" LocationCode="01" Network="1N">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.065125956" LocationCode="01" Network="1N">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHE" Gain="0.065125956" LocationCode="02" Network="1N">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.065125956" LocationCode="02" Network="1N">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.065125956" LocationCode="02" Network="1N">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

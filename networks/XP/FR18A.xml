@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="FR18A" ELEVATION="840.0" LATITUDE="44.9672" LONGITUDE="2.80704" NAME="Brezons, 15026, Cantal, Auvergne-Rhone-Alpes, France">
+    <channel ChannelCode="HHE" Gain="1.5763730849175963E8" LocationCode="00" Network="XP">
+        <poles>
+            <pole>-0.005869999993592501 -0.005909999832510948</pole>
+            <pole>-0.005869999993592501 0.005909999832510948</pole>
+            <pole>-59.5099983215332 75.68000030517578</pole>
+            <pole>-59.5099983215332 -75.68000030517578</pole>
+            <pole>-93.6500015258789 -240.00999450683594</pole>
+            <pole>-93.6500015258789 240.00999450683594</pole>
+            <pole>-59.08000183105469 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-69.08999633789062 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.5763730849175963E8" LocationCode="00" Network="XP">
+        <poles>
+            <pole>-0.005869999993592501 -0.005909999832510948</pole>
+            <pole>-0.005869999993592501 0.005909999832510948</pole>
+            <pole>-59.5099983215332 75.68000030517578</pole>
+            <pole>-59.5099983215332 -75.68000030517578</pole>
+            <pole>-93.6500015258789 -240.00999450683594</pole>
+            <pole>-93.6500015258789 240.00999450683594</pole>
+            <pole>-59.08000183105469 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-69.08999633789062 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.5763730849175963E8" LocationCode="00" Network="XP">
+        <poles>
+            <pole>-0.005869999993592501 -0.005909999832510948</pole>
+            <pole>-0.005869999993592501 0.005909999832510948</pole>
+            <pole>-59.5099983215332 75.68000030517578</pole>
+            <pole>-59.5099983215332 -75.68000030517578</pole>
+            <pole>-93.6500015258789 -240.00999450683594</pole>
+            <pole>-93.6500015258789 240.00999450683594</pole>
+            <pole>-59.08000183105469 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-69.08999633789062 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

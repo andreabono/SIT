@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PAF" ELEVATION="17.0" LATITUDE="-49.351" LONGITUDE="70.21071" NAME="Port aux Francais - Kerguelen - TAAF, France">
+    <channel ChannelCode="BHE" Gain="1.0510514264951222E18" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01231439970433712 0.011960900388658047</pole>
+            <pole>-0.01231439970433712 -0.011960900388658047</pole>
+            <pole>-33.90610122680664 76.08689880371094</pole>
+            <pole>-33.90610122680664 -76.08689880371094</pole>
+            <pole>-24.79330062866211 373.87200927734375</pole>
+            <pole>-24.79330062866211 -373.87200927734375</pole>
+            <pole>-15326.099609375 0.0</pole>
+            <pole>-15326.099609375 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="1.0583256417661725E18" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012277199886739254 0.011947600170969963</pole>
+            <pole>-0.012277199886739254 -0.011947600170969963</pole>
+            <pole>-33.69070053100586 74.18810272216797</pole>
+            <pole>-33.69070053100586 -74.18810272216797</pole>
+            <pole>-24.596200942993164 372.32501220703125</pole>
+            <pole>-24.596200942993164 -372.32501220703125</pole>
+            <pole>-15759.5 0.0</pole>
+            <pole>-15759.5 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="1.0693784880932815E18" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01225189957767725 0.01199360005557537</pole>
+            <pole>-0.01225189957767725 -0.01199360005557537</pole>
+            <pole>-34.28160095214844 61.75090026855469</pole>
+            <pole>-34.28160095214844 -61.75090026855469</pole>
+            <pole>-27.83049964904785 391.8269958496094</pole>
+            <pole>-27.83049964904785 -391.8269958496094</pole>
+            <pole>-15314.400390625 0.0</pole>
+            <pole>-15314.400390625 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

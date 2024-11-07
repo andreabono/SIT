@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="UNM" ELEVATION="2280.0" LATITUDE="19.329662" LONGITUDE="-99.17806" NAME="Unam - Mexico, Mexico">
+    <channel ChannelCode="BHE" Gain="30295.021584384" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012187999673187733 0.011909999884665012</pole>
+            <pole>-0.012187999673187733 -0.011909999884665012</pole>
+            <pole>-36.71689987182617 73.66079711914062</pole>
+            <pole>-36.71689987182617 -73.66079711914062</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="29168.966303744" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01219599973410368 0.011982000432908535</pole>
+            <pole>-0.01219599973410368 -0.011982000432908535</pole>
+            <pole>-36.74580001831055 72.00379943847656</pole>
+            <pole>-36.74580001831055 -72.00379943847656</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="35324.851912704" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012342999689280987 0.011801999993622303</pole>
+            <pole>-0.012342999689280987 -0.011801999993622303</pole>
+            <pole>-36.61360168457031 69.9540023803711</pole>
+            <pole>-36.61360168457031 -69.9540023803711</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="2.103881854693566E10" LocationCode="00" Network="G">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="2.103881854693566E10" LocationCode="00" Network="G">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="2.103881854693566E10" LocationCode="00" Network="G">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

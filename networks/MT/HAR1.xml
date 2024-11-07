@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="HAR1" ELEVATION="750.0" LATITUDE="44.939934" LONGITUDE="5.66899" NAME="glissement de terrain de l'Harmalière">
+    <channel ChannelCode="EHE" Gain="0.320014048" LocationCode="02" Network="MT">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHE" Gain="0.320014048" LocationCode="03" Network="MT">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.320014048" LocationCode="02" Network="MT">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="0.320014048" LocationCode="03" Network="MT">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.320014048" LocationCode="02" Network="MT">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.320014048" LocationCode="03" Network="MT">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

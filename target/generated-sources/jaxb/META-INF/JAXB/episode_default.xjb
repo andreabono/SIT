@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Questo file è stato generato dall'Eclipse Implementation of JAXB, v3.0.2 
+Vedere https://eclipse-ee4j.github.io/jaxb-ri 
+Qualsiasi modifica a questo file andrà persa durante la ricompilazione dello schema di origine. 
+Generato il: 2024.09.05 alle 11:56:25 AM CEST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://quakeml.org/xmlns/quakeml/1.2">
+    <schemaBindings map="false">
+      <package name="org.quakeml.xmlns.quakeml._1"/>
+    </schemaBindings>
+    <bindings scd="~tns:Quakeml">
+      <class ref="org.quakeml.xmlns.quakeml._1.Quakeml"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://quakeml.org/xmlns/bed/1.2">
+    <schemaBindings map="false">
+      <package name="org.quakeml.xmlns.bed._1"/>
+    </schemaBindings>
+    <bindings scd="~tns:EventParameters">
+      <class ref="org.quakeml.xmlns.bed._1.EventParameters"/>
+    </bindings>
+    <bindings scd="~tns:TimeQuantity">
+      <class ref="org.quakeml.xmlns.bed._1.TimeQuantity"/>
+    </bindings>
+    <bindings scd="~tns:CreationInfo">
+      <class ref="org.quakeml.xmlns.bed._1.CreationInfo"/>
+    </bindings>
+    <bindings scd="~tns:EventDescription">
+      <class ref="org.quakeml.xmlns.bed._1.EventDescription"/>
+    </bindings>
+    <bindings scd="~tns:Phase">
+      <class ref="org.quakeml.xmlns.bed._1.Phase"/>
+    </bindings>
+    <bindings scd="~tns:Comment">
+      <class ref="org.quakeml.xmlns.bed._1.Comment"/>
+    </bindings>
+    <bindings scd="~tns:Axis">
+      <class ref="org.quakeml.xmlns.bed._1.Axis"/>
+    </bindings>
+    <bindings scd="~tns:PrincipalAxes">
+      <class ref="org.quakeml.xmlns.bed._1.PrincipalAxes"/>
+    </bindings>
+    <bindings scd="~tns:DataUsed">
+      <class ref="org.quakeml.xmlns.bed._1.DataUsed"/>
+    </bindings>
+    <bindings scd="~tns:CompositeTime">
+      <class ref="org.quakeml.xmlns.bed._1.CompositeTime"/>
+    </bindings>
+    <bindings scd="~tns:Tensor">
+      <class ref="org.quakeml.xmlns.bed._1.Tensor"/>
+    </bindings>
+    <bindings scd="~tns:OriginQuality">
+      <class ref="org.quakeml.xmlns.bed._1.OriginQuality"/>
+    </bindings>
+    <bindings scd="~tns:RealQuantity">
+      <class ref="org.quakeml.xmlns.bed._1.RealQuantity"/>
+    </bindings>
+    <bindings scd="~tns:NodalPlane">
+      <class ref="org.quakeml.xmlns.bed._1.NodalPlane"/>
+    </bindings>
+    <bindings scd="~tns:TimeWindow">
+      <class ref="org.quakeml.xmlns.bed._1.TimeWindow"/>
+    </bindings>
+    <bindings scd="~tns:WaveformStreamID">
+      <class ref="org.quakeml.xmlns.bed._1.WaveformStreamID"/>
+    </bindings>
+    <bindings scd="~tns:IntegerQuantity">
+      <class ref="org.quakeml.xmlns.bed._1.IntegerQuantity"/>
+    </bindings>
+    <bindings scd="~tns:SourceTimeFunction">
+      <class ref="org.quakeml.xmlns.bed._1.SourceTimeFunction"/>
+    </bindings>
+    <bindings scd="~tns:NodalPlanes">
+      <class ref="org.quakeml.xmlns.bed._1.NodalPlanes"/>
+    </bindings>
+    <bindings scd="~tns:ConfidenceEllipsoid">
+      <class ref="org.quakeml.xmlns.bed._1.ConfidenceEllipsoid"/>
+    </bindings>
+    <bindings scd="~tns:MomentTensor">
+      <class ref="org.quakeml.xmlns.bed._1.MomentTensor"/>
+    </bindings>
+    <bindings scd="~tns:FocalMechanism">
+      <class ref="org.quakeml.xmlns.bed._1.FocalMechanism"/>
+    </bindings>
+    <bindings scd="~tns:Amplitude">
+      <class ref="org.quakeml.xmlns.bed._1.Amplitude"/>
+    </bindings>
+    <bindings scd="~tns:StationMagnitudeContribution">
+      <class ref="org.quakeml.xmlns.bed._1.StationMagnitudeContribution"/>
+    </bindings>
+    <bindings scd="~tns:Magnitude">
+      <class ref="org.quakeml.xmlns.bed._1.Magnitude"/>
+    </bindings>
+    <bindings scd="~tns:StationMagnitude">
+      <class ref="org.quakeml.xmlns.bed._1.StationMagnitude"/>
+    </bindings>
+    <bindings scd="~tns:OriginUncertainty">
+      <class ref="org.quakeml.xmlns.bed._1.OriginUncertainty"/>
+    </bindings>
+    <bindings scd="~tns:Arrival">
+      <class ref="org.quakeml.xmlns.bed._1.Arrival"/>
+    </bindings>
+    <bindings scd="~tns:Origin">
+      <class ref="org.quakeml.xmlns.bed._1.Origin"/>
+    </bindings>
+    <bindings scd="~tns:Pick">
+      <class ref="org.quakeml.xmlns.bed._1.Pick"/>
+    </bindings>
+    <bindings scd="~tns:Event">
+      <class ref="org.quakeml.xmlns.bed._1.Event"/>
+    </bindings>
+    <bindings scd="~tns:OriginUncertaintyDescription">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.OriginUncertaintyDescription"/>
+    </bindings>
+    <bindings scd="~tns:AmplitudeCategory">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.AmplitudeCategory"/>
+    </bindings>
+    <bindings scd="~tns:OriginDepthType">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.OriginDepthType"/>
+    </bindings>
+    <bindings scd="~tns:OriginType">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.OriginType"/>
+    </bindings>
+    <bindings scd="~tns:MTInversionType">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.MTInversionType"/>
+    </bindings>
+    <bindings scd="~tns:EvaluationMode">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.EvaluationMode"/>
+    </bindings>
+    <bindings scd="~tns:EvaluationStatus">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.EvaluationStatus"/>
+    </bindings>
+    <bindings scd="~tns:PickOnset">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.PickOnset"/>
+    </bindings>
+    <bindings scd="~tns:EventType">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.EventType"/>
+    </bindings>
+    <bindings scd="~tns:DataUsedWaveType">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.DataUsedWaveType"/>
+    </bindings>
+    <bindings scd="~tns:EventDescriptionType">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.EventDescriptionType"/>
+    </bindings>
+    <bindings scd="~tns:MomentTensorCategory">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.MomentTensorCategory"/>
+    </bindings>
+    <bindings scd="~tns:EventTypeCertainty">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.EventTypeCertainty"/>
+    </bindings>
+    <bindings scd="~tns:SourceTimeFunctionType">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.SourceTimeFunctionType"/>
+    </bindings>
+    <bindings scd="~tns:PickPolarity">
+      <typesafeEnumClass ref="org.quakeml.xmlns.bed._1.PickPolarity"/>
+    </bindings>
+  </bindings>
+</bindings>
+

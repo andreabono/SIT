@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="PPTF" ELEVATION="705.0" LATITUDE="-17.5896" LONGITUDE="-149.56525" NAME="Pamatai - Papeete - Tahiti island - French Polynesia, France">
+    <channel ChannelCode="BHE" Gain="31536.822878208" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012254700064659119 0.012135299853980541</pole>
+            <pole>-0.012254700064659119 -0.012135299853980541</pole>
+            <pole>-31.985700607299805 75.1489028930664</pole>
+            <pole>-31.985700607299805 -75.1489028930664</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="29407.011930112" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012313700281083584 0.0120344003662467</pole>
+            <pole>-0.012313700281083584 -0.0120344003662467</pole>
+            <pole>-31.171499252319336 72.54149627685547</pole>
+            <pole>-31.171499252319336 -72.54149627685547</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="32675.786129408" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.012296999804675579 0.012059999629855156</pole>
+            <pole>-0.012296999804675579 -0.012059999629855156</pole>
+            <pole>-31.90239906311035 68.7833023071289</pole>
+            <pole>-31.90239906311035 -68.7833023071289</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

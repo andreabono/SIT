@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE root SYSTEM "datasource.dtd">
+<root>
+    <datasource>
+        <datasourcetype>EARTHWORMWS</datasourcetype>
+        <description>INGV Earthworm host HEW10 Winston waveserver</description>
+        <used>true</used>
+        <hostname>hew1.int.ingv.it</hostname>
+        <waveserver_ports_list>16222</waveserver_ports_list>
+        <url/>
+        <httpport>80</httpport>
+    </datasource>
+    <datasource>
+        <datasourcetype>EARTHWORMWS</datasourcetype>
+        <description>INGV Earthworm host HEW10 waveservers</description>
+        <used>false</used>
+        <hostname>hew1.int.ingv.it</hostname>
+        <waveserver_ports_list>16021,16022,16023,16024,16025,16026,16027,16028,16029,16030,16031,16032,16033,16034,16035,16036,16037,16038,16039,16040,16041,16042,16043,16044</waveserver_ports_list>
+        <url/>
+        <httpport>80</httpport>
+    </datasource>
+</root>

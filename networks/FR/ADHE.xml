@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ADHE" ELEVATION="88.0" LATITUDE="44.37408" LONGITUDE="4.76974" NAME="La Garde-Adhémar">
+    <channel ChannelCode="HHE" Gain="1.4523657998502462E9" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.4557107890998478E9" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.4544967908238294E9" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="1.3223452513308508E11" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.3223452513308508E11" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.3223452513308508E11" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-981.0 1009.0</pole>
+            <pole>-981.0 -1009.0</pole>
+            <pole>-3290.0 1263.0</pole>
+            <pole>-3290.0 -1263.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

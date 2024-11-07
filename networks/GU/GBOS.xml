@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="GBOS" ELEVATION="845.0" LATITUDE="44.2416" LONGITUDE="7.8399" NAME="Grotte di Bossea (CN) - Italy">
+    <channel ChannelCode="HHE" Gain="2.5559795675811104E17" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.018133999779820442 0.01803399994969368</pole>
+            <pole>-0.018133999779820442 -0.01803399994969368</pole>
+            <pole>-84.4000015258789 0.0</pole>
+            <pole>-180.1999969482422 224.39999389648438</pole>
+            <pole>-180.1999969482422 -224.39999389648438</pole>
+            <pole>-725.0 0.0</pole>
+            <pole>-1060.0 0.0</pole>
+            <pole>-4300.0 0.0</pole>
+            <pole>-5800.0 0.0</pole>
+            <pole>-4200.0 4600.0</pole>
+            <pole>-4200.0 -4600.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-72.5 0.0</zero>
+            <zero>-163.3000030517578 0.0</zero>
+            <zero>-251.0 0.0</zero>
+            <zero>-3270.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="2.5559795675811104E17" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.018133999779820442 0.01803399994969368</pole>
+            <pole>-0.018133999779820442 -0.01803399994969368</pole>
+            <pole>-84.4000015258789 0.0</pole>
+            <pole>-180.1999969482422 224.39999389648438</pole>
+            <pole>-180.1999969482422 -224.39999389648438</pole>
+            <pole>-725.0 0.0</pole>
+            <pole>-1060.0 0.0</pole>
+            <pole>-4300.0 0.0</pole>
+            <pole>-5800.0 0.0</pole>
+            <pole>-4200.0 4600.0</pole>
+            <pole>-4200.0 -4600.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-72.5 0.0</zero>
+            <zero>-163.3000030517578 0.0</zero>
+            <zero>-251.0 0.0</zero>
+            <zero>-3270.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="2.5559795675811104E17" LocationCode="" Network="GU">
+        <poles>
+            <pole>-0.018133999779820442 0.01803399994969368</pole>
+            <pole>-0.018133999779820442 -0.01803399994969368</pole>
+            <pole>-84.4000015258789 0.0</pole>
+            <pole>-180.1999969482422 224.39999389648438</pole>
+            <pole>-180.1999969482422 -224.39999389648438</pole>
+            <pole>-725.0 0.0</pole>
+            <pole>-1060.0 0.0</pole>
+            <pole>-4300.0 0.0</pole>
+            <pole>-5800.0 0.0</pole>
+            <pole>-4200.0 4600.0</pole>
+            <pole>-4200.0 -4600.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-72.5 0.0</zero>
+            <zero>-163.3000030517578 0.0</zero>
+            <zero>-251.0 0.0</zero>
+            <zero>-3270.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

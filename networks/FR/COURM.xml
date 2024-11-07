@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="COURM" ELEVATION="1503.0" LATITUDE="45.820335" LONGITUDE="6.963495" NAME="Courmayeur">
+    <channel ChannelCode="HHE" Gain="5.572417357264978E8" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="5.581751523790029E8" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="5.591085346717696E8" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.023560000583529472 0.023560000583529472</pole>
+            <pole>-0.023560000583529472 -0.023560000583529472</pole>
+            <pole>-62.38159942626953 135.39199829101562</pole>
+            <pole>-62.38159942626953 -135.39199829101562</pole>
+            <pole>-350.0 0.0</pole>
+            <pole>-75.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

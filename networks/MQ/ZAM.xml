@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ZAM" ELEVATION="11.0" LATITUDE="14.58501" LONGITUDE="-61.02243" NAME="Zone Aero-Militaire - Martinique">
+    <channel ChannelCode="HHE" Gain="1.8013889985354137E8" LocationCode="00" Network="MQ">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="1.8653994731280795E8" LocationCode="00" Network="MQ">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="1.815106780481454E8" LocationCode="00" Network="MQ">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

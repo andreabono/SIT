@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="IT03A" ELEVATION="190.0" LATITUDE="45.237926" LONGITUDE="8.288635" NAME="Tricerro (VC)">
+    <channel ChannelCode="HHE" Gain="8.142780392852684E8" LocationCode="" Network="4P">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="8.142780392852684E8" LocationCode="" Network="4P">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="8.142780392852684E8" LocationCode="" Network="4P">
+        <poles>
+            <pole>-0.038589999079704285 -0.036490000784397125</pole>
+            <pole>-0.038589999079704285 0.036490000784397125</pole>
+            <pole>-158.0 -193.0</pole>
+            <pole>-158.0 193.0</pole>
+            <pole>-190.0 0.0</pole>
+            <pole>-639.0 -1418.0</pole>
+            <pole>-639.0 1418.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>-106.0 0.0</zero>
+            <zero>-158.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

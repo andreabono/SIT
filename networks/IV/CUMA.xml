@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CUMA" ELEVATION="81.0" LATITUDE="40.847946" LONGITUDE="14.053389" NAME="CUMA Parco Archeologico - Stazione Osservatorio Vesuviano">
+    <channel ChannelCode="HHE" Gain="4.54465985831764E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="4.54465985831764E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="4.54465985831764E8" LocationCode="" Network="IV">
+        <poles>
+            <pole>-0.07401599735021591 0.07401599735021591</pole>
+            <pole>-0.07401599735021591 -0.07401599735021591</pole>
+            <pole>-502.6499938964844 0.0</pole>
+            <pole>-1005.0 0.0</pole>
+            <pole>-1131.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="1.4598753543167934E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-382.01800537109375 973.8939819335938</pole>
+            <pole>-382.01800537109375 -973.8939819335938</pole>
+            <pole>-804.2479858398438 0.0</pole>
+            <pole>-8293.8095703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="1.4598753543167934E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-382.01800537109375 973.8939819335938</pole>
+            <pole>-382.01800537109375 -973.8939819335938</pole>
+            <pole>-804.2479858398438 0.0</pole>
+            <pole>-8293.8095703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="1.4598753543167934E10" LocationCode="" Network="IV">
+        <poles>
+            <pole>-382.01800537109375 973.8939819335938</pole>
+            <pole>-382.01800537109375 -973.8939819335938</pole>
+            <pole>-804.2479858398438 0.0</pole>
+            <pole>-8293.8095703125 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

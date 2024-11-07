@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="NOCA" ELEVATION="373.0" LATITUDE="43.72633" LONGITUDE="7.29985" NAME="Observatoire de la Côte d'Azur">
+    <channel ChannelCode="EHZ" Gain="42.95155712" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHE" Gain="42.95155712" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHN" Gain="42.95155712" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-0.8880000114440918 0.8880000114440918</pole>
+            <pole>-0.8880000114440918 -0.8880000114440918</pole>
+            <pole>-0.28999999165534973 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="8.601588728059658E8" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="8.630973863506739E8" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="8.641342258156667E8" LocationCode="00" Network="FR">
+        <poles>
+            <pole>-156.13099670410156 160.58999633789062</pole>
+            <pole>-156.13099670410156 -160.58999633789062</pole>
+            <pole>-523.6199951171875 201.00999450683594</pole>
+            <pole>-523.6199951171875 -201.00999450683594</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

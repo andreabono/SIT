@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="BBL" ELEVATION="375.0" LATITUDE="15.52613" LONGITUDE="-61.46948" NAME="Dominique Barbers Block ou Morne Espagnol">
+    <channel ChannelCode="EHZ" Gain="0.36123088" LocationCode="90" Network="GL">
+        <poles>
+            <pole>-4.334519863128662 -4.548659801483154</pole>
+            <pole>-4.334519863128662 4.548659801483154</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

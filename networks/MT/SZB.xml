@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="SZB" ELEVATION="1948.0" LATITUDE="44.3477" LONGITUDE="6.67603" NAME="Super-Sauze B">
+    <channel ChannelCode="EH1" Gain="0.066853416" LocationCode="00" Network="MT">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EH2" Gain="0.066853416" LocationCode="00" Network="MT">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="0.066853416" LocationCode="00" Network="MT">
+        <poles>
+            <pole>-0.7071070075035095 0.7071070075035095</pole>
+            <pole>-0.7071070075035095 -0.7071070075035095</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

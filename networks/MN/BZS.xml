@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="BZS" ELEVATION="260.0" LATITUDE="45.6188" LONGITUDE="21.6401" NAME="Buzias, Romania">
+    <channel ChannelCode="BHE" Gain="3.5956139916211E8" LocationCode="" Network="MN">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="3.5956139916211E8" LocationCode="" Network="MN">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="3.5956139916211E8" LocationCode="" Network="MN">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHE" Gain="3.5956139916211E8" LocationCode="" Network="MN">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHN" Gain="3.5956139916211E8" LocationCode="" Network="MN">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HHZ" Gain="3.5956139916211E8" LocationCode="" Network="MN">
+        <poles>
+            <pole>-502.6549987792969 0.0</pole>
+            <pole>-1005.3099975585938 0.0</pole>
+            <pole>-1130.969970703125 0.0</pole>
+            <pole>-0.07401590049266815 -0.07401590049266815</pole>
+            <pole>-0.07401590049266815 0.07401590049266815</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

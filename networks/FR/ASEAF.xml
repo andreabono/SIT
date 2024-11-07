@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="ASEAF" ELEVATION="-2470.0" LATITUDE="42.79483" LONGITUDE="6.1635" NAME="Antares">
+    <channel ChannelCode="HHZ" Gain="1.2759159204216832E7" LocationCode="10" Network="FR">
+        <poles>
+            <pole>-0.001964000053703785 -0.001964000053703785</pole>
+            <pole>-0.001964000053703785 0.001964000053703785</pole>
+            <pole>-30.052900314331055 -31.1210994720459</pole>
+            <pole>-30.052900314331055 31.1210994720459</pole>
+            <pole>-41.25640106201172 -114.53500366210938</pole>
+            <pole>-41.25640106201172 114.53500366210938</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNE" Gain="239.139684352" LocationCode="10" Network="FR">
+        <poles>
+            <pole>-0.05000000074505806 0.0</pole>
+            <pole>-65.5999984741211 104.0</pole>
+            <pole>-65.5999984741211 -104.0</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNN" Gain="238.522826752" LocationCode="10" Network="FR">
+        <poles>
+            <pole>-0.05000000074505806 0.0</pole>
+            <pole>-65.5999984741211 104.0</pole>
+            <pole>-65.5999984741211 -104.0</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="HNZ" Gain="238.991425536" LocationCode="10" Network="FR">
+        <poles>
+            <pole>-0.05000000074505806 0.0</pole>
+            <pole>-65.5999984741211 104.0</pole>
+            <pole>-65.5999984741211 -104.0</pole>
+            <pole>-50.0 0.0</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

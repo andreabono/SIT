@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="AGEO" ELEVATION="17.0" LATITUDE="38.26488" LONGITUDE="22.06354" NAME="Agios Giorgios">
+    <channel ChannelCode="EH2" Gain="1.327998208" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EH3" Gain="1.327998208" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="EHZ" Gain="1.327998208" LocationCode="00" Network="CL">
+        <poles>
+            <pole>-8.795999526977539 8.973999977111816</pole>
+            <pole>-8.795999526977539 -8.973999977111816</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>

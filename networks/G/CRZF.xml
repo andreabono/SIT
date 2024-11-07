@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<station CODE="CRZF" ELEVATION="140.0" LATITUDE="-46.43096" LONGITUDE="51.85531" NAME="Port Alfred - Ile de la Possession - Crozet Islands, France">
+    <channel ChannelCode="BHE" Gain="4645.631557632" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-19.587299346923828 24.56130027770996</pole>
+            <pole>-19.587299346923828 -24.56130027770996</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHN" Gain="4843.248812032" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-19.587299346923828 24.56130027770996</pole>
+            <pole>-19.587299346923828 -24.56130027770996</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+    <channel ChannelCode="BHZ" Gain="5980.794912768" LocationCode="00" Network="G">
+        <poles>
+            <pole>-0.01233999989926815 0.01233999989926815</pole>
+            <pole>-0.01233999989926815 -0.01233999989926815</pole>
+            <pole>-19.587299346923828 24.56130027770996</pole>
+            <pole>-19.587299346923828 -24.56130027770996</pole>
+        </poles>
+        <zeroes>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+            <zero>0.0 0.0</zero>
+        </zeroes>
+    </channel>
+</station>
