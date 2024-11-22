@@ -1777,7 +1777,7 @@ public class Event {
             Stazioni_canali_tempi_selezionati = Ancora_da_cercare(Stazioni_canali_tempi_selezionati, false); 
                       
             // EW
-            if ((Stazioni_canali_tempi_selezionati!=null)  && (!Stazioni_canali_tempi_selezionati.isEmpty())){
+            if (App.G.options.getDatasources_EW()!=null && !App.G.options.getDatasources_EW().isEmpty() && Stazioni_canali_tempi_selezionati!=null  && !Stazioni_canali_tempi_selezionati.isEmpty()){
                 for (int idEW=0; idEW<App.G.options.getDatasources_EW().size(); idEW++){
                     if (App.G.options.getDatasources_EW().get(idEW).isUsed()){      
                         // Download data from the Earthworm wave server #idEW
@@ -1858,11 +1858,11 @@ public class Event {
                 //}
             } 
             
-            System.out.println("PRIMA ----------------------------------------------");
-             for (int j=0; j< Stazioni_canali_tempi_selezionati.size(); j++){
-                System.out.println(Stazioni_canali_tempi_selezionati.get(j).getStation() + "   " + Stazioni_canali_tempi_selezionati.get(j).getChannel());
-            }
-            System.out.println("PRIMA ----------------------------------------------");
+//            System.out.println("PRIMA ----------------------------------------------");
+//             for (int j=0; j< Stazioni_canali_tempi_selezionati.size(); j++){
+//                System.out.println(Stazioni_canali_tempi_selezionati.get(j).getStation() + "   " + Stazioni_canali_tempi_selezionati.get(j).getChannel());
+//            }
+//            System.out.println("PRIMA ----------------------------------------------");
             
             //----------------------------------------------------------------------
     //      Costruisce la SCNL_list a partire dalle selected stations 
@@ -1883,9 +1883,9 @@ public class Event {
                 }
             }
             
-            for (int j=0; j< Stazioni_canali_tempi_selezionati.size(); j++){
-                System.out.println(Stazioni_canali_tempi_selezionati.get(j).getStation() + "   " + Stazioni_canali_tempi_selezionati.get(j).getChannel());
-            }
+//            for (int j=0; j< Stazioni_canali_tempi_selezionati.size(); j++){
+//                System.out.println(Stazioni_canali_tempi_selezionati.get(j).getStation() + "   " + Stazioni_canali_tempi_selezionati.get(j).getChannel());
+//            }
             
             //----------------------------------------------------------------------
             // A questo punto in params_from_picks c'è tutto quello che vogliamo vedere
@@ -1900,31 +1900,37 @@ public class Event {
             // Fino a quando ci sono datasource abilitati e tracce da cercare...
             //-------------------------------------------------------------------
 
-            for (int idEW=0; idEW<App.G.options.getDatasources_EW().size(); idEW++){
-                if (App.G.options.getDatasources_EW().get(idEW).isUsed()){                   
-                    System.out.println("*****************************************************************+*+");
-                    App.logger.info("Downloading horizontal waves from datasource " + App.G.options.getDatasources_EW().get(idEW).getDescription());
-                    System.out.println("*****************************************************************+*+");
-                          
-                    // Download data from the Earthworm wave server #idEW
-                    RecoverWaves_EW_WA(idEW, Stazioni_canali_tempi_selezionati);
-                            
-                    Stazioni_canali_tempi_selezionati = Ancora_da_cercare(Stazioni_canali_tempi_selezionati, true); 
+            if (App.G.options.getDatasources_EW()!=null && !App.G.options.getDatasources_EW().isEmpty()) {
+                for (int idEW=0; idEW<App.G.options.getDatasources_EW().size(); idEW++){
+                    if (App.G.options.getDatasources_EW().get(idEW).isUsed()){                   
+    //                    System.out.println("*****************************************************************+*+");
+                        App.logger.info("Downloading horizontal waves from datasource " + App.G.options.getDatasources_EW().get(idEW).getDescription());
+    //                    System.out.println("*****************************************************************+*+");
+
+                        // Download data from the Earthworm wave server #idEW
+                        RecoverWaves_EW_WA(idEW, Stazioni_canali_tempi_selezionati);
+
+                        Stazioni_canali_tempi_selezionati = Ancora_da_cercare(Stazioni_canali_tempi_selezionati, true); 
+                    }
                 }
             }
-            for (int idSL=0; idSL<App.G.options.getDatasources_SL().size(); idSL++){
-                //
+            if (App.G.options.getDatasources_SL()!=null && !App.G.options.getDatasources_SL().isEmpty()) {
+                for (int idSL=0; idSL<App.G.options.getDatasources_SL().size(); idSL++){
+                    //
+                }
             }
-            for (int idFDSN=0; idFDSN<App.G.options.getDatasources_FDSN().size(); idFDSN++){
-                if (App.G.options.getDatasources_FDSN().get(idFDSN).isUsed()){                   
-                    System.out.println("*****************************************************************+*+");
-                    App.logger.info("Downloading horizontal waves from datasource " + App.G.options.getDatasources_EW().get(idFDSN).getDescription());
-                    System.out.println("*****************************************************************+*+");
-                          
-                    // Download data from the Earthworm wave server #idEW
-                    RecoverWaves_FDSN_WA(idFDSN, Stazioni_canali_tempi_selezionati);
-                            
-                    Stazioni_canali_tempi_selezionati = Ancora_da_cercare(Stazioni_canali_tempi_selezionati, true); 
+            if (App.G.options.getDatasources_FDSN()!=null && !App.G.options.getDatasources_FDSN().isEmpty()) {
+                for (int idFDSN=0; idFDSN<App.G.options.getDatasources_FDSN().size(); idFDSN++){
+                    if (App.G.options.getDatasources_FDSN().get(idFDSN).isUsed()){                   
+    //                    System.out.println("*****************************************************************+*+");
+                        App.logger.info("Downloading horizontal waves from datasource " + App.G.options.getDatasources_FDSN().get(idFDSN).getDescription());
+    //                    System.out.println("*****************************************************************+*+");
+
+                        // Download data from the Earthworm wave server #idEW
+                        RecoverWaves_FDSN_WA(idFDSN, Stazioni_canali_tempi_selezionati);
+
+                        Stazioni_canali_tempi_selezionati = Ancora_da_cercare(Stazioni_canali_tempi_selezionati, true); 
+                    }
                 }
             }
 

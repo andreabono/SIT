@@ -3537,6 +3537,8 @@ public class WavesFormController implements Initializable {
 //------------------------------------------------------------------------------    
     private boolean show_current_wave_wa(int plotId){
         
+        if (plot_combinato_WA==null) return false;
+        
         current_WA_plotbox_index=plotId;
         //-----------------------------------------
         // BISOGNA CAPIRE QUAL è LA CURRENT WAVE 
@@ -3613,27 +3615,29 @@ public class WavesFormController implements Initializable {
                     if (OPERATION_DETAIL_WAVE_WA!=null) {
                        switch (OPERATION_DETAIL_WAVE_WA) {
                         case PICKING_PH:
+                            LocalDateTime time_mouse_wa;
                             OPERATION_DETAIL_WAVE_WA=null;
                             XYPlot wa_plot = (XYPlot)event.getChart().getPlot();
-
-                            double domainCrosshairValue = wa_plot.getDomainCrosshairValue();
-                            //
-                            Date date_new_phase = new Date(Math.round(domainCrosshairValue));
-                            LocalDateTime t = convertToLocalDateTimeViaInstant(date_new_phase);
-                            //
-                            prospective_phase_WA.setArrTimeIsUsed(false);  
-
-                            prospective_phase_WA.getPick().setArrivalTime(t.atOffset(ZoneOffset.UTC));
-
+                                                
+                            double domain =  wa_plot.getDomainAxis().java2DToValue(event.getTrigger().getX(), 
+                                chart_viewer_single_WA.getRenderingInfo().getPlotInfo().getDataArea(), 
+                                wa_plot.getDomainAxisEdge());   
+                            
+                            Instant instant = Instant.ofEpochMilli((long) domain);
+                            time_mouse_wa = LocalDateTime.ofInstant(instant, ZoneId.of("UTC"));                            
+                            Date date_new_pick  = Date.from(time_mouse_wa.atZone(ZoneId.of("UTC")).toInstant());
+                          
+                            prospective_phase_WA.getPick().setArrivalTime(time_mouse_wa.atOffset(ZoneOffset.UTC)); 
+                            
                             if (prospective_phase_WA.getIscCode().contains("b"))
-                                T_b=t;
+                                T_b=time_mouse_wa; 
                             else if (prospective_phase_WA.getIscCode().contains("a"))
-                                    T_a=t;
+                                    T_a=time_mouse_wa; 
 
                             //                       
-                            //ValueMarker new_phase_marker = Make_Phase_Marker(date_new_phase, prospective_phase_WA.getIscCode());
+                            //ValueMarker new_phase_marker = Make_Phase_Marker(date_new_pick, prospective_phase_WA.getIscCode());
                             if (prospective_phase_WA.getArrTimeIsUsed()==null) prospective_phase_WA.setArrTimeIsUsed(true);
-                            ValueMarker new_phase_marker = Make_Marker(date_new_phase, prospective_phase_WA.getIscCode(),
+                            ValueMarker new_phase_marker = Make_Marker(date_new_pick, prospective_phase_WA.getIscCode(),
                                     (java.awt.Color)wa_plot.getBackgroundPaint(), prospective_phase_WA.getArrTimeIsUsed());
                             ValueMarker m;
                             ValueMarker old_phase_marker=null;
@@ -3646,11 +3650,15 @@ public class WavesFormController implements Initializable {
                              }
                             }
     //                                           
-                                 if (old_phase_marker!=null) {
-                                     wa_plot.removeDomainMarker(old_phase_marker);
-                                 } 
-     //                          // Add new marker
-                                 wa_plot.addDomainMarker(new_phase_marker);                       
+                             if (old_phase_marker!=null) {
+                                 wa_plot.removeDomainMarker(old_phase_marker);
+                             } 
+ //                          // Add new marker
+                             wa_plot.addDomainMarker(new_phase_marker);  
+                             
+                             radio_beforeA.setSelected(false);
+                             radio_afterA.setSelected(false);
+                             
                             break;
                        case PICKING_T1:
 
@@ -4083,6 +4091,19 @@ public class WavesFormController implements Initializable {
 
     @FXML
     private void btnRecalc_single_click(ActionEvent event) {
+        if (T_a==null || T_b==null) {
+            sitDialog.ShowInformationMessage("Please, set 'before' and 'after' indicators first.", PrimaryStage);
+        }
+        
+        // Calcola la differenza assoluta in secondi
+        long diffInSeconds = Math.abs(Duration.between(T_a, T_b).getSeconds());
+
+        // Verifica se la differenza è maggiore di 1 secondo
+        if (diffInSeconds > 1) {
+            sitDialog.ShowInformationMessage("Warning: You selected a time window that is longer than a second!!", PrimaryStage);
+        }
+        
+        
         try {
             ValueMarker m;
             XYPlot wa_plot = (XYPlot)chart_viewer_single_WA.getChart().getPlot();  
@@ -4090,6 +4111,7 @@ public class WavesFormController implements Initializable {
             int idEnd = -1;
             //
             XYDataset dataset = wa_plot.getDataset();
+           
             RegularTimePeriod  p;
            // 
             ZoneId zoneId = ZoneId.of("UTC");
@@ -4099,26 +4121,26 @@ public class WavesFormController implements Initializable {
 
                     if (m.getLabel().contains("b")) {
                        // Find the start index
+//                       Date data = Date.from( T_b.atZone(ZoneId.of("UTC")).toInstant());
+//                       p=RegularTimePeriod.createInstance(org.jfree.data.time.Millisecond.class, 
+//                               data, TimeZone.getTimeZone("UTC"), Locale.getDefault())  ;
+//                                          
+//                       idStart = ((TimeSeries)((TimeSeriesCollection) dataset).getSeries().get(0)).getIndex(p);
 //                       
-//                       time = i.floatValue()/tmpWave.getSamplingRate(); //the time value of the sample
-//                        current_time= timestamp + Float.valueOf(time*1000).intValue();
-//                        new_date = millsToLocalDateTime(current_time);
-//                        ms= new Millisecond(Date.from(new_date.atZone(zoneId).toInstant()));          
-//                        item = new TimeSeriesDataItem(ms, tmpWave.getY(i)); 
-                       
-                       Date data = Date.from( T_b.atZone(ZoneId.of("UTC")).toInstant());
-                       p=RegularTimePeriod.createInstance(org.jfree.data.time.Millisecond.class, 
-                               data, TimeZone.getTimeZone("UTC"), Locale.getDefault())  ;
-                                          
-                       idStart = ((TimeSeries)((TimeSeriesCollection) dataset).getSeries().get(0)).getIndex(p);
+//                       System.out.println("idStart = " + idStart);
 
+                        idStart = FindIndexInDataset(dataset, T_b);
+                      
                     } else {
                         if (m.getLabel().contains("a")) {
-                           // Find the end index
-                            Date data = Date.from(T_a.atZone(ZoneId.of("UTC")).toInstant());
-                            p=RegularTimePeriod.createInstance(org.jfree.data.time.Millisecond.class, data, 
-                                     TimeZone.getTimeZone("UTC"), Locale.getDefault())  ;
-                            idEnd = ((TimeSeries)((TimeSeriesCollection) dataset).getSeries().get(0)).getIndex(p);
+//                            // Find the end index
+//                            Date data = Date.from(T_a.atZone(ZoneId.of("UTC")).toInstant());
+//                            p=RegularTimePeriod.createInstance(org.jfree.data.time.Millisecond.class, data, 
+//                                     TimeZone.getTimeZone("UTC"), Locale.getDefault())  ;
+//                            idEnd = ((TimeSeries)((TimeSeriesCollection) dataset).getSeries().get(0)).getIndex(p);
+                            
+                            idEnd = FindIndexInDataset(dataset, T_a);
+                            
                         }
                     }
                 }
@@ -4129,7 +4151,7 @@ public class WavesFormController implements Initializable {
                         idStart = idEnd;
                         idEnd = a;
                     }
-                }
+               }
                 //
                 Waveform tmpW = myEvent.SubplotIndex_to_Waveform_WA(current_WA_plotbox_index);
                 LocalDateTime dateStart;
@@ -4187,6 +4209,41 @@ public class WavesFormController implements Initializable {
         }
               
     }   
+    
+    private int FindIndexInDataset(XYDataset D, LocalDateTime T){
+        try{
+            
+            int itemCount = D.getItemCount(0);
+            
+            // Converto il tempo T_In in millisecondi dall'Epoch
+            long targetTimeMillis = T.toInstant(ZoneOffset.UTC).toEpochMilli();
+
+            // Variabili per tenere traccia del minimo errore
+            long minDifference = Long.MAX_VALUE;
+            int nearestIndex = -1;
+
+            // Itera sui campioni
+            for (int i = 0; i < itemCount; i++) {
+                // Recupera il valore in ascissa (tempo) in millisecondi dall'Epoch
+                double xValue = D.getXValue(0, i);
+                long sampleTimeMillis = (long) xValue;
+
+                // Calcola la differenza assoluta
+                long difference = Math.abs(sampleTimeMillis - targetTimeMillis);
+
+                // Aggiorna l'indice più vicino se troviamo un errore minore
+                if (difference < minDifference) {
+                    minDifference = difference;
+                    nearestIndex = i;
+                }
+            }
+            
+            return nearestIndex;
+        } catch (Exception ex) {
+            return -1;
+        }
+    
+    }
 //--------------------------------------------------------------------------------    
     private void delete_amplitude_markers(CombinedDomainXYPlot combined_plot){
         if (combined_plot.getSubplots()!=null) {

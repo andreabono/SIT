@@ -267,9 +267,11 @@ public class WavesTaskDialogController implements Initializable {
             }
                         
             // EW
-            for (int idEW=0; idEW<App.G.options.getDatasources_EW().size(); idEW++){
-                if (App.G.options.getDatasources_EW().get(idEW).isUsed())
-                    startTask("EW", idEW);
+            if (App.G.options.getDatasources_EW()!=null && !App.G.options.getDatasources_EW().isEmpty()) {
+                for (int idEW=0; idEW<App.G.options.getDatasources_EW().size(); idEW++){
+                    if (App.G.options.getDatasources_EW().get(idEW).isUsed())
+                        startTask("EW", idEW);
+                }
             }
                        
             // SL

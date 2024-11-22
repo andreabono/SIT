@@ -28,37 +28,43 @@ public final class sitDialog {
      * @param msgText
      */
         public static void ShowErrorMessage(String msgText, Stage owner){
-            Platform.runLater(new Runnable(){
-                @Override public void run() 
-                {
-                    Alert alert = new Alert(AlertType.ERROR);
-                    alert.initOwner(owner); 
-                    alert.initModality(Modality.APPLICATION_MODAL);
-                    alert.setTitle("SIT - Error");
-                    alert.setHeaderText("An error occurred!!");
-                    alert.setContentText(msgText);
+            try{
+                Platform.runLater(new Runnable(){
+                    @Override public void run() 
+                    {
+                        Alert alert = new Alert(AlertType.ERROR);
+                        alert.initOwner(owner); 
+                        alert.initModality(Modality.APPLICATION_MODAL);
+                        alert.setTitle("SIT - Error");
+                        alert.setHeaderText("An error occurred!!");
+                        alert.setContentText(msgText);
 
-                    Optional<ButtonType> option = alert.showAndWait();
-                }
-            });          
+                        Optional<ButtonType> option = alert.showAndWait();
+                    }
+                });   
+            } catch (Exception ex){
+            }
     }       
 //------------------------------------------------------------------------------
     /**
      *
      * @param msgText
      */
-        public static void ShowInformationMessage(String msgText, Stage owner){            
-            Platform.runLater(new Runnable(){
-                @Override public void run() {
-                    Alert alert = new Alert(AlertType.INFORMATION);
-                    alert.initOwner(owner); 
-                    alert.initModality(Modality.APPLICATION_MODAL);
-                    alert.setTitle("SIT - Information");
-                    alert.setContentText(msgText);
-                    alert.showAndWait();
-                }
-                
-            });
+        public static void ShowInformationMessage(String msgText, Stage owner){    
+            try {
+                Platform.runLater(new Runnable(){
+                    @Override public void run() {
+                        Alert alert = new Alert(AlertType.INFORMATION);
+                        alert.initOwner(owner); 
+                        alert.initModality(Modality.APPLICATION_MODAL);
+                        alert.setTitle("SIT - Information");
+                        alert.setContentText(msgText);
+                        alert.showAndWait();
+                    }
+
+                });
+                } catch (Exception ex){
+            }
     }
 //------------------------------------------------------------------------------
     public static ButtonType ShowConfirmationMessage(String header_text, String msgText, Stage owner){
@@ -88,14 +94,18 @@ public final class sitDialog {
      * @param msgText
      */
         public static void ShowMessage(String msgText, String title, AlertType alert_type, Stage owner){
-            Platform.runLater(() -> {
-                Alert alert = new Alert(alert_type);
-                alert.initOwner(owner); 
-                alert.initModality(Modality.APPLICATION_MODAL);
-                alert.setTitle(title);
-                alert.setContentText(msgText);
-                alert.showAndWait();
-            });
+            try {
+                    Platform.runLater(() -> {
+                    Alert alert = new Alert(alert_type);
+                    alert.initOwner(owner); 
+                    alert.initModality(Modality.APPLICATION_MODAL);
+                    alert.setTitle(title);
+                    alert.setContentText(msgText);
+                    alert.showAndWait();
+                });
+            } catch (Exception ex){
+            }
+            
     }
 //------------------------------------------------------------------------------
 }
