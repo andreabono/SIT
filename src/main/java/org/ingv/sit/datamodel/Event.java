@@ -1305,7 +1305,7 @@ public class Event {
             int mlId=-1;
             
             if (innerObjectEvent.getOrigins().get(0)==null) return null;
-            if (innerObjectEvent.getOrigins().get(0).getMagnitudes().isEmpty()) return null;
+            if (innerObjectEvent.getOrigins().get(0).getMagnitudes()==null || innerObjectEvent.getOrigins().get(0).getMagnitudes().isEmpty()) return null;
 
             while ((!hasML) && (i<innerObjectEvent.getOrigins().get(0).getMagnitudes().size())){
                 if (innerObjectEvent.getOrigins().get(0).getMagnitudes().get(i).getTypeMagnitude().toUpperCase().contains("ML")) {
@@ -1430,6 +1430,9 @@ public class Event {
 
         for (int i=0; i< innerObjectEvent.getOrigins().get(0).getMagnitudes().size(); i++){
             if (innerObjectEvent.getOrigins().get(0).getMagnitudes().get(i).getTypeMagnitude().toUpperCase().contains("ML")){
+                if (innerObjectEvent.getOrigins().get(0).getMagnitudes().get(i).getStationmagnitudes()==null){
+                    innerObjectEvent.getOrigins().get(0).getMagnitudes().get(i).setStationmagnitudes(new ArrayList<ObjectStationmagnitude>());
+                }
                 innerObjectEvent.getOrigins().get(0).getMagnitudes().get(i).getStationmagnitudes().add(inAmp);
             }
         }

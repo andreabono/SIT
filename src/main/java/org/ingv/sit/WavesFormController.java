@@ -4260,7 +4260,7 @@ public class WavesFormController implements Initializable {
             Object o[] = current_plot.getDomainMarkers(org.jfree.chart.ui.Layer.FOREGROUND).toArray();
             for (int i =0; i< o.length; i++){
                 m = (ValueMarker)o[i];
-                if (( (m.getLabel().toUpperCase().contains("A")) && !m.getLabel().toUpperCase().contains("CODA"))||(m.getLabel().isBlank()))
+                if (( ((m.getLabel().toUpperCase().contains("A")) || (m.getLabel().toUpperCase().contains("B")))&& !m.getLabel().toUpperCase().contains("CODA"))||(m.getLabel().isBlank()))
                      current_plot.removeDomainMarker(m);
             }
 
