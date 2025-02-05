@@ -5,6 +5,8 @@ Program language: JavaFX
 Software required: Java JDK runtime 22 or upper  
 Program size: 190 MB  
 
+Wiki is available here: https://github.com/andreabono/SIT/wiki
+
 Build the code using Maven  
 >   mvn -B package --file pom.xml
 
