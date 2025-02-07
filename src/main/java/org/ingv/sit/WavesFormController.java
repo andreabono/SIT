@@ -28,7 +28,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
-import java.sql.SQLException;
 import java.text.DecimalFormat;
 import java.time.Duration;
 import java.time.Instant;
@@ -46,9 +45,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
 import java.util.ResourceBundle;
-import java.util.TimeZone;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
@@ -93,6 +90,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
@@ -127,6 +125,7 @@ import org.ingv.dante.model.ObjectTypeOrigin;
 import org.ingv.dante.model.TypeOriginName;
 import org.ingv.sit.datamodel.Event_type;
 import org.ingv.sit.datamodel.Event;
+import org.ingv.sit.datamodel.Signal;
 import org.ingv.sit.datamodel.Station;
 import org.ingv.sit.datamodel.Waveform;
 //import org.ingv.sit.jL.jL;
@@ -398,6 +397,72 @@ public class WavesFormController implements Initializable {
     private Label lblOT;
     @FXML
     private TabPane main_waves_tab;
+    @FXML
+    private SplitPane waves_split_new;
+    @FXML
+    private ToggleSwitch tglFilterAll_new;
+    @FXML
+    private Button btnZoomResetPreview_new;
+    @FXML
+    private Button btnLocate_Hypo2000_new;
+    @FXML
+    private Button btnSave_new;
+    @FXML
+    private Button bntRepaintBigger_new;
+    @FXML
+    private Button bntRepaintSmaller_new;
+    @FXML
+    private ScrollPane waves_scrollbox_preview_new;
+    @FXML
+    private AnchorPane waves_anchor_new;
+    @FXML
+    private Button btnDSP_new;
+    @FXML
+    private ToggleSwitch tglFilterTerna_new;
+    @FXML
+    private Button btnPM_new;
+    @FXML
+    private Button btnZoomIn_Area_new;
+    @FXML
+    private Button btnZoomIn_new;
+    @FXML
+    private Button btnZoomOut_new;
+    @FXML
+    private Button btnZoomReset_new;
+    @FXML
+    private Button btnClearWeightBoxes_new;
+    @FXML
+    private Button btnPaneLeft_new;
+    @FXML
+    private Button btnPaneRight_new;
+    @FXML
+    private RadioButton radioP_new;
+    @FXML
+    private RadioButton radioS_new;
+    
+    
+    
+    @FXML
+    private RadioButton radioCoda_new;
+    @FXML
+    private Button btnWeight_new;
+    @FXML
+    private Button btnDropCoda_new;
+    @FXML
+    private Button btnPrevTerna_new;
+    @FXML
+    private Button btnNextTerna_new;
+    @FXML
+    private ComboBox<?> combo_TernaChannels_new;
+    @FXML
+    private ComboBox<?> cmbActiveStation_new;
+    @FXML
+    private Button btnDiscardStation_new;
+    //private ScrollPane waves_scrollbox_TERNA_new;
+    @FXML
+    private VBox vBox_TERNA;
+    @FXML
+    private AnchorPane anchor_TERNA;
     
     public void resizemap(){
         this.btnRapaintMap.fire();
@@ -483,8 +548,8 @@ public class WavesFormController implements Initializable {
                 }
                 // Download waveforms:
                 myEvent.ADDWAVES(MH.getSelected_Stations(), PrimaryStage);
-                
-                if (show_waves_PREVIEW(preview_subplot_index)) {     
+                                  
+                if (show_waves_PREVIEW(preview_subplot_index) && show_waves_PREVIEW_new(preview_subplot_index, true)) {  
                     //LoadAndShowTerna(0);
                     show_phase_lines(plot_combinato);
                     showMap();
@@ -567,6 +632,8 @@ public class WavesFormController implements Initializable {
         waves_scrollbox_TERNA.setFitToHeight(true);
         waves_scrollbox_preview.setFitToWidth(true);
         waves_scrollbox_preview.setFitToHeight(false);
+        waves_scrollbox_preview_new.setFitToWidth(true);
+        waves_scrollbox_preview_new.setFitToHeight(false);
         waves_scrollbox_preview_WA.setFitToWidth(true);
         waves_scrollbox_preview_WA.setFitToHeight(false);
         
@@ -589,7 +656,6 @@ public class WavesFormController implements Initializable {
                     waves_scrollbox_TERNA.setPrefSize(waves_split.getWidth(), waves_split.getHeight()-(waves_split.getHeight()*scale_factor)-40);       
                     waves_scrollbox_preview.setMaxHeight(waves_split.getHeight()- waves_scrollbox_TERNA.getHeight());
                     waves_scrollbox_preview.setPrefHeight(waves_split.getHeight()- waves_scrollbox_TERNA.getHeight()); 
-                    
                 }
             }
         });
@@ -602,7 +668,7 @@ public class WavesFormController implements Initializable {
                     waves_scrollbox_TERNA.setPrefSize(waves_split.getWidth(), waves_split.getHeight()-(waves_split.getHeight()*scale_factor)-40);
                                 
                     waves_scrollbox_preview.setMaxHeight(waves_split.getHeight()- waves_scrollbox_TERNA.getHeight());
-                    waves_scrollbox_preview.setPrefHeight(waves_split.getHeight()- waves_scrollbox_TERNA.getHeight());         
+                    waves_scrollbox_preview.setPrefHeight(waves_split.getHeight()- waves_scrollbox_TERNA.getHeight()); 
                 }
             }
         });
@@ -638,13 +704,13 @@ public class WavesFormController implements Initializable {
                     try {
                         if (new_val) {
                            if (Filter_ALLWAVES()) {
-                                DisplayOnlyWaves(preview_subplot_index);
+                                DisplayOnlyWaves(preview_subplot_index, false);
 
                                 //tglFilterTerna.setSelected(true);
                             }  
                         } else {
                             Restore_ALLWAVES_ResetOriginal();
-                            DisplayOnlyWaves(preview_subplot_index);
+                            DisplayOnlyWaves(preview_subplot_index, false);
                             //tglFilterTerna.setSelected(false);
                         }      
                     } catch (Exception ex) {
@@ -664,11 +730,11 @@ public class WavesFormController implements Initializable {
                     if (new_val) {
                         Range xRange = ((XYPlot)getPlot_combinato_TERNA().getSubplots().get(0)).getDomainAxis().getRange();
                         //Range yRange = ((XYPlot)plot_combinato_TERNA.getSubplots().get(0)).getRangeAxis().getRange();
-                        if (Filter_TERNA()) DisplayWaves_TERNA(xRange); //, yRange);    
+                        if (Filter_TERNA()) DisplayWaves_TERNA(xRange, false, false); //, yRange);    
                     } else {
                         Restore_TERNA_UndoLastFilter();
                         Range xRange = ((XYPlot)getPlot_combinato_TERNA().getSubplots().get(0)).getDomainAxis().getRange();
-                        DisplayWaves_TERNA(xRange); //, yRange);  
+                        DisplayWaves_TERNA(xRange, false, false); //, yRange);  
                     }      
                 } catch (Exception ex) {
                     App.logger.error(ex.getMessage());
@@ -1396,11 +1462,19 @@ public class WavesFormController implements Initializable {
 //------------------------------------------------------------------------------    
     public void DisplayAll() {
         if ( !form_initializing) {
-            if (show_waves_PREVIEW(-1)) {
+            if (show_waves_PREVIEW(-1) && show_waves_PREVIEW_new(-1, true)) {
                 waves_split.setDividerPosition(0, 0.6);
                 info_split.setDividerPosition(0, 0.5);
                 info_split_inner.setDividerPosition(0, 0.5);
-                LoadAndShowTerna(0);
+                
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        LoadAndShowTerna(0);
+                    }
+                    });
+                
+               
                 show_phase_lines(plot_combinato);
                 showMap();
                 populate_magnitude_tabs();
@@ -1419,8 +1493,8 @@ public class WavesFormController implements Initializable {
         populate_hypoinfo_tab();
     }  
     //------------------------------------------------------------------------------
-    public void DisplayOnlyWaves(int new_current_wave_id) {
-        if (show_waves_PREVIEW(new_current_wave_id)) {
+    public void DisplayOnlyWaves(int new_current_wave_id, boolean ReSync) {
+        if (show_waves_PREVIEW(new_current_wave_id) && show_waves_PREVIEW_new(new_current_wave_id, ReSync)) {
             show_phase_lines(plot_combinato);
         }
     } 
@@ -1514,6 +1588,7 @@ public class WavesFormController implements Initializable {
             if (myEvent.getNStations()>0) {
                 for (int i = 0; i < myEvent.getNStations(); i++){
                         myEvent.getStations().get(i).getWave(0).Restore_Samples();
+                        myEvent.getStations().get(i).getWave(0).UpdateYBounds();
                         if (myEvent.getStations().get(i).getWave(0).getFilters()>0)
                             myEvent.getStations().get(i).getWave(0).setFilters(myEvent.getStations().get(i).getWave(0).getFilters()-1);
                 }  
@@ -1528,6 +1603,7 @@ public class WavesFormController implements Initializable {
             if (myEvent.getActiveTerna().getWaves()!=null) {
                 for (int i = 0; i < myEvent.getActiveTerna().getWaves().size(); i++){
                         myEvent.getActiveTerna().getWaves().get(i).Restore_Samples();
+                        myEvent.getActiveTerna().getWaves().get(i).UpdateYBounds();
                         if (myEvent.getActiveTerna().getWaves().get(i).getFilters()>0)
                             myEvent.getActiveTerna().getWaves().get(i).setFilters(myEvent.getActiveTerna().getWaves().get(i).getFilters()-1);
                 }  
@@ -1543,6 +1619,7 @@ public class WavesFormController implements Initializable {
             if (myEvent.getNStations()>0) {
                 for (int i = 0; i < myEvent.getNStations(); i++){
                         myEvent.getStations().get(i).getWave(0).Restore_Original_Samples();
+                        myEvent.getStations().get(i).getWave(0).UpdateYBounds();
                         if (myEvent.getStations().get(i).getWave(0).getFilters()>0)
                             myEvent.getStations().get(i).getWave(0).setFilters(myEvent.getStations().get(i).getWave(0).getFilters()-1);
                 }  
@@ -1602,7 +1679,69 @@ public class WavesFormController implements Initializable {
 //            paint_PREVIEW_ONLY(true);
 //        }
     }
-//------------------------------------------------------------------------------    
+//------------------------------------------------------------------------------  
+    
+    public boolean show_waves_PREVIEW_new(int new_preview_subplot_index, boolean ReSync){     
+        if (myEvent == null) return false;
+        if (!myEvent.Event_has_waves()) return false;
+        try {
+            VBox vboxMain = new VBox();
+            if (vboxMain.getChildren() !=null)
+                vboxMain.getChildren().clear();
+            
+            waves_scrollbox_preview_new.setContent(vboxMain);
+            AnchorPane.setBottomAnchor(vboxMain,0.0);
+            AnchorPane.setTopAnchor(vboxMain,0.0);
+            AnchorPane.setLeftAnchor(vboxMain,0.0);
+            AnchorPane.setRightAnchor(vboxMain,0.0);
+            
+           
+            
+            // How many wave boxes do I have to create?
+            int nOpenWaves=0;
+            for (int idStation=0; idStation < myEvent.getNStations(); idStation++) { 
+                if (myEvent.getStation(idStation).getNWaves()>0) {
+                    nOpenWaves++;
+                }
+            }
+            
+            Pane P;                       
+            for (int i=0; i< nOpenWaves; i++){
+                P = new Pane();
+                P.setPrefHeight(80);
+                P.setMinHeight(80); // Altezza minima
+                P.setMaxHeight(80); // Altezza massima
+
+                vboxMain.getChildren().add(P);
+            }
+//            Thread.sleep(50);
+            if (ReSync)
+                myEvent.SyncroWaves();
+
+            int waves_counter =-1; 
+            for (int idStation=0; idStation < myEvent.getNStations(); idStation++) { 
+                if (myEvent.getStation(idStation).getNWaves()>0) {
+                    waves_counter++;
+                    final Pane P2 = (Pane)vboxMain.getChildren().get(waves_counter);
+                    final int idStaz=idStation;
+                    Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        //myEvent.getStation(idStaz).PlotWave(P2,0, true, true, false, false);
+                        PlotWave(myEvent.getStation(idStaz).getWave(0),
+                                myEvent.getStation(idStaz).getPhases(),
+                                P2, true, true, false, false, javafx.scene.paint.Color.LIME);
+                    }
+                    });
+                }
+            }
+       
+            return true;
+        } catch (Exception ex) {
+            return false;
+        }
+    }   
+    
     public boolean show_waves_PREVIEW(int new_preview_subplot_index){        
         Waveform tmpWave;
         int idStation;
@@ -2589,7 +2728,7 @@ public class WavesFormController implements Initializable {
                     s.getEarthWorm_WaveServer_Client_INDEX(), s.getFDSN_Service_index())) {
                     //
                     // This shows the waves for the selected station
-                    DisplayWaves_TERNA(null); //, null);
+                    DisplayWaves_TERNA(null, true, true); //, null);
                     //tglFilterTerna.setSelected(false);
                 }
             } 
@@ -2622,10 +2761,18 @@ public class WavesFormController implements Initializable {
         }
     }
 //------------------------------------------------------------------------------    
-    public void DisplayWaves_TERNA(Range xRange) { //, Range yRange) {
+    public void DisplayWaves_TERNA(Range xRange, boolean ReSync, boolean ReSort) { //, Range yRange) {
         if (show_waves_TERNA(xRange)) { //, yRange)) {
             show_phases_TERNA();
         }
+        
+        show_waves_TERNA_new(xRange, ReSync, ReSort);
+    }  
+    
+    public void DisplayWaves_TERNA_new(Range xRange, boolean ReSync, boolean ReSort) { //, Range yRange) {
+        if (show_waves_TERNA_new(xRange, ReSync, ReSort)) { //, yRange)) {
+            //show_phases_TERNA();
+        }       
     }  
 //------------------------------------------------------------------------------        
     public void LoadAndShowTerna(String staCode) {
@@ -2648,7 +2795,7 @@ public class WavesFormController implements Initializable {
                     tmpW.getChannelCode().substring(0, 2), 
                     tmpW.getNetworkCode(), tmpW.getLocationCode(), s.getEarthWorm_WaveServer_Client_INDEX(), s.getFDSN_Service_index())) {
                     // Mostra le tracce e le fasi della stazione selezionata
-                    DisplayWaves_TERNA(null); //, null);
+                    DisplayWaves_TERNA(null, true, true); //, null);
                     //tglFilterTerna.setSelected(false);
                 }
             } 
@@ -2670,7 +2817,7 @@ public class WavesFormController implements Initializable {
                 if (myEvent.InitTerna(staCode, myEvent.getStation(idStation).getName(),
                     chaCode, s.getNetwork(), s.getLocation(chaCode), s.getEarthWorm_WaveServer_Client_INDEX(),s.getFDSN_Service_index())) {
                     // Mostra le tracce e le fasi della stazione selezionata
-                    DisplayWaves_TERNA(null); //, null);
+                    DisplayWaves_TERNA(null, true, true); //, null);
                     //tglFilterTerna.setSelected(false);
                 } else {
                     Alert alert = new Alert(AlertType.WARNING);
@@ -2687,7 +2834,80 @@ public class WavesFormController implements Initializable {
             Logger.getLogger("org.ingv.sit").log(java.util.logging.Level.SEVERE, ex.getMessage());
         }    
     }
-//------------------------------------------------------------------------------    
+//------------------------------------------------------------------------------ 
+    private boolean show_waves_TERNA_new(Range xRange, boolean ReSync, boolean ReSort) {   
+        try{
+            if (myEvent == null) return true;                    // or false?
+            if (myEvent.getActiveTerna() == null) return true;   // or false?
+            if (myEvent.getActiveTerna().getWaves()==null) return false;
+            if (myEvent.getActiveTerna().getWaves().isEmpty()) return false;   
+            
+            //VBox vboxTerna= new VBox();
+            
+            if (vBox_TERNA.getChildren() !=null)
+                vBox_TERNA.getChildren().clear();
+            
+            if (ReSort)
+                myEvent.getActiveTerna().SortWaves();
+            if (ReSync)
+            myEvent.getActiveTerna().SyncroWaves();
+            
+            Pane P;                       
+            for (Waveform wave : myEvent.getActiveTerna().getWaves()) {
+                P = new Pane();
+                P.setPrefHeight(anchor_TERNA.getHeight()/myEvent.getActiveTerna().getWaves().size());
+                P.setMinHeight(anchor_TERNA.getHeight()/myEvent.getActiveTerna().getWaves().size());
+                P.setMaxHeight(anchor_TERNA.getHeight()/myEvent.getActiveTerna().getWaves().size());
+                
+//                P.setMinHeight(waves_scrollbox_TERNA_new.getHeight()/myEvent.getActiveTerna().getWaves().size()); // Altezza minima
+//                P.setMaxHeight(waves_scrollbox_TERNA_new.getHeight()/myEvent.getActiveTerna().getWaves().size()); // Altezza massima
+
+                vBox_TERNA.getChildren().add(P);
+            }
+            
+            for (int idWave=0; idWave < myEvent.getActiveTerna().getWaves().size(); idWave++) {     
+                final Pane P2 = (Pane)vBox_TERNA.getChildren().get(idWave);
+                final int idW = idWave;    
+                final ArrayList<ObjectArrival> Ph = myEvent.getStation(myEvent.getActiveStationID()).getPhases();
+                final javafx.scene.paint.Color WaveColor;
+                              
+                switch (myEvent.getActiveTerna().getWaves().get(idW).getChannelCode().substring(2)) {
+                        case "Z":
+                            WaveColor = javafx.scene.paint.Color.YELLOW;
+                            break;
+                        case "N":
+                            WaveColor = javafx.scene.paint.Color.CYAN;
+                            break;
+                        case "1":
+                            WaveColor = javafx.scene.paint.Color.CYAN;
+                            break;
+                        case "E":
+                            WaveColor = javafx.scene.paint.Color.MAGENTA;
+                            break;  
+                        case "2":
+                            WaveColor = javafx.scene.paint.Color.MAGENTA;
+                            break; 
+                        default: 
+                            WaveColor = javafx.scene.paint.Color.LIME;
+                            break;
+                    } 
+                
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        PlotWave(myEvent.getActiveTerna().getWaves().get(idW), Ph, P2, 
+                            true, true,
+                            true, true, WaveColor);
+                    }
+                });
+                
+            }
+                       
+            return true;
+        } catch (Exception ex){
+            return false;
+        } 
+    }
     private boolean show_waves_TERNA(Range xRange) {     
         Waveform tmpWave;
         int idWave=0;
@@ -2726,7 +2946,7 @@ public class WavesFormController implements Initializable {
             getPlot_combinato_TERNA().getDomainAxis().setLabelPaint(java.awt.Color.white);
     //    
             //SortTernaWaves();  
-            myEvent.getActiveTerna().SortWaves();
+            myEvent.getActiveTerna().SortWaves();           
             //         
             ZoneId zoneId = ZoneId.of("UTC");    
             float ymin, ymax;   
@@ -2983,6 +3203,7 @@ public class WavesFormController implements Initializable {
                             (float)3.0, (float)7.0, 
                             2);
                         myEvent.getStations().get(i).getWave(0).setFilters(myEvent.getStations().get(i).getWave(0).getFilters()+1);
+                        myEvent.getStations().get(i).getWave(0).UpdateYBounds();
                     }
                 }               
                 return true;
@@ -3016,6 +3237,8 @@ public class WavesFormController implements Initializable {
                             0, (int)myEvent.getActiveTerna().getWaves().get(idWave).getnSamples(), 
                             (float)3.0, (float)7.0, 
                             2);
+                    
+                    myEvent.getActiveTerna().getWaves().get(idWave).UpdateYBounds();
                 }
             return true;
             } else {
@@ -4094,16 +4317,7 @@ public class WavesFormController implements Initializable {
         if (T_a==null || T_b==null) {
             sitDialog.ShowInformationMessage("Please, set 'before' and 'after' indicators first.", PrimaryStage);
         }
-        
-        // Calcola la differenza assoluta in secondi
-        long diffInSeconds = Math.abs(Duration.between(T_a, T_b).getSeconds());
-
-        // Verifica se la differenza è maggiore di 1 secondo
-        if (diffInSeconds > 1) {
-            sitDialog.ShowInformationMessage("Warning: You selected a time window that is longer than a second!!", PrimaryStage);
-        }
-        
-        
+            
         try {
             ValueMarker m;
             XYPlot wa_plot = (XYPlot)chart_viewer_single_WA.getChart().getPlot();  
@@ -4191,6 +4405,16 @@ public class WavesFormController implements Initializable {
                         t_min  =  millsToLocalDateTime(current_time);
                     }
 
+                }
+
+                // Calcola la differenza assoluta in secondi
+                long diffInSeconds = Math.abs(Duration.between(t_max, t_min).getSeconds());
+
+                // Verifica se la differenza è maggiore di 1 secondo
+                if (diffInSeconds > 1) {
+                    sitDialog.ShowInformationMessage("""
+                                                     Warning: [T_MAX-T_MIN] Resulting time window is longer than a second!!
+                                                     Amplitude value could be unreliable.""", PrimaryStage);
                 }
 
                 if (t_min != t_max) {
@@ -5262,9 +5486,9 @@ public class WavesFormController implements Initializable {
         // 
         if (myEvent.RemoveStation(myEvent.getActiveStationID())){
             if ((preview_subplot_index>0)||(preview_subplot_index==plot_combinato.getSubplots().size()-1))
-                DisplayOnlyWaves(preview_subplot_index-1);
+                DisplayOnlyWaves(preview_subplot_index-1, false);
             else
-                DisplayOnlyWaves(preview_subplot_index);
+                DisplayOnlyWaves(preview_subplot_index, false);
             LoadAndShowTerna(preview_subplot_index);
         }
     }
@@ -5452,6 +5676,69 @@ public class WavesFormController implements Initializable {
      */
     public void setPlot_combinato_TERNA(CombinedDomainXYPlot plot_combinato_TERNA) {
         this.plot_combinato_TERNA = plot_combinato_TERNA;
+    }
+    
+    //------------------------------------------------------------------------------    
+    public void PlotWave(Waveform W, ArrayList<ObjectArrival> Phases, Pane P, 
+            boolean ShowGrid, boolean ShowAxes,
+            boolean ShowTimeLabels, boolean ShowPhaseUncertainties,
+            javafx.scene.paint.Color wave_color){
+        P.layout();
+        //if ((Waves==null)||(Waves.isEmpty())) return;
+
+        // Dati del segnale
+        double[] xData = new double[(int) W.getnSamples()];
+        for (int i = 0; i < (int) W.getnSamples(); i++) {
+            xData[i] = i/W.getSamplingRate();
+        }
+
+        double[] yData = new double[(int) W.getnSamples()];
+        for (int i = 0; i < (int) W.getnSamples(); i++) {
+            yData[i] = W.getY(i);
+        }
+        
+        W.getSignal().Plot(P, W.getStationCode(), W.getChannelCode(), W.getStartTime(), 
+                ShowGrid, ShowAxes, ShowTimeLabels, xData, yData, 1/W.getSamplingRate(),
+                wave_color);
+              
+        javafx.scene.paint.Color phaseColor;
+        if ((Phases!=null) && (!Phases.isEmpty())){
+            for (int idPh = 0; idPh < Phases.size(); idPh++) {         
+                if ((((ObjectArrival)Phases.get(idPh)).getPick().getLowerUncertainty()!=null && ((ObjectArrival)Phases.get(idPh)).getPick().getUpperUncertainty()!=null) && (ShowPhaseUncertainties))
+                    W.getSignal().ShowPhaseUncertainty(P, W.getStartTime(), ((ObjectArrival)Phases.get(idPh)).getPick().getArrivalTime().toLocalDateTime(),
+                        ((ObjectArrival)Phases.get(idPh)).getPick().getLowerUncertainty(),
+                        ((ObjectArrival)Phases.get(idPh)).getPick().getUpperUncertainty());
+                if (((ObjectArrival)Phases.get(idPh)).getIscCode().toUpperCase().startsWith("P"))
+                    phaseColor= javafx.scene.paint.Color.RED;
+                else
+                    phaseColor = javafx.scene.paint.Color.MAGENTA;
+                W.getSignal().ShowMarker(P, W.getStartTime(), ((ObjectArrival)Phases.get(idPh)).getPick().getArrivalTime().toLocalDateTime(), 
+                        ((ObjectArrival)Phases.get(idPh)).getIscCode(), phaseColor);
+            }
+        }
+             
+        P.widthProperty().addListener((obs, oldWidth, newWidth) -> { 
+            javafx.scene.paint.Color phaseCol;
+             // Ridisegna la polilinea quando cambia la larghezza
+            W.getSignal().Plot(P, W.getStationCode(), W.getChannelCode(), W.getStartTime(), 
+                    ShowGrid, ShowAxes, ShowTimeLabels, xData, yData, 1/W.getSamplingRate(),
+                    wave_color);
+            if ((Phases!=null) && (!Phases.isEmpty())){
+                for (int idPh = 0; idPh < Phases.size(); idPh++) {                    
+                    if ((((ObjectArrival)Phases.get(idPh)).getPick().getLowerUncertainty()!=null && ((ObjectArrival)Phases.get(idPh)).getPick().getUpperUncertainty()!=null) && (ShowPhaseUncertainties))
+                        W.getSignal().ShowPhaseUncertainty(P, W.getStartTime(), ((ObjectArrival)Phases.get(idPh)).getPick().getArrivalTime().toLocalDateTime(),
+                            ((ObjectArrival)Phases.get(idPh)).getPick().getLowerUncertainty(),
+                            ((ObjectArrival)Phases.get(idPh)).getPick().getUpperUncertainty());
+                    if (((ObjectArrival)Phases.get(idPh)).getIscCode().toUpperCase().startsWith("P"))
+                        phaseCol= javafx.scene.paint.Color.RED;
+                    else
+                        phaseCol = javafx.scene.paint.Color.MAGENTA;
+                    W.getSignal().ShowMarker(P, W.getStartTime(), ((ObjectArrival)Phases.get(idPh)).getPick().getArrivalTime().toLocalDateTime(), 
+                            ((ObjectArrival)Phases.get(idPh)).getIscCode(), phaseCol);
+                }
+            }
+        });
+        
     }
 }   
 //------------------------------------------------------------------------------

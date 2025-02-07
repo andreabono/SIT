@@ -42,9 +42,9 @@ import static org.ingv.sit.WavesTaskDialogController.wavesTaskType.EW;
 import static org.ingv.sit.WavesTaskDialogController.wavesTaskType.SEEDLINK;
 import org.ingv.sit.datamodel.DataSource;
 import org.ingv.sit.datamodel.Event;
+import org.ingv.sit.datamodel.Signal;
 import org.ingv.sit.datamodel.Waveform;
 import org.ingv.sit.earthworm.EW_Wave_Server_Client;
-import org.ingv.sit.mapping.MapHandler;
 import org.ingv.sit.utils.MiniSeedToFloatArray;
 import org.ingv.sit.utils.sitDialog;
 
@@ -345,18 +345,32 @@ public class WavesTaskDialogController implements Initializable {
                             //swpW.setStartTime(formatter.parse(lista.get(0).getHeader().getStartTime()));
                             DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy,D,HH:mm:ss.SSSS");
                             swpW.setStartTime(LocalDateTime.parse(lista.get(0).getHeader().getStartTime(), format));
-                            //swpW.setEndTime(LocalDateTime.parse(lista.get(lista.size()-1).getHeader().getEndTime(), format));
                         } catch (Exception ex) {
                             Logger.getLogger(EW_Wave_Server_Client.class.getName()).log(Level.SEVERE, null, ex);
                         }                     
 //
                         samps = msf.extract(lista);
+                                               
+                        float xData[] =new float[samps.length];
+                        for (Integer sampId =0; sampId< samps.length; sampId++) {         
+                            float timesamp = sampId.floatValue()/swpW.getSamplingRate(); //the time value of the sample
+                            xData[sampId] = timesamp;
+                        }
+                        swpW.setX(xData);
+                                           
                         if (samps != null) {
                             swpW.setY(samps);
                             swpW.setnSamples(samps.length);
                             swpW.setFilename(filename);
                             Warr.add(swpW);
                         }    
+                                              
+                        swpW.setStartTime_Box(swpW.getStartTime());
+                        swpW.setEndTime(swpW.getStartTime().plusNanos((long)((swpW.getnSamples()/swpW.getSamplingRate())*1000000000)));
+                        swpW.setEndTime_Box(swpW.getEndTime());
+                        
+                        // It builds the embedded SIGNAL object
+                        swpW.setSignal(new Signal(swpW.getX(), swpW.getY()));
                     }   
                 } 
             }                   
@@ -543,7 +557,7 @@ System.out.println(">>>>>>>>>>> Scarico da FDSN " + Stazioni_canali_tempi_selezi
                         Event_on_Map.ShowWavesWindow();
                     else {
                         Event_on_Map.setAddingStations(false);
-                        App.G.WavesControllers.get(Event_on_Map.getIdController()).DisplayOnlyWaves(0);
+                        App.G.WavesControllers.get(Event_on_Map.getIdController()).DisplayOnlyWaves(0, true);
                         App.G.WavesControllers.get(Event_on_Map.getIdController()).populate_stations_combo();
                     }
                 });

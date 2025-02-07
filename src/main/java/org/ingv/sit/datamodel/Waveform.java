@@ -28,13 +28,22 @@ public class Waveform {
     private float[] Y_backup;
     private float[] Y_original;
     private LocalDateTime StartTime;
+    private LocalDateTime StartTime_Box;
+    private LocalDateTime EndTime;
+    private LocalDateTime EndTime_Box;
     private String filename;
     private int plot_box_id_WA=-1;
     private int plot_box_id=-1;
     public int filters=0;
     public String DataProvider; // in [EW,FDSN, LOCALHOST] e SL?
     
-
+    private Signal Signal;
+    
+    
+    public void UpdateYBounds(){
+        Signal.ymin = Signal.findMin(Y);
+        Signal.ymax = Signal.findMax(Y);
+    }
     /**
      * @return the SamplingRate
      */
@@ -299,6 +308,62 @@ public class Waveform {
      */
     public void setPlot_box_id(int plot_box_id) {
         this.plot_box_id = plot_box_id;
+    }
+
+    /**
+     * @return the StartTime_Box
+     */
+    public LocalDateTime getStartTime_Box() {
+        return StartTime_Box;
+    }
+
+    /**
+     * @param StartTime_Box the StartTime_Box to set
+     */
+    public void setStartTime_Box(LocalDateTime StartTime_Box) {
+        this.StartTime_Box = StartTime_Box;
+    }
+
+    /**
+     * @return the EndTime_Box
+     */
+    public LocalDateTime getEndTime_Box() {
+        return EndTime_Box;
+    }
+
+    /**
+     * @param EndTime_Box the EndTime_Box to set
+     */
+    public void setEndTime_Box(LocalDateTime EndTime_Box) {
+        this.EndTime_Box = EndTime_Box;
+    }
+
+    /**
+     * @return the EndTime
+     */
+    public LocalDateTime getEndTime() {
+        return EndTime;
+    }
+
+    /**
+     * @param EndTime the EndTime to set
+     */
+    public void setEndTime(LocalDateTime EndTime) {
+        this.EndTime = EndTime;
+    }
+
+    /**
+     * @return the Signal
+     */
+    public Signal getSignal() {
+        return Signal;
+    }
+
+    /**
+     * @param Signal the Signal to set
+     */
+    public void setSignal(Signal Signal) {
+        this.Signal = Signal;
     }
 
 }

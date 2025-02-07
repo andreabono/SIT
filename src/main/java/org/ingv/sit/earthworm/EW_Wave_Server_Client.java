@@ -34,6 +34,7 @@ import java.util.TimeZone;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.ingv.sit.App;
+import org.ingv.sit.datamodel.Signal;
 import org.ingv.sit.datamodel.Station;
 import org.ingv.sit.datamodel.Waveform;
 import org.ingv.sit.utils.MiniSeedToFloatArray;
@@ -341,12 +342,25 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
                         }                     
 //
                         samps = msf.extract(lista);
+                        float xData[] =new float[samps.length];
+                        for (Integer sampId =0; sampId< samps.length; sampId++) {         
+                            float timesamp = sampId.floatValue()/swpW.getSamplingRate(); //the time value of the sample
+                            xData[sampId] = timesamp;
+                        }
+                        swpW.setX(xData);
                         if (samps != null) {
                             swpW.setY(samps);
                             swpW.setnSamples(samps.length);
                             swpW.setFilename(filename);
                             Warr.add(swpW);
-                        }    
+                        } 
+                        
+                        swpW.setStartTime_Box(swpW.getStartTime());
+                        swpW.setEndTime(swpW.getStartTime().plusNanos((long)((swpW.getnSamples()/swpW.getSamplingRate())*1000000000)));
+                        swpW.setEndTime_Box(swpW.getEndTime());
+                        
+                        // It builds the embedded SIGNAL object
+                        swpW.setSignal(new Signal(swpW.getX(), swpW.getY()));
                     }   
                 } 
             }                   
@@ -423,12 +437,26 @@ public class EW_Wave_Server_Client { //extends MSeedQueryClient{
                         }                     
 //
                         samps = msf.extract(lista);
+                        float xData[] =new float[samps.length];
+                        for (Integer sampId =0; sampId< samps.length; sampId++) {         
+                            float timesamp = sampId.floatValue()/swpW.getSamplingRate(); //the time value of the sample
+                            xData[sampId] = timesamp;
+                        }
+                        swpW.setX(xData);
+                        
                         if (samps != null) {
                             swpW.setY(samps);
                             swpW.setnSamples(samps.length);
                             swpW.setFilename(filename);
                             Warr.add(swpW);
                         }    
+                        
+                        swpW.setStartTime_Box(swpW.getStartTime());
+                        swpW.setEndTime(swpW.getStartTime().plusNanos((long)((swpW.getnSamples()/swpW.getSamplingRate())*1000000000)));
+                        swpW.setEndTime_Box(swpW.getEndTime());
+                        
+                        // It builds the embedded SIGNAL object
+                        swpW.setSignal(new Signal(swpW.getX(), swpW.getY()));
                     }   
                 } 
             }                   

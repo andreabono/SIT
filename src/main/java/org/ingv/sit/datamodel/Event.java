@@ -1545,14 +1545,26 @@ public class Event {
               
                 DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy,D,HH:mm:ss.SSSS");
                 swpW.setStartTime(LocalDateTime.parse(lista.get(0).getHeader().getStartTime(), format));
-                //swpW.setEndTime(LocalDateTime.parse(lista.get(lista.size()-1).getHeader().getEndTime(), format));
-                
+                swpW.setStartTime_Box(swpW.getStartTime());
+                                           
                 samps = msf.extract(lista);
+                float xData[] =new float[samps.length];
+                for (Integer sampId =0; sampId< samps.length; sampId++) {         
+                    float timesamp = sampId.floatValue()/swpW.getSamplingRate(); //the time value of the sample
+                    xData[sampId] = timesamp;
+                }
+                swpW.setX(xData);
                 if (samps != null) {
                     swpW.setY(samps);
                     swpW.setnSamples(samps.length);
                     Warr.add(swpW);
                 }    
+                
+                swpW.setEndTime(swpW.getStartTime().plusNanos((long)((swpW.getnSamples()/swpW.getSamplingRate())*1000000000)));
+                swpW.setEndTime_Box(swpW.getEndTime());
+                
+                // It builds the embedded SIGNAL object
+                swpW.setSignal(new Signal(swpW.getX(), swpW.getY()));                
             }            
 //            
             return Warr;
@@ -3049,6 +3061,20 @@ public class Event {
                             tmpW.setY(tempSACTimeSeries.getY());
                             
                             
+                            tmpW.setStartTime_Box(tmpW.getStartTime());      
+                            tmpW.setEndTime(tmpW.getStartTime().plusNanos((long)((tmpW.getnSamples()*tmpW.getSamplingRate())*1000000000)));
+                            tmpW.setEndTime_Box(tmpW.getEndTime());
+                                                        
+                            float xData[] =new float[(int)tmpW.getnSamples()];
+                            for (Integer sampId =0; sampId< tmpW.getnSamples(); sampId++) {         
+                                float timesamp = sampId.floatValue()/tmpW.getSamplingRate(); //the time value of the sample
+                                xData[sampId] = timesamp;
+                            }
+                            tmpW.setX(xData);
+                            
+                            // It builds the embedded SIGNAL object
+                            tmpW.setSignal(new Signal(tmpW.getX(), tmpW.getY()));
+                                                                                            
                             if (s.getWaves()==null) s.setWaves(new ArrayList<Waveform>());
                             s.getWaves().add(tmpW);
                         }
@@ -3148,7 +3174,95 @@ public class Event {
         } catch (Exception ex){
         }
     }
-
+//------------------------------------------------------------------------------
+    public void SyncroWaves(){
+        if (getnOpenWaves()>0){
+            // if this.multipledates()
+            // syncro_su_piu_date
+          //else
+            SyncroWavesOnSingleDate();
+        }
+    }
+    
+    
+    private void SyncroWavesOnSingleDate(){
+        int fsS, leS;
+        double diff;
+        for (int i = 0; i < getNStations(); i++){
+            if (Stations.get(i).HasAnUsedPhase() && Stations.get(i).getNWaves() > 0) {
+                
+                Stations.get(i).getWave(0).setStartTime_Box(Stations.get(i).getWave(0).getStartTime());
+                Stations.get(i).getWave(0).setEndTime_Box(Stations.get(i).getWave(0).getEndTime());
+                    
+                //    .Signal.ResetBounds(True, False)
+                
+            }
+        }
+        
+        // 1. Trova la traccia che inizia per prima (fsS)
+        fsS = FindFirstPlotStationId();
+        leS = fsS;
+        for (int i = 0; i < getNStations(); i++){
+            if (Stations.get(i).getNWaves() > 0) {       
+                if (Stations.get(i).getWave(0).getStartTime_Box().isBefore(Stations.get(fsS).getWave(0).getStartTime_Box()))      
+                    fsS = i;               
+            }
+        }
+        
+        // 2. Trova la traccia che finisce per ultima (leS)
+        for (int i = 0; i < getNStations(); i++){
+            if (Stations.get(i).getNWaves() > 0) {       
+                if (Stations.get(i).getWave(0).getEndTime_Box().isAfter(Stations.get(leS).getWave(0).getEndTime_Box()))      
+                    leS = i;               
+            }
+        }
+        
+        // 3. Aggiunge "spazio" in Testa
+        for (int ii = 0; ii < getNStations(); ii++){
+            if (Stations.get(ii).getNWaves() > 0) {  
+                if (ii != fsS) {
+//                            
+                    if (Stations.get(ii).getWave(0).getStartTime_Box().isAfter(Stations.get(fsS).getWave(0).getStartTime_Box())){
+                        long nanosDifference = Duration.between(Stations.get(fsS).getWave(0).getStartTime_Box(), Stations.get(ii).getWave(0).getStartTime_Box()).toNanos();
+                        
+                        diff = nanosDifference / 1000_000_000.0;
+        
+                        Stations.get(ii).getWave(0).setStartTime_Box(Stations.get(fsS).getWave(0).getStartTime_Box());
+                        Stations.get(ii).getWave(0).getSignal().xmin-=diff;
+                    }        
+                }
+            }
+        }
+            
+        // 4. Aggiunge "spazio" in coda
+        for (int ii = 0; ii < getNStations(); ii++){
+            if (Stations.get(ii).getNWaves() > 0) {
+                if (ii != leS) {                             
+                    if (Stations.get(ii).getWave(0).getEndTime_Box().isBefore(Stations.get(leS).getWave(0).getEndTime_Box())){
+                        long nanosDifference = Duration.between(Stations.get(ii).getWave(0).getEndTime_Box(), Stations.get(leS).getWave(0).getEndTime_Box()).toNanos();
+                        
+                        diff = nanosDifference / 1000_000_000.0;
+                        Stations.get(ii).getWave(0).setEndTime_Box(Stations.get(leS).getWave(0).getEndTime_Box());
+                        Stations.get(ii).getWave(0).getSignal().xmax+=diff;
+                    }
+                }
+            }
+        }
+    }
+    
+    private int FindFirstPlotStationId(){
+        // This finds the station_id for the first plot in the preview
+        int res=0;
+        while (res < getNStations()){
+            if (Stations.get(res).getNWaves()>0){
+                return res;
+            } else res++;
+        
+        }
+        
+        return -1;
+    }
+//------------------------------------------------------------------------------    
     /**
      * @return the sitProvenance
      */

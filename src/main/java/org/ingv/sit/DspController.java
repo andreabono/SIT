@@ -161,7 +161,8 @@ public class DspController implements Initializable {
                 } 
                 //
                 Range xRange = ((XYPlot)App.G.WavesControllers.get(ID_waves_controller).getPlot_combinato_TERNA().getSubplots().get(0)).getDomainAxis().getRange();
-                App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA(xRange);
+                App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA(xRange, false, false);
+                App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA_new(xRange, false, false);
           
                 IIR_btnCancel.setDisable(false);
             } else {
@@ -315,7 +316,8 @@ public class DspController implements Initializable {
         App.G.WavesControllers.get(ID_waves_controller).Restore_TERNA_UndoLastFilter();
         Range xRange = ((XYPlot)App.G.WavesControllers.get(ID_waves_controller).getPlot_combinato_TERNA().getSubplots().get(0)).getDomainAxis().getRange();
         
-        App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA(xRange);
+        App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA(xRange, false, false);
+        App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA_new(xRange, false, false);
         
         IIR_btnCancel.setDisable(true);
     }
@@ -476,7 +478,8 @@ public class DspController implements Initializable {
                 } 
                 //
                 Range xRange = ((XYPlot)App.G.WavesControllers.get(ID_waves_controller).getPlot_combinato_TERNA().getSubplots().get(0)).getDomainAxis().getRange();
-                App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA(xRange);
+                App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA(xRange, false, false);
+                App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA_new(xRange, false, false);
           
                 FIR_btnCancel.setDisable(false);
             } else {
@@ -491,7 +494,8 @@ public class DspController implements Initializable {
         App.G.WavesControllers.get(ID_waves_controller).Restore_TERNA_UndoLastFilter();
         Range xRange = ((XYPlot)App.G.WavesControllers.get(ID_waves_controller).getPlot_combinato_TERNA().getSubplots().get(0)).getDomainAxis().getRange();
         
-        App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA(xRange);
+        App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA(xRange, false, false);
+        App.G.WavesControllers.get(ID_waves_controller).DisplayWaves_TERNA_new(xRange, false, false);
         
         FIR_btnCancel.setDisable(true);
     }

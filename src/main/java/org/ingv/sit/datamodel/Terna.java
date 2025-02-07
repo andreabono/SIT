@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -247,7 +248,20 @@ public class Terna {
                             tmpW.setnSamples(tempSACTimeSeries.getHeader().getNpts());
 
                             tmpW.setY(tempSACTimeSeries.getY());
-
+                            
+                            
+                            float xData[] =new float[(int)tmpW.getnSamples()];
+                            for (Integer sampId =0; sampId< tmpW.getnSamples(); sampId++) {         
+                                float timesamp = sampId.floatValue()/tmpW.getSamplingRate(); //the time value of the sample
+                                xData[sampId] = timesamp;
+                            }
+                            tmpW.setX(xData);
+                            // It builds the embedded SIGNAL object
+                            tmpW.setSignal(new Signal(tmpW.getX(), tmpW.getY()));
+                                                       
+                            tmpW.setStartTime_Box(tmpW.getStartTime());      
+                            tmpW.setEndTime(tmpW.getStartTime().plusNanos((long)((tmpW.getnSamples()*tmpW.getSamplingRate())*1000000000)));
+                            tmpW.setEndTime_Box(tmpW.getEndTime());
 
                             if (this.getWaves()==null) this.setWaves(new ArrayList<Waveform>());
                             this.getWaves().add(tmpW);
@@ -332,12 +346,27 @@ public class Terna {
                         }                     
 //
                         samps = msf.extract(lista);
+                        
+                        float xData[] =new float[samps.length];
+                        for (Integer sampId =0; sampId< samps.length; sampId++) {         
+                            float timesamp = sampId.floatValue()/swpW.getSamplingRate(); //the time value of the sample
+                            xData[sampId] = timesamp;
+                        }
+                        swpW.setX(xData);
+                        
                         if (samps != null) {
                             swpW.setY(samps);
                             swpW.setnSamples(samps.length);
                             swpW.setFilename(filename);
                             Waves.add(swpW);
                         }    
+                        
+                        swpW.setStartTime_Box(swpW.getStartTime());
+                        swpW.setEndTime(swpW.getStartTime().plusNanos((long)((swpW.getnSamples()/swpW.getSamplingRate())*1000000000)));
+                        swpW.setEndTime_Box(swpW.getEndTime());
+                        
+                        // It builds the embedded SIGNAL object
+                        swpW.setSignal(new Signal(swpW.getX(), swpW.getY()));
                     }   
                 } 
             }   
@@ -571,11 +600,26 @@ public class Terna {
                 //swpW.setEndTime(LocalDateTime.parse(lista.get(lista.size()-1).getHeader().getEndTime(), format));
                 
                 samps = msf.extract(lista);
+                
+                float xData[] =new float[samps.length];
+                for (Integer sampId =0; sampId< samps.length; sampId++) {         
+                    float timesamp = sampId.floatValue()/swpW.getSamplingRate(); //the time value of the sample
+                    xData[sampId] = timesamp;
+                }
+                swpW.setX(xData);
+                
                 if (samps != null) {
                     swpW.setY(samps);
                     swpW.setnSamples(samps.length);
                     Warr.add(swpW);
-                }    
+                }   
+                
+                swpW.setStartTime_Box(swpW.getStartTime());
+                swpW.setEndTime(swpW.getStartTime().plusNanos((long)((swpW.getnSamples()/swpW.getSamplingRate())*1000000000)));
+                swpW.setEndTime_Box(swpW.getEndTime());
+                
+                // It builds the embedded SIGNAL object
+                swpW.setSignal(new Signal(swpW.getX(), swpW.getY()));
             }            
 //            
             return Warr;
@@ -736,6 +780,62 @@ public class Terna {
      */
     public void setStationName(String StationName) {
         this.StationName = StationName;
+    }
+    
+    
+    
+    public void SyncroWaves(){
+        int fsW, leW;
+        double diff;
+        for (int i = 0; i < Waves.size(); i++){   
+            Waves.get(i).setStartTime_Box(Waves.get(i).getStartTime());
+            Waves.get(i).setEndTime_Box(Waves.get(i).getEndTime());
+            //    .Signal.ResetBounds(True, False)          
+        }
+        
+        // 1. Trova la traccia che inizia per prima (fsS)
+        fsW = 0;
+        
+        for (int i = 0; i < Waves.size(); i++){            
+            if (Waves.get(i).getStartTime_Box().isBefore(Waves.get(fsW).getStartTime_Box()))      
+                fsW = i;                    
+        }
+        
+        // 2. Trova la traccia che finisce per ultima (leS)
+        leW=0;
+        for (int i = 0; i < Waves.size(); i++){            
+            if (Waves.get(i).getEndTime_Box().isAfter(Waves.get(leW).getEndTime_Box()))      
+                leW = i;                    
+        }
+        
+        // 3. Aggiunge "spazio" in Testa
+        for (int ii = 0; ii < Waves.size(); ii++){       
+            if (ii != fsW) {
+                if (Waves.get(ii).getStartTime_Box().isAfter(Waves.get(fsW).getStartTime_Box())){
+                    long nanosDifference = Duration.between(Waves.get(fsW).getStartTime_Box(), Waves.get(ii).getStartTime_Box()).toNanos();
+
+                    diff = nanosDifference / 1000_000_000.0;
+
+                    Waves.get(ii).setStartTime_Box(Waves.get(fsW).getStartTime_Box());
+                    Waves.get(ii).getSignal().xmin-=diff;
+                }        
+            }
+            
+        }
+            
+        // 4. Aggiunge "spazio" in coda
+        for (int ii = 0; ii < Waves.size(); ii++){    
+            if (ii != leW) { 
+                if (Waves.get(ii).getEndTime_Box().isBefore(Waves.get(leW).getEndTime_Box())){
+                    long nanosDifference = Duration.between(Waves.get(ii).getEndTime_Box(), Waves.get(leW).getEndTime_Box()).toNanos();
+
+                    diff = nanosDifference / 1000_000_000.0;
+                    Waves.get(ii).setEndTime_Box(Waves.get(leW).getEndTime_Box());
+                    Waves.get(ii).getSignal().xmax+=diff;
+                }
+            }
+            
+        }
     }
     
 }

@@ -19,6 +19,7 @@ import org.ingv.dante.model.ObjectStationmagnitude;
 import org.ingv.sit.App;
 
 import org.ingv.sit.datamodel.Event;
+import org.ingv.sit.datamodel.Signal;
 import org.ingv.sit.datamodel.Station;
 import org.ingv.sit.datamodel.Waveform;
 import org.ingv.sit.utils.sitDialog;
@@ -392,8 +393,19 @@ _SAC_ResponseStruct readPZ(String STAZ, String CHAN) {
             
             inWave.setSamplingRate(WA.size()/new_duration);
             inWave.setnSamples(WA.size());
-            //inWave.setY(new float[(int)inWave.getnSamples()]);
+            
+            
+            float xData[] =new float[WA.size()];
+            for (Integer sampId =0; sampId< WA.size(); sampId++) {         
+                float timesamp = sampId.floatValue()/inWave.getSamplingRate(); //the time value of the sample
+                xData[sampId] = timesamp;
+            }
+            inWave.setX(xData);
+                       
             inWave.setY(res_float);
+            
+            // It builds the embedded SIGNAL object
+            inWave.setSignal(new Signal(inWave.getX(), inWave.getY()));
         
             return true;            
         } catch (Exception ex) {
