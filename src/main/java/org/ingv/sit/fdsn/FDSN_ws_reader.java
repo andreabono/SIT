@@ -21,6 +21,11 @@ import edu.sc.seis.seisFile.fdsnws.quakeml.EventIterator;
 import edu.sc.seis.seisFile.fdsnws.quakeml.QuakeMLTagNames;
 import edu.sc.seis.seisFile.fdsnws.quakeml.Quakeml;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.TimeZone;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -42,9 +47,9 @@ public class FDSN_ws_reader {
             float min_magnitude,
             float min_lat, float max_lat, float min_lon, float max_lon,
             float max_depth){
-        try {
+        try {           
             FDSNEventQueryParams queryParams = new FDSNEventQueryParams();
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");            
             sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
             //    
             if (host.toUpperCase().contains("INGV"))

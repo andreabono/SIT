@@ -4,7 +4,7 @@
     <datasource>
         <datasourcetype>FDSN</datasourcetype>
         <description>Italian EIDA node webserivce</description>
-        <used>true</used>
+        <used>false</used>
         <hostname>webservices.ingv.it</hostname>
         <waveserver_ports_list/>
         <url>http://webservices.ingv.it</url>
@@ -31,7 +31,7 @@
     <datasource>
         <datasourcetype>FDSN</datasourcetype>
         <description>RESIF webserivce</description>
-        <used>false</used>
+        <used>true</used>
         <hostname>ws.resif.fr</hostname>
         <waveserver_ports_list/>
         <url>http://ws.resif.fr</url>

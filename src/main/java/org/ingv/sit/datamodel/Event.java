@@ -111,7 +111,7 @@ public class Event {
     private String waves_path_WA;
     private String original_hostname;   
     //private String work_event_ID;
-    private Long work_event_ID;
+    private String work_event_ID;
     private Long work_origin_ID;  
     public ObjectEvent innerObjectEvent; 
     ObjectLocalspace sitLocalSpace;
@@ -180,7 +180,7 @@ public class Event {
                     // 
                     innerObjectEvent = myResp.getData().getEvent();
                                         
-                    work_event_ID=myResp.getData().getEvent().getId(); 
+                    work_event_ID=myResp.getData().getEvent().getId().toString(); 
                     setWork_origin_ID(myResp.getData().getEvent().getOrigins().get(0).getId());
                                                            
                     if (myResp.getData().getEvent().getLocalspace()!=null && myResp.getData().getEvent().getLocalspace().getName()!=null){
@@ -380,12 +380,19 @@ public class Event {
             
             //edu.sc.seis.seisFile.fdsnws.quakeml.Origin o = QMLevent.getOriginList().get(QMLevent.getOriginList().size()-2);
             edu.sc.seis.seisFile.fdsnws.quakeml.Origin o = QMLevent.getOriginList().get(id_origin);
+//            if (QMLevent.getPublicId().contains("=")) {
+//                work_event_ID = Long.valueOf(QMLevent.getPublicId().toString().substring(QMLevent.getPublicId().toString().indexOf("=")+1));
+//            } else if (QMLevent.getPublicId().contains("/")) {
+//                work_event_ID = Long.valueOf(QMLevent.getPublicId().substring(QMLevent.getPublicId().lastIndexOf("/")+1));
+//            } else {
+//                work_event_ID = Long.valueOf(QMLevent.getPublicId());
+//            }
             if (QMLevent.getPublicId().contains("=")) {
-                work_event_ID = Long.valueOf(QMLevent.getPublicId().toString().substring(QMLevent.getPublicId().toString().indexOf("=")+1));
+                work_event_ID = QMLevent.getPublicId().toString().substring(QMLevent.getPublicId().toString().indexOf("=")+1);
             } else if (QMLevent.getPublicId().contains("/")) {
-                work_event_ID = Long.valueOf(QMLevent.getPublicId().substring(QMLevent.getPublicId().lastIndexOf("/")+1));
+                work_event_ID = QMLevent.getPublicId().substring(QMLevent.getPublicId().lastIndexOf("/")+1);
             } else {
-                work_event_ID = Long.valueOf(QMLevent.getPublicId());
+                work_event_ID = QMLevent.getPublicId();
             }
             //
             innerObjectEvent.setTypeEvent(QMLevent.getType()); 
@@ -2379,14 +2386,14 @@ public class Event {
     /**
      * @return the work_event_ID
      */
-    public Long getWork_event_ID() {
+    public String getWork_event_ID() {
         return work_event_ID;
     }
 
     /**
      * @param local_event_ID the work_event_ID to set
      */
-    public void setWork_event_ID(Long in_work_event_ID) {
+    public void setWork_event_ID(String in_work_event_ID) {
         this.work_event_ID = in_work_event_ID;
     }
 

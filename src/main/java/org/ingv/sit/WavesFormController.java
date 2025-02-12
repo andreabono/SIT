@@ -977,7 +977,7 @@ public class WavesFormController implements Initializable {
                         relocated_event.CalculateMD();
                     }
                     
-                    relocated_event.setWork_event_ID(myEvent.innerObjectEvent.getId());
+                    relocated_event.setWork_event_ID(myEvent.innerObjectEvent.getId().toString());
                     relocated_event.setWork_origin_ID(myEvent.getInnerObjectEvent().getOrigins().get(0).getId());
                     //----------------------------------------------------------------------
                     // Serve per salvare gli eventi in SeisEV
