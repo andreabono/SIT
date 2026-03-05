@@ -1,0 +1,136 @@
+body{
+    margin:0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color:#e6f3ff;
+    background:#071a2d;
+    background-image:url("../images/earth-bg.png");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+/* HEADER */
+
+header{
+    background:rgba(5,20,40,0.85);
+    backdrop-filter:blur(6px);
+    padding:20px;
+}
+
+nav{
+    text-align:center;
+}
+
+nav a{
+    color:#8fd3ff;
+    margin:0 25px;
+    font-size:18px;
+    font-weight:600;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* MAIN */
+
+.container{
+    width:1100px;
+    margin:auto;
+    padding:50px;
+}
+
+.hero{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 0 40px rgba(0,0,0,0.8);
+}
+
+.section{
+    margin-top:60px;
+}
+
+.section img{
+    width:450px;
+    border-radius:10px;
+}
+
+/* TITLES */
+
+h1{
+    font-size:42px;
+    letter-spacing:1px;
+}
+
+h2{
+    color:#6ec5ff;
+}
+
+/* DOWNLOAD BUTTONS */
+
+.download-area{
+    display:flex;
+    gap:40px;
+    margin-top:30px;
+}
+
+.download-btn{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:18px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:18px;
+}
+
+.windows{
+    background:#0078d4;
+    color:white;
+}
+
+.windows:hover{
+    background:#1a8cff;
+}
+
+.mac{
+    background:#444;
+    color:white;
+}
+
+.mac:hover{
+    background:#666;
+}
+
+.download-btn img{
+    width:28px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#9ac7e8;
+}
+
+/* SEISMIC WAVE ANIMATION */
+
+.wave{
+    height:80px;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 8px,
+        #00aaff 8px,
+        #00aaff 10px
+    );
+    opacity:0.3;
+    animation:moveWave 6s linear infinite;
+}
+
+@keyframes moveWave{
+    from{background-position:0 0;}
+    to{background-position:400px 0;}
+}
